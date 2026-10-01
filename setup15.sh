@@ -1,3 +1,6 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -226,3 +229,8 @@
   </script>
 </body>
 </html>
+EOF
+
+git add .
+git commit -m "Filtros completos: preço, frete grátis, ordenação"
+git push   
