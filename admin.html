@@ -251,16 +251,48 @@
 
       // Detecta formato do bookmarklet (contém |||)
       if (lines[0].includes("|||")) {
+        const catMap = {
+          "celulares": "Celulares", "telefones": "Celulares", "celulares e telefones": "Celulares",
+          "informática": "Informatica", "informatica": "Informatica", "notebooks": "Informatica",
+          "games": "Games", "consoles": "Games", "games e consoles": "Games",
+          "móveis": "Moveis", "moveis": "Moveis", "decoration": "Moveis", "decoração": "Moveis",
+          "cozinha": "Cozinha", "mesa": "Cozinha", "utensílios": "Cozinha",
+          "moda": "Moda", "acessórios": "Moda", "moda e acessórios": "Moda", "roupas": "Moda",
+          "beleza": "Beleza", "saúde": "Beleza", "beleza e saúde": "Beleza", "perfumaria": "Beleza",
+          "esportes": "Esportes", "fitness": "Esportes", "esportes e fitness": "Esportes",
+          "animais": "Pet", "estimação": "Pet", "pet": "Pet",
+          "brinquedos": "Infantil", "jogos": "Infantil", "infantil": "Infantil",
+          "automotivo": "Automotivo", "auto": "Automotivo",
+          "ferramentas": "Ferramentas", "construção": "Ferramentas",
+          "livros": "Livros", "filmes": "Livros", "músicas": "Livros", "papelaria": "Livros"
+        };
+        function mapCategory(mlCat) {
+          if (!mlCat) return "";
+          const lower = mlCat.toLowerCase();
+          for (const key in catMap) {
+            if (lower.includes(key)) return catMap[key];
+          }
+          return "";
+        }
         batchItems = lines.map(line => {
           const parts = line.split("|||");
+          const mlCat = (parts[5] || "").trim();
+          const mapped = mapCategory(mlCat);
           return {
             nome: (parts[0] || "Sem nome").trim(),
             preco: (parts[1] || "0").trim(),
             imagem: (parts[2] || "").trim(),
             frete: (parts[3] || "Consultar frete").trim(),
-            link: (parts[4] || "").trim()
+            link: (parts[4] || "").trim(),
+            categoriaAuto: mapped || ""
           };
         });
+        // Auto-seleciona categoria no select se todos forem a mesma
+        const cats = batchItems.map(i => i.categoriaAuto).filter(c => c);
+        if (cats.length > 0 && cats.every(c => c === cats[0])) {
+          const sel = document.getElementById("batch-categoria");
+          if (sel) sel.value = cats[0];
+        }
         statusEl.style.display = "block";
         statusEl.className = "status success";
         statusEl.textContent = `✅ ${batchItems.length} produto(s) importados!`;
@@ -394,8 +426,9 @@
     function confirmBatch() {
       const valid = batchItems.filter(i => !i.erro);
       if (valid.length === 0) { alert("Nenhuma oferta válida."); return; }
-      const cat = document.getElementById("batch-categoria").value;
+      const catSel = document.getElementById("batch-categoria").value;
       valid.forEach(item => {
+        const cat = (item.categoriaAuto && catSel === "Outros") ? item.categoriaAuto : catSel;
         const offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
         if (item.imagem) offer.imagem = item.imagem;
         const lk = (item.link || '').toLowerCase();
