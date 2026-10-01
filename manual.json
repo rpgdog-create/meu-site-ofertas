@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "nome": "Lixeira Inteligente Sensor Automático 16l Cinza Smart Recarregável Para Banheiro E Cozinha",
+    "preco": "64.3",
+    "link": "https://meli.la/2C9344L",
+    "categoria": "Indústria e Comércio",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_749787-MLA111237820392_052026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Principia Kit 2 Protetor Solar Corporal Ps-03 FPS60",
+    "preco": "87.05",
+    "link": "https://meli.la/2W9JHFT",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_644422-MLA110121267428_042026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Climatizador De Ar Frio Portátil Zlx-8 8l 4 Funções Zellox",
+    "preco": "354.9",
+    "link": "https://meli.la/2Nx9sNg",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_937900-MLB89100085079_082025-O-climatizador-de-ar-frio-portatil-zlx-8-8l-4-funcoes-zellox.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Jogo Panela Ceramica Antiaderente 5pç Tampa Silicone Induçao",
+    "preco": "266.17",
+    "link": "https://meli.la/1haGYNB",
+    "categoria": "Outros",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_815631-MLB109277052486_042026-O-jogo-panela-ceramica-antiaderente-5pc-tampa-silicone-inducao.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lixeira Inteligente Sensor Automático 16l Cinza Smart Recarregável Para Banheiro E Cozinha",
+    "preco": "64.3",
+    "link": "https://meli.la/2C9344L",
+    "categoria": "Indústria e Comércio",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_749787-MLA111237820392_052026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Principia Kit 2 Protetor Solar Corporal Ps-03 FPS60",
+    "preco": "87.05",
+    "link": "https://meli.la/2W9JHFT",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_644422-MLA110121267428_042026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Climatizador De Ar Frio Portátil Zlx-8 8l 4 Funções Zellox",
+    "preco": "354.9",
+    "link": "https://meli.la/2Nx9sNg",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_937900-MLB89100085079_082025-O-climatizador-de-ar-frio-portatil-zlx-8-8l-4-funcoes-zellox.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  }
+]
