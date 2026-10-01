@@ -1,3 +1,6 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+cat > admin.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -415,3 +418,11 @@
   </script>
 </body>
 </html>
+HTMLEOF
+
+echo "✅ admin.html substituído!"
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Admin com suporte a bookmarklet ML Copy'"
+echo "  git push"   
