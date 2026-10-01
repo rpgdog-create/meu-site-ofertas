@@ -9,17 +9,11 @@
 <body>
   <header>
     <h1>🔥 Ofertas do Dia</h1>
-    <p class="subtitle">As melhores comissões dos marketplaces</p>
+    <p class="subtitle">As melhores ofertas dos marketplaces</p>
   </header>
 
-  <nav class="tabs">
-    <button class="tab active" data-source="shopee">Shopee</button>
-    <button class="tab" data-source="manual">Mercado Livre / Amazon</button>
-  </nav>
-
   <main>
-    <div id="grid-shopee" class="grid"></div>
-    <div id="grid-manual" class="grid" style="display:none"></div>
+    <div id="grid-all" class="grid"></div>
   </main>
 
   <footer>
@@ -27,6 +21,62 @@
     <p style="margin-top:0.5rem;"><a href="admin.html">⚙️ Admin</a></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const grid = document.getElementById('grid-all');
+
+    function getBadge(p) {
+      const mp = (p.marketplace || '').toUpperCase();
+      if (mp === 'ML' || mp === 'MERCADO LIVRE') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
+      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">Shopee</span>';
+      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">Amazon</span>';
+      const link = (p.link || p.offerLink || '').toLowerCase();
+      if (link.includes('mercadolivre') || link.includes('meli.la')) return '<span class="mp-badge mp-ml">Mercado Livre</span>';
+      if (link.includes('shopee')) return '<span class="mp-badge mp-shopee">Shopee</span>';
+      if (link.includes('amazon')) return '<span class="mp-badge mp-amazon">Amazon</span>';
+      return '';
+    }
+
+    function renderCard(p) {
+      const div = document.createElement('div');
+      div.className = 'card';
+      const badge = getBadge(p);
+      const tag = p.tag ? `<span class="tag">${p.tag}</span>` : '';
+      const img = p.imagem ? `<img src="${p.imagem}" alt="" class="card-img">` : '';
+      const frete = p.frete ? `<p class="frete">🚚 ${p.frete}</p>` : '';
+      const desc = p.descricao ? `<p class="desc">${p.descricao}</p>` : '';
+      div.innerHTML = `
+        ${badge}
+        ${tag}
+        ${img}
+        <h3>${p.productName || p.nome}</h3>
+        <p class="price">R$ ${Number(p.price || p.preco).toFixed(2)}</p>
+        <p class="commission">${p.commissionRate ? 'Comissão: ' + p.commissionRate + '%' : ''}</p>
+        <p class="meta">${p.rating ? '⭐ ' + p.rating : ''} ${p.salesCount ? '| ' + p.salesCount + ' vendidos' : ''}</p>
+        ${frete}
+        ${desc}
+        <a href="${p.offerLink || p.link}" target="_blank" rel="noopener">Ver oferta →</a>
+      `;
+      return div;
+    }
+
+    async function loadAll() {
+      try {
+        const [r1, r2] = await Promise.all([
+          fetch('manual.json?t=' + Date.now()),
+          fetch('ofertas.json?t=' + Date.now())
+        ]);
+        const manual = await r1.json().catch(() => []);
+        const shopee = await r2.json().catch(() => []);
+        const all = [...manual, ...shopee];
+        grid.innerHTML = '';
+        if (all.length === 0) { grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Nenhuma oferta ainda.</p>'; return; }
+        all.forEach(p => grid.appendChild(renderCard(p)));
+      } catch (e) {
+        grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Erro ao carregar ofertas.</p>';
+      }
+    }
+
+    loadAll();
+  </script>
 </body>
 </html>
