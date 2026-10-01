@@ -335,13 +335,21 @@
     }
 
     async function commitFile(content, message) {
-      var sha = await getFileSHA();
-      var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
-      await ghFetch(API, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" })
-      });
+      var base64 = btoa(String.fromCharCode.apply(null, new Uint8Array(new TextEncoder().encode(JSON.stringify(content, null, 2)))));
+      for (var attempt = 0; attempt < 3; attempt++) {
+        var sha = await getFileSHA();
+        try {
+          await ghFetch(API, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" })
+          });
+          return;
+        } catch (e) {
+          if (e.message.indexOf("409") !== -1 && attempt < 2) continue;
+          throw e;
+        }
+      }
     }
 
     function isValidCategory(cat) {
@@ -386,7 +394,7 @@
             nome: (parts[0] || "Sem nome").trim(),
             preco: (parts[1] || "0").trim(),
             imagem: (parts[2] || "").trim(),
-            frete: (parts[3] || "sim").trim(),
+            frete: (parts[3] || "").trim(),
             link: linkVal,
             categoriaAuto: cat,
             erro: false
@@ -507,6 +515,11 @@
       return result;
     }
 
+    function parsePreco(str) {
+      var n = parseFloat(String(str).replace(/[^\d.]/g, ''));
+      return isNaN(n) ? str : n.toFixed(2);
+    }
+
     function renderBatchResults() {
       var results = document.getElementById("batch-results");
       results.innerHTML = batchItems.map(function(item, i) {
@@ -523,7 +536,7 @@
         return '<div class="batch-item" style="' + (item.erro ? 'opacity:0.5;' : '') + '">' +
           (item.imagem ? '<img src="' + item.imagem + '" alt="">' : '<div style="width:50px;height:50px;background:#eee;border-radius:4px;"></div>') +
           '<div class="bi-info"><h5>' + item.nome + '</h5><p class="bi-frete">' + (item.frete || "") + '</p><p style="margin-top:0.2rem;">' + catHtml + '</p></div>' +
-          '<span class="bi-price">R$ ' + Number(item.preco).toFixed(2) + '</span>' +
+          '<span class="bi-price">R$ ' + parsePreco(item.preco) + '</span>' +
           (!item.erro ? '<button class="bi-remove" onclick="removeBatchItem(' + i + ')">X</button>' : '') +
           '</div>';
       }).join("");
@@ -553,20 +566,31 @@
       var validItems = batchItems.filter(function(i) { return !i.erro; });
       var blocked = 0;
       var already = 0;
+      var toAdd = [];
+
       validItems.forEach(function(item) {
         var cat = item.categoriaAuto || catGlobal;
-        if (!cat) {
-          blocked++;
-          return;
-        }
-        var isDup = offers.some(function(o) {
-          return o.link && item.link && o.link === item.link;
-        });
-        if (isDup) {
-          already++;
-          return;
-        }
-        var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
+        if (!cat) { blocked++; return; }
+        var isDup = offers.some(function(o) { return o.link && item.link && o.link === item.link; });
+        if (isDup) { already++; return; }
+        toAdd.push({ item: item, cat: cat });
+      });
+
+      if (blocked > 0 || already > 0) {
+        var msgs = [];
+        if (blocked > 0) msgs.push(blocked + " sem categoria");
+        if (already > 0) msgs.push(already + " já adicionado(s)");
+        var statusEl = document.getElementById("batch-status");
+        statusEl.style.display = "block";
+        statusEl.className = "status error";
+        statusEl.textContent = "⚠️ " + msgs.join(", ") + ". Corrija e clique em Adicionar todos novamente.";
+        renderList();
+        return;
+      }
+
+      toAdd.forEach(function(entry) {
+        var item = entry.item;
+        var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: entry.cat };
         if (item.imagem) offer.imagem = item.imagem;
         var lk = (item.link || "").toLowerCase();
         if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
@@ -575,17 +599,6 @@
         if (item.frete) offer.frete = item.frete;
         offers.push(offer);
       });
-      var msgs = [];
-      if (blocked > 0) msgs.push(blocked + " sem categoria");
-      if (already > 0) msgs.push(already + " já adicionado(s)");
-      if (msgs.length > 0) {
-        var statusEl = document.getElementById("batch-status");
-        statusEl.style.display = "block";
-        statusEl.className = "status error";
-        statusEl.textContent = "⚠️ " + msgs.join(", ") + ". Corrija e clique em Adicionar todos novamente.";
-        renderList();
-        return;
-      }
       renderList();
       clearBatch();
     }
@@ -607,7 +620,7 @@
       list.innerHTML = offers.map(function(o, i) {
         return '<div class="offer-item"><div class="info">' +
           '<h4>' + (o.tag ? '<span style="background:#ee4d2d;color:#fff;padding:0.1rem 0.4rem;border-radius:4px;font-size:0.7rem;">' + o.tag + '</span> ' : "") + o.nome + '</h4>' +
-          '<p>R$ ' + o.preco + (o.frete ? " | " + o.frete : "") + (o.categoria ? " | " + o.categoria : "") + '</p>' +
+          '<p>R$ ' + parsePreco(o.preco) + (o.frete ? " | " + o.frete : "") + (o.categoria ? " | " + o.categoria : "") + '</p>' +
           '</div><button class="btn btn-danger" onclick="removeOffer(' + i + ')">X</button></div>';
       }).join("");
     }
@@ -618,6 +631,7 @@
     }
 
     async function saveAll() {
+      if (!confirm("Salvar " + offers.length + " oferta(s) no site? Isso sobrescreve o manual.json.")) return;
       var s = document.getElementById("save-status");
       s.className = "status";
       s.textContent = "Salvando...";
