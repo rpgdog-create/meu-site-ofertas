@@ -548,29 +548,30 @@
     }
 
     function confirmBatch() {
-      var catGlobal = document.getElementById("batch-categoria").value;
-      var validItems = batchItems.filter(function(i) { return !i.erro; });
-      var blocked = 0;
-      validItems.forEach(function(item) {
-        var cat = item.categoriaAuto || catGlobal;
-        if (!cat) {
-          blocked++;
-          return;
-        }
-        var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
-        if (item.imagem) offer.imagem = item.imagem;
-        var lk = (item.link || "").toLowerCase();
-        if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
-        else if (lk.indexOf("shopee") !== -1) offer.marketplace = "Shopee";
-        else if (lk.indexOf("amazon") !== -1) offer.marketplace = "Amazon";
-        if (item.frete) offer.frete = item.frete;
-        offers.push      });
-      if (blocked > 0) {
-        alert(blocked + " produto(s) NAO adicionados: sem categoria. Escolha a categoria no select ao lado de cada produto ou no select global acima.");
-      }
-      renderList();
-      clearBatch();
+  var catGlobal = document.getElementById("batch-categoria").value;
+  var validItems = batchItems.filter(function(i) { return !i.erro; });
+  var blocked = 0;
+  validItems.forEach(function(item) {
+    var cat = item.categoriaAuto || catGlobal;
+    if (!cat) {
+      blocked++;
+      return;
     }
+    var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
+    if (item.imagem) offer.imagem = item.imagem;
+    var lk = (item.link || "").toLowerCase();
+    if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
+    else if (lk.indexOf("shopee") !== -1) offer.marketplace = "Shopee";
+    else if (lk.indexOf("amazon") !== -1) offer.marketplace = "Amazon";
+    if (item.frete) offer.frete = item.frete;
+    offers.push(offer);
+  });
+  if (blocked > 0) {
+    alert(blocked + " produto(s) NAO adicionados: sem categoria. Escolha a categoria no select ao lado de cada produto ou no select global acima.");
+  }
+  renderList();
+  clearBatch();
+}
 
     async function loadOffers() {
       try {
