@@ -102,7 +102,7 @@
         <div class="form-group">
           <textarea id="batch-links" placeholder="Cole aqui (Ctrl+V) os dados do ML Copy ou os links..."></textarea>
         </div>
-        <button class="btn btn-primary" id="btn-batch" onclick="batchFetch()">🔍 Importar</button>
+        <button class="btn btn-primary" id="btn-batch" onclick="batchFetch()">🔍 Importar</button> <button class="btn btn-secondary" onclick="document.getElementById('batch-links').value='';" style="margin-left:0.5rem;">🗑️ Limpar</button>
         <div id="batch-status" class="status info" style="display:none;"></div>
         <div class="progress-bar" id="progress" style="display:none;"><div class="fill" id="progress-fill" style="width:0%"></div></div>
         <div id="batch-results" style="margin-top:1rem;"></div>
