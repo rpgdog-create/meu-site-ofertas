@@ -107,7 +107,18 @@
         <div class="progress-bar" id="progress" style="display:none;"><div class="fill" id="progress-fill" style="width:0%"></div></div>
         <div id="batch-results" style="margin-top:1rem;"></div>
         <div id="batch-actions" style="display:none;margin-top:1rem;">
-          <button class="btn btn-primary" onclick="confirmBatch()">✅ Adicionar todos</button>
+          <div class="form-group" style="margin-top:0.8rem;">
+          <label>Categoria (aplicada a todos os produtos do lote)</label>
+          <select id="batch-categoria" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:6px;font-size:0.9rem;">
+            <option value="Outros">Outros</option>
+            <option value="Eletronicos">Eletrônicos</option>
+            <option value="Casa">Casa & Cozinha</option>
+            <option value="Moda">Moda</option>
+            <option value="Beleza">Beleza</option>
+            <option value="Esportes">Esportes</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="confirmBatch()">✅ Adicionar todos</button>
           <button class="btn btn-secondary" onclick="clearBatch()" style="margin-left:0.5rem;">Limpar</button>
         </div>
       </div>
@@ -375,8 +386,9 @@
     function confirmBatch() {
       const valid = batchItems.filter(i => !i.erro);
       if (valid.length === 0) { alert("Nenhuma oferta válida."); return; }
+      const cat = document.getElementById("batch-categoria").value;
       valid.forEach(item => {
-        const offer = { nome: item.nome, preco: item.preco, link: item.link };
+        const offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
         if (item.imagem) offer.imagem = item.imagem;
         const lk = (item.link || '').toLowerCase();
         if (lk.includes('mercadolivre') || lk.includes('meli.la')) offer.marketplace = 'ML';

@@ -1,3 +1,7 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+# ─── index.html (com busca + filtros) ─────────────────────
+cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -152,3 +156,67 @@
   </script>
 </body>
 </html>
+EOF
+
+# ─── Atualiza admin.html: adiciona campo categoria ────────
+python3 << 'PYEOF'
+with open("admin.html", "r") as f:
+    content = f.read()
+
+# Adiciona select de categoria antes do botão "Adicionar todos"
+old = '<button class="btn btn-primary" onclick="confirmBatch()">✅ Adicionar todos</button>'
+new = '''<div class="form-group" style="margin-top:0.8rem;">
+          <label>Categoria (aplicada a todos os produtos do lote)</label>
+          <select id="batch-categoria" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:6px;font-size:0.9rem;">
+            <option value="Outros">Outros</option>
+            <option value="Eletronicos">Eletrônicos</option>
+            <option value="Casa">Casa & Cozinha</option>
+            <option value="Moda">Moda</option>
+            <option value="Beleza">Beleza</option>
+            <option value="Esportes">Esportes</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="confirmBatch()">✅ Adicionar todos</button>'''
+
+if old in content:
+    content = content.replace(old, new)
+    print("✅ Select de categoria adicionado")
+else:
+    print("⚠️  Botão não encontrado")
+
+# Atualiza confirmBatch pra incluir categoria
+old2 = '''valid.forEach(item => {
+        const offer = { nome: item.nome, preco: item.preco, link: item.link };
+        if (item.imagem) offer.imagem = item.imagem;
+        const lk = (item.link || '').toLowerCase();
+        if (lk.includes('mercadolivre') || lk.includes('meli.la')) offer.marketplace = 'ML';
+        else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
+        else if (lk.includes('amazon')) offer.marketplace = 'Amazon';'''
+
+new2 = '''const cat = document.getElementById("batch-categoria").value;
+      valid.forEach(item => {
+        const offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
+        if (item.imagem) offer.imagem = item.imagem;
+        const lk = (item.link || '').toLowerCase();
+        if (lk.includes('mercadolivre') || lk.includes('meli.la')) offer.marketplace = 'ML';
+        else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
+        else if (lk.includes('amazon')) offer.marketplace = 'Amazon';'''
+
+if old2 in content:
+    content = content.replace(old2, new2)
+    print("✅ confirmBatch atualizado com categoria")
+else:
+    print("⚠️  confirmBlock não encontrado (pode já estar atualizado)")
+
+with open("admin.html", "w") as f:
+    f.write(content)
+print("✅ admin.html salvo!")
+PYEOF
+
+echo ""
+echo "✅ Tudo atualizado!"
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Busca + filtros por categoria'"
+echo "  git push"   
