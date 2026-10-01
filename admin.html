@@ -183,39 +183,38 @@
     var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FILE_PATH;
     var CORS_PROXY = "https://ml-proxy.rpgdog.workers.dev/?url=";
     var CAT_OPTIONS = [
-  "Acessórios para Veículos",
-  "Agro",
-  "Alimentos e Bebidas",
-  "Animais",
-  "Antiguidades e Coleções",
-  "Arte, Papelaria e Armarinho",
-  "Bebês",
-  "Beleza e Cuidado Pessoal",
-  "Brinquedos e Hobbies",
-  "Calçados, Roupas e Bolsas",
-  "Carros, Motos e Outros",
-  "Casa, Móveis e Decoração",
-  "Celulares e Telefones",
-  "Câmeras e Acessórios",
-  "Construção",
-  "Eletrodomésticos",
-  "Eletrônicos, Áudio e Vídeo",
-  "Esportes e Fitness",
-  "Ferramentas",
-  "Festas e Lembrancinhas",
-  "Games",
-  "Indústria e Comércio",
-  "Ingressos",
-  "Instrumentos Musicais",
-  "Joias e Relógios",
-  "Livros, Revistas e Comics",
-  "Música, Filmes e Seriados",
-  "Saúde",
-  "Serviços",
-  "Televisores",
-  "Informática",
-  "Outros"
-];
+      "Acessórios para Veículos",
+      "Agro",
+      "Alimentos e Bebidas",
+      "Animais",
+      "Antiguidades e Coleções",
+      "Arte, Papelaria e Armarinho",
+      "Bebês",
+      "Beleza e Cuidado Pessoal",
+      "Brinquedos e Hobbies",
+      "Calçados, Roupas e Bolsas",
+      "Carros, Motos e Outros",
+      "Casa, Móveis e Decoração",
+      "Celulares e Telefones",
+           "Construção",
+      "Eletrodomésticos",
+      "Eletrônicos, Áudio e Vídeo",
+      "Esportes e Fitness",
+      "Ferramentas",
+      "Festas e Lembrancinhas",
+      "Games",
+      "Indústria e Comércio",
+      "Ingressos",
+      "Instrumentos Musicais",
+      "Joias e Relógios",
+      "Livros, Revistas e Comics",
+      "Música, Filmes e Seriados",
+      "Saúde",
+      "Serviços",
+      "Televisores",
+      "Informática",
+      "Outros"
+    ];
 
     var offers = [];
     var batchItems = [];
@@ -376,14 +375,18 @@
       if (lines[0].indexOf("|||") !== -1) {
         batchItems = lines.map(function(line) {
           var parts = line.split("|||");
-          var mlCat = (parts[5] || "").trim();
+          var c4 = (parts[4] || "").trim();
+          var c5 = (parts[5] || "").trim();
+          var isUrl = function(s){ return /^https?:\/\//i.test(s); };
+          var linkVal = isUrl(c5) ? c5 : c4;
+          var mlCat = isUrl(c5) ? c4 : c5;
           var cat = isValidCategory(mlCat) ? mlCat : "";
           return {
             nome: (parts[0] || "Sem nome").trim(),
             preco: (parts[1] || "0").trim(),
             imagem: (parts[2] || "").trim(),
-            frete: (parts[3] || "Consultar frete").trim(),
-            link: (parts[4] || "").trim(),
+            frete: (parts[3] || "sim").trim(),
+            link: linkVal,
             categoriaAuto: cat,
             erro: false
           };
@@ -490,13 +493,13 @@
       }
       if (!result.nome) {
         var og = html.match(/<meta property="og:title" content="([^"]*)"/);
-        if (og) result.nome = og[1].replace(/ - Mercado Livre.*$/, "").replace(/ | Mercado Livre.*$/, "").trim();
+        if (og) result.nome = og[1].replace(/ - Mercado Livre.*$/, "").trim();
       }
       if (!result.imagem) {
         var ogImg = html.match(/<meta property="og:image" content="([^"]*)"/);
         if (ogImg) result.imagem = ogImg[1];
       }
-      if (!result.preco) {
+      if (!result.preco || result.preco === "0") {
         var m = html.match(/"price"\s*:\s*"?([\d.]+)"?/);
         if (m) result.preco = m[1];
       }
@@ -561,8 +564,7 @@
         else if (lk.indexOf("shopee") !== -1) offer.marketplace = "Shopee";
         else if (lk.indexOf("amazon") !== -1) offer.marketplace = "Amazon";
         if (item.frete) offer.frete = item.frete;
-        offers.push(offer);
-      });
+        offers.push      });
       if (blocked > 0) {
         alert(blocked + " produto(s) NAO adicionados: sem categoria. Escolha a categoria no select ao lado de cada produto ou no select global acima.");
       }
