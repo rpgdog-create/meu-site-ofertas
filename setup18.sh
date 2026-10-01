@@ -1,3 +1,6 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+cat > admin.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -543,3 +546,12 @@
   </script>
 </body>
 </html>
+HTMLEOF
+
+echo ""
+echo "✅ admin.html substituído por versão limpa!"
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Admin limpo - tudo funcionando'"
+echo "  git push"   
