@@ -256,15 +256,15 @@
           var clean = mlCat.trim();
           if (clean.length < 3) return "";
           if (clean.length > 50) return "";
-          if (clean.includes("@")) return "";
-          if (clean.toLowerCase().includes("vender")) return "";
-          if (clean.toLowerCase().includes("igual")) return "";
-          if (clean.toLowerCase().includes("comprar")) return "";
-          if (clean.toLowerCase().includes("oferta")) return "";
-          if (clean.toLowerCase().includes("imperd")) return "";
-          if (clean.toLowerCase().includes("mais vendido")) return "";
-          if (clean.match(/^[0-9]/)) return "";
-          if (clean.match(/[|<>{}\[\]]/)) return "";
+          if (clean.indexOf("@") !== -1) return "";
+          var lower = clean.toLowerCase();
+          if (lower.indexOf("vender") !== -1) return "";
+          if (lower.indexOf("igual") !== -1) return "";
+          if (lower.indexOf("comprar") !== -1) return "";
+          if (lower.indexOf("oferta") !== -1) return "";
+          if (lower.indexOf("imperd") !== -1) return "";
+          if (lower.indexOf("mais vendido") !== -1) return "";
+          if (clean.charAt(0) >= "0" && clean.charAt(0) <= "9") return "";
           return clean;
         }
         batchItems = lines.map(line => {
