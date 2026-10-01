@@ -478,6 +478,15 @@
       renderBatchResults();
     }
 
+    function setBatchCat(index, value) {
+      if (value === "Outros") {
+        batchItems[index].categoriaAuto = "";
+      } else {
+        batchItems[index].categoriaAuto = value;
+      }
+      renderBatchResults();
+    }
+
     function removeBatchItem(i) {
       batchItems.splice(i, 1);
       renderBatchResults();
