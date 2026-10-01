@@ -257,15 +257,13 @@
           if (clean.length < 3) return "";
           if (clean.length > 50) return "";
           if (clean.includes("@")) return "";
-          if (clean.includes("vender")) return "";
-          if (clean.includes("igual")) return "";
-          if (clean.includes("comprar")) return "";
-          if (clean.includes("oferta")) return "";
-          if (clean.includes("promo")) return "";
-          if (clean.includes("imperd")) return "";
-          if (clean.includes("mais vendido")) return "";
+          if (clean.toLowerCase().includes("vender")) return "";
+          if (clean.toLowerCase().includes("igual")) return "";
+          if (clean.toLowerCase().includes("comprar")) return "";
+          if (clean.toLowerCase().includes("oferta")) return "";
+          if (clean.toLowerCase().includes("imperd")) return "";
+          if (clean.toLowerCase().includes("mais vendido")) return "";
           if (clean.match(/^[0-9]/)) return "";
-          if (clean.match(/\s{3,}/)) return "";
           if (clean.match(/[|<>{}\[\]]/)) return "";
           return clean;
         }
@@ -415,23 +413,28 @@
     function clearBatch() { batchItems = []; renderBatchResults(); document.getElementById("batch-actions").style.display = "none"; document.getElementById("batch-status").style.display = "none"; document.getElementById("progress").style.display = "none"; document.getElementById("batch-links").value = ""; }
 
     function confirmBatch() {
-      const valid = batchItems.filter(i => !i.erro);
-      if (valid.length === 0) { alert("Nenhuma oferta válida."); return; }
       const catSel = document.getElementById("batch-categoria").value;
-      valid.forEach(item => {
+      const validItems = batchItems.filter(i => !i.erro);
+      let blocked = 0;
+      validItems.forEach(item => {
         const cat = (item.categoriaAuto && catSel === "Outros") ? item.categoriaAuto : catSel;
+        if (!cat || (cat === "Outros" && !item.categoriaAuto)) {
+          blocked++;
+          return;
+        }
         const offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: cat };
         if (item.imagem) offer.imagem = item.imagem;
         const lk = (item.link || '').toLowerCase();
-        if (lk.includes('mercadolivre') || lk.includes('meli.la')) offer.marketplace = 'ML';
+        if (lk.includes('mercadolivre') || lk.includes('meli.la') || lk.includes('rpgdog')) offer.marketplace = 'ML';
         else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
         else if (lk.includes('amazon')) offer.marketplace = 'Amazon';
         if (item.frete) offer.frete = item.frete;
-        added.push(offer);
+        offers.push(offer);
       });
-      added.forEach(o => offers.push(o));
       if (blocked > 0) {
-        alert(blocked + " produto(s) NÃO foram adicionados por não terem categoria válida.\n\nOpções:\n• Escolha uma categoria no select e clique em Adicionar todos de novo\n• Ou remova os produtos sem categoria da lista");
+        alert(blocked + " produto(s) NÃO adicionados: sem categoria válida.
+
+Escolha uma categoria no select acima e clique em Adicionar todos de novo, ou remova os produtos sem categoria.");
       }
       renderList();
       clearBatch();
