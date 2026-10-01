@@ -1,3 +1,6 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+cat > admin.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -414,3 +417,12 @@
   </script>
 </body>
 </html>
+HTMLEOF
+
+echo ""
+echo "✅ admin.html atualizado com importação em lote!"
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Importação em lote de ofertas'"
+echo "  git push"   
