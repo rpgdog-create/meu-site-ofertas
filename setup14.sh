@@ -1,47 +1,44 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ofertas do Dia</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .search-bar { max-width: 1200px; margin: 1rem auto 0; padding: 0 1rem; }
-    .search-bar input { width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-    .search-bar input:focus { outline: none; border-color: #ee4d2d; box-shadow: 0 0 0 3px rgba(238,77,45,0.1); }
-    .chips { max-width: 1200px; margin: 0.8rem auto 0; padding: 0 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .chip { padding: 0.4rem 0.9rem; border: 1px solid #ddd; border-radius: 20px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
-    .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
-    .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
-    .results-count { max-width: 1200px; margin: 0.8rem auto 0; padding: 0 1rem; font-size: 0.85rem; color: #888; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🔥 Ofertas do Dia</h1>
-    <p class="subtitle">As melhores ofertas dos marketplaces</p>
-  </header>
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
 
-  <div class="search-bar">
-    <input type="text" id="search-input" placeholder="🔍 Buscar produto...">
-  </div>
+# ─── index.html: chips dinâmicos ──────────────────────────
+python3 << 'PYEOF'
+with open("index.html", "r") as f:
+    content = f.read()
 
-  <div class="chips" id="chips">
+# Substitui os chips fixos por um container vazio (preenchido via JS)
+old_chips_block = '''<div class="chips" id="chips">
     <span class="chip active" data-cat="all">Todos</span>
-  </div>
+    <span class="chip" data-cat="Celulares">Celulares & Tablets</span>
+    <span class="chip" data-cat="Informatica">Informática</span>
+    <span class="chip" data-cat="Games">Games & Consoles</span>
+    <span class="chip" data-cat="Moveis">Móveis & Decoração</span>
+    <span class="chip" data-cat="Cozinha">Cozinha & Utensílios</span>
+    <span class="chip" data-cat="Moda">Moda</span>
+    <span class="chip" data-cat="Beleza">Beleza & Saúde</span>
+    <span class="chip" data-cat="Esportes">Esportes & Fitness</span>
+    <span class="chip" data-cat="Pet">Pet</span>
+    <span class="chip" data-cat="Infantil">Brinquedos & Infantil</span>
+    <span class="chip" data-cat="Automotivo">Automotivo</span>
+    <span class="chip" data-cat="Ferramentas">Ferramentas</span>
+    <span class="chip" data-cat="Livros">Livros & Papelaria</span>
+    <span class="chip" data-cat="Outros">Outros</span>
+  </div>'''
 
-  <p class="results-count" id="results-count"></p>
+new_chips_block = '''<div class="chips" id="chips">
+    <span class="chip active" data-cat="all">Todos</span>
+  </div>'''
 
-  <main>
-    <div id="grid-all" class="grid"></div>
-  </main>
+if old_chips_block in content:
+    content = content.replace(old_chips_block, new_chips_block)
+    print("✅ Chips fixos removidos")
+else:
+    print("⚠️  Bloco de chips não encontrado (já pode ser dinâmico)")
 
-  <footer>
-    <p>Site de afiliados — comissões ajudam a manter o projeto.</p>
-    <p style="margin-top:0.5rem;"><a href="admin.html">⚙️ Admin</a></p>
-  </footer>
+# Substitui o script inteiro por uma versão com chips dinâmicos
+old_script_start = '  <script>\n    const grid = document.getElementById'
+old_script_end = '  </script>\n</body>'
 
-  <script>
+new_script = '''  <script>
     const grid = document.getElementById('grid-all');
     const searchInput = document.getElementById('search-input');
     const chipsContainer = document.getElementById('chips');
@@ -162,5 +159,64 @@
 
     loadAll();
   </script>
-</body>
-</html>
+</body>'''
+
+# Faz o replace do script
+import re
+pattern = r'  <script>\s*\n    const grid = document\.getElementById.*?  </script>\s*\n</body>'
+content = re.sub(pattern, new_script, content, flags=re.DOTALL)
+print("✅ Script atualizado com chips dinâmicos")
+
+with open("index.html", "w") as f:
+    f.write(content)
+
+# ─── admin.html: usa categoria bruta do ML ────────────────
+with open("admin.html", "r") as f:
+    content = f.read()
+
+# Remove o mapeamento fixo e usa a categoria bruta
+old_map = '''const catMap = {
+          "celulares": "Celulares", "telefones": "Celulares", "celulares e telefones": "Celulares",
+          "informática": "Informatica", "informatica": "Informatica", "notebooks": "Informatica",
+          "games": "Games", "consoles": "Games", "games e consoles": "Games",
+          "móveis": "Moveis", "moveis": "Moveis", "decoration": "Moveis", "decoração": "Moveis",
+          "cozinha": "Cozinha", "mesa": "Cozinha", "utensílios": "Cozinha",
+          "moda": "Moda", "acessórios": "Moda", "moda e acessórios": "Moda", "roupas": "Moda",
+          "beleza": "Beleza", "saúde": "Beleza", "beleza e saúde": "Beleza", "perfumaria": "Beleza",
+          "esportes": "Esportes", "fitness": "Esportes", "esportes e fitness": "Esportes",
+          "animais": "Pet", "estimação": "Pet", "pet": "Pet",
+          "brinquedos": "Infantil", "jogos": "Infantil", "infantil": "Infantil",
+          "automotivo": "Automotivo", "auto": "Automotivo",
+          "ferramentas": "Ferramentas", "construção": "Ferramentas",
+          "livros": "Livros", "filmes": "Livros", "músicas": "Livros", "papelaria": "Livros"
+        };
+        function mapCategory(mlCat) {
+          if (!mlCat) return "";
+          const lower = mlCat.toLowerCase();
+          for (const key in catMap) {
+            if (lower.includes(key)) return catMap[key];
+          }
+          return "";
+        }'''
+
+new_map = '''function mapCategory(mlCat) {
+          return mlCat || "";
+        }'''
+
+if old_map in content:
+    content = content.replace(old_map, new_map)
+    print("✅ Mapeamento fixo removido (agora usa categoria bruta)")
+else:
+    print("⚠️  Mapeamento não encontrado (pode já estar atualizado)")
+
+with open("admin.html", "w") as f:
+    f.write(content)
+
+print("✅ Tudo salvo!")
+PYEOF
+
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Categorias dinâmicas - criadas automaticamente'"
+echo "  git push"   

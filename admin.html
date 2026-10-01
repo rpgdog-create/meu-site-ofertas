@@ -251,28 +251,8 @@
 
       // Detecta formato do bookmarklet (contém |||)
       if (lines[0].includes("|||")) {
-        const catMap = {
-          "celulares": "Celulares", "telefones": "Celulares", "celulares e telefones": "Celulares",
-          "informática": "Informatica", "informatica": "Informatica", "notebooks": "Informatica",
-          "games": "Games", "consoles": "Games", "games e consoles": "Games",
-          "móveis": "Moveis", "moveis": "Moveis", "decoration": "Moveis", "decoração": "Moveis",
-          "cozinha": "Cozinha", "mesa": "Cozinha", "utensílios": "Cozinha",
-          "moda": "Moda", "acessórios": "Moda", "moda e acessórios": "Moda", "roupas": "Moda",
-          "beleza": "Beleza", "saúde": "Beleza", "beleza e saúde": "Beleza", "perfumaria": "Beleza",
-          "esportes": "Esportes", "fitness": "Esportes", "esportes e fitness": "Esportes",
-          "animais": "Pet", "estimação": "Pet", "pet": "Pet",
-          "brinquedos": "Infantil", "jogos": "Infantil", "infantil": "Infantil",
-          "automotivo": "Automotivo", "auto": "Automotivo",
-          "ferramentas": "Ferramentas", "construção": "Ferramentas",
-          "livros": "Livros", "filmes": "Livros", "músicas": "Livros", "papelaria": "Livros"
-        };
         function mapCategory(mlCat) {
-          if (!mlCat) return "";
-          const lower = mlCat.toLowerCase();
-          for (const key in catMap) {
-            if (lower.includes(key)) return catMap[key];
-          }
-          return "";
+          return mlCat || "";
         }
         batchItems = lines.map(line => {
           const parts = line.split("|||");
