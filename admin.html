@@ -252,7 +252,22 @@
       // Detecta formato do bookmarklet (contém |||)
       if (lines[0].includes("|||")) {
         function mapCategory(mlCat) {
-          return mlCat || "";
+          if (!mlCat) return "";
+          var clean = mlCat.trim();
+          if (clean.length < 3) return "";
+          if (clean.length > 50) return "";
+          if (clean.includes("@")) return "";
+          if (clean.includes("vender")) return "";
+          if (clean.includes("igual")) return "";
+          if (clean.includes("comprar")) return "";
+          if (clean.includes("oferta")) return "";
+          if (clean.includes("promo")) return "";
+          if (clean.includes("imperd")) return "";
+          if (clean.includes("mais vendido")) return "";
+          if (clean.match(/^[0-9]/)) return "";
+          if (clean.match(/\s{3,}/)) return "";
+          if (clean.match(/[|<>{}\[\]]/)) return "";
+          return clean;
         }
         batchItems = lines.map(line => {
           const parts = line.split("|||");
@@ -268,11 +283,7 @@
           };
         });
         // Auto-seleciona categoria no select se todos forem a mesma
-        const cats = batchItems.map(i => i.categoriaAuto).filter(c => c);
-        if (cats.length > 0 && cats.every(c => c === cats[0])) {
-          const sel = document.getElementById("batch-categoria");
-          if (sel) sel.value = cats[0];
-        }
+
         statusEl.style.display = "block";
         statusEl.className = "status success";
         statusEl.textContent = `✅ ${batchItems.length} produto(s) importados!`;
@@ -416,8 +427,12 @@
         else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
         else if (lk.includes('amazon')) offer.marketplace = 'Amazon';
         if (item.frete) offer.frete = item.frete;
-        offers.push(offer);
+        added.push(offer);
       });
+      added.forEach(o => offers.push(o));
+      if (blocked > 0) {
+        alert(blocked + " produto(s) NÃO foram adicionados por não terem categoria válida.\n\nOpções:\n• Escolha uma categoria no select e clique em Adicionar todos de novo\n• Ou remova os produtos sem categoria da lista");
+      }
       renderList();
       clearBatch();
     }
