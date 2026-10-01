@@ -415,9 +415,6 @@
         if (lk.includes('mercadolivre') || lk.includes('meli.la')) offer.marketplace = 'ML';
         else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
         else if (lk.includes('amazon')) offer.marketplace = 'Amazon';
-        if (item.imagem) offer.imagem = item.imagem;
-        else if (lk.includes('shopee')) offer.marketplace = 'Shopee';
-        else if (lk.includes('amazon')) offer.marketplace = 'Amazon'; if (item.imagem) offer.imagem = item.imagem;
         if (item.frete) offer.frete = item.frete;
         offers.push(offer);
       });
