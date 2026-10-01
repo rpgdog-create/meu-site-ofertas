@@ -101,7 +101,8 @@
       <!-- BATCH IMPORT -->
       <div class="admin-section">
         <h2>📥 Importar ofertas em lote</h2>
-        <p style="font-size:0.85rem;color:#666;margin-bottom:0.8rem;">Cole os links abaixo (um por linha). Aceita <code>meli.la/...</code> ou URLs completas do ML.</p>
+        <p style="font-size:0.85rem;color:#666;margin-bottom:0.5rem;"><strong>Método 1:</strong> Cole os dados copiados pelo bookmarklet <code>ML Copy</code> (um produto por linha).</p>
+        <p style="font-size:0.85rem;color:#666;margin-bottom:0.8rem;"><strong>Método 2:</strong> Cole apenas os links (um por linha) — busca automática.</p>
         <div class="form-group">
           <textarea id="batch-links" placeholder="https://meli.la/2Nx9sNg&#10;https://meli.la/AbC1234&#10;https://www.mercadolivre.com.br/p/MLB123456789"></textarea>
         </div>
@@ -228,7 +229,8 @@
     // ─── BATCH FETCH ──────────────────────────────────────
     async function batchFetch() {
       const raw = document.getElementById("batch-links").value.trim();
-      const links = raw.split("\n").map(l => l.trim()).filter(l => l.length > 5);
+      const lines = raw.split("
+").map(l => l.trim()).filter(l => l.length > 5);
       const statusEl = document.getElementById("batch-status");
       const progress = document.getElementById("progress");
       const fill = document.getElementById("progress-fill");
@@ -236,9 +238,35 @@
       const results = document.getElementById("batch-results");
       const actions = document.getElementById("batch-actions");
 
-      if (links.length === 0) { alert("Cole pelo menos 1 link."); return; }
-      if (links.length > 20) { alert("Máximo de 20 links por vez."); return; }
+      if (lines.length === 0) { alert("Cole pelo menos 1 linha."); return; }
+      if (lines.length > 20) { alert("Máximo de 20 por vez."); return; }
 
+      // Detecta formato do bookmarklet (tem |||)
+      const isBookmarklet = lines[0].includes("|||");
+
+      if (isBookmarklet) {
+        // Formato: NOME|||PRECO|||IMAGEM|||FRETE|||URL
+        batchItems = lines.map(line => {
+          const parts = line.split("|||");
+          return {
+            nome: parts[0] || "Sem nome",
+            preco: parts[1] || "0",
+            imagem: parts[2] || "",
+            frete: parts[3] || "Consultar frete",
+            link: parts[4] || ""
+          };
+        });
+        statusEl.style.display = "block";
+        statusEl.className = "status success";
+        statusEl.textContent = `✅ ${batchItems.length} produtos importados da área de transferência!`;
+        progress.style.display = "none";
+        renderBatchResults();
+        actions.style.display = "block";
+        return;
+      }
+
+      // Formato: links (busca automática via proxy)
+      const links = lines;
       btn.disabled = true;
       btn.innerHTML = '<span class="loading"></span>';
       statusEl.style.display = "block";
@@ -249,12 +277,10 @@
       batchItems = [];
 
       let ok = 0, fail = 0;
-
       for (let i = 0; i < links.length; i++) {
         const link = links[i];
         statusEl.textContent = `Buscando ${i + 1} de ${links.length}...`;
         fill.style.width = `${Math.round((i / links.length) * 100)}%`;
-
         try {
           const data = await fetchProductData(link);
           data.link = link;
@@ -264,10 +290,8 @@
           fail++;
           batchItems.push({ nome: "❌ Erro: " + e.message, preco: "0", link: link, erro: true });
         }
-
         renderBatchResults();
       }
-
       fill.style.width = "100%";
       statusEl.textContent = `✅ ${ok} encontrados, ${fail} falhas.`;
       statusEl.className = "status " + (fail === 0 ? "success" : "info");
