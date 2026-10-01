@@ -376,7 +376,7 @@
       const valid = batchItems.filter(i => !i.erro);
       if (valid.length === 0) { alert("Nenhuma oferta válida."); return; }
       valid.forEach(item => {
-        const offer = { nome: item.nome, preco: item.preco, link: item.link };
+        const offer = { nome: item.nome, preco: item.preco, link: item.link }; if (item.imagem) offer.imagem = item.imagem;
         if (item.frete) offer.frete = item.frete;
         offers.push(offer);
       });

@@ -1,3 +1,10 @@
+cd ~/Programação/projetos/Meu_site_ofertas/meu-site-ofertas
+
+# 1. Adiciona "imagem" ao objeto offer no admin.html
+sed -i '' 's/const offer = { nome: item.nome, preco: item.preco, link: item.link };/const offer = { nome: item.nome, preco: item.preco, link: item.link }; if (item.imagem) offer.imagem = item.imagem;/' admin.html
+
+# 2. Atualiza o script.js pra renderizar imagem na card
+cat > script.js << 'EOF'
 const tabs = document.querySelectorAll('.tab');
 const gridShopee = document.getElementById('grid-shopee');
 const gridManual = document.getElementById('grid-manual');
@@ -59,3 +66,14 @@ async function loadManual() {
 
 loadShopee();
 loadManual();
+EOF
+
+# 3. Adiciona CSS pra imagem na card
+sed -i '' 's/.card .tag {/.card-img { width: 100%; height: 140px; object-fit: contain; border-radius: 6px; margin-bottom: 0.5rem; }\n.card .tag {/' style.css
+
+echo "✅ Imagens ativas no site!"
+echo ""
+echo "Agora:"
+echo "  git add ."
+echo "  git commit -m 'Adicionar fotos dos produtos nas cards'"
+echo "  git push"   
