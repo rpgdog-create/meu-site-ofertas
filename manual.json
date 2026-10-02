@@ -43,5 +43,437 @@
     "imagem": "https://m.media-amazon.com/images/I/51TjyLbnJaL._AC_SX679_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 6.0 TWS Sem Fio Wireless, Graves Potentes, Controle por Toque, Até 7 Horas de Reprodução, Esportivo Compatível com iOS e Android, Beesev BSV-202 (Preto)",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0H9JCHP5X?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51moBBFgRwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Headphone Bluetooth, TAH2300BK/00, Com Microfone, Até 55 horas de bateria, Design Over-ear, Dobrável, Preto",
+    "preco": "178.98",
+    "link": "https://www.amazon.com.br/dp/B0FJMHMCBZ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51BmQ8K9sML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth, Fone de ouvido sem fio Bluetooth 5.4, Cancelamento de Ruído, Bateria de 16h, Funciona em Todos os Celulares e Notebook",
+    "preco": "28.49",
+    "link": "https://www.amazon.com.br/dp/B0HJG6W168?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61EMsHbhXKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Fone de Ouvido com Microfone, TAUE101BK/00, Com fio de 1,2 metros, intra-auricular, Preto",
+    "preco": "36.46",
+    "link": "https://www.amazon.com.br/dp/B084S6BCJN?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51+W7A115SL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 6.0 TWS Sem Fio Wireless, IPX5 à Prova d'Água, Graves Potentes, Controle por Toque, Até 50h Horas de Reprodução, Compatível com iOS e Android, Beesev BSV-303 (Preto)",
+    "preco": "39.90",
+    "link": "https://www.amazon.com.br/dp/B0H9JBD372?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51npBNlelzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Fone de Ouvido com Microfone, TAUE101WT/00, Com fio de 1,2 metros, intra-auricular, Branco",
+    "preco": "31.23",
+    "link": "https://www.amazon.com.br/dp/B084S6N81P?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51xo8ufuc5L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth Modelo MD192 Headphone Over-Ear Até 30h de Bateria",
+    "preco": "170.90",
+    "link": "https://www.amazon.com.br/dp/B0HJ2VZW68?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61bS4cv4drL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 530BT, Sem Fio, Até 76 Horas de Bateria - Preto",
+    "preco": "181.98",
+    "link": "https://www.amazon.com.br/dp/B0GM1LSHQF?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61cnqHlVvEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Fone de Ouvido Sem Fio TWS, TAT1109WT/00, Bluetooth, Com Microfone, Até 24 horas de bateria, Branco",
+    "preco": "113.08",
+    "link": "https://www.amazon.com.br/dp/B0DVMZVMYQ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41fLbiUk-cL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Fone de Ouvido Sem Fio TWS, TAT1109BK/00, Bluetooth, Com Microfone, Até 24 horas de bateria, Preto",
+    "preco": "149.00",
+    "link": "https://www.amazon.com.br/dp/B0DVMQVVDY?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/519bjoeFBTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Xiaomi Redmi Buds 6 Play",
+    "preco": "70.10",
+    "link": "https://www.amazon.com.br/dp/B0DB52X2ZW?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51DVGGv77KL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido com Fio Intra-auricular P2 3,5mm com Microfone Anti-Ruído Graves Potentes Cabo Nylon Reforçado Compativel Com Celular Notebook PC Xbox Games Uso Esportivo Academia Corrida",
+    "preco": "15.99",
+    "link": "https://www.amazon.com.br/dp/B0H7T6GMJP?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61lCerVezlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "soundcore P30i da Anker, ANC Fone de Ouvido Bluetooth 5.4 Sem Fio, TWS",
+    "preco": "186.67",
+    "link": "https://www.amazon.com.br/dp/B0CRTR3PMF?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51TL2aLCIpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "FONE DE OUVIDO 1000MM - 1200MM - PRETO - VQ-H26",
+    "preco": "19.00",
+    "link": "https://www.amazon.com.br/dp/B09RT27FV2?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41S2r1DY6OL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido in Ear, C50HI - Preto",
+    "preco": "54.40",
+    "link": "https://www.amazon.com.br/dp/B07JQKQ91F?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51ijOG7u83L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fones De Ouvido Com Fio Tipo C Intra Auricular Microfone Integrado Compativel iPhone 15 15 Pro 15 Pro Max 16 16 Pro Max 17 Com Fio Fones Estéreo Compatíveis ANDROID LG Qualidade Premium Preto",
+    "preco": "10.90",
+    "link": "https://www.amazon.com.br/dp/B0HJ6Q6F7X?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61tr7edy6+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Sem Fio, JBL, Bluetooth, Wave Beam 2, Intra Auricular, Sem Fio, Resistente À Água e Poeira - Preto",
+    "preco": "254.89",
+    "link": "https://www.amazon.com.br/dp/B0DHL93XCN?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61DFgTmj9xL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Xiaomi Redmi Buds 6 Play | Driver din�mico de 10 mm | Redu��o de ru�do AI | Bateria at� 36 horas | Bluetooth 5.4 | Controle por toque - Rosa",
+    "preco": "74.95",
+    "link": "https://www.amazon.com.br/dp/B0DBHTP4NM?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51uvnyZHbyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de ouvido sem fio TWS Philips TAT1209BK/00 na cor preto, com bluetooth, microfone, tecnologia IPX4 e 18 horas de reprodução.",
+    "preco": "113.04",
+    "link": "https://www.amazon.com.br/dp/B0CS3RHBZQ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51yHf2TFfUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.4 TWS com Cancelamento de Ruído, IPX4 à Prova d'Água, Microfone Integrado – Ideal para Treino, Corrida, Trabalho e Uso Diário (iOS/Android)",
+    "preco": "41.49",
+    "link": "https://www.amazon.com.br/dp/B0H78Y11RR?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51hz+CtvvEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Premium Bluetooth 5.3 TWS Sem Fio Intra Auricular",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0HHZFRDHT?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/71aJLrVhtEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.3, Graves Potentes, Drivers de 13mm, 14H de Reprodução, Resistência à Água, Fone sem fio tws (rosa)",
+    "preco": "46.55",
+    "link": "https://www.amazon.com.br/dp/B0GMMKKQDJ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51YNV8I7aTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Sem Fio, JBL, Bluetooth, Wave Buds 2, Intra Auricular, Sem Fio, Resistente À Água e Poeira - Preto",
+    "preco": "229.91",
+    "link": "https://www.amazon.com.br/dp/B0DHL63KWK?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/414+kOLlS5L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "soundcore P20i da Anker, Fone de Ouvido Bluetooth 5.3 Sem Fio, 2 Mics IA",
+    "preco": "148.10",
+    "link": "https://www.amazon.com.br/dp/B0BTYCRJSS?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61ljZu9+GXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Headphone P47 Sem Fio Bluetooth Wireless Micro Sd 5.0 Dobrável Com Microfone Regulável Para Corrida Academia Escritório Caminhada Linha Premium (Preto)",
+    "preco": "19.99",
+    "link": "https://www.amazon.com.br/dp/B0DT9XFTCG?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61T+5-Ae1JL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.4, IPX5 à Prova D'Água, 45h de Bateria, Com Microfone Embutido. Design Esportivo Ergonômico Ideal Para Esportes Corridas Atividades Físicas Videogame IPhone Android Premium",
+    "preco": "75.90",
+    "link": "https://www.amazon.com.br/dp/B0FDB9Z96L?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/619duhcCzQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Samsung Galaxy Buds Core, Fone de Ouvido, sem fio, cancelamento de ruído, interprete inteligente",
+    "preco": "239.00",
+    "link": "https://www.amazon.com.br/dp/B0FP8T2RDC?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/31zLQOfTQ2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "INAVA Fone de Ouvido de Nova Geração,Bluetooth 6.0,50h de Autonomia,À Prova d'Água IPX6,Microfone ENC,Conforto Leve para Esportes,Orelhas Pequenas e Óculos (Roxo)",
+    "preco": "75.03",
+    "link": "https://www.amazon.com.br/dp/B0G7ZWWWNF?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61qus8DXsdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fones De Ouvido Com Fio Tipo C Microfone Integrado Compativel iPhone 15 15 Pro 15 Pro Max 16 16 Pro Max Com Fio Fones Estéreo Compatíveis ANDROID LG Qualidade Premium",
+    "preco": "9.90",
+    "link": "https://www.amazon.com.br/dp/B0HK2L144K?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51NZFj8jd9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido Com Fio, Quantum 100M2, Headset Gamer, Over Ear, Microfone Removível - Preto",
+    "preco": "170.05",
+    "link": "https://www.amazon.com.br/dp/B0D6NLHV8N?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61uBAfuJUfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Fone de Ouvido com Microfone, TAE2146BK/00, Com fio USB-C de 1,2 metros, Intra-auricular, Preto",
+    "preco": "38.37",
+    "link": "https://www.amazon.com.br/dp/B0DL4S61RP?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41gSn0Ykz7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PHILIPS, Headphone Bluetooth, TAH2209, Até 25 horas de bateria, Preto",
+    "preco": "107.35",
+    "link": "https://www.amazon.com.br/dp/B0F5BQGVJM?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41jjoSyX37L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth, 2 Pares, Mini para Dormir e Tipo Clip, Preto",
+    "preco": "84.55",
+    "link": "https://www.amazon.com.br/dp/B0HHXF3ZWX?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61IwbQha7OL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.3 Headphone On-ear Sem Fio Fone Para Academia e Corridas, com Cancelamento de Ruído, Dobrável, com microfone Integrado Compatível com Android e iOS Premium (Preto)",
+    "preco": "44.89",
+    "link": "https://www.amazon.com.br/dp/B0H2ZPFS7V?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51IQDm9ayjL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "INAVA Headphone Bluethooth, 25h, Áudio Hi-Res, Headset com Microfone, ENC, Fone de Ouvido Bluetooth, Suitable for Travel, Home, and Office Use (Azul)",
+    "preco": "95.00",
+    "link": "https://www.amazon.com.br/dp/B0GQZCKB11?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51iREkG+4NL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Basike Fone de Ouvido Bluetooth, Headphone com Cancelamento de Ruído ANC",
+    "preco": "158.16",
+    "link": "https://www.amazon.com.br/dp/B0GQSXG7FJ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61dnK5nVdvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.4 TWS com IPX4 à Prova d’Água, Redução de Ruído e Microfone – Ideal para Corrida, Academia e Trabalho (iOS e Android)",
+    "preco": "46.49",
+    "link": "https://www.amazon.com.br/dp/B0GMRZS4QD?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51vF9tKkrzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido Bluetooth Over-Ear, Tune 730BT, Sem Fio, Até 76 Horas de Bateria - Preto",
+    "preco": "265.03",
+    "link": "https://www.amazon.com.br/dp/B0GR11L1VP?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61dRLHx9tpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Dapon Fone de Ouvido Headphone H02d Bluetooth 5.1 Over-Ear 22 Horas de Bateria Branco",
+    "preco": "70.49",
+    "link": "https://www.amazon.com.br/dp/B0GY992RY3?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41n4LOcX5+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.4 TWS Com Cancelamento de Ruído, IPX4 à Prova d’Água e Microfone – Ideal para Treino, Corrida e Trabalho (iOS/Android)",
+    "preco": "43.49",
+    "link": "https://www.amazon.com.br/dp/B0GXMXMZL3?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51h-aH7GIEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido, Wave Beam 2, Bluetooth, Intra Auricular, Sem Fio, Resistente à Água e Poeira - Branco",
+    "preco": "264.00",
+    "link": "https://www.amazon.com.br/dp/B0DHL5V4QT?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61MhLv7z8CL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "FONE DE OUVIDO PHILIPS TWS – TAT1139BK",
+    "preco": "110.12",
+    "link": "https://www.amazon.com.br/dp/B0FS268X4B?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41zUAqrxZPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JBL, Fone de Ouvido Sem Fio, JBL, Bluetooth, Wave Buds 2, Intra Auricular, Sem Fio, Resistente À Água e Poeira - Branco",
+    "preco": "219.70",
+    "link": "https://www.amazon.com.br/dp/B0DHLBLFXQ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/31AilnfwkbL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fones De Ouvido Com Fio Tipo C Microfone Integrado Compativel iPhone 15 15 Pro 15 Pro Max 16 16 Pro Max Com Fio Fones Estéreo Compatíveis ANDROID LG Qualidade Premium",
+    "preco": "13.90",
+    "link": "https://www.amazon.com.br/dp/B0HFFB43SP?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51rxxVWURWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fones Bluetooth 5.3 com 42H de Bateria, Graves Profundos e IPX5 Preto",
+    "preco": "75.04",
+    "link": "https://www.amazon.com.br/dp/B0DQP41H2M?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61A6ljpbnGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth 5.1 TWS Premium Wireless com Luz LED, Som Hi-Fi Estéreo, Cancelamento de Ruído, Toque Inteligente, Bateria Longa, Microfone, Compatível com Android e iOS",
+    "preco": "23.90",
+    "link": "https://www.amazon.com.br/dp/B0FCBJH6VZ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61E5OdmWojL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "INAVA Fone de Ouvido Bluetooth 3ª Geração, 50 Horas de Bateria, Microfone com Cancelamento de Ruído (ENC), fone de ouvido esportivo Ergonômico, Ideal para Academia/Corrida/Trabalho (Bege)",
+    "preco": "58.64",
+    "link": "https://www.amazon.com.br/dp/B0GSRB5G7F?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51ED4sdFMqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone De Ouvido Bluetooth Sem Fio Intra Auricular Estéreo Com Visor Graves Potentes Compatível Com Todos Os Celulares",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B0H5G8184H?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51THm2xdnnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
