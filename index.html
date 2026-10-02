@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .navbar { position: sticky; top: 0; z-index: 999; background: #fff; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.8rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.8rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }   
     .navbar .logo { font-size: 1.1rem; font-weight: 700; color: #333; text-decoration: none; }
     .navbar .logo:hover { color: #ee4d2d; }
-    .navbar .nav-links { display: flex; gap: 1rem; align-items: center; }
+    .navbar .nav-links { display: flex; gap: 1rem; align-items: center; justify-content: center; }   
     .navbar .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.3rem 0.5rem; border-radius: 4px; transition: all 0.2s; }
     .navbar .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
     .navbar .nav-links a.active { color: #ee4d2d; font-weight: 600; }
@@ -52,7 +52,6 @@
 <body>
   <nav class="navbar">
     <div class="navbar-inner">
-      <a href="index.html" class="logo">🔥 Ofertas do Dia</a>
       <div class="nav-links">
         <a href="index.html" id="nav-inicio" class="active">Início</a>
         <a href="#" id="nav-ml">ML</a>
