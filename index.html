@@ -6,6 +6,20 @@
   <title>Ofertas do Dia</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    .navbar { position: sticky; top: 0; z-index: 999; background: #fff; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.8rem 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .navbar .logo { font-size: 1.1rem; font-weight: 700; color: #333; text-decoration: none; }
+    .navbar .logo:hover { color: #ee4d2d; }
+    .navbar .nav-links { display: flex; gap: 1rem; align-items: center; }
+    .navbar .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.3rem 0.5rem; border-radius: 4px; transition: all 0.2s; }
+    .navbar .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
+    .navbar .nav-links a.active { color: #ee4d2d; font-weight: 600; }
+    .navbar .nav-links a.admin-link { color: #aaa; font-size: 1rem; }
+    .navbar .nav-links a.admin-link:hover { color: #e74c3c; }
+    @media (max-width: 768px) {
+      .navbar-inner { flex-direction: column; gap: 0.5rem; }
+      .navbar .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+    }
     .layout { display: flex; max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; gap: 1.5rem; }
     .sidebar { width: 200px; flex-shrink: 0; }
     .sidebar h3 { font-size: 0.9rem; color: #666; margin-bottom: 0.8rem; }
@@ -36,7 +50,22 @@
   </style>
 </head>
 <body>
-  <header>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">🔥 Ofertas do Dia</a>
+      <div class="nav-links">
+        <a href="index.html" id="nav-inicio" class="active">Início</a>
+        <a href="#" id="nav-ml">ML</a>
+        <a href="#" id="nav-amazon">Amazon</a>
+        <a href="#" id="nav-shopee">Shopee</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
+      </div>
+    </div>
+  </nav>
+
+  <header style="padding-top:1rem;">
     <h1>🔥 Ofertas do Dia</h1>
     <p class="subtitle">As melhores ofertas dos marketplaces</p>
   </header>
@@ -94,21 +123,30 @@
     var resultsCount = document.getElementById('results-count');
     var allOffers = [];
     var activeCat = 'all';
+    var activeMp = '';
     var searchTerm = '';
     var minPrice = 0;
     var maxPrice = Infinity;
     var freteOnly = false;
     var sortBy = 'recentes';
 
-    function getBadge(p) {
+    function getMpKey(p) {
       var mp = (p.marketplace || '').toUpperCase();
-      if (mp === 'ML' || mp === 'MERCADO LIVRE') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
+      if (mp === 'ML' || mp === 'MERCADO LIVRE') return 'ML';
+      if (mp === 'SHOPEE') return 'SHOPEE';
+      if (mp === 'AMAZON') return 'AMAZON';
+      var link = (p.link || p.offerLink || '').toLowerCase();
+      if (link.includes('mercadolivre') || link.includes('meli.la')) return 'ML';
+      if (link.includes('shopee')) return 'SHOPEE';
+      if (link.includes('amazon')) return 'AMAZON';
+      return '';
+    }
+
+    function getBadge(p) {
+      var mp = getMpKey(p);
+      if (mp === 'ML') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
       if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">Shopee</span>';
       if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">Amazon</span>';
-      var link = (p.link || p.offerLink || '').toLowerCase();
-      if (link.includes('mercadolivre') || link.includes('meli.la')) return '<span class="mp-badge mp-ml">Mercado Livre</span>';
-      if (link.includes('shopee')) return '<span class="mp-badge mp-shopee">Shopee</span>';
-      if (link.includes('amazon')) return '<span class="mp-badge mp-amazon">Amazon</span>';
       return '';
     }
 
@@ -169,6 +207,10 @@
     function renderGrid() {
       var filtered = allOffers.slice();
 
+      if (activeMp) {
+        filtered = filtered.filter(function(p) { return getMpKey(p) === activeMp; });
+      }
+
       if (activeCat !== 'all') {
         filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
       }
@@ -214,6 +256,24 @@
     priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
+
+    // Nav bar marketplace filters
+    function setNavMp(mp, el) {
+      var navLinks = document.querySelectorAll('.nav-links a');
+      navLinks.forEach(function(a) { a.classList.remove('active'); });
+      if (mp === '') {
+        document.getElementById('nav-inicio').classList.add('active');
+      } else {
+        el.classList.add('active');
+      }
+      activeMp = mp;
+      renderGrid();
+    }
+
+    document.getElementById('nav-inicio').addEventListener('click', function(e) { e.preventDefault(); setNavMp('', this); });
+    document.getElementById('nav-ml').addEventListener('click', function(e) { e.preventDefault(); setNavMp('ML', this); });
+    document.getElementById('nav-amazon').addEventListener('click', function(e) { e.preventDefault(); setNavMp('AMAZON', this); });
+    document.getElementById('nav-shopee').addEventListener('click', function(e) { e.preventDefault(); setNavMp('SHOPEE', this); });
 
     async function loadAll() {
       try {
