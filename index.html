@@ -6,7 +6,14 @@
   <title>Ofertas do Dia</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .filters-bar { max-width: 1200px; margin: 1rem auto 0; padding: 0 1rem; }
+    .layout { display: flex; max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; gap: 1.5rem; }
+    .sidebar { width: 200px; flex-shrink: 0; }
+    .sidebar h3 { font-size: 0.9rem; color: #666; margin-bottom: 0.8rem; }
+    .sidebar .chip { display: block; width: 100%; text-align: left; margin-bottom: 0.3rem; padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+    .sidebar .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
+    .sidebar .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
+    .main-content { flex: 1; min-width: 0; }
+    .filters-bar { margin-bottom: 1rem; }
     .search-bar { display: flex; gap: 0.5rem; }
     .search-bar input[type="text"] { flex: 1; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
     .search-bar input[type="text"]:focus { outline: none; border-color: #ee4d2d; box-shadow: 0 0 0 3px rgba(238,77,45,0.1); }
@@ -16,13 +23,16 @@
     .filter-row select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
     .filter-row .checkbox-wrap { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; color: #555; }
     .filter-row .checkbox-wrap input { width: 16px; height: 16px; }
-    .chips { max-width: 1200px; margin: 0.6rem auto 0; padding: 0 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .chip { padding: 0.4rem 0.9rem; border: 1px solid #ddd; border-radius: 20px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
-    .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
-    .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
-    .results-bar { max-width: 1200px; margin: 0.8rem auto 0; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center; }
+    .results-bar { margin-bottom: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
     .results-bar .count { font-size: 0.85rem; color: #888; }
     .results-bar select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
+    #btn-top { position: fixed; bottom: 20px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: #ee4d2d; color: #fff; border: none; font-size: 1.3rem; cursor: move; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center; user-select: none; }
+    #btn-top:hover { background: #d63a1a; }
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+      .sidebar { width: 100%; }
+      .sidebar .chip { display: inline-block; width: auto; margin-right: 0.3rem; }
+    }
   </style>
 </head>
 <body>
@@ -31,37 +41,42 @@
     <p class="subtitle">As melhores ofertas dos marketplaces</p>
   </header>
 
-  <div class="filters-bar">
-    <div class="search-bar">
-      <input type="text" id="search-input" placeholder="🔍 Buscar produto, marca, modelo...">
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Categorias</h3>
+      <div id="chips"></div>
+    </aside>
+
+    <div class="main-content">
+      <div class="filters-bar">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="🔍 Buscar produto, marca, modelo...">
+        </div>
+        <div class="filter-row">
+          <label>Preço:</label>
+          <input type="number" id="price-min" placeholder="Mín" min="0" step="0.01">
+          <span style="color:#888;">—</span>
+          <input type="number" id="price-max" placeholder="Máx" min="0" step="0.01">
+          <label class="checkbox-wrap">
+            <input type="checkbox" id="frete-gratis"> Frete grátis
+          </label>
+          <select id="sort-select">
+            <option value="recentes">Mais recentes</option>
+            <option value="menor-preco">Menor preço</option>
+            <option value="maior-preco">Maior preço</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="results-bar">
+        <span class="count" id="results-count"></span>
+      </div>
+
+      <div id="grid-all" class="grid"></div>
     </div>
-    <div class="filter-row">
-      <label>Preço:</label>
-      <input type="number" id="price-min" placeholder="Mín" min="0" step="0.01">
-      <span style="color:#888;">—</span>
-      <input type="number" id="price-max" placeholder="Máx" min="0" step="0.01">
-      <label class="checkbox-wrap">
-        <input type="checkbox" id="frete-gratis"> Frete grátis
-      </label>
-      <select id="sort-select">
-        <option value="recentes">Mais recentes</option>
-        <option value="menor-preco">Menor preço</option>
-        <option value="maior-preco">Maior preço</option>
-      </select>
-    </div>
   </div>
 
-  <div class="chips" id="chips">
-    <span class="chip active" data-cat="all">Todos</span>
-  </div>
-
-  <div class="results-bar">
-    <span class="count" id="results-count"></span>
-  </div>
-
-  <main>
-    <div id="grid-all" class="grid"></div>
-  </main>
+  <button id="btn-top" title="Voltar ao topo">↑</button>
 
   <footer>
     <p>Site de afiliados — comissões ajudam a manter o projeto.</p>
@@ -69,28 +84,28 @@
   </footer>
 
   <script>
-    const grid = document.getElementById('grid-all');
-    const searchInput = document.getElementById('search-input');
-    const priceMin = document.getElementById('price-min');
-    const priceMax = document.getElementById('price-max');
-    const freteGratis = document.getElementById('frete-gratis');
-    const sortSelect = document.getElementById('sort-select');
-    const chipsContainer = document.getElementById('chips');
-    const resultsCount = document.getElementById('results-count');
-    let allOffers = [];
-    let activeCat = 'all';
-    let searchTerm = '';
-    let minPrice = 0;
-    let maxPrice = Infinity;
-    let freteOnly = false;
-    let sortBy = 'recentes';
+    var grid = document.getElementById('grid-all');
+    var searchInput = document.getElementById('search-input');
+    var priceMin = document.getElementById('price-min');
+    var priceMax = document.getElementById('price-max');
+    var freteGratis = document.getElementById('frete-gratis');
+    var sortSelect = document.getElementById('sort-select');
+    var chipsContainer = document.getElementById('chips');
+    var resultsCount = document.getElementById('results-count');
+    var allOffers = [];
+    var activeCat = 'all';
+    var searchTerm = '';
+    var minPrice = 0;
+    var maxPrice = Infinity;
+    var freteOnly = false;
+    var sortBy = 'recentes';
 
     function getBadge(p) {
-      const mp = (p.marketplace || '').toUpperCase();
+      var mp = (p.marketplace || '').toUpperCase();
       if (mp === 'ML' || mp === 'MERCADO LIVRE') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
       if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">Shopee</span>';
       if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">Amazon</span>';
-      const link = (p.link || p.offerLink || '').toLowerCase();
+      var link = (p.link || p.offerLink || '').toLowerCase();
       if (link.includes('mercadolivre') || link.includes('meli.la')) return '<span class="mp-badge mp-ml">Mercado Livre</span>';
       if (link.includes('shopee')) return '<span class="mp-badge mp-shopee">Shopee</span>';
       if (link.includes('amazon')) return '<span class="mp-badge mp-amazon">Amazon</span>';
@@ -98,53 +113,53 @@
     }
 
     function renderCard(p) {
-      const div = document.createElement('div');
+      var div = document.createElement('div');
       div.className = 'card';
-      const badge = getBadge(p);
-      const tag = p.tag ? `<span class="tag">${p.tag}</span>` : '';
-      const img = p.imagem ? `<img src="${p.imagem}" alt="" class="card-img" loading="lazy">` : '';
-      const frete = p.frete ? `<p class="frete">🚚 ${p.frete}</p>` : '';
-      const desc = p.descricao ? `<p class="desc">${p.descricao}</p>` : '';
-      const cat = p.categoria ? `<p class="meta">📂 ${p.categoria}</p>` : '';
-      div.innerHTML = `
-        ${badge}
-        ${tag}
-        ${img}
-        <h3>${p.productName || p.nome}</h3>
-        <p class="price">R$ ${Number(p.price || p.preco).toFixed(2)}</p>
-        <p class="commission">${p.commissionRate ? 'Comissão: ' + p.commissionRate + '%' : ''}</p>
-        <p class="meta">${p.rating ? '⭐ ' + p.rating : ''} ${p.salesCount ? '| ' + p.salesCount + ' vendidos' : ''}</p>
-        ${frete}
-        ${cat}
-        ${desc}
-        <a href="${p.offerLink || p.link}" target="_blank" rel="noopener">Ver oferta →</a>
-      `;
+      var badge = getBadge(p);
+      var tag = p.tag ? '<span class="tag">' + p.tag + '</span>' : '';
+      var img = p.imagem ? '<img src="' + p.imagem + '" alt="" class="card-img" loading="lazy">' : '';
+      var frete = p.frete ? '<p class="frete">🚚 ' + p.frete + '</p>' : '';
+      var desc = p.descricao ? '<p class="desc">' + p.descricao + '</p>' : '';
+      var cat = p.categoria ? '<p class="meta">📂 ' + p.categoria + '</p>' : '';
+      div.innerHTML =
+        badge +
+        tag +
+        img +
+        '<h3>' + (p.productName || p.nome) + '</h3>' +
+        '<p class="price">R$ ' + Number(p.price || p.preco).toFixed(2) + '</p>' +
+        '<p class="commission">' + (p.commissionRate ? 'Comissão: ' + p.commissionRate + '%' : '') + '</p>' +
+        '<p class="meta">' + (p.rating ? '⭐ ' + p.rating : '') + ' ' + (p.salesCount ? '| ' + p.salesCount + ' vendidos' : '') + '</p>' +
+        frete +
+        cat +
+        desc +
+        '<a href="' + (p.offerLink || p.link) + '" target="_blank" rel="noopener">Ver oferta →</a>';
       return div;
     }
 
     function buildChips() {
-      const cats = new Set();
-      allOffers.forEach(p => {
-        const c = p.categoria || p.categoriaAuto;
+      var cats = new Set();
+      allOffers.forEach(function(p) {
+        var c = p.categoria || p.categoriaAuto;
         if (c) cats.add(c);
       });
-      const sorted = [...cats].sort((a, b) => a.localeCompare(b, 'pt-BR'));
-      chipsContainer.innerHTML = '<span class="chip active" data-cat="all">Todos</span>';
-      sorted.forEach(cat => {
-        const chip = document.createElement('span');
+      var sorted = Array.from(cats).sort(function(a, b) { return a.localeCompare(b, 'pt-BR'); });
+      chipsContainer.innerHTML = '<span class="chip active" data-cat="all">Todos (' + allOffers.length + ')</span>';
+      sorted.forEach(function(cat) {
+        var count = allOffers.filter(function(p) { return (p.categoria || p.categoriaAuto) === cat; }).length;
+        var chip = document.createElement('span');
         chip.className = 'chip';
         chip.dataset.cat = cat;
-        chip.textContent = cat;
-        chip.addEventListener('click', () => {
-          chipsContainer.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.textContent = cat + ' (' + count + ')';
+        chip.addEventListener('click', function() {
+          chipsContainer.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
           chip.classList.add('active');
           activeCat = cat;
           renderGrid();
         });
         chipsContainer.appendChild(chip);
       });
-      chipsContainer.querySelector('[data-cat="all"]').addEventListener('click', () => {
-        chipsContainer.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      chipsContainer.querySelector('[data-cat="all"]').addEventListener('click', function() {
+        chipsContainer.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
         chipsContainer.querySelector('[data-cat="all"]').classList.add('active');
         activeCat = 'all';
         renderGrid();
@@ -152,69 +167,61 @@
     }
 
     function renderGrid() {
-      let filtered = allOffers.slice();
+      var filtered = allOffers.slice();
 
-      // Categoria
       if (activeCat !== 'all') {
-        filtered = filtered.filter(p => (p.categoria || p.categoriaAuto || '') === activeCat);
+        filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
       }
 
-      // Busca por texto
       if (searchTerm) {
-        const term = searchTerm.toLowerCase();
-        filtered = filtered.filter(p => {
-          const nome = (p.productName || p.nome || '').toLowerCase();
-          const desc = (p.descricao || '').toLowerCase();
-          const cat = (p.categoria || '').toLowerCase();
+        var term = searchTerm.toLowerCase();
+        filtered = filtered.filter(function(p) {
+          var nome = (p.productName || p.nome || '').toLowerCase();
+          var desc = (p.descricao || '').toLowerCase();
+          var cat = (p.categoria || '').toLowerCase();
           return nome.includes(term) || desc.includes(term) || cat.includes(term);
         });
       }
 
-      // Preço
       if (minPrice > 0) {
-        filtered = filtered.filter(p => Number(p.price || p.preco || 0) >= minPrice);
+        filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) >= minPrice; });
       }
       if (maxPrice < Infinity) {
-        filtered = filtered.filter(p => Number(p.price || p.preco || 0) <= maxPrice);
+        filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) <= maxPrice; });
       }
 
-      // Frete grátis
       if (freteOnly) {
-        filtered = filtered.filter(p => /gr[aá]tis/i.test(p.frete || ''));
+        filtered = filtered.filter(function(p) { return /gr[aá]tis/i.test(p.frete || ''); });
       }
 
-      // Ordenação
       if (sortBy === 'menor-preco') {
-        filtered.sort((a, b) => Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0));
+        filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
       } else if (sortBy === 'maior-preco') {
-        filtered.sort((a, b) => Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0));
+        filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
       }
 
       grid.innerHTML = '';
       if (filtered.length === 0) {
         grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Nenhuma oferta encontrada com os filtros atuais.</p>';
       } else {
-        filtered.forEach(p => grid.appendChild(renderCard(p)));
+        filtered.forEach(function(p) { grid.appendChild(renderCard(p)); });
       }
       resultsCount.textContent = filtered.length + ' oferta(s)';
     }
 
-    // Eventos
-    searchInput.addEventListener('input', () => { searchTerm = searchInput.value.trim(); renderGrid(); });
-    priceMin.addEventListener('input', () => { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); });
-    priceMax.addEventListener('input', () => { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
-    freteGratis.addEventListener('change', () => { freteOnly = freteGratis.checked; renderGrid(); });
-    sortSelect.addEventListener('change', () => { sortBy = sortSelect.value; renderGrid(); });
+    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); renderGrid(); });
+    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); });
+    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
+    freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
+    sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
 
     async function loadAll() {
       try {
-        const [r1, r2] = await Promise.all([
-          fetch('manual.json?t=' + Date.now()),
-          fetch('ofertas.json?t=' + Date.now())
-        ]);
-        const manual = await r1.json().catch(() => []);
-        const shopee = await r2.json().catch(() => []);
-        allOffers = [...manual, ...shopee];
+        var r1 = await fetch('manual.json?t=' + Date.now());
+        var r2 = await fetch('ofertas.json?t=' + Date.now());
+        var manual = await r1.json().catch(function() { return []; });
+        var shopee = await r2.json().catch(function() { return []; });
+        allOffers = manual.concat(shopee);
         buildChips();
         renderGrid();
       } catch (e) {
@@ -223,6 +230,29 @@
     }
 
     loadAll();
+
+    // Botão flutuante "voltar ao topo" (arrastável)
+    (function() {
+      var btn = document.getElementById('btn-top');
+      var dragging = false, offsetX = 0, offsetY = 0;
+      btn.addEventListener('mousedown', function(e) {
+        dragging = true;
+        offsetX = e.clientX - btn.offsetLeft;
+        offsetY = e.clientY - btn.offsetTop;
+        btn.style.right = 'auto';
+        btn.style.bottom = 'auto';
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        btn.style.left = (e.clientX - offsetX) + 'px';
+        btn.style.top = (e.clientY - offsetY) + 'px';
+      });
+      document.addEventListener('mouseup', function() { dragging = false; });
+      btn.addEventListener('click', function() {
+        if (!dragging) window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 </body>
-</html>
+</html>   

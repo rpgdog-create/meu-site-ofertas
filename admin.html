@@ -52,6 +52,11 @@
     .cat-valid { font-size: 0.7rem; color: #00a650; }
     .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
+    .admin-topbar { display: flex; justify-content: space-between; align-items: center; max-width: 800px; margin: 1rem auto 0; padding: 0 1rem; }
+    .admin-topbar a { font-size: 0.9rem; color: #ee4d2d; text-decoration: none; }
+    .admin-topbar a:hover { text-decoration: underline; }
+    #btn-top { position: fixed; bottom: 20px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: #ee4d2d; color: #fff; border: none; font-size: 1.3rem; cursor: move; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center; user-select: none; }
+    #btn-top:hover { background: #d63a1a; }
   </style>
 </head>
 <body>
@@ -59,6 +64,11 @@
     <h1>Admin - Ofertas</h1>
     <p class="subtitle">Gerencie as ofertas manuais (ML / Amazon)</p>
   </header>
+
+  <div class="admin-topbar">
+    <a href="index.html">← Voltar ao site</a>
+    <a href="#" onclick="doLogout()">Sair</a>
+  </div>
 
   <div class="auth-screen" id="screen-email">
     <div class="auth-box">
@@ -167,12 +177,15 @@
         <br>
         <button class="btn btn-primary" onclick="saveAll()">Salvar no site</button>
         <button class="btn btn-secondary" onclick="loadOffers()" style="margin-left:0.5rem;">Recarregar</button>
+        <button class="btn btn-danger" onclick="removeAllOffers()" style="margin-left:0.5rem;">Remover todos</button>
         <button class="btn btn-danger" onclick="doLogout()" style="margin-left:0.5rem;">Sair</button>
         <div id="save-status" class="status"></div>
       </div>
 
     </div>
   </div>
+
+  <button id="btn-top" title="Voltar ao topo">↑</button>
 
   <footer>
     <p><a href="index.html">Voltar ao site</a></p>
@@ -401,6 +414,13 @@
       } else {
         alert("Nenhum item sem categoria para atualizar.");
       }
+    }
+
+    function removeAllOffers() {
+      if (offers.length === 0) { alert("Nenhuma oferta para remover."); return; }
+      if (!confirm("Tem certeza? Vai remover TODAS as " + offers.length + " ofertas do site.")) return;
+      offers = [];
+      renderList();
     }
 
     async function batchFetch() {
@@ -677,6 +697,31 @@
         s.textContent = "Erro: " + e.message;
       }
     }
+
+    // Botão flutuante "voltar ao topo" (arrastável)
+    (function() {
+      var btn = document.getElementById('btn-top');
+      var dragging = false, offsetX = 0, offsetY = 0, moved = false;
+      btn.addEventListener('mousedown', function(e) {
+        dragging = true;
+        moved = false;
+        offsetX = e.clientX - btn.offsetLeft;
+        offsetY = e.clientY - btn.offsetTop;
+        btn.style.right = 'auto';
+        btn.style.bottom = 'auto';
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        moved = true;
+        btn.style.left = (e.clientX - offsetX) + 'px';
+        btn.style.top = (e.clientY - offsetY) + 'px';
+      });
+      document.addEventListener('mouseup', function() { dragging = false; });
+      btn.addEventListener('click', function() {
+        if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 </body>
 </html>   
