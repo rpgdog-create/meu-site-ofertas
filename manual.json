@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "nome": "Principia Kit 2 Protetor Solar Corporal Ps-03 FPS60",
+    "preco": "87.05",
+    "link": "https://meli.la/2W9JHFT",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_644422-MLA110121267428_042026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Tapete Banheiro Antiderrapante Macio Absorvente 60x40",
+    "preco": "18.99",
+    "link": "https://meli.la/2hgVq2h",
+    "categoria": "Acessórios para Veículos",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_724454-MLB111718364601_052026-O-tapete-banheiro-antiderrapante-macio-absorvente-60x40.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Criado Mudor P/ Cama Box Compacto C/ Prateleira Max Cor Off white/Cinamomo",
+    "preco": "72.92",
+    "link": "https://meli.la/2FYEXBE",
+    "categoria": "Agro",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_943106-MLA113992544258_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  }
+]
