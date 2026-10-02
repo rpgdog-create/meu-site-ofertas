@@ -475,5 +475,14 @@
     "imagem": "https://m.media-amazon.com/images/I/51THm2xdnnL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "NIVEA Sabonete Líquido Íntimo Suave 250ml, Limpeza Delicada, Mantém pH Natural, Extrato de Camomila, Cuidado Calmante, Uso Diário",
+    "preco": "18.99",
+    "link": "https://www.amazon.com.br/dp/B07F3DK2CK?tag=ofertas01dc-20",
+    "categoria": "Saúde",
+    "imagem": "https://m.media-amazon.com/images/I/71k8uphFgmL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
