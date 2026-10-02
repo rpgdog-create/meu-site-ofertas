@@ -1,74 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ofertas do Dia</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .navbar { position: sticky; top: 0; z-index: 999; background: #fff; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.8rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }   
-    .navbar .logo { font-size: 1.1rem; font-weight: 700; color: #333; text-decoration: none; }
-    .navbar .logo:hover { color: #ee4d2d; }
-    .navbar .nav-links { display: flex; gap: 1rem; align-items: center; justify-content: center; }   
-    .navbar .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.3rem 0.5rem; border-radius: 4px; transition: all 0.2s; }
-    .navbar .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
-    .navbar .nav-links a.active { color: #ee4d2d; font-weight: 600; }
-    .navbar .nav-links a.admin-link { color: #aaa; font-size: 1rem; }
-    .navbar .nav-links a.admin-link:hover { color: #e74c3c; }
-    @media (max-width: 768px) {
-      .navbar-inner { flex-direction: column; gap: 0.5rem; }
-      .navbar .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
-    }
-    .layout { display: flex; max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; gap: 1.5rem; }
-    .sidebar { width: 200px; flex-shrink: 0; }
-    .sidebar h3 { font-size: 0.9rem; color: #666; margin-bottom: 0.8rem; }
-    .sidebar .chip { display: block; width: 100%; text-align: left; margin-bottom: 0.3rem; padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
-    .sidebar .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
-    .sidebar .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
-    .main-content { flex: 1; min-width: 0; }
-    .filters-bar { margin-bottom: 1rem; }
-    .search-bar { display: flex; gap: 0.5rem; }
-    .search-bar input[type="text"] { flex: 1; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-    .search-bar input[type="text"]:focus { outline: none; border-color: #ee4d2d; box-shadow: 0 0 0 3px rgba(238,77,45,0.1); }
-    .filter-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.6rem; }
-    .filter-row label { font-size: 0.8rem; color: #666; }
-    .filter-row input[type="number"] { width: 90px; padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; }
-    .filter-row select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
-    .filter-row .checkbox-wrap { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; color: #555; }
-    .filter-row .checkbox-wrap input { width: 16px; height: 16px; }
-    .results-bar { margin-bottom: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
-    .results-bar .count { font-size: 0.85rem; color: #888; }
-    .results-bar select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
-    #btn-top { position: fixed; bottom: 20px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: #ee4d2d; color: #fff; border: none; font-size: 1.3rem; cursor: move; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center; user-select: none; }
-    #btn-top:hover { background: #d63a1a; }
-    @media (max-width: 768px) {
-      .layout { flex-direction: column; }
-      .sidebar { width: 100%; }
-      .sidebar .chip { display: inline-block; width: auto; margin-right: 0.3rem; }
-    }
-  </style>
 </head>
 <body>
-
-<header style="padding-top:1rem;">
-  <h1>🔥 Ofertas do Dia</h1>
-  <p class="subtitle">As melhores ofertas dos marketplaces</p>
-</header>
-
-<nav class="navbar">
-  <div class="navbar-inner">
-    <div class="nav-links">
-      <a href="index.html" id="nav-inicio" class="active">Início</a>
-      <a href="#" id="nav-ml">Mercado Livre</a>
-      <a href="#" id="nav-amazon">Amazon</a>
-      <a href="#" id="nav-shopee">Shopee</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-      <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
-    </div>
+  <div class="hero">
+    <h1>🔥 Ofertas do Dia</h1>
+    <p class="subtitle">As melhores ofertas dos marketplaces</p>
   </div>
-</nav>   
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-links">
+        <a href="index.html" id="nav-inicio" class="active">Início</a>
+        <a href="#" id="nav-ml">ML</a>
+        <a href="#" id="nav-amazon">Amazon</a>
+        <a href="#" id="nav-shopee">Shopee</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
+        <button class="theme-toggle" id="theme-toggle" title="Alternar tema">🌙</button>
+      </div>
+    </div>
+  </nav>
 
   <div class="layout">
     <aside class="sidebar">
@@ -84,7 +41,7 @@
         <div class="filter-row">
           <label>Preço:</label>
           <input type="number" id="price-min" placeholder="Mín" min="0" step="0.01">
-          <span style="color:#888;">—</span>
+          <span style="color:var(--text-light);">—</span>
           <input type="number" id="price-max" placeholder="Máx" min="0" step="0.01">
           <label class="checkbox-wrap">
             <input type="checkbox" id="frete-gratis"> Frete grátis
@@ -108,11 +65,32 @@
   <button id="btn-top" title="Voltar ao topo">↑</button>
 
   <footer>
+    <p class="footer-logo">🔥 Ofertas do Dia</p>
     <p>Site de afiliados — comissões ajudam a manter o projeto.</p>
-    <p style="margin-top:0.5rem;"><a href="admin.html">⚙️ Admin</a></p>
+    <p style="margin-top:0.8rem;"><a href="admin.html">⚙️ Admin</a></p>
+    <p style="margin-top:0.5rem;opacity:0.6;">© 2026</p>
   </footer>
 
   <script>
+    // Dark mode
+    (function() {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+      var btn = document.getElementById('theme-toggle');
+      function updateIcon() {
+        var t = document.documentElement.getAttribute('data-theme');
+        btn.textContent = t === 'dark' ? '☀️' : '🌙';
+      }
+      updateIcon();
+      btn.addEventListener('click', function() {
+        var t = document.documentElement.getAttribute('data-theme');
+        var next = t === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon();
+      });
+    })();
+
     var grid = document.getElementById('grid-all');
     var searchInput = document.getElementById('search-input');
     var priceMin = document.getElementById('price-min');
@@ -144,9 +122,9 @@
 
     function getBadge(p) {
       var mp = getMpKey(p);
-      if (mp === 'ML') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
-      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">Shopee</span>';
-      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">Amazon</span>';
+      if (mp === 'ML') return '<span class="mp-badge mp-ml">🛒 ML</span>';
+      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">🛍️ Shopee</span>';
+      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">📦 Amazon</span>';
       return '';
     }
 
@@ -244,9 +222,13 @@
 
       grid.innerHTML = '';
       if (filtered.length === 0) {
-        grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Nenhuma oferta encontrada com os filtros atuais.</p>';
+        grid.innerHTML = '<p style="grid-column:1/-1;color:var(--text-light);">Nenhuma oferta encontrada com os filtros atuais.</p>';
       } else {
-        filtered.forEach(function(p) { grid.appendChild(renderCard(p)); });
+        filtered.forEach(function(p, i) {
+          var card = renderCard(p);
+          card.style.animationDelay = (i * 0.04) + 's';
+          grid.appendChild(card);
+        });
       }
       resultsCount.textContent = filtered.length + ' oferta(s)';
     }
@@ -257,7 +239,6 @@
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
 
-    // Nav bar marketplace filters
     function setNavMp(mp, el) {
       var navLinks = document.querySelectorAll('.nav-links a');
       navLinks.forEach(function(a) { a.classList.remove('active'); });
@@ -285,7 +266,7 @@
         buildChips();
         renderGrid();
       } catch (e) {
-        grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Erro ao carregar ofertas.</p>';
+        grid.innerHTML = '<p style="grid-column:1/-1;color:var(--text-light);">Erro ao carregar ofertas.</p>';
       }
     }
 
