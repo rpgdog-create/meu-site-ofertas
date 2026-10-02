@@ -6,24 +6,10 @@
   <title>Ofertas do Dia</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .navbar { position: sticky; top: 0; z-index: 999; background: #fff; border-bottom: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.8rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }   
-    .navbar .logo { font-size: 1.1rem; font-weight: 700; color: #333; text-decoration: none; }
-    .navbar .logo:hover { color: #ee4d2d; }
-    .navbar .nav-links { display: flex; gap: 1rem; align-items: center; justify-content: center; }   
-    .navbar .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.3rem 0.5rem; border-radius: 4px; transition: all 0.2s; }
-    .navbar .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
-    .navbar .nav-links a.active { color: #ee4d2d; font-weight: 600; }
-    .navbar .nav-links a.admin-link { color: #aaa; font-size: 1rem; }
-    .navbar .nav-links a.admin-link:hover { color: #e74c3c; }
-    @media (max-width: 768px) {
-      .navbar-inner { flex-direction: column; gap: 0.5rem; }
-      .navbar .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
-    }
     .layout { display: flex; max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; gap: 1.5rem; }
-    .sidebar { width: 200px; flex-shrink: 0; }
+    .sidebar { width: 210px; flex-shrink: 0; }
     .sidebar h3 { font-size: 0.9rem; color: #666; margin-bottom: 0.8rem; }
-    .sidebar .chip { display: block; width: 100%; text-align: left; margin-bottom: 0.3rem; padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; }
+    .sidebar .chip { display: block; width: 100%; text-align: left; margin-bottom: 0.3rem; padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
     .sidebar .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
     .main-content { flex: 1; min-width: 0; }
@@ -39,7 +25,14 @@
     .filter-row .checkbox-wrap input { width: 16px; height: 16px; }
     .results-bar { margin-bottom: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
     .results-bar .count { font-size: 0.85rem; color: #888; }
-    .results-bar select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
+    .navbar { background: #fff; border-bottom: 1px solid #eee; }
+    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.7rem 1rem; display: flex; align-items: center; justify-content: center; }
+    .nav-links { display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+    .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 20px; transition: all 0.2s; font-weight: 500; }
+    .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
+    .nav-links a.active { color: #fff; background: #ee4d2d; }
+    .nav-links a.admin-link { color: #aaa; font-size: 1rem; }
+    .nav-links a.admin-link:hover { color: #ee4d2d; }
     #btn-top { position: fixed; bottom: 20px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: #ee4d2d; color: #fff; border: none; font-size: 1.3rem; cursor: move; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center; user-select: none; }
     #btn-top:hover { background: #d63a1a; }
     @media (max-width: 768px) {
@@ -50,25 +43,24 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>🔥 Ofertas do Dia</h1>
+    <p class="subtitle">As melhores ofertas dos marketplaces</p>
+  </header>
 
-<header style="padding-top:1rem;">
-  <h1>🔥 Ofertas do Dia</h1>
-  <p class="subtitle">As melhores ofertas dos marketplaces</p>
-</header>
-
-<nav class="navbar">
-  <div class="navbar-inner">
-    <div class="nav-links">
-      <a href="index.html" id="nav-inicio" class="active">Início</a>
-      <a href="#" id="nav-ml">Mercado Livre</a>
-      <a href="#" id="nav-amazon">Amazon</a>
-      <a href="#" id="nav-shopee">Shopee</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-      <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-links">
+        <a href="index.html" id="nav-inicio" class="active">Início</a>
+        <a href="#" id="nav-ml">ML</a>
+        <a href="#" id="nav-amazon">Amazon</a>
+        <a href="#" id="nav-shopee">Shopee</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
+      </div>
     </div>
-  </div>
-</nav>   
+  </nav>
 
   <div class="layout">
     <aside class="sidebar">
@@ -144,9 +136,9 @@
 
     function getBadge(p) {
       var mp = getMpKey(p);
-      if (mp === 'ML') return '<span class="mp-badge mp-ml">Mercado Livre</span>';
-      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">Shopee</span>';
-      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">Amazon</span>';
+      if (mp === 'ML') return '<span class="mp-badge mp-ml">🛒 ML</span>';
+      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">🛍️ Shopee</span>';
+      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">📦 Amazon</span>';
       return '';
     }
 
@@ -188,6 +180,7 @@
         chip.className = 'chip';
         chip.dataset.cat = cat;
         chip.textContent = cat + ' (' + count + ')';
+        chip.title = cat + ' (' + count + ')';
         chip.addEventListener('click', function() {
           chipsContainer.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
           chip.classList.add('active');
@@ -257,7 +250,6 @@
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
 
-    // Nav bar marketplace filters
     function setNavMp(mp, el) {
       var navLinks = document.querySelectorAll('.nav-links a');
       navLinks.forEach(function(a) { a.classList.remove('active'); });
