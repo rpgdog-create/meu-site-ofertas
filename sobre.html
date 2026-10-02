@@ -14,10 +14,10 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-sand-50 text-slate-800 antialiased">
-  <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-200/80">
+  <header class="bg-brand-900">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
-      <span class="font-display font-bold text-lg text-slate-900">Sobre</span>
+      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-teal-200 hover:text-white transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
+      <span class="font-display font-bold text-lg text-white">Sobre</span>
     </div>
   </header>
   <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
@@ -30,11 +30,29 @@
         <p><strong class="text-slate-800">Como nos mantemos:</strong> participamos de programas de afiliados oficiais. Quando você compra através dos nossos links, recebemos uma pequena comissão — sem custo extra para você. Isso mantém o site 100% gratuito.</p>
         <p>Não somos afiliados de nenhuma marca. Não vendemos dados. Não enviamos spam. Só achamos bom preço e te mostramos.</p>
       </div>
-      <div class="mt-8 pt-6 border-t border-sand-100 flex items-center gap-4">
-        <span class="inline-flex items-center gap-1.5 text-[11px] text-slate-400 bg-sand-50 border border-sand-200 px-2.5 py-1 rounded-md"><i data-lucide="info" class="w-3.5 h-3.5"></i> Comissões de afiliados ajudam a manter o projeto.</span>
-      </div>
+    </div>
+    <div class="mt-6 bg-brand-900 rounded-2xl p-5 flex items-center justify-center">
+      <span class="inline-flex items-center gap-1.5 text-[12px] text-brand-100 bg-brand-500/30 border border-brand-500/50 px-3 py-1.5 rounded-lg font-medium"><i data-lucide="info" class="w-4 h-4"></i> Comissões de afiliados ajudam a manter o projeto.</span>
     </div>
   </main>
+
+  <footer class="bg-white border-t border-sand-200 pt-10 pb-6 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i></div>
+          <span class="font-display font-bold text-slate-800">Ofertas do Dia</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="hover:text-brand-600 transition-colors">Início</a>
+          <a href="sobre.html" class="hover:text-brand-600 transition-colors">Sobre</a>
+          <a href="contato.html" class="hover:text-brand-600 transition-colors">Contato</a>
+          <a href="admin.html" class="hover:text-brand-600 transition-colors">Admin</a>
+        </div>
+        <p>© 2026</p>
+      </div>
+    </div>
+  </footer>
   <script>lucide.createIcons();</script>
 </body>
 </html>   
