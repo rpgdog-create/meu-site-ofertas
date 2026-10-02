@@ -288,7 +288,13 @@
 
   <script>
     lucide.createIcons();
-
+    document.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        var input = window.innerWidth >= 768 ? document.getElementById('search-input') : document.getElementById('search-input-mobile');
+        if (input) { input.focus(); input.select(); }
+      }
+    });   
     var grid = document.getElementById('grid-all');
     var searchInput = document.getElementById('search-input');
     var searchInputMobile = document.getElementById('search-input-mobile');
@@ -459,6 +465,7 @@
     document.getElementById('nav-shopee').addEventListener('click', function() { setNavMp('SHOPEE'); });
 
     async function loadAll() {
+    setInterval(loadAll, 15 * 60 * 1000);   
       try {
         var r1 = await fetch('manual.json?t=' + Date.now());
         var r2 = await fetch('ofertas.json?t=' + Date.now());
