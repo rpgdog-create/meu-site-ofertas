@@ -234,23 +234,27 @@
     // Botão flutuante "voltar ao topo" (arrastável)
     (function() {
       var btn = document.getElementById('btn-top');
-      var dragging = false, offsetX = 0, offsetY = 0;
+      var dragging = false, offsetX = 0, offsetY = 0, moved = false;
       btn.addEventListener('mousedown', function(e) {
         dragging = true;
+        moved = false;
         offsetX = e.clientX - btn.offsetLeft;
         offsetY = e.clientY - btn.offsetTop;
-        btn.style.right = 'auto';
-        btn.style.bottom = 'auto';
         e.preventDefault();
       });
       document.addEventListener('mousemove', function(e) {
         if (!dragging) return;
+        if (!moved) {
+          moved = true;
+          btn.style.right = 'auto';
+          btn.style.bottom = 'auto';
+        }
         btn.style.left = (e.clientX - offsetX) + 'px';
         btn.style.top = (e.clientY - offsetY) + 'px';
       });
       document.addEventListener('mouseup', function() { dragging = false; });
       btn.addEventListener('click', function() {
-        if (!dragging) window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     })();
   </script>
