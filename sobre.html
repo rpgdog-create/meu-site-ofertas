@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre — Ofertas do Dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { 50:'#F0FDF9', 100:'#CCFBEF', 500:'#0D9488', 600:'#0F766E', 900:'#134E4A' }, accent: { 50:'#FFF7ED', 500:'#F97316', 600:'#EA580C' }, sand: { 50:'#FAF8F5', 100:'#F5F0E8', 200:'#E6DFD3', 800:'#2C2A29' } }, fontFamily: { sans: ['"Plus Jakarta Sans"','sans-serif'], display: ['"Space Grotesk"','sans-serif'] } } }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-sand-50 text-slate-800 antialiased">
+  <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
+      <span class="font-display font-bold text-lg text-slate-900">Sobre</span>
+    </div>
+  </header>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="bg-white rounded-3xl border border-sand-200 p-8 sm:p-12 shadow-sm">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 mb-6"><i data-lucide="sparkles" class="w-7 h-7"></i></div>
+      <h1 class="font-display text-3xl font-bold text-slate-900 mb-4">Sobre o Ofertas do Dia</h1>
+      <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+        <p>O <strong class="text-slate-800">Ofertas do Dia</strong> é um site independente de curadoria e rastreamento de descontos. Nossa missão é simples: te ajudar a pagar o preço justo em produtos dos maiores marketplaces do Brasil.</p>
+        <p>Monitoramos e selecionamos manualmente as melhores ofertas da <strong class="text-slate-800">Amazon</strong>, <strong class="text-slate-800">Mercado Livre</strong> e <strong class="text-slate-800">Shopee</strong>. Cada produto que aparece aqui foi verificado por nossa equipe antes de ser publicado.</p>
+        <p><strong class="text-slate-800">Como nos mantemos:</strong> participamos de programas de afiliados oficiais. Quando você compra através dos nossos links, recebemos uma pequena comissão — sem custo extra para você. Isso mantém o site 100% gratuito.</p>
+        <p>Não somos afiliados de nenhuma marca. Não vendemos dados. Não enviamos spam. Só achamos bom preço e te mostramos.</p>
+      </div>
+      <div class="mt-8 pt-6 border-t border-sand-100 flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-[11px] text-slate-400 bg-sand-50 border border-sand-200 px-2.5 py-1 rounded-md"><i data-lucide="info" class="w-3.5 h-3.5"></i> Comissões de afiliados ajudam a manter o projeto.</span>
+      </div>
+    </div>
+  </main>
+  <script>lucide.createIcons();</script>
+</body>
+</html>   

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Ofertas do Dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { 50:'#F0FDF9', 100:'#CCFBEF', 500:'#0D9488', 600:'#0F766E', 900:'#134E4A' }, accent: { 50:'#FFF7ED', 500:'#F97316', 600:'#EA580C' }, sand: { 50:'#FAF8F5', 100:'#F5F0E8', 200:'#E6DFD3', 800:'#2C2A29' } }, fontFamily: { sans: ['"Plus Jakarta Sans"','sans-serif'], display: ['"Space Grotesk"','sans-serif'] } } }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-sand-50 text-slate-800 antialiased">
+  <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
+      <span class="font-display font-bold text-lg text-slate-900">Contato</span>
+    </div>
+  </header>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="bg-white rounded-3xl border border-sand-200 p-8 sm:p-12 shadow-sm">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 mb-6"><i data-lucide="mail" class="w-7 h-7"></i></div>
+      <h1 class="font-display text-3xl font-bold text-slate-900 mb-4">Fale com a gente</h1>
+      <p class="text-sm text-slate-600 leading-relaxed mb-8">Sugestões de ofertas, dúvidas, parcerias ou qualquer outro assunto — responde em até 24h.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="https://wa.me/5561996405354" target="_blank" rel="noopener" class="flex items-center gap-4 p-5 rounded-2xl border border-sand-200 hover:border-brand-500 hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-100 transition-colors"><i data-lucide="message-circle" class="w-6 h-6 text-emerald-600"></i></div>
+          <div>
+            <p class="text-sm font-bold text-slate-900">WhatsApp</p>
+            <p class="text-xs text-slate-500">61 99640-5354</p>
+          </div>
+        </a>
+        <a href="mailto:rpgdog@gmail.com" class="flex items-center gap-4 p-5 rounded-2xl border border-sand-200 hover:border-brand-500 hover:shadow-md transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center group-hover:bg-brand-100 transition-colors"><i data-lucide="mail" class="w-6 h-6 text-brand-600"></i></div>
+          <div>
+            <p class="text-sm font-bold text-slate-900">E-mail</p>
+            <p class="text-xs text-slate-500">rpgdog@gmail.com</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-sand-100">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Sugerir uma oferta</h2>
+        <p class="text-xs text-slate-500 leading-relaxed">Vi um bom preço que não está no site? Manda pro WhatsApp com o link do produto + nome + preço. Avaliamos e adicionamos no radar.</p>
+      </div>
+    </div>
+  </main>
+  <script>lucide.createIcons();</script>
+</body>
+</html>   
