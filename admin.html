@@ -448,11 +448,11 @@
       if (url.indexOf("meli.la") !== -1) {
         var res = await fetch(CORS_PROXY + encodeURIComponent(url));
         pageHtml = await res.text();
-        var idMatch = pageHtml.match(/MLB\d{6,}/);
-        if (idMatch) itemId = idMatch[0];
+        var idMatch = pageHtml.match(/MLB-?\d{6,}/);
+        if (idMatch) itemId = idMatch[0].replace('-','');
       } else if (url.indexOf("mercadolivre.com") !== -1) {
-        var idMatch2 = url.match(/MLB\d{6,}/);
-        if (idMatch2) itemId = idMatch2[0];
+        var idMatch2 = url.match(/MLB-?\d{6,}/);
+        if (idMatch2) itemId = idMatch2[0].replace('-','');
       }
       if (!itemId) throw new Error("ID MLB nao encontrado");
 
@@ -631,7 +631,6 @@
     }
 
     async function saveAll() {
-      if (!confirm("Salvar " + offers.length + " oferta(s) no site? Isso sobrescreve o manual.json.")) return;
       var s = document.getElementById("save-status");
       s.className = "status";
       s.textContent = "Salvando...";
