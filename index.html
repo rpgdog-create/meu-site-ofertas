@@ -482,6 +482,27 @@
 
     loadAll();
 
+    // Drag to scroll - chips
+    (function() {
+      var container = document.getElementById('chips');
+      var isDown = false, startX, startScroll, dragged;
+      container.addEventListener('mousedown', function(e) {
+        isDown = true; dragged = false;
+        startX = e.pageX;
+        startScroll = container.scrollLeft;
+      });
+      document.addEventListener('mousemove', function(e) {
+        if (!isDown) return;
+        var dx = e.pageX - startX;
+        if (Math.abs(dx) > 5) dragged = true;
+        if (dragged) { container.scrollLeft = startScroll - dx; e.preventDefault(); }
+      });
+      document.addEventListener('mouseup', function() { isDown = false; });
+      container.addEventListener('click', function(e) {
+        if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
+      }, true);
+    })();   
+
     // Botão flutuante "voltar ao topo" (arrastável)
     (function() {
       var btn = document.getElementById('btn-top');
