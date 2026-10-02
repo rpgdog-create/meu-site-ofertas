@@ -1,112 +1,297 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ofertas do Dia</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .layout { display: flex; max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; gap: 1.5rem; }
-    .sidebar { width: 210px; flex-shrink: 0; }
-    .sidebar h3 { font-size: 0.9rem; color: #666; margin-bottom: 0.8rem; }
-    .sidebar .chip { display: block; width: 100%; text-align: left; margin-bottom: 0.3rem; padding: 0.4rem 0.8rem; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .sidebar .chip:hover { border-color: #ee4d2d; color: #ee4d2d; }
-    .sidebar .chip.active { background: #ee4d2d; color: #fff; border-color: #ee4d2d; }
-    .main-content { flex: 1; min-width: 0; }
-    .filters-bar { margin-bottom: 1rem; }
-    .search-bar { display: flex; gap: 0.5rem; }
-    .search-bar input[type="text"] { flex: 1; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
-    .search-bar input[type="text"]:focus { outline: none; border-color: #ee4d2d; box-shadow: 0 0 0 3px rgba(238,77,45,0.1); }
-    .filter-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.6rem; }
-    .filter-row label { font-size: 0.8rem; color: #666; }
-    .filter-row input[type="number"] { width: 90px; padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; }
-    .filter-row select { padding: 0.4rem 0.6rem; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; background: #fff; }
-    .filter-row .checkbox-wrap { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; color: #555; }
-    .filter-row .checkbox-wrap input { width: 16px; height: 16px; }
-    .results-bar { margin-bottom: 0.8rem; display: flex; justify-content: space-between; align-items: center; }
-    .results-bar .count { font-size: 0.85rem; color: #888; }
-    .navbar { background: #fff; border-bottom: 1px solid #eee; }
-    .navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0.7rem 1rem; display: flex; align-items: center; justify-content: center; }
-    .nav-links { display: flex; gap: 0.3rem; align-items: center; flex-wrap: wrap; justify-content: center; }
-    .nav-links a { font-size: 0.85rem; color: #666; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 20px; transition: all 0.2s; font-weight: 500; }
-    .nav-links a:hover { color: #ee4d2d; background: #fef2f0; }
-    .nav-links a.active { color: #fff; background: #ee4d2d; }
-    .nav-links a.admin-link { color: #aaa; font-size: 1rem; }
-    .nav-links a.admin-link:hover { color: #ee4d2d; }
-    #btn-top { position: fixed; bottom: 20px; right: 20px; width: 44px; height: 44px; border-radius: 50%; background: #ee4d2d; color: #fff; border: none; font-size: 1.3rem; cursor: move; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 9999; display: flex; align-items: center; justify-content: center; user-select: none; }
-    #btn-top:hover { background: #d63a1a; }
-    @media (max-width: 768px) {
-      .layout { flex-direction: column; }
-      .sidebar { width: 100%; }
-      .sidebar .chip { display: inline-block; width: auto; margin-right: 0.3rem; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ofertas do Dia — O curador inteligente dos melhores descontos da Amazon, Mercado Livre e Shopee.">
+  <title>Ofertas do Dia — Curadoria Inteligente de Preços & Descontos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#F0FDF9', 100:'#CCFBEF', 500:'#0D9488', 600:'#0F766E', 900:'#134E4A' },
+            accent: { 50:'#FFF7ED', 500:'#F97316', 600:'#EA580C' },
+            sand: { 50:'#FAF8F5', 100:'#F5F0E8', 200:'#E6DFD3', 800:'#2C2A29' }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"','sans-serif'],
+            display: ['"Space Grotesk"','sans-serif']
+          }
+        }
+      }
     }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .custom-scroll::-webkit-scrollbar { height: 6px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background-color: #E6DFD3; border-radius: 9999px; }
+    #btn-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 3rem; height: 3rem; border-radius: 50%; background: #fff; color: #334155; border: 1px solid #E6DFD3; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 9999; display: flex; align-items: center; justify-content: center; cursor: move; user-select: none; transition: all 0.2s; }
+    #btn-top:hover { color: #0F766E; transform: translateY(-2px); }
   </style>
 </head>
-<body>
-  <header>
-    <h1>🔥 Ofertas do Dia</h1>
-    <p class="subtitle">As melhores ofertas dos marketplaces</p>
-  </header>
+<body class="bg-sand-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
 
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <div class="nav-links">
-        <a href="index.html" id="nav-inicio" class="active">Início</a>
-        <a href="#" id="nav-ml">ML</a>
-        <a href="#" id="nav-amazon">Amazon</a>
-        <a href="#" id="nav-shopee">Shopee</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-        <a href="admin.html" class="admin-link" title="Admin">⚙️</a>
+  <!-- Top Announcement Bar -->
+  <aside class="bg-brand-900 text-teal-100 py-2.5 px-4 text-xs font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-[10px] uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live Radar
+        </span>
+        <span class="hidden sm:inline">Monitorando promoções reais na Amazon, Mercado Livre e Shopee</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-teal-200">
+        <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-teal-400"></i> Links Verificados</span>
+        <span class="hidden md:flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-teal-400"></i> Atualizado a cada 15 min</span>
       </div>
     </div>
-  </nav>
+  </aside>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <h3>Categorias</h3>
-      <div id="chips"></div>
-    </aside>
-
-    <div class="main-content">
-      <div class="filters-bar">
-        <div class="search-bar">
-          <input type="text" id="search-input" placeholder="🔍 Buscar produto, marca, modelo...">
+  <!-- Navigation -->
+  <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3 group flex-shrink-0">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform duration-300">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
         </div>
-        <div class="filter-row">
-          <label>Preço:</label>
-          <input type="number" id="price-min" placeholder="Mín" min="0" step="0.01">
-          <span style="color:#888;">—</span>
-          <input type="number" id="price-max" placeholder="Máx" min="0" step="0.01">
-          <label class="checkbox-wrap">
-            <input type="checkbox" id="frete-gratis"> Frete grátis
-          </label>
-          <select id="sort-select">
+        <div>
+          <span class="font-display font-bold text-xl tracking-tight text-slate-900 flex items-center gap-1.5">Ofertas <span class="text-brand-600">do Dia</span></span>
+          <p class="text-[11px] font-medium text-slate-500 tracking-wide uppercase">Curadoria Independente</p>
+        </div>
+      </a>
+
+      <div class="flex-1 max-w-xl hidden md:block">
+        <div class="relative">
+          <i data-lucide="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input type="text" id="search-input" placeholder="Buscar por fone bluetooth, JBL, smart speaker, carregador..." class="w-full bg-white border border-sand-200 rounded-2xl pl-11 pr-24 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 shadow-sm transition-all">
+          <kbd class="absolute right-3.5 top-1/2 -translate-y-1/2 px-2 py-0.5 text-[10px] font-semibold text-slate-400 bg-sand-100 rounded-md border border-sand-200">⌘K</kbd>
+        </div>
+      </div>
+
+      <nav class="flex items-center gap-3">
+        <div class="hidden lg:flex items-center gap-1 bg-white/70 p-1 rounded-xl border border-sand-200 text-xs font-semibold text-slate-600">
+          <button id="nav-todos" class="px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm">Todos</button>
+          <button id="nav-ml" class="px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-amber-500"></span> ML</button>
+          <button id="nav-amazon" class="px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-600"></span> Amazon</button>
+          <button id="nav-shopee" class="px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-500"></span> Shopee</button>
+        </div>
+        <a href="admin.html" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold px-3 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all" title="Admin">
+          <i data-lucide="settings" class="w-4 h-4"></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-10 pb-12 sm:pt-16 sm:pb-20 border-b border-sand-200">
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+      <div class="absolute -top-36 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-gradient-to-b from-brand-100/70 via-teal-50/40 to-transparent blur-3xl opacity-80"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div class="max-w-2xl text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sand-100 border border-sand-200 text-brand-700 text-xs font-semibold mb-5">
+            <i data-lucide="flame" class="w-3.5 h-3.5 text-accent-500"></i>
+            Radar Ativo: <span id="hero-count">0</span> Achados Auditados Hoje
+          </div>
+          <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.12]">
+            Chega de promoções falsas. Encontre o <span class="relative whitespace-nowrap text-brand-600 inline-block">menor preço real</span> da internet.
+          </h1>
+          <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            Filtramos os catálogos dos maiores marketplaces do Brasil para você pagar o justo em áudio premium, tecnologia indispensável e utilidades essenciais.
+          </p>
+          <div class="mt-8 grid grid-cols-3 gap-4 pt-6 border-t border-sand-200 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="font-display text-2xl font-bold text-slate-900" id="stat-min-price">—</p>
+              <p class="text-xs text-slate-500">Preço inicial hoje</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl font-bold text-brand-600" id="stat-count">—</p>
+              <p class="text-xs text-slate-500">Produtos ativos</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl font-bold text-slate-900">100%</p>
+              <p class="text-xs text-slate-500">Links Seguros</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-96 flex-shrink-0">
+          <div class="bg-white p-6 rounded-3xl border border-sand-200 shadow-xl shadow-slate-200/60 relative overflow-hidden group" id="spotlight-card">
+            <div class="absolute -right-12 -top-12 w-32 h-32 bg-accent-50 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-500"></div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded-lg bg-accent-500 text-white text-[11px] font-bold tracking-wider uppercase flex items-center gap-1">
+                <i data-lucide="trending-down" class="w-3 h-3"></i> Top Pick do Dia
+              </span>
+              <span class="text-xs font-semibold text-slate-400" id="spotlight-mp"></span>
+            </div>
+            <div class="relative h-48 bg-sand-50 rounded-2xl p-4 flex items-center justify-center overflow-hidden mb-4 border border-sand-100">
+              <img id="spotlight-img" src="" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <h3 class="font-bold text-slate-900 text-base line-clamp-2" id="spotlight-name"></h3>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <p class="text-2xl font-display font-bold text-slate-900" id="spotlight-price"></p>
+              </div>
+              <a href="#" id="spotlink" class="px-4 py-2 bg-slate-900 hover:bg-brand-600 text-white rounded-xl text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-md">
+                <span>Resgatar</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Feed Area -->
+  <main id="feed" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Mobile Search -->
+    <div class="md:hidden mb-6 relative">
+      <i data-lucide="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+      <input type="text" id="search-input-mobile" placeholder="Buscar produto..." class="w-full bg-white border border-sand-200 rounded-2xl pl-11 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/40">
+    </div>
+
+    <!-- Categories Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scroll mb-8" id="chips"></div>
+
+    <!-- Filter & Sort Bar -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-white rounded-2xl border border-sand-200 mb-8 shadow-sm">
+      <div class="flex items-center gap-3 w-full sm:w-auto flex-wrap">
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Filtrar por:</span>
+        <div class="flex items-center gap-2">
+          <input type="number" id="price-min" placeholder="Mín (R$)" class="w-20 px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
+          <span class="text-slate-400 text-xs">até</span>
+          <input type="number" id="price-max" placeholder="Máx (R$)" class="w-20 px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
+        </div>
+        <label class="flex items-center gap-1.5 text-xs font-medium text-slate-600 cursor-pointer ml-2">
+          <input type="checkbox" id="frete-gratis" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
+          <span>Frete Grátis</span>
+        </label>
+      </div>
+      <div class="flex items-center justify-between w-full sm:w-auto gap-4">
+        <span class="text-xs text-slate-500"><strong class="text-slate-900 font-semibold" id="results-count">0</strong> produtos</span>
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-slate-400">Ordenar:</span>
+          <select id="sort-select" class="bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-1.5 px-3 focus:outline-none focus:ring-1 focus:ring-brand-500">
             <option value="recentes">Mais recentes</option>
             <option value="menor-preco">Menor preço</option>
             <option value="maior-preco">Maior preço</option>
           </select>
         </div>
       </div>
-
-      <div class="results-bar">
-        <span class="count" id="results-count"></span>
-      </div>
-
-      <div id="grid-all" class="grid"></div>
     </div>
-  </div>
 
-  <button id="btn-top" title="Voltar ao topo">↑</button>
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-all"></div>
 
-  <footer>
-    <p>Site de afiliados — comissões ajudam a manter o projeto.</p>
-    <p style="margin-top:0.5rem;"><a href="admin.html">⚙️ Admin</a></p>
+  </main>
+
+  <!-- Trust Section -->
+  <section class="bg-sand-100 py-16 border-y border-sand-200 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-slate-900">Como garantimos o melhor preço?</h2>
+        <p class="mt-2 text-sm text-slate-600">Eliminamos golpes e ofertas infladas antes de qualquer recomendação chegar até você.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm flex flex-col items-start">
+          <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4"><i data-lucide="history" class="w-5 h-5"></i></div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">Curadoria Manual</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Cada oferta é verificada individualmente antes de aparecer no site. Nada de spam ou links quebrados.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm flex flex-col items-start">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4"><i data-lucide="badge-check" class="w-5 h-5"></i></div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">Marketplaces Oficiais</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Só exibimos produtos vendidos diretamente pela Amazon, Mercado Livre ou Shopee. Links de afiliado verificados.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm flex flex-col items-start">
+          <div class="w-10 h-10 rounded-xl bg-accent-50 text-accent-600 flex items-center justify-center mb-4"><i data-lucide="bell-ring" class="w-5 h-5"></i></div>
+          <h3 class="font-bold text-slate-900 text-base mb-1">Atualização Constante</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Ofertas são adicionadas e removidas diariamente. O que expira, sai. O que é novo, entra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-gradient-to-br from-brand-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-2xl">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="max-w-2xl">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-teal-300 text-xs font-semibold mb-4">
+          <i data-lucide="send" class="w-3.5 h-3.5"></i> Sugerir Oferta
+        </span>
+        <h2 class="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white mb-4">
+          Viu um bom preço que não está aqui?
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+          Manda pra gente que a gente avalia e adiciona no radar. Quanto mais sugestões, mais completo o site fica.
+        </p>
+        <a href="mailto:rpgdog@gmail.com?subject=Sugestão de Oferta" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-400 text-white font-semibold text-sm rounded-xl transition-all shadow-lg shadow-brand-500/30">
+          <span>Enviar Sugestão</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-sand-200 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-xl bg-brand-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+            <span class="font-display font-bold text-lg text-slate-900">Ofertas do Dia</span>
+          </div>
+          <p class="text-xs text-slate-500 max-w-sm leading-relaxed mb-4">Plataforma independente de curadoria e rastreamento de descontos. Participamos de programas de afiliados para manter o serviço 100% gratuito para você.</p>
+          <span class="inline-flex items-center gap-1.5 text-[11px] text-slate-400 bg-sand-50 border border-sand-200 px-2.5 py-1 rounded-md">
+            <i data-lucide="info" class="w-3.5 h-3.5"></i> Comissões de afiliados ajudam a manter o projeto.
+          </span>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Plataformas</h4>
+          <ul class="space-y-2 text-xs text-slate-600">
+            <li><a href="#" class="hover:text-brand-600 transition-colors" onclick="setNavMp('ML');return false;">Promoções Mercado Livre</a></li>
+            <li><a href="#" class="hover:text-brand-600 transition-colors" onclick="setNavMp('AMAZON');return false;">Ofertas Amazon</a></li>
+            <li><a href="#" class="hover:text-brand-600 transition-colors" onclick="setNavMp('SHOPEE');return false;">Cupons Shopee</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Navegação</h4>
+          <ul class="space-y-2 text-xs text-slate-600">
+            <li><a href="index.html" class="hover:text-brand-600 transition-colors">Início</a></li>
+            <li><a href="sobre.html" class="hover:text-brand-600 transition-colors">Sobre</a></li>
+            <li><a href="contato.html" class="hover:text-brand-600 transition-colors">Contato</a></li>
+            <li><a href="admin.html" class="hover:text-brand-600 transition-colors flex items-center gap-1"><i data-lucide="lock" class="w-3 h-3 text-slate-400"></i> Painel Admin</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-sand-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+        <p>© 2026 Ofertas do Dia. Todos os direitos reservados.</p>
+        <div class="flex items-center gap-4">
+          <a href="mailto:rpgdog@gmail.com" class="hover:text-slate-600">Contato</a>
+          <a href="mailto:rpgdog@gmail.com?subject=Sugestão de Oferta" class="hover:text-slate-600">Sugerir Oferta</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <!-- Floating Scroll To Top -->
+  <button id="btn-top" title="Voltar ao Topo"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>
+
   <script>
+    lucide.createIcons();
+
     var grid = document.getElementById('grid-all');
     var searchInput = document.getElementById('search-input');
+    var searchInputMobile = document.getElementById('search-input-mobile');
     var priceMin = document.getElementById('price-min');
     var priceMax = document.getElementById('price-max');
     var freteGratis = document.getElementById('frete-gratis');
@@ -136,33 +321,45 @@
 
     function getBadge(p) {
       var mp = getMpKey(p);
-      if (mp === 'ML') return '<span class="mp-badge mp-ml">🛒 ML</span>';
-      if (mp === 'SHOPEE') return '<span class="mp-badge mp-shopee">🛍️ Shopee</span>';
-      if (mp === 'AMAZON') return '<span class="mp-badge mp-amazon">📦 Amazon</span>';
+      if (mp === 'ML') return '<span class="px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-wider">Mercado Livre</span>';
+      if (mp === 'SHOPEE') return '<span class="px-2 py-0.5 rounded-md bg-orange-100 text-orange-800 text-[10px] font-bold uppercase tracking-wider">Shopee</span>';
+      if (mp === 'AMAZON') return '<span class="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 text-[10px] font-bold uppercase tracking-wider">Amazon</span>';
       return '';
     }
 
     function renderCard(p) {
-      var div = document.createElement('div');
-      div.className = 'card';
+      var div = document.createElement('article');
+      div.className = 'bg-white rounded-2xl p-4 border border-sand-200 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group';
       var badge = getBadge(p);
-      var tag = p.tag ? '<span class="tag">' + p.tag + '</span>' : '';
-      var img = p.imagem ? '<img src="' + p.imagem + '" alt="" class="card-img" loading="lazy">' : '';
-      var frete = p.frete ? '<p class="frete">🚚 ' + p.frete + '</p>' : '';
-      var desc = p.descricao ? '<p class="desc">' + p.descricao + '</p>' : '';
-      var cat = p.categoria ? '<p class="meta">📂 ' + p.categoria + '</p>' : '';
+      var tag = p.tag ? '<span class="px-2 py-0.5 rounded-md bg-accent-50 text-accent-600 text-[10px] font-bold">' + p.tag + '</span>' : '';
+      var img = p.imagem ? '<img src="' + p.imagem + '" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">' : '';
+      var frete = p.frete ? '<span class="text-[10px] text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="truck" class="w-3 h-3"></i> ' + p.frete + '</span>' : '';
+      var cat = p.categoria ? '<span class="text-[11px] font-semibold text-brand-600 uppercase tracking-wider">' + p.categoria + '</span>' : '';
+      var commission = p.commissionRate ? '<span class="text-[10px] text-emerald-600">Comissão: ' + p.commissionRate + '%</span>' : '';
+      var meta = (p.rating ? '⭐ ' + p.rating : '') + (p.salesCount ? ' | ' + p.salesCount + ' vendidos' : '');
       div.innerHTML =
-        badge +
-        tag +
-        img +
-        '<h3>' + (p.productName || p.nome) + '</h3>' +
-        '<p class="price">R$ ' + Number(p.price || p.preco).toFixed(2) + '</p>' +
-        '<p class="commission">' + (p.commissionRate ? 'Comissão: ' + p.commissionRate + '%' : '') + '</p>' +
-        '<p class="meta">' + (p.rating ? '⭐ ' + p.rating : '') + ' ' + (p.salesCount ? '| ' + p.salesCount + ' vendidos' : '') + '</p>' +
-        frete +
-        cat +
-        desc +
-        '<a href="' + (p.offerLink || p.link) + '" target="_blank" rel="noopener">Ver oferta →</a>';
+        '<div>' +
+          '<div class="relative bg-sand-50 rounded-xl p-4 h-48 flex items-center justify-center overflow-hidden mb-3 border border-sand-100">' +
+            '<span class="absolute top-2.5 left-2.5">' + badge + '</span>' +
+            (tag ? '<span class="absolute top-2.5 right-2.5">' + tag + '</span>' : '') +
+            img +
+          '</div>' +
+          cat +
+          '<h2 class="text-sm font-bold text-slate-800 line-clamp-2 mt-1 group-hover:text-brand-600 transition-colors">' + (p.productName || p.nome) + '</h2>' +
+        '</div>' +
+        '<div class="mt-4 pt-4 border-t border-sand-100 flex items-center justify-between">' +
+          '<div>' +
+            '<span class="text-[11px] text-slate-400 block">Preço verificado</span>' +
+            '<span class="font-display text-xl font-bold text-slate-900">R$ ' + Number(p.price || p.preco).toFixed(2) + '</span>' +
+            (commission ? '<br>' + commission : '') +
+            (meta ? '<br><span class="text-[10px] text-slate-400">' + meta + '</span>' : '') +
+            (frete ? '<br>' + frete : '') +
+          '</div>' +
+          '<a href="' + (p.offerLink || p.link) + '" target="_blank" rel="noopener" class="px-3.5 py-2 rounded-xl bg-sand-100 hover:bg-brand-600 text-slate-800 hover:text-white font-semibold text-xs transition-all flex items-center gap-1">' +
+            '<span>Ver oferta</span>' +
+            '<i data-lucide="external-link" class="w-3.5 h-3.5"></i>' +
+          '</a>' +
+        '</div>';
       return div;
     }
 
@@ -173,41 +370,27 @@
         if (c) cats.add(c);
       });
       var sorted = Array.from(cats).sort(function(a, b) { return a.localeCompare(b, 'pt-BR'); });
-      chipsContainer.innerHTML = '<span class="chip active" data-cat="all">Todos (' + allOffers.length + ')</span>';
+      var html = '<button data-cat="all" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5"></i> Todos (' + allOffers.length + ')</button>';
       sorted.forEach(function(cat) {
         var count = allOffers.filter(function(p) { return (p.categoria || p.categoriaAuto) === cat; }).length;
-        var chip = document.createElement('span');
-        chip.className = 'chip';
-        chip.dataset.cat = cat;
-        chip.textContent = cat + ' (' + count + ')';
-        chip.title = cat + ' (' + count + ')';
-        chip.addEventListener('click', function() {
-          chipsContainer.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
-          chip.classList.add('active');
-          activeCat = cat;
+        html += '<button data-cat="' + cat + '" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5 text-slate-400"></i> ' + cat + ' (' + count + ')</button>';
+      });
+      chipsContainer.innerHTML = html;
+      lucide.createIcons();
+      chipsContainer.querySelectorAll('button').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          chipsContainer.querySelectorAll('button').forEach(function(b) { b.className = 'whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all flex items-center gap-1.5'; });
+          btn.className = 'whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5';
+          activeCat = btn.dataset.cat;
           renderGrid();
         });
-        chipsContainer.appendChild(chip);
-      });
-      chipsContainer.querySelector('[data-cat="all"]').addEventListener('click', function() {
-        chipsContainer.querySelectorAll('.chip').forEach(function(c) { c.classList.remove('active'); });
-        chipsContainer.querySelector('[data-cat="all"]').classList.add('active');
-        activeCat = 'all';
-        renderGrid();
       });
     }
 
     function renderGrid() {
       var filtered = allOffers.slice();
-
-      if (activeMp) {
-        filtered = filtered.filter(function(p) { return getMpKey(p) === activeMp; });
-      }
-
-      if (activeCat !== 'all') {
-        filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
-      }
-
+      if (activeMp) filtered = filtered.filter(function(p) { return getMpKey(p) === activeMp; });
+      if (activeCat !== 'all') filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
       if (searchTerm) {
         var term = searchTerm.toLowerCase();
         filtered = filtered.filter(function(p) {
@@ -217,55 +400,63 @@
           return nome.includes(term) || desc.includes(term) || cat.includes(term);
         });
       }
-
-      if (minPrice > 0) {
-        filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) >= minPrice; });
-      }
-      if (maxPrice < Infinity) {
-        filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) <= maxPrice; });
-      }
-
-      if (freteOnly) {
-        filtered = filtered.filter(function(p) { return /gr[aá]tis/i.test(p.frete || ''); });
-      }
-
-      if (sortBy === 'menor-preco') {
-        filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
-      } else if (sortBy === 'maior-preco') {
-        filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
-      }
+      if (minPrice > 0) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) >= minPrice; });
+      if (maxPrice < Infinity) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) <= maxPrice; });
+      if (freteOnly) filtered = filtered.filter(function(p) { return /gr[aá]tis|sim/i.test(p.frete || ''); });
+      if (sortBy === 'menor-preco') filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
+      else if (sortBy === 'maior-preco') filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
 
       grid.innerHTML = '';
       if (filtered.length === 0) {
-        grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Nenhuma oferta encontrada com os filtros atuais.</p>';
+        grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Nenhuma oferta encontrada com os filtros atuais.</p>';
       } else {
         filtered.forEach(function(p) { grid.appendChild(renderCard(p)); });
       }
-      resultsCount.textContent = filtered.length + ' oferta(s)';
+      lucide.createIcons();
+      resultsCount.textContent = filtered.length;
     }
 
-    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); renderGrid(); });
+    function updateStats() {
+      document.getElementById('hero-count').textContent = allOffers.length;
+      document.getElementById('stat-count').textContent = allOffers.length;
+      if (allOffers.length > 0) {
+        var minP = Math.min.apply(null, allOffers.map(function(p) { return Number(p.price || p.preco || 0); }));
+        document.getElementById('stat-min-price').textContent = 'R$ ' + minP.toFixed(2);
+        var top = allOffers[0];
+        document.getElementById('spotlight-name').textContent = top.productName || top.nome;
+        document.getElementById('spotlight-price').textContent = 'R$ ' + Number(top.price || top.preco).toFixed(2);
+        document.getElementById('spotlight-img').src = top.imagem || '';
+        document.getElementById('spotlink').href = top.offerLink || top.link;
+        var mp = getMpKey(top);
+        document.getElementById('spotlight-mp').textContent = mp === 'ML' ? 'Mercado Livre' : mp === 'AMAZON' ? 'Amazon Brasil' : mp === 'SHOPEE' ? 'Shopee' : '';
+      }
+    }
+
+    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
+    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
     priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); });
     priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
 
-    function setNavMp(mp, el) {
-      var navLinks = document.querySelectorAll('.nav-links a');
-      navLinks.forEach(function(a) { a.classList.remove('active'); });
-      if (mp === '') {
-        document.getElementById('nav-inicio').classList.add('active');
-      } else {
-        el.classList.add('active');
-      }
+    function setNavMp(mp) {
+      var btns = ['nav-todos','nav-ml','nav-amazon','nav-shopee'];
+      btns.forEach(function(id) {
+        var el = document.getElementById(id);
+        el.className = 'px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors flex items-center gap-1.5';
+      });
+      if (mp === '') { document.getElementById('nav-todos').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm'; }
+      else if (mp === 'ML') { document.getElementById('nav-ml').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
+      else if (mp === 'AMAZON') { document.getElementById('nav-amazon').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
+      else if (mp === 'SHOPEE') { document.getElementById('nav-shopee').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
       activeMp = mp;
       renderGrid();
     }
 
-    document.getElementById('nav-inicio').addEventListener('click', function(e) { e.preventDefault(); setNavMp('', this); });
-    document.getElementById('nav-ml').addEventListener('click', function(e) { e.preventDefault(); setNavMp('ML', this); });
-    document.getElementById('nav-amazon').addEventListener('click', function(e) { e.preventDefault(); setNavMp('AMAZON', this); });
-    document.getElementById('nav-shopee').addEventListener('click', function(e) { e.preventDefault(); setNavMp('SHOPEE', this); });
+    document.getElementById('nav-todos').addEventListener('click', function() { setNavMp(''); });
+    document.getElementById('nav-ml').addEventListener('click', function() { setNavMp('ML'); });
+    document.getElementById('nav-amazon').addEventListener('click', function() { setNavMp('AMAZON'); });
+    document.getElementById('nav-shopee').addEventListener('click', function() { setNavMp('SHOPEE'); });
 
     async function loadAll() {
       try {
@@ -276,8 +467,9 @@
         allOffers = manual.concat(shopee);
         buildChips();
         renderGrid();
+        updateStats();
       } catch (e) {
-        grid.innerHTML = '<p style="grid-column:1/-1;color:#888;">Erro ao carregar ofertas.</p>';
+        grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Erro ao carregar ofertas.</p>';
       }
     }
 
@@ -288,26 +480,19 @@
       var btn = document.getElementById('btn-top');
       var dragging = false, offsetX = 0, offsetY = 0, moved = false;
       btn.addEventListener('mousedown', function(e) {
-        dragging = true;
-        moved = false;
+        dragging = true; moved = false;
         offsetX = e.clientX - btn.offsetLeft;
         offsetY = e.clientY - btn.offsetTop;
         e.preventDefault();
       });
       document.addEventListener('mousemove', function(e) {
         if (!dragging) return;
-        if (!moved) {
-          moved = true;
-          btn.style.right = 'auto';
-          btn.style.bottom = 'auto';
-        }
+        if (!moved) { moved = true; btn.style.right = 'auto'; btn.style.bottom = 'auto'; }
         btn.style.left = (e.clientX - offsetX) + 'px';
         btn.style.top = (e.clientY - offsetY) + 'px';
       });
       document.addEventListener('mouseup', function() { dragging = false; });
-      btn.addEventListener('click', function() {
-        if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+      btn.addEventListener('click', function() { if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' }); });
     })();
   </script>
 </body>
