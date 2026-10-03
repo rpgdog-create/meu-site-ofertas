@@ -34,26 +34,27 @@
     <div class="w-14 h-14 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-lg mb-6"><i data-lucide="sparkles" class="w-7 h-7"></i></div>   
       <h1 class="font-display text-3xl font-bold text-slate-900 mb-4">Fale com a gente</h1>
       <p class="text-sm text-slate-600 leading-relaxed mb-8">Sugestões de ofertas, dúvidas, parcerias ou qualquer outro assunto — responde em até 24h.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <a href="https://wa.me/5561996405354" target="_blank" rel="noopener" class="flex items-center gap-4 p-5 rounded-2xl border border-sand-200 hover:border-brand-500 hover:shadow-md transition-all group">
-          <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center group-hover:bg-emerald-100 transition-colors"><i data-lucide="message-circle" class="w-6 h-6 text-emerald-600"></i></div>
-          <div>
-            <p class="text-sm font-bold text-slate-900">WhatsApp</p>
-            <p class="text-xs text-slate-500">61 99640-5354</p>
-          </div>
-        </a>
-        <a href="mailto:rpgdog@gmail.com" class="flex items-center gap-4 p-5 rounded-2xl border border-sand-200 hover:border-brand-500 hover:shadow-md transition-all group">
-          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center group-hover:bg-brand-100 transition-colors"><i data-lucide="mail" class="w-6 h-6 text-brand-600"></i></div>
-          <div>
-            <p class="text-sm font-bold text-slate-900">E-mail</p>
-            <p class="text-xs text-slate-500">rpgdog@gmail.com</p>
-          </div>
-        </a>
-      </div>
+      <form id="form-contato" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Nome</label>
+          <input type="text" id="f-nome" required placeholder="Seu nome" class="w-full px-4 py-3 rounded-xl border border-sand-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-sand-50">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">E-mail</label>
+          <input type="email" id="f-email" required placeholder="voce@email.com" class="w-full px-4 py-3 rounded-xl border border-sand-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-sand-50">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Mensagem</label>
+          <textarea id="f-msg" rows="4" required placeholder="Sugestão de oferta, dúvida, parceria..." class="w-full px-4 py-3 rounded-xl border border-sand-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-sand-50 resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-sm font-bold transition-colors shadow-md"><i data-lucide="send" class="w-4 h-4"></i> Enviar mensagem</button>
+        <p id="form-status" class="text-xs text-center hidden"></p>
+      </form>
       <div class="mt-8 pt-6 border-t border-sand-100">
         <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Sugerir uma oferta</h2>
-        <p class="text-xs text-slate-500 leading-relaxed">Vi um bom preço que não está no site? Manda pro WhatsApp com o link do produto + nome + preço. Avaliamos e adicionamos no radar.</p>
-    </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Vi um bom preço que não está no site? Preencha o formulário acima com o link do produto + nome + preço. Avaliamos e adicionamos no radar.</p>
+      </div>
+    </div>   
   </main>
 
   <footer class="bg-white border-t border-sand-200 pt-12 pb-8 mt-12">
@@ -88,7 +89,34 @@
       </div>
     </div>
   </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init({ publicKey: 'iMkQX8pFPaer4mxtE' });
+document.getElementById('form-contato').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  const status = document.getElementById('form-status');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="animate-pulse">Enviando...</span>';
+  try {
+    await emailjs.send('Gmail_service', 'template_contato', {
+      nome: document.getElementById('f-nome').value,
+      email: document.getElementById('f-email').value,
+      mensagem: document.getElementById('f-msg').value
+    });
+    status.textContent = 'Mensagem enviada! Respondo em até 24h.';
+    status.className = 'text-xs text-center text-emerald-600 font-medium';
+    this.reset();
+  } catch (err) {
+    status.textContent = 'Erro ao enviar. Tente novamente.';
+    status.className = 'text-xs text-center text-red-500 font-medium';
+  }
+  btn.disabled = false;
+  btn.innerHTML = '<i data-lucide="send" class="w-4 h-4"></i> Enviar mensagem';
+  lucide.createIcons();
+  setTimeout(() => status.classList.add('hidden'), 5000);
+});
+</script>   
   <script>lucide.createIcons();</script>
 </body>
 </html>   
