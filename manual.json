@@ -16,5 +16,23 @@
     "imagem": "https://http2.mlstatic.com/D_NQ_NP_600326-MLB116947956512_092026-O-kit-pinceis-maquiagem-13-pecas--2-esponjas-com-estojo.webp",
     "marketplace": "ML",
     "frete": "sim"
+  },
+  {
+    "nome": "Bateria Infantil Star Kids 05 Pecas Alumisteel E P.S. Pint Eletro Preto Aro Nylon Pele Leitosa - Inf - Luen",
+    "preco": "788.40",
+    "link": "https://www.amazon.com.br/dp/B0CLBJHBH1?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51EBR9c+ciL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Smartphone OPPO Find X9 Pro 512GB 16GB Ram Branco",
+    "preco": "8999.10",
+    "link": "https://www.amazon.com.br/dp/B0GPZ9MRP4?tag=ofertas01dc-20",
+    "categoria": "Celulares e Telefones",
+    "imagem": "https://m.media-amazon.com/images/I/51+PB93SAoL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
