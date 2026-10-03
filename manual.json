@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "nome": "Jogo Panela Ceramica Antiaderente 5pç Tampa Silicone Induçao",
+    "preco": "266.17",
+    "link": "https://meli.la/1haGYNB",
+    "categoria": "Animais",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_815631-MLB109277052486_042026-O-jogo-panela-ceramica-antiaderente-5pc-tampa-silicone-inducao.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "491.41"
+  },
+  {
+    "nome": "Espelho Rocco Corpo Inteiro Organico 90x40 Pinterest Grande",
+    "preco": "78.99",
+    "link": "https://meli.la/2NJ9mk9",
+    "categoria": "Animais",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_671705-MLB118351926475_092026-O-espelho-rocco-corpo-inteiro-organico-90x40-pinterest-grande.webp",
+    "marketplace": "ML",
+    "frete": "nao",
+    "precoOriginal": "129.00"
+  }
+]
