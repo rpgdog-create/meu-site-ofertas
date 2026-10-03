@@ -129,6 +129,10 @@
               </span>
               <span class="text-xs font-semibold text-slate-400" id="spotlight-mp"></span>
             </div>
+            <div class="mb-3" id="spotlight-disc-wrap" style="display:none;">
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-emerald-500 text-white text-sm font-bold shadow-md"><i data-lucide="trending-down" class="w-4 h-4"></i> <span id="spotlight-disc"></span> de desconto</span>
+            </div>   
+            </div>
             <div class="relative h-48 bg-sand-50 rounded-2xl p-4 flex items-center justify-center overflow-hidden mb-4 border border-sand-100">
               <img id="spotlight-img" src="" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
             </div>
@@ -432,6 +436,10 @@
         document.getElementById('spotlink').href = top.offerLink || top.link;
         var mp = getMpKey(top);
         document.getElementById('spotlight-mp').textContent = mp === 'ML' ? 'Mercado Livre' : mp === 'AMAZON' ? 'Amazon Brasil' : mp === 'SHOPEE' ? 'Shopee' : '';
+        var spDisc = (top.precoOriginal && Number(top.precoOriginal) > Number(top.price || top.preco)) ? Math.round((1 - Number(top.price || top.preco) / Number(top.precoOriginal)) * 100) : 0;
+        var spWrap = document.getElementById('spotlight-disc-wrap');
+        if (spDisc > 0) { spWrap.style.display = 'block'; document.getElementById('spotlight-disc').textContent = '-' + spDisc + '%'; }
+        else { spWrap.style.display = 'none'; }   
       }
     }
 
