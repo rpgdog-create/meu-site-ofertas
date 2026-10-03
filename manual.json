@@ -38,5 +38,401 @@
     "marketplace": "ML",
     "frete": "sim",
     "precoOriginal": "120.00"
+  },
+  {
+    "nome": "Bicicleta Ergométrica Bike Spinning para Treino em Casa e Academia, Silenciosa, Ajustável e Confortável, Ideal para Cardio e Emagrecimento – Linha Fitness Premium",
+    "preco": "432.90",
+    "link": "https://www.amazon.com.br/dp/B0GLR43HBC?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61N2Tj3Ru5L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Colli Bike, Bicicleta GPS 148 Dupla Suspensão e Freios V-Brake, Aro 26 Aero, 36 Raias, 21 Marchas",
+    "preco": "787.46",
+    "link": "https://www.amazon.com.br/dp/B0B4FG2CBY?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71nHyYaZAKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "KSX Bicicleta MTB Aro 29 Alumínio 21 Marchas Freio a Disco Cabeamento Interno Suspensão Dianteira Unissex",
+    "preco": "730.55",
+    "link": "https://www.amazon.com.br/dp/B0GVKF4FBS?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71BrwyZyfhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Caloi Bicicleta Aspen, Aro 29, Tamanho 17, Câmbio 24 Velocidades, Azul",
+    "preco": "1225.80",
+    "link": "https://www.amazon.com.br/dp/B0DQRBY4PN?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71Z3x0RjjjL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 26 Feminina De Passeio 18 Marchas Saidx",
+    "preco": "626.90",
+    "link": "https://www.amazon.com.br/dp/B0813SPWQ8?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/81lQe4-z2ZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 26 Kls V-brake Sem Marcha Feminina Caixa Box - Preto/pink",
+    "preco": "608.47",
+    "link": "https://www.amazon.com.br/dp/B0H9BYHBJC?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61BJFwWdD9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 26 Alum Kls Aero V-brake 21 Marchas Caixa Box Feminina - Branco/pink",
+    "preco": "746.54",
+    "link": "https://www.amazon.com.br/dp/B0H95JLDHD?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61bUqeouiyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 24 Kls Aero V-brake 21 Marchas Caixa Box - Preto/vermelho",
+    "preco": "637.31",
+    "link": "https://www.amazon.com.br/dp/B0H6N84GJX?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61CrUQLbyAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 24 Kls Aero V-brake 21 Marchas Caixa Box - Preto/vermelho",
+    "preco": "637.31",
+    "link": "https://www.amazon.com.br/dp/B0H6N76SXW?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61-1W5DGu0L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 26 Kls Aero V-brake 21 Marchas Caixa Box Feminina - Azul Piscina/rosa Chiclete",
+    "preco": "656.32",
+    "link": "https://www.amazon.com.br/dp/B0H957THL6?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61g6-JP2MsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta KOG BIKES Infantil Aro 24 KOG Masculina 18 Marcha V-brake",
+    "preco": "547.93",
+    "link": "https://www.amazon.com.br/dp/B0DG5Z2YQ1?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61Xt+B56ZYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "KSX Bicicleta MTB Aro 29 Alumínio 21 Marchas Freio Disco Cabeamento Interno",
+    "preco": "721.99",
+    "link": "https://www.amazon.com.br/dp/B0HK1L6SQR?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/610H5nYwplL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Nathor Charm, Nathor",
+    "preco": "185.15",
+    "link": "https://www.amazon.com.br/dp/B083KMF7PG?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71noutoLEuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Nathor Bicicleta Infantil Aro 12 Marvel Spider-Man",
+    "preco": "276.25",
+    "link": "https://www.amazon.com.br/dp/B083KMM29F?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/81OmlrEyTJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 24 Feminina Saidx Quadro em Aço Freio V-Brake",
+    "preco": "588.81",
+    "link": "https://www.amazon.com.br/dp/B0H857KBL6?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61WhFhTskpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta De Equilibrio Buba, 4 Rodas",
+    "preco": "170.05",
+    "link": "https://www.amazon.com.br/dp/B0FBNJM6G3?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51C8eY8DwYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Caloi Bicicleta Infantil Ceci, Aro 20, Branca",
+    "preco": "789.46",
+    "link": "https://www.amazon.com.br/dp/B0DQR6HT12?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71ItR3cpaOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 Infantil KRS - Com Rodinhas",
+    "preco": "503.40",
+    "link": "https://www.amazon.com.br/dp/B0HK67Y5QV?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61F+7nkiK3L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 29 Saidx 21 Marchas Alumínio Cambio Shimano Freio a Disco",
+    "preco": "854.05",
+    "link": "https://www.amazon.com.br/dp/B0BD5VPRDV?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61DX0uubpFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Nathor Motor X Selim Pu, Nathor",
+    "preco": "175.65",
+    "link": "https://www.amazon.com.br/dp/B083KMNDQ9?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61J4DvV47KL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 Kls Free Gold Freio V-brake Mtb Feminina - Pink/branco",
+    "preco": "568.80",
+    "link": "https://www.amazon.com.br/dp/B0GKDT2XZV?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61czBuOvHNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 29 Saidx 21 Marchas Alumínio Cambio Shimano Freio a Disco",
+    "preco": "854.05",
+    "link": "https://www.amazon.com.br/dp/B0BD5PGBXC?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/6106UNXDMNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta de Equilíbrio Wild Infantil Kidino - Sem Pedal, Balance Bike Estável e Segura +12 Meses – Desenvolve Coordenação Motora e Equilíbrio para Crianças",
+    "preco": "108.82",
+    "link": "https://www.amazon.com.br/dp/B0FKBDFF3Z?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51mbmx6uAtL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Bike Aro 26 Masculina 18 Velocidades Saidx",
+    "preco": "626.90",
+    "link": "https://www.amazon.com.br/dp/B0H7Z2PYTH?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61f-q6v8HEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 BMX Freestyle KOG Freios V-Brake Pneus Preto",
+    "preco": "515.63",
+    "link": "https://www.amazon.com.br/dp/B0HKK99X4C?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61iuTrol2-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta 24 Kls Aero V-brake 21 Marchas Caixa Box Feminina - Preto/pink/azul",
+    "preco": "656.82",
+    "link": "https://www.amazon.com.br/dp/B0H6NB37MJ?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51eMmvHVHsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 Kls Sport Gold V-brake Mono 7 Marchas Feminina - Branco/pink/azul",
+    "preco": "604.94",
+    "link": "https://www.amazon.com.br/dp/B0H6Y2WQCC?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/616IrfHTJvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 Infantil Feminina KOG – Quadro Aço Carbono e Freio V‑Brake – Saúde, Lazer e Segurança",
+    "preco": "477.23",
+    "link": "https://www.amazon.com.br/dp/B0FDXBH5V4?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61RExrvCdhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 20 BMX Vert Bikes Freestyle Protetor de Corrente e Desconso",
+    "preco": "474.05",
+    "link": "https://www.amazon.com.br/dp/B0GT9V3F8Y?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61ZA4vJ61fL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Rino Start RX 1.4 MTB Aro 29 Alumínio 24 Marchas Freio a Disco Suspensão Dianteira",
+    "preco": "759.05",
+    "link": "https://www.amazon.com.br/dp/B0F9ZW2CCF?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71Rf9EFPuML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Bicicleta Aro 20 BMX Pro-X Série 1 Freestyle - Branco e Azul",
+    "preco": "523.23",
+    "link": "https://www.amazon.com.br/dp/B0CSPRJ3WB?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61HAV5yHrEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 26 KOG 18v Disco Freeride Full X25 Tipo Viking",
+    "preco": "852.15",
+    "link": "https://www.amazon.com.br/dp/B0DFXDB4TT?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/610Q+fZC5LL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Infantil Verden Jack - Aro 12 com rodinhas",
+    "preco": "167.20",
+    "link": "https://www.amazon.com.br/dp/B0B4YDD48T?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61ZXzUu65IL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Aro 29 Absolute Nero 6 12V Freio a Disco Suspensão com Trava",
+    "preco": "1486.37",
+    "link": "https://www.amazon.com.br/dp/B0HD2JRDJF?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61iQymmNbcL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Bike Aro 29 MTB Alumínio KSX SD7 21V Câmbio Especial S. Cabeamento Interno UCL Unissex",
+    "preco": "759.05",
+    "link": "https://www.amazon.com.br/dp/B0FF6CHDTG?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71KsMmH+2oL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Verden Bicicleta Infantil Casa Magica Da Gabby Aro 12 com cestinha rodinhas de apoio e garrafinha",
+    "preco": "209.00",
+    "link": "https://www.amazon.com.br/dp/B0DYB4M3ZZ?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71VU0pscb9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Infantil Husky Aro 16 Menina Rosa Alumínio com Cesta e Rodinhas",
+    "preco": "530.10",
+    "link": "https://www.amazon.com.br/dp/B0FR9B9RDX?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61MTZ3VjE7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Nathor Bicicleta Infantil Aro 12 Spider-Man",
+    "preco": "266.85",
+    "link": "https://www.amazon.com.br/dp/B09ZPTXXTT?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61mDDSlpUeL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "TK3 Track Bicicleta Infantil Aro 16 Pinky GR",
+    "preco": "329.90",
+    "link": "https://www.amazon.com.br/dp/B07YGNG585?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61GCwoaTymL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Mormaii Aro 16 MTB Aço Carbono Sweet Girl Rosa",
+    "preco": "475.00",
+    "link": "https://www.amazon.com.br/dp/B0BG68FLYQ?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61qaizS91sL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta Feminina Aro 29 KSW Sunny em Aluminio Retrô Rebaixada em Aluminio 6061 Freio a Disco Garfo de Suspensão 80mm",
+    "preco": "913.68",
+    "link": "https://www.amazon.com.br/dp/B0DFD23M29?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/61vRMNbpVHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "TK3 Track Bicicleta Aro 29 Troy B 21v",
+    "preco": "759.90",
+    "link": "https://www.amazon.com.br/dp/B0B44PV5S3?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51DCe1yg2HL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bandeirante Bicicleta Aro 14 Unicórnio",
+    "preco": "399.99",
+    "link": "https://www.amazon.com.br/dp/B0F2J8NFY7?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51MTzJJf5SL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bicicleta KSX MTB Aro 29 Alumínio 21 Marchas Freio Disco Suspensão",
+    "preco": "721.99",
+    "link": "https://www.amazon.com.br/dp/B0FPNTVKP6?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/71GJgaRDQuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
