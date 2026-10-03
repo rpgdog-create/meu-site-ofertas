@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+∑<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
@@ -127,13 +127,25 @@
               <span class="px-2.5 py-1 rounded-lg bg-accent-500 text-white text-[11px] font-bold tracking-wider uppercase flex items-center gap-1">
                 <i data-lucide="trending-down" class="w-3 h-3"></i> Top Pick do Dia
               </span>
-              <span class="flex items-center gap-2"><span id="spotlight-disc" class="hidden px-2 py-0.5 rounded-md bg-emerald-500 text-white text-[11px] font-bold"></span><span class="text-xs font-semibold text-slate-400" id="spotlight-mp"></span></span>   
-            </div>
-
+              <span class="text-xs font-semibold text-slate-400" id="spotlight-mp"></span>
             </div>
             <div class="relative h-48 bg-sand-50 rounded-2xl p-4 flex items-center justify-center overflow-hidden mb-4 border border-sand-100">
               <img id="spotlight-img" src="" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+              <div id="spotlight-disc-wrap" class="absolute top-3 right-3 hidden" style="transform:rotate(-12deg);">
+                <span id="spotlight-disc" class="px-3 py-1.5 rounded-lg bg-emerald-500 text-white text-sm font-bold shadow-lg"></span>
+              </div>
             </div>
+            <h3 class="font-bold text-slate-900 text-base line-clamp-2" id="spotlight-name"></h3>
+            <div class="mt-4 flex items-end justify-between">
+              <div>
+                <p class="text-2xl font-display font-bold text-slate-900" id="spotlight-price"></p>
+              </div>
+              <a href="#" id="spotlink" class="px-4 py-2 bg-slate-900 hover:bg-brand-600 text-white rounded-xl text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-md">
+                <span>Resgatar</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>   
             <h3 class="font-bold text-slate-900 text-base line-clamp-2" id="spotlight-name"></h3>
             <div class="mt-4 flex items-end justify-between">
               <div>
@@ -435,9 +447,9 @@
         var mp = getMpKey(top);
         document.getElementById('spotlight-mp').textContent = mp === 'ML' ? 'Mercado Livre' : mp === 'AMAZON' ? 'Amazon Brasil' : mp === 'SHOPEE' ? 'Shopee' : '';
         var spDisc = (top.precoOriginal && Number(top.precoOriginal) > Number(top.price || top.preco)) ? Math.round((1 - Number(top.price || top.preco) / Number(top.precoOriginal)) * 100) : 0;
-        var spDiscEl = document.getElementById('spotlight-disc');
-        if (spDisc > 0) { spDiscEl.textContent = '-' + spDisc + '% OFF'; spDiscEl.classList.remove('hidden'); }
-        else { spDiscEl.classList.add('hidden'); }   
+        var spWrap = document.getElementById('spotlight-disc-wrap');
+        if (spDisc > 0) { document.getElementById('spotlight-disc').textContent = '-' + spDisc + '% OFF'; spWrap.classList.remove('hidden'); }
+        else { spWrap.classList.add('hidden'); }   
       }
     }
 
