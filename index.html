@@ -330,6 +330,8 @@
       var div = document.createElement('article');
       div.className = 'bg-white rounded-2xl p-4 border border-sand-200 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group';
       var badge = getBadge(p);
+      var disc = (p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco)) ? Math.round((1 - Number(p.price || p.preco) / Number(p.precoOriginal)) * 100) : 0;
+      var discBadge = disc ? '<span class="px-1.5 py-0.5 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold">-' + disc + '%</span>' : '';   
       var tag = p.tag ? '<span class="px-2 py-0.5 rounded-md bg-accent-50 text-accent-600 text-[10px] font-bold">' + p.tag + '</span>' : '';
       var img = p.imagem ? '<img src="' + p.imagem + '" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">' : '';
       var frete = p.frete ? '<span class="text-[10px] text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="truck" class="w-3 h-3"></i> ' + p.frete + '</span>' : '';
@@ -339,7 +341,7 @@
       div.innerHTML =
         '<div>' +
           '<div class="relative bg-sand-50 rounded-xl p-4 h-48 flex items-center justify-center overflow-hidden mb-3 border border-sand-100">' +
-            '<span class="absolute top-2.5 left-2.5">' + badge + '</span>' +
+          '<span class="absolute top-2.5 left-2.5 flex flex-col gap-1">' + badge + (discBadge ? '<span class="inline-block">' + discBadge + '</span>' : '') + '</span>' +   
             (tag ? '<span class="absolute top-2.5 right-2.5">' + tag + '</span>' : '') +
             img +
           '</div>' +
@@ -421,7 +423,9 @@
       if (allOffers.length > 0) {
         var minP = Math.min.apply(null, allOffers.map(function(p) { return Number(p.price || p.preco || 0); }));
         document.getElementById('stat-min-price').textContent = 'R$ ' + minP.toFixed(2);
-        var top = allOffers[0];
+    var discounted = allOffers.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });
+    var top = allOffers[0];
+    if (discounted.length > 0) { discounted.sort(function(a, b) { var da = (Number(a.precoOriginal) - Number(a.price || a.preco)) / Number(a.precoOriginal) * 100; var db = (Number(b.precoOriginal) - Number(b.price || b.preco)) / Number(b.precoOriginal) * 100; return db - da; }); top = discounted[0]; }   
         document.getElementById('spotlight-name').textContent = top.productName || top.nome;
         document.getElementById('spotlight-price').textContent = 'R$ ' + Number(top.price || top.preco).toFixed(2);
         document.getElementById('spotlight-img').src = top.imagem || '';
