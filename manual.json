@@ -18,5 +18,15 @@
     "marketplace": "ML",
     "frete": "nao",
     "precoOriginal": "129.00"
+  },
+  {
+    "nome": "Smartphone OPPO Find X9 Pro 512GB 16GB Ram Branco",
+    "preco": "8999.10",
+    "link": "https://www.amazon.com.br/dp/B0GPZ9MRP4?tag=ofertas01dc-20",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://m.media-amazon.com/images/I/51+PB93SAoL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "11999.00"
   }
 ]
