@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "nome": "Kit 3 Organizadores Geladeira Alimentos Vegetais Com Tampas",
+    "preco": "38",
+    "link": "https://meli.la/2CdShxA",
+    "categoria": "Bebês",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_849419-MLB116549588914_092026-O-kit-3-organizadores-geladeira-alimentos-vegetais-com-tampas.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "49.00"
+  },
+  {
+    "nome": "Armário De Cozinha Completo 5 Portas 1 Gaveta Com Nichos",
+    "preco": "357.06",
+    "link": "https://meli.la/258n6Yv",
+    "categoria": "Construção",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_758173-MLB116007686618_092026-O-armario-de-cozinha-completo-5-portas-1-gaveta-com-nichos.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "899.00"
+  }
+]
