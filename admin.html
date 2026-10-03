@@ -411,25 +411,32 @@ y          <div class="flex gap-3">
       var catGlobal = document.getElementById("batch-categoria").value;
       var validItems = batchItems.filter(function(i) { return !i.erro; });
       var blocked = 0, already = 0, toAdd = [];
-      validItems.forEach(function(item) {
-        var cat = item.categoriaAuto || catGlobal;
-        if (!cat) { blocked++; return; }
-        var isDup = offers.some(function(o) { return o.link && item.link && o.link === item.link; });
-        if (isDup) { already++; return; }
-        toAdd.push({ item: item, cat: cat });
-      });
-      if (blocked > 0 || already > 0) {
-        var msgs = [];
-        if (blocked > 0) msgs.push(blocked + " sem categoria");
-        if (already > 0) msgs.push(already + " já adicionado(s)");
-        var statusEl = document.getElementById("batch-status");
-        statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
-        statusEl.textContent = "⚠️ " + msgs.join(", ") + ". Corrija e clique em Adicionar todos novamente.";
-        renderList(); return;
+validItems.forEach(function(item) {
+  var cat = item.categoriaAuto || catGlobal;
+  if (!cat) { blocked++; return; }
+  var isDup = offers.some(function(o) { return o.link && item.link && o.link === item.link; });
+  if (isDup) { already++; item._dup = true; }
+  toAdd.push({ item: item, cat: cat });
+});
+if (blocked > 0) {
+  var statusEl = document.getElementById("batch-status");
+  statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
+  statusEl.textContent = "⚠️ " + blocked + " sem categoria. Corrija e clique em Adicionar todos novamente.";
+  renderList(); return;
+}
+var statusEl = document.getElementById("batch-status");
+if (already > 0) {
+  statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
+  statusEl.textContent = "⚠️ " + already + " já adicionado(s) — marcados em vermelho. Remova-os da caixa e clique novamente.";
+} else {
+  statusEl.classList.add('hidden');
+}
+renderList();   
       }
       toAdd.forEach(function(entry) {
         var item = entry.item;
         var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: entry.cat };
+        if (item._dup) offer._dup = true;          
         if (item.imagem) offer.imagem = item.imagem;
         var lk = (item.link || "").toLowerCase();
         if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
@@ -507,7 +514,7 @@ y          <div class="flex gap-3">
       var list = document.getElementById("offers-list");
       if (!offers.length) { list.innerHTML = "<p class='text-xs text-slate-400 text-center py-4'>Nenhuma oferta ainda.</p>"; return; }
       list.innerHTML = offers.map(function(o, i) {
-        return '<div class="flex items-center justify-between p-3 rounded-xl border border-sand-100 hover:border-sand-200 transition-colors">' +
+return '<div class="flex items-center justify-between p-3 rounded-xl border transition-colors ' + (o._dup ? 'border-red-300 bg-red-50' : 'border-sand-100 hover:border-sand-200') + '">' +   
           '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + (o.tag ? '<span class="inline-block px-1.5 py-0.5 bg-accent-500 text-white rounded text-[9px] font-bold mr-1">' + o.tag + '</span>' : "") + o.nome + '</p>' +
           '<p class="text-[10px] text-slate-400 mt-0.5">R$ ' + parsePreco(o.preco) + (o.frete ? " | " + o.frete : "") + (o.categoria ? " | " + o.categoria : "") + '</p></div>' +
           '<button onclick="removeOffer(' + i + ')" class="ml-3 text-red-400 hover:text-red-600 transition-colors"><i data-lucide="x" class="w-4 h-4"></i></button></div>';
