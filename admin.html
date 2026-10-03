@@ -448,19 +448,18 @@ renderList();
       toAdd.forEach(function(entry) {
         var item = entry.item;
         var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: entry.cat };
-        if (item._dup) offer._dup = true;          
+        if (item._dup) offer._dup = true;
         if (item.imagem) offer.imagem = item.imagem;
         var lk = (item.link || "").toLowerCase();
         if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
         else if (lk.indexOf("shopee") !== -1) offer.marketplace = "Shopee";
         else if (lk.indexOf("amazon") !== -1) offer.marketplace = "Amazon";
         if (item.frete) offer.frete = item.frete;
-        if (item.precoOriginal) offer.precoOriginal = item.precoOriginal;   
+        if (item.precoOriginal) offer.precoOriginal = item.precoOriginal;
         offers.push(offer);
       });
       renderList(); clearBatch();
-    }
-
+    }   
     async function loadOffers() { try { offers = await (await fetch("manual.json?t=" + Date.now())).json(); } catch (e) { offers = []; } renderList(); }
     async function runSyncML() {
       var token = localStorage.getItem('gh_token');
