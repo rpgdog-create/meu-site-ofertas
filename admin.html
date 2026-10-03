@@ -299,18 +299,28 @@
       return true;
     }
 
-    function addCatToOptions(cat) {
-      if (CAT_OPTIONS.indexOf(cat) === -1) {
-        CAT_OPTIONS.push(cat);
-        var sel = document.getElementById("batch-categoria");
-        if (sel) {
-          var opt = document.createElement("option");
-          opt.value = cat; opt.textContent = cat;
-          sel.appendChild(opt);
+function addCatToOptions(cat) {
+  if (CAT_OPTIONS.indexOf(cat) === -1) {
+    var sorted = CAT_OPTIONS.concat([cat]).sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
+    CAT_OPTIONS = sorted;
+    var sel = document.getElementById("batch-categoria");
+    if (sel) {
+      var opt = document.createElement("option");
+      opt.value = cat; opt.textContent = cat;
+      var inserted = false;
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].disabled) continue;
+        if (sel.options[i].value === "__create__" || sel.options[i].value === "") continue;
+        if (sel.options[i].value.localeCompare(cat, 'pt-BR') > 0) {
+          sel.insertBefore(opt, sel.options[i]);
+          inserted = true;
+          break;
         }
       }
+      if (!inserted) sel.appendChild(opt);
     }
-
+  }
+}   
     function updateGlobalCatStyle() {
       var sel = document.getElementById("batch-categoria");
       if (!sel) return;
