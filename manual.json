@@ -443,5 +443,15 @@
     "imagem": "https://m.media-amazon.com/images/I/519ZTcS4aOS._AC_SX679_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Amazon Echo Show 8 (Geração mais recente) - Com novo design, tela vibrante HD de 8,7\", áudio espacial e Alexa, Cor Grafite, com Acesso Antecipado à Alexa+",
+    "preco": "1699.00",
+    "link": "https://www.amazon.com.br/dp/B0FMMRGSB9?tag=ofertas01dc-20",
+    "categoria": "Alimentos e Bebidas",
+    "imagem": "https://m.media-amazon.com/images/I/71iIMpnRXEL._AC_SY879_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1999.00"
   }
 ]
