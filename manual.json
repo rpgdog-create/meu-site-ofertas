@@ -3785,5 +3785,1031 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "9.80"
+  },
+  {
+    "nome": "Vodka Smirnoff 1750ml",
+    "preco": "47.44",
+    "link": "https://www.amazon.com.br/dp/B005IZZDAY?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/511TSrqzmCL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "63.90"
+  },
+  {
+    "nome": "Vodka Absolut - 1 Litro",
+    "preco": "73.14",
+    "link": "https://www.amazon.com.br/dp/B004V54ZVK?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/613sQ8zlsuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "136.90"
+  },
+  {
+    "nome": "Aperitivo Bitter Campari 748ml",
+    "preco": "42.54",
+    "link": "https://www.amazon.com.br/dp/B0CPFJMNZB?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71a8-9BtUVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "56.87"
+  },
+  {
+    "nome": "Aperitivo Aperol 750ml",
+    "preco": "43.90",
+    "link": "https://www.amazon.com.br/dp/B07HM62BR7?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71aVsAhM3lL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "58.53"
+  },
+  {
+    "nome": "Licor Ballena morango 750ml",
+    "preco": "89.72",
+    "link": "https://www.amazon.com.br/dp/B09SGPQ2J7?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51CsgBLsJXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "119.63"
+  },
+  {
+    "nome": "Jameson - Whiskey Irlandês, 750 ml",
+    "preco": "69.08",
+    "link": "https://www.amazon.com.br/dp/B07FPW95CM?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51VDQk5QdbL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "92.11"
+  },
+  {
+    "nome": "Old Parr Whisky 12 Anos 1L",
+    "preco": "127.80",
+    "link": "https://www.amazon.com.br/dp/B002BSJLE0?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51zz0lzNtuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Vodka Grey Goose Original 750ml",
+    "preco": "104.00",
+    "link": "https://www.amazon.com.br/dp/B006ILMIGE?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51gbgFf-Z5L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Whisky Buchanan's Deluxe 12 Anos 1L",
+    "preco": "159.99",
+    "link": "https://www.amazon.com.br/dp/B00MTFIL0U?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/518U+8v+f4L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Whisky Jack Daniel’s Old No. 7 Tennessee Whiskey 1L",
+    "preco": "118.00",
+    "link": "https://www.amazon.com.br/dp/B000PQECW6?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71K9vMVvdaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bourbon Whiskey Jim Beam White 1L",
+    "preco": "74.59",
+    "link": "https://www.amazon.com.br/dp/B005HQNCLG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71hDD6numwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Whisky Johnnie Walker Red Label 1L",
+    "preco": "79.99",
+    "link": "https://www.amazon.com.br/dp/B004Q47N5G?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51zNcnEgdFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "115.90"
+  },
+  {
+    "nome": "Smirnoff Vodka Nº 21 998ml",
+    "preco": "30.90",
+    "link": "https://www.amazon.com.br/dp/B07R1GV92N?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/510NtwaPsBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "30.96"
+  },
+  {
+    "nome": "Vodka Skyy 980ml",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B07XS8JM94?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61dTZ5s2jJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "30.51"
+  },
+  {
+    "nome": "Whisky Johnnie Walker Black Label 12 Anos 1L",
+    "preco": "137.73",
+    "link": "https://www.amazon.com.br/dp/B004QEKTSO?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51iC0RL7yIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "222.90"
+  },
+  {
+    "nome": "Gin Bombay Sapphire 750ml",
+    "preco": "78.90",
+    "link": "https://www.amazon.com.br/dp/B001TP3GCE?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61UyC8OiP2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Whisky Johnnie Walker Red Label 750ml",
+    "preco": "58.11",
+    "link": "https://www.amazon.com.br/dp/B0086LLUG8?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41C6vb-0vwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "92.90"
+  },
+  {
+    "nome": "Gin Tanqueray London Dry, 750ml",
+    "preco": "89.14",
+    "link": "https://www.amazon.com.br/dp/B006I1M8ZU?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71IsSlovFZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "White Horse Whisky 1L",
+    "preco": "64.59",
+    "link": "https://www.amazon.com.br/dp/B009UWD34O?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51VHnK8ONqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.90"
+  },
+  {
+    "nome": "GORDON'S Gin Gordon'S 750Ml",
+    "preco": "54.19",
+    "link": "https://www.amazon.com.br/dp/B07WTHV6Y4?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51PiUlINpLL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "78.90"
+  },
+  {
+    "nome": "Rum Bacardi Mojito 700ml",
+    "preco": "29.98",
+    "link": "https://www.amazon.com.br/dp/B0DLXNN8LM?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61O+iQaOO4L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "45.90"
+  },
+  {
+    "nome": "Rum Bacardi Carta Blanca 980ml",
+    "preco": "42.90",
+    "link": "https://www.amazon.com.br/dp/B07XYH874V?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61d7pJypApL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "52.90"
+  },
+  {
+    "nome": "Vermute Martini Rosato 750ml",
+    "preco": "29.97",
+    "link": "https://www.amazon.com.br/dp/B07XLBFZSP?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51Sg83M4rBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "42.90"
+  },
+  {
+    "nome": "Whisky Old Parr 12 anos 750ml",
+    "preco": "99.90",
+    "link": "https://www.amazon.com.br/dp/B00E0EUP66?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51IQlv4pAdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "133.20"
+  },
+  {
+    "nome": "Whisky Ballantine's Finest Blended Escocês - 1 Litro",
+    "preco": "69.97",
+    "link": "https://www.amazon.com.br/dp/B01ERTTV5O?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51fuirDimQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "105.90"
+  },
+  {
+    "nome": "Licor 43 700 Ml",
+    "preco": "149.90",
+    "link": "https://www.amazon.com.br/dp/B004EAL5UG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71WF7H-hgML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "214.14"
+  },
+  {
+    "nome": "Jagermeister Licor Licores Herbais 700 Ml Pacote De 1",
+    "preco": "119.90",
+    "link": "https://www.amazon.com.br/dp/B07X6HW8NH?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/81OmpjtU2pL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Concha y Toro Reservado Cabernet Sauvignon 750ml",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B07XLMJHRN?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61B-RdsyzBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Malibu, Rum Sabor Coco - 750 ml",
+    "preco": "56.99",
+    "link": "https://www.amazon.com.br/dp/B07XRTY3NH?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41Vw74oas7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "83.00"
+  },
+  {
+    "nome": "Whisky Johnnie Walker Black Label 12 Anos 750ml",
+    "preco": "89.10",
+    "link": "https://www.amazon.com.br/dp/B00861CC7Y?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61S5PedMY6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "177.90"
+  },
+  {
+    "nome": "Vodka Absolut Raspberri - 750 ml",
+    "preco": "73.18",
+    "link": "https://www.amazon.com.br/dp/B09W65NNN6?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61Eb2qGG4zL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "73180.00"
+  },
+  {
+    "nome": "Saquê Nacional Azuma Kirin Soft 740ml",
+    "preco": "36.50",
+    "link": "https://www.amazon.com.br/dp/B07XJ6PQBQ?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51XbtAcbd4L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Licor Amarula Cream, 17% de Teor Alcoólico, Garrafa 750ml, Amarula Original",
+    "preco": "107.00",
+    "link": "https://www.amazon.com.br/dp/B008V6PVBS?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51QWfYKOsOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "142.67"
+  },
+  {
+    "nome": "Don Cream Coquetel Alcoólico Dulce de Leche 750ml",
+    "preco": "69.99",
+    "link": "https://www.amazon.com.br/dp/B0GZX6YN53?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41CX-mRwxZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Heineken Cerveja Barril 5L",
+    "preco": "97.91",
+    "link": "https://www.amazon.com.br/dp/B07BB8NL42?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71HEhcTxjvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Whisky Chivas Regal 12 anos Blended Escocês - 750 ml",
+    "preco": "104.40",
+    "link": "https://www.amazon.com.br/dp/B001HUBXJO?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51vXUyibQAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "149.90"
+  },
+  {
+    "nome": "Vermute Martini Rosso 750ml",
+    "preco": "40.53",
+    "link": "https://www.amazon.com.br/dp/B07XS1BLNC?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51ZihtQFSqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "54.04"
+  },
+  {
+    "nome": "Gin Tanqueray Sevilla 700ml",
+    "preco": "84.99",
+    "link": "https://www.amazon.com.br/dp/B07C8NJV9P?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51cn1cLRg1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "121.41"
+  },
+  {
+    "nome": "Salvatore Longobardo Limoncello Sabor Limão Siciliano 700 Ml",
+    "preco": "79.00",
+    "link": "https://www.amazon.com.br/dp/B07ZJWMNJX?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41lpoS6W2lL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "112.86"
+  },
+  {
+    "nome": "Conhaque Dreher 900ml",
+    "preco": "24.99",
+    "link": "https://www.amazon.com.br/dp/B0BTQTGS67?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61P7PciE76L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "27.77"
+  },
+  {
+    "nome": "Whisky Chivas Regal 12 anos Blended Escocês - 1 litro",
+    "preco": "120.90",
+    "link": "https://www.amazon.com.br/dp/B075QHV5LD?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51pLvcYPoYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Rum Bacardi Carta Oro 980ml",
+    "preco": "48.00",
+    "link": "https://www.amazon.com.br/dp/B07XYGKWZQ?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61NjEBpnuYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Gin Inglês Beefeater Blackberry Garrafa 700ml",
+    "preco": "88.25",
+    "link": "https://www.amazon.com.br/dp/B08R7TM341?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51le9h0WThL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "92.90"
+  },
+  {
+    "nome": "Aperitivo Bitter Campari 998ml",
+    "preco": "59.84",
+    "link": "https://www.amazon.com.br/dp/B0CSLM1G3D?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51dxM7DkxfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.90"
+  },
+  {
+    "nome": "Vermute Martini Bianco 750ml",
+    "preco": "38.05",
+    "link": "https://www.amazon.com.br/dp/B07HM75F83?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51J2+m8blhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "50.73"
+  },
+  {
+    "nome": "Whisky Ballantine's Sunshine Abacaxi - 700 ml",
+    "preco": "71.15",
+    "link": "https://www.amazon.com.br/dp/B0DRPMCBTD?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51GBs8JmtsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "84.90"
+  },
+  {
+    "nome": "Vodka Absolut Vanilia - 750 ml",
+    "preco": "70.76",
+    "link": "https://www.amazon.com.br/dp/B0058GVP9Q?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61kRgGBakLL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "117.90"
+  },
+  {
+    "nome": "Gin Bulldog London Dry 750ml",
+    "preco": "100.17",
+    "link": "https://www.amazon.com.br/dp/B005J9CJR4?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51XMjfUD0JL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "133.56"
+  },
+  {
+    "nome": "Whisky Bourbon Maker's Mark 750ml",
+    "preco": "159.91",
+    "link": "https://www.amazon.com.br/dp/B000WLN7AM?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71SfJuhnSaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Gin Tanqueray London Dry 375ml",
+    "preco": "65.89",
+    "link": "https://www.amazon.com.br/dp/B0FC8SKB2F?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71DaVdoqVDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "175.71"
+  },
+  {
+    "nome": "Salton Gin Theros 1000 Ml",
+    "preco": "42.74",
+    "link": "https://www.amazon.com.br/dp/B07XS8NDXR?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71rCsHSsraL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "44.99"
+  },
+  {
+    "nome": "Jack Daniel's Gentleman Jack Tennessee Whiskey – 1 Litro",
+    "preco": "180.40",
+    "link": "https://www.amazon.com.br/dp/B07D7MC53G?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61Ixr8lO9dL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "239.90"
+  },
+  {
+    "nome": "Saliníssima Cachaça 670 Ml",
+    "preco": "34.79",
+    "link": "https://www.amazon.com.br/dp/B07RYYYHLM?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/618MyVazrVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "51.93"
+  },
+  {
+    "nome": "Vodka Skyy 750ml",
+    "preco": "30.22",
+    "link": "https://www.amazon.com.br/dp/B08B9M713X?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61dTZ5s2jJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "41.90"
+  },
+  {
+    "nome": "Licor de whisky com canela Fireball – 750ml",
+    "preco": "89.97",
+    "link": "https://www.amazon.com.br/dp/B004CYZ7ZI?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51yZsCdhJcL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.98"
+  },
+  {
+    "nome": "Amarula Licor Cream 375Ml",
+    "preco": "62.90",
+    "link": "https://www.amazon.com.br/dp/B01N0GHG4C?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71I-sGgpOhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "75.19"
+  },
+  {
+    "nome": "Whisky Ballantine's Finest Blended Escocês - 750 ml",
+    "preco": "71.90",
+    "link": "https://www.amazon.com.br/dp/B07YNYMP5B?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51eQv8xcN-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Passport Scotch Whisky Passport 1L",
+    "preco": "59.30",
+    "link": "https://www.amazon.com.br/dp/B07BR9NMYH?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51UYCrFpn5S._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Rum Bacardi Limón 700ml",
+    "preco": "45.90",
+    "link": "https://www.amazon.com.br/dp/B0DLXLY49S?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71W+IXgNVFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "65.57"
+  },
+  {
+    "nome": "Pack Bebida Mista Alcoólica Absolut Vodka Sprite - 6 unidades de lata 269ml",
+    "preco": "56.90",
+    "link": "https://www.amazon.com.br/dp/B0DSJPGPC7?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/618KF1gpKTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.90"
+  },
+  {
+    "nome": "Whiskey Jameson Caskmates IPA Irlandês - 750 ml",
+    "preco": "115.90",
+    "link": "https://www.amazon.com.br/dp/B07XQM4PH3?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51uazHKL35L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "154.53"
+  },
+  {
+    "nome": "Whiskey Wild Turkey 101 Bourbon 700ml",
+    "preco": "160.55",
+    "link": "https://www.amazon.com.br/dp/B07TNR7YWZ?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/711tWaZa3fL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "179.90"
+  },
+  {
+    "nome": "Whisky Escocês Blended 10 Anos Ballantine's Garrafa 750ml",
+    "preco": "109.45",
+    "link": "https://www.amazon.com.br/dp/B0D63KDTVT?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51HRjDCtpuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "145.93"
+  },
+  {
+    "nome": "The Macallan Whisky Sherry Oak 12 Anos Single Malt 700ml",
+    "preco": "759.99",
+    "link": "https://www.amazon.com.br/dp/B001TZ3ZN4?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51G6KUqconL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "839.33"
+  },
+  {
+    "nome": "JOHNNIE WALKER Whisky Black Label 12 anos, 50ml",
+    "preco": "30.90",
+    "link": "https://www.amazon.com.br/dp/B00HU5C17S?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71VlL-n9kAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Larios Gin Espanhol Dry Original 700ml",
+    "preco": "72.90",
+    "link": "https://www.amazon.com.br/dp/B00XUNT40Q?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51Iz8pb59eL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "104.14"
+  },
+  {
+    "nome": "Goly Licor Fino De Melancia e Hortelã 750ml",
+    "preco": "75.90",
+    "link": "https://www.amazon.com.br/dp/B0F1V7L221?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/517e66C6AFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "79.90"
+  },
+  {
+    "nome": "JOHNNIE WALKER Whisky Red Label, 50ml",
+    "preco": "22.00",
+    "link": "https://www.amazon.com.br/dp/B075G45SJJ?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41ezBXOwaDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Gin Japonês ROKU, 700ml",
+    "preco": "138.50",
+    "link": "https://www.amazon.com.br/dp/B074Z72STD?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71iKGlNbSaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "197.86"
+  },
+  {
+    "nome": "Montilla Rum Carta Branca 1L",
+    "preco": "51.30",
+    "link": "https://www.amazon.com.br/dp/B07XL4XSRG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51t8EqMWiFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "54.00"
+  },
+  {
+    "nome": "Gin Tanqueray No Ten 750ml",
+    "preco": "139.99",
+    "link": "https://www.amazon.com.br/dp/B0DXF1QBM1?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51XFSlZdiqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "186.65"
+  },
+  {
+    "nome": "Monkey Ruby Bitter | Aperitivo Brasileiro Premium - High Level | 778ml",
+    "preco": "47.40",
+    "link": "https://www.amazon.com.br/dp/B0GY9R81CR?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41wtQv2xsfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.90"
+  },
+  {
+    "nome": "Osborne Brandy De Jerez 700 Ml",
+    "preco": "107.28",
+    "link": "https://www.amazon.com.br/dp/B07XS8QLDF?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71hK3OvR4vL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "153.26"
+  },
+  {
+    "nome": "Whisky Escocês Blended 10 Anos Ballantine's Garrafa 1l",
+    "preco": "118.79",
+    "link": "https://www.amazon.com.br/dp/B0D63J2X32?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/516u4UtdXnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Rum Bacardi Carta Oro 700ml",
+    "preco": "55.80",
+    "link": "https://www.amazon.com.br/dp/B0DLX69BMC?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71NdBzbWmyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "79.71"
+  },
+  {
+    "nome": "Smirnoff Vodka 600Ml",
+    "preco": "27.39",
+    "link": "https://www.amazon.com.br/dp/B07QZB3PDY?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51auWmdo6sL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "45.65"
+  },
+  {
+    "nome": "Jack Daniel's Single Barrel Select Tennessee Whiskey 750 mL",
+    "preco": "287.08",
+    "link": "https://www.amazon.com.br/dp/B000NDYQDG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61yKynS4H6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "382.77"
+  },
+  {
+    "nome": "Ypióca Cachaça 150 Anos 700Ml",
+    "preco": "80.40",
+    "link": "https://www.amazon.com.br/dp/B07XS9F94Z?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/81MhY41nO7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "84.65"
+  },
+  {
+    "nome": "Kit Coquetel Alcoólico Don Cream Dulce De Leche 750ml C/2und",
+    "preco": "170.81",
+    "link": "https://www.amazon.com.br/dp/B0H5D9YQ1W?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51SMZJ6ABOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "179.80"
+  },
+  {
+    "nome": "Whisky Old Parr 18 Anos, 750ml",
+    "preco": "379.99",
+    "link": "https://www.amazon.com.br/dp/B07YM874SG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61Mnde-Id1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "506.65"
+  },
+  {
+    "nome": "Gin Tanqueray Bossa Nova 700ml",
+    "preco": "129.90",
+    "link": "https://www.amazon.com.br/dp/B0D8VBTCQH?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71B9qRFOWNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "185.57"
+  },
+  {
+    "nome": "Askov Vodka Frutas Vermelhas 900 Ml",
+    "preco": "23.99",
+    "link": "https://www.amazon.com.br/dp/B07XS79LV3?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71oHHex5rSL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "26.66"
+  },
+  {
+    "nome": "Whisky Bourbon Jim Beam Black 7 Anos 1L",
+    "preco": "170.05",
+    "link": "https://www.amazon.com.br/dp/B0DK623RFG?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71gsuzWx3ZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "179.00"
+  },
+  {
+    "nome": "Salvatore Longobardo Licor Caffé 700Ml",
+    "preco": "90.00",
+    "link": "https://www.amazon.com.br/dp/B0BLCZGZXD?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51xU0Hp-ZjL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "The Macallan Whisky Double Cask 12 Anos 700ml",
+    "preco": "759.62",
+    "link": "https://www.amazon.com.br/dp/B079FYVVLF?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/515t45uNGZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1135.00"
+  },
+  {
+    "nome": "Licor Fino Tullan Manga com Gin 700ml",
+    "preco": "103.55",
+    "link": "https://www.amazon.com.br/dp/B0G174BJGW?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61LVMB+TRFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "109.00"
+  },
+  {
+    "nome": "Amarula Licor Vanilla Spice 15 5% De Teor Alcoólico Garrafa 750Ml",
+    "preco": "111.45",
+    "link": "https://www.amazon.com.br/dp/B07X6HWRSZ?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61oafcyuPWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "148.60"
+  },
+  {
+    "nome": "Beefeater Botanics Limão e Gengibre - 750 ml",
+    "preco": "96.04",
+    "link": "https://www.amazon.com.br/dp/B094X1ZPZB?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51AaNu5BbmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "97.99"
+  },
+  {
+    "nome": "Gin BEG Modern & Tropical Refil 500ml, 40% Álcool, Azul Vibrante que Muda para Rosa, Notas Florais, Artesanal",
+    "preco": "55.90",
+    "link": "https://www.amazon.com.br/dp/B0B5LPM2S3?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/714WHd2fv-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "111.80"
+  },
+  {
+    "nome": "Grey Goose, Vodka, La Poire - 750 ml",
+    "preco": "157.99",
+    "link": "https://www.amazon.com.br/dp/B002VXFSSI?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41rxEks0YvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Licor Sheridan's Coffeelayered 700ml Original",
+    "preco": "204.25",
+    "link": "https://www.amazon.com.br/dp/B01ERRSIPU?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/513upExEM7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "216.00"
+  },
+  {
+    "nome": "Bothanical Gin 750ml 45% vol 5 Vezes Destilado",
+    "preco": "94.05",
+    "link": "https://www.amazon.com.br/dp/B09XN7RP7J?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71t2lcLUYdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.00"
+  },
+  {
+    "nome": "Whisky Ballantine's American Barrel Blended Escocês - 750 ml",
+    "preco": "92.42",
+    "link": "https://www.amazon.com.br/dp/B08VHRNJ3M?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51+eFAumiaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "123.23"
+  },
+  {
+    "nome": "Old Eight Aperitivo de Whisky 900 ml",
+    "preco": "26.99",
+    "link": "https://www.amazon.com.br/dp/B0DHHL7T24?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61kYQqwG87L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "29.99"
+  },
+  {
+    "nome": "Babuxca Tangerina com Pímenta 700ml Babuxca Sabor Tangerina com Pimenta 700 Ml",
+    "preco": "52.19",
+    "link": "https://www.amazon.com.br/dp/B07XFGVNXW?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51rLIzLnW0L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "74.56"
+  },
+  {
+    "nome": "Campari Negroni Ready To Serve 500ml",
+    "preco": "117.61",
+    "link": "https://www.amazon.com.br/dp/B01B16BA5A?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71rCGh7Aw1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "235.22"
+  },
+  {
+    "nome": "Saint Germain, Licor de Flores, Francês, 750 ml",
+    "preco": "189.00",
+    "link": "https://www.amazon.com.br/dp/B0085HUOTW?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71VtqRhMUoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "210.00"
+  },
+  {
+    "nome": "Bothanical Negroni 750ml Pronto para Servir 26% vol",
+    "preco": "141.55",
+    "link": "https://www.amazon.com.br/dp/B0FJDHM68Z?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71YDHOscOrL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "159.00"
+  },
+  {
+    "nome": "Fire One Black Coquetel Alc de MALT WHISKY 1000ML",
+    "preco": "23.99",
+    "link": "https://www.amazon.com.br/dp/B0F1W391FX?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61r3T5AF5nL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Gin Bothanical 500ml 45% De Álcool - Refil Garrafa De Alumínio Sustentável",
+    "preco": "56.90",
+    "link": "https://www.amazon.com.br/dp/B0CLF965L8?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71oGlIhan2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.90"
+  },
+  {
+    "nome": "Nulla Sabor Gin - Zero Álcool - 750ml",
+    "preco": "73.66",
+    "link": "https://www.amazon.com.br/dp/B0C75QN3J2?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41yDFV1hwnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "98.21"
+  },
+  {
+    "nome": "Licor 43 DIEGO ZAMORA HORCHATA Sabor 700ML",
+    "preco": "189.90",
+    "link": "https://www.amazon.com.br/dp/B01LYWNV1J?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/71lGXc-TSzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "271.29"
+  },
+  {
+    "nome": "Vodka Grey Goose, Le Citron - 750 ml",
+    "preco": "174.90",
+    "link": "https://www.amazon.com.br/dp/B004EAFFKC?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/51GKNqJP6RL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "LICOR CURAÇAU FINO (TRIPLE SEC) 700ml",
+    "preco": "21.87",
+    "link": "https://www.amazon.com.br/dp/B07W61453N?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/61oYlE68mKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "31.24"
+  },
+  {
+    "nome": "NIB COCKTAILS COMOSPOLITAN 700ML",
+    "preco": "123.40",
+    "link": "https://www.amazon.com.br/dp/B0FBS2FZHR?tag=ofertas01dc-20",
+    "categoria": "Bebidas alcoólicas",
+    "imagem": "https://m.media-amazon.com/images/I/41s6ydugXpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "129.90"
   }
 ]
