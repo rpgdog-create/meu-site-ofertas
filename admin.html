@@ -320,7 +320,7 @@
           var isUrl = function(s){ return /^https?:\/\//i.test(s); };
           var linkVal = isUrl(c5) ? c5 : c4; var mlCat = isUrl(c5) ? c4 : c5;
           var cat = isValidCategory(mlCat) ? mlCat : "";
-          return { nome: (parts[0] || "Sem nome").trim(), preco: (parts[1] || "0").trim(), imagem: (parts[2] || "").trim(), frete: (parts[3] || "").trim(), link: linkVal, categoriaAuto: cat, erro: false };
+          return { nome: (parts[0] || "Sem nome").trim(), preco: (parts[1] || "0").trim(), imagem: (parts[2] || "").trim(), frete: (parts[3] || "").trim(), link: linkVal, categoriaAuto: cat, precoOriginal: (parts[6] || "").trim(), erro: false };   
         });
         statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700';
         statusEl.textContent = batchItems.length + " produto(s) importados!";
