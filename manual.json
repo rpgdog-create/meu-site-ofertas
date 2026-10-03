@@ -434,5 +434,14 @@
     "imagem": "https://m.media-amazon.com/images/I/71GJgaRDQuL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Bateria Baby Laranja - Bumbo 10\", Tom E Caixa 06\" Corpo De Abs",
+    "preco": "522.50",
+    "link": "https://www.amazon.com.br/dp/B07QC4CGXQ?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/519ZTcS4aOS._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
