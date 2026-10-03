@@ -341,10 +341,10 @@
       div.innerHTML =
         '<div>' +
           '<div class="relative bg-sand-50 rounded-xl p-4 h-48 flex items-center justify-center overflow-hidden mb-3 border border-sand-100">' +
-          '<span class="absolute top-2.5 left-2.5 flex flex-col gap-1">' + badge + (discBadge ? '<span class="inline-block">' + discBadge + '</span>' : '') + '</span>' +   
             (tag ? '<span class="absolute top-2.5 right-2.5">' + tag + '</span>' : '') +
             img +
           '</div>' +
+          '<div class="flex items-center gap-1.5 mt-2">' + badge + (discBadge ? '<span class="px-1.5 py-0.5 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold">-' + disc + '%</span>' : '') + '</div>' +   
           cat +
           '<h2 class="text-sm font-bold text-slate-800 line-clamp-2 mt-1 group-hover:text-brand-600 transition-colors">' + (p.productName || p.nome) + '</h2>' +
         '</div>' +
