@@ -85,15 +85,15 @@
         <textarea id="batch-links" rows="5" placeholder="Cole aqui (Ctrl+V) os dados do ML Copy / AM Copy ou os links..." class="w-full px-4 py-3 rounded-xl border border-sand-200 text-xs font-mono focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500 resize-y mb-4"></textarea>
         <div class="flex gap-3">
           <button id="btn-batch" onclick="batchFetch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Importar</button>
-<button onclick="document.getElementById('batch-links').value=''" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all">Limpar caixa</button>   
+<button onclick="document.getElementById('batch-links').value=''" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all">Limpar caixa</button>   
         </div>
         <div id="batch-status" class="hidden mt-4 px-4 py-3 rounded-xl text-xs font-medium"></div>
         <div id="progress" class="hidden mt-3 h-1.5 bg-sand-100 rounded-full overflow-hidden"><div id="progress-fill" class="h-full bg-teal-500 transition-all" style="width:0%"></div></div>
         <div id="batch-results" class="mt-4 space-y-2"></div>
         <div id="batch-actions" class="hidden mt-4 pt-4 border-t border-sand-100">
-          <div class="flex items-center gap-3 mb-4 flex-wrap">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
             <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Categoria global:</label>
-            <select id="batch-categoria" class="px-3 py-2 rounded-xl border border-sand-200 text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/40">
+            <select id="batch-categoria" onchange="onGlobalCatChange(this)" class="px-3 py-2 rounded-xl border text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/40 transition-colors">
               <option value="">Nenhuma (exige individual)</option>
               <option value="Acessórios para Veículos">Acessórios para Veículos</option>
               <option value="Agro">Agro</option>
@@ -132,8 +132,13 @@
               <option value="Televisores">Televisores</option>
               <option value="Informática">Informática</option>
               <option value="Outros">Outros</option>
+              <option value="__create__">➕ Criar categoria</option>
             </select>
-            <button onclick="applyGlobalCat()" class="px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-800    text-xs font-semibold rounded-xl transition-all">Aplicar a todos</button>
+            <button onclick="applyGlobalCat()" class="px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all">Aplicar a todos</button>
+          </div>
+          <div id="global-newcat" class="hidden mb-2 flex items-center gap-2">
+            <input type="text" id="global-newcat-input" placeholder="Nome da nova categoria..." onkeydown="if(event.key==='Enter')confirmGlobalNewCat()" class="px-3 py-1.5 rounded-lg border border-teal-200 text-xs focus:outline-none focus:ring-2 focus:ring-teal-500/40 w-48">
+            <button onclick="confirmGlobalNewCat()" class="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white text-[10px] font-semibold rounded-lg">OK</button>
           </div>
           <div class="flex gap-3">
             <button id="btn-add" onclick="confirmBatch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Adicionar todos</button>
@@ -293,12 +298,56 @@
       return true;
     }
 
+    function updateGlobalCatStyle() {
+      var sel = document.getElementById("batch-categoria");
+      if (!sel) return;
+      var validItems = batchItems.filter(function(i) { return !i.erro; });
+      var missing = validItems.filter(function(i) { return !i.categoriaAuto; }).length;
+      sel.classList.remove('border-sand-200','border-red-300','border-emerald-300','bg-white','bg-red-50','bg-emerald-50');
+      if (validItems.length === 0) {
+        sel.classList.add('border-sand-200','bg-white');
+      } else if (missing > 0) {
+        sel.classList.add('border-red-300','bg-red-50');
+      } else {
+        sel.classList.add('border-emerald-300','bg-emerald-50');
+      }
+    }
+
+    function onGlobalCatChange(sel) {
+      if (sel.value === "__create__") {
+        document.getElementById("global-newcat").classList.remove('hidden');
+        document.getElementById("global-newcat-input").focus();
+      } else {
+        document.getElementById("global-newcat").classList.add('hidden');
+        document.getElementById("global-newcat-input").value = "";
+      }
+    }
+
+    function confirmGlobalNewCat() {
+      var val = document.getElementById("global-newcat-input").value.trim();
+      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
+      var applied = 0;
+      batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = val; applied++; } });
+      document.getElementById("global-newcat").classList.add('hidden');
+      document.getElementById("global-newcat-input").value = "";
+      document.getElementById("batch-categoria").value = "";
+      renderBatchResults();
+      updateGlobalCatStyle();
+      if (applied > 0) {
+        var s = document.getElementById("batch-status");
+        s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700';
+        s.textContent = applied + " item(ns) receberam a categoria: " + val;
+      }
+    }
+
     function applyGlobalCat() {
       var cat = document.getElementById("batch-categoria").value;
       if (!cat) { alert("Selecione uma categoria primeiro."); return; }
+      if (cat === "__create__") { document.getElementById("global-newcat").classList.remove('hidden'); document.getElementById("global-newcat-input").focus(); return; }
       var applied = 0;
       batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = cat; applied++; } });
       renderBatchResults();
+      updateGlobalCatStyle();
       var statusEl = document.getElementById("batch-status");
       if (applied > 0) { statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; statusEl.textContent = applied + " item(ns) receberam a categoria: " + cat; }
       else { alert("Nenhum item sem categoria para atualizar."); }
@@ -330,6 +379,7 @@
         btnAdd.disabled = false;
         btnAdd.classList.remove('bg-red-400','cursor-not-allowed');
         btnAdd.classList.add('bg-teal-600','hover:bg-teal-500');
+        updateGlobalCatStyle();
         return;
       }
       btn.disabled = true; btn.innerHTML = '<span class="loading"></span>';
@@ -352,6 +402,7 @@
       btnAdd2.disabled = false;
       btnAdd2.classList.remove('bg-red-400','cursor-not-allowed');
       btnAdd2.classList.add('bg-teal-600','hover:bg-teal-500');
+      updateGlobalCatStyle();
       btn.disabled = false; btn.textContent = "Importar";
     }
 
@@ -393,7 +444,13 @@
       results.innerHTML = batchItems.map(function(item, i) {
         var catHtml;
         if (item.categoriaAuto) { catHtml = '<span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">' + item.categoriaAuto + '</span>'; }
-        else { var opts = '<option value="">Escolha...</option>'; for (var j = 0; j < CAT_OPTIONS.length; j++) opts += '<option value="' + CAT_OPTIONS[j] + '">' + CAT_OPTIONS[j] + '</option>'; catHtml = '<select class="text-[10px] px-2 py-1 rounded-lg border border-sand-200 bg-white focus:outline-none focus:ring-1 focus:ring-teal-500" onchange="setBatchCat(' + i + ',this.value)">' + opts + '</select>'; }
+        else {
+          var opts = '<option value="">Escolha...</option>';
+          for (var j = 0; j < CAT_OPTIONS.length; j++) opts += '<option value="' + CAT_OPTIONS[j] + '">' + CAT_OPTIONS[j] + '</option>';
+          opts += '<option value="__create__">➕ Criar categoria</option>';
+          catHtml = '<select class="text-[10px] px-2 py-1 rounded-lg border border-sand-200 bg-white focus:outline-none focus:ring-1 focus:ring-teal-500" onchange="onItemCatChange(' + i + ',this)">' + opts + '</select>';
+          catHtml += '<div id="item-newcat-' + i + '" class="hidden mt-1 flex items-center gap-1"><input type="text" id="item-newcat-input-' + i + '" placeholder="Nova categoria..." onkeydown="if(event.key===\'Enter\')confirmItemNewCat(' + i + ')" class="text-[10px] px-2 py-1 rounded border border-teal-200 focus:outline-none focus:ring-1 focus:ring-teal-500 w-32"><button onclick="confirmItemNewCat(' + i + ')" class="px-2 py-1 bg-teal-600 text-white text-[9px] rounded">OK</button></div>';
+        }
         var boxClass = item._dup ? 'border-red-300 bg-red-50' : (item.erro ? 'border-sand-100 opacity-50' : 'border-sand-100');
         var dupBadge = item._dup ? '<span class="text-[9px] font-bold text-red-600 bg-red-100 px-1.5 py-0.5 rounded ml-1">JÁ ADICIONADO</span>' : '';
         return '<div class="flex items-center gap-3 p-3 rounded-xl border transition-colors ' + boxClass + '">' +
@@ -404,6 +461,24 @@
           '</div>';
       }).join("");
       lucide.createIcons();
+      updateGlobalCatStyle();
+    }
+
+    function onItemCatChange(i, sel) {
+      if (sel.value === "__create__") {
+        var box = document.getElementById("item-newcat-" + i);
+        if (box) { box.classList.remove('hidden'); box.classList.add('flex'); document.getElementById("item-newcat-input-" + i).focus(); }
+      } else if (sel.value) {
+        batchItems[i].categoriaAuto = sel.value;
+        renderBatchResults();
+      }
+    }
+
+    function confirmItemNewCat(i) {
+      var val = document.getElementById("item-newcat-input-" + i).value.trim();
+      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
+      batchItems[i].categoriaAuto = val;
+      renderBatchResults();
     }
 
     function setBatchCat(index, value) { batchItems[index].categoriaAuto = value; renderBatchResults(); }
@@ -427,6 +502,9 @@
       document.getElementById("batch-status").classList.add('hidden');
       document.getElementById("progress").classList.add('hidden');
       document.getElementById("batch-links").value = "";
+      document.getElementById("global-newcat").classList.add('hidden');
+      document.getElementById("global-newcat-input").value = "";
+      document.getElementById("batch-categoria").value = "";
       var btnAdd = document.getElementById("btn-add");
       btnAdd.disabled = false;
       btnAdd.classList.remove('bg-red-400','cursor-not-allowed');
@@ -435,6 +513,7 @@
 
     function confirmBatch() {
       var catGlobal = document.getElementById("batch-categoria").value;
+      if (catGlobal === "__create__") { alert("Confirme a nova categoria primeiro (clique OK)."); return; }
       var validItems = batchItems.filter(function(i) { return !i.erro; });
       var blocked = 0, already = 0, toAdd = [];
       validItems.forEach(function(item) {
