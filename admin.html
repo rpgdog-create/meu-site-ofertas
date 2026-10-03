@@ -157,7 +157,7 @@
     function sendCode() {
       var email = document.getElementById("auth-email").value.trim().toLowerCase();
       hideErr("email-error");
-      if (email !== ADMIN_EMAIL) { showErr("email-email-error", "E-mail não autorizado."); return; }
+      if (email !== ADMIN_EMAIL) { showErr("email-error", "E-mail não autorizado."); return; }
       currentCode = String(Math.floor(100000 + Math.random() * 900000));
       codeExpiry = Date.now() + CODE_EXPIRY_MS;
       emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { to_email: email, code: currentCode })
@@ -262,6 +262,12 @@
       if (lower.indexOf("vender") !== -1 || lower.indexOf("igual") !== -1 || lower.indexOf("comprar") !== -1 || lower.indexOf("oferta") !== -1 || lower.indexOf("imperd") !== -1 || lower.indexOf("mais vendido") !== -1) return false;
       if (clean.charAt(0) >= "0" && clean.charAt(0) <= "9") return false;
       return true;
+    }
+
+    function isValidPrice(val) {
+      if (!val || val === "0" || val === "0.00") return false;
+      var n = parseFloat(String(val).replace(/[^\d.]/g, ''));
+      return !isNaN(n) && n > 0;
     }
 
     function allCats() {
@@ -521,12 +527,13 @@
           catHtml = '<select class="text-[10px] px-2 py-1 rounded-lg border border-sand-200 bg-white focus:outline-none focus:ring-1 focus:ring-teal-500" onchange="onItemCatChange(' + i + ',this)">' + opts + '</select>';
           catHtml += '<div id="item-catmgr-' + i + '" class="hidden mt-1"></div>';
         }
-        var boxClass = item._dup ? 'border-red-300 bg-red-50' : (item.erro ? 'border-sand-100 opacity-50' : 'border-sand-100');
+        var priceWarn = !isValidPrice(item.preco) ? ' <span class="text-[9px] font-bold text-red-500">⚠ PREÇO INVÁLIDO</span>' : '';
+        var boxClass = item._dup ? 'border-red-300 bg-red-50' : (item.erro ? 'border-sand-100 opacity-50' : (!isValidPrice(item.preco) ? 'border-amber-300 bg-amber-50' : 'border-sand-100'));
         var dupBadge = item._dup ? '<span class="text-[9px] font-bold text-red-600 bg-red-100 px-1.5 py-0.5 rounded ml-1">JÁ ADICIONADO</span>' : '';
         return '<div class="flex items-center gap-3 p-3 rounded-xl border transition-colors ' + boxClass + '">' +
           (item.imagem ? '<img src="' + item.imagem + '" alt="" class="w-12 h-12 object-contain rounded-lg">' : '<div class="w-12 h-12 bg-sand-100 rounded-lg"></div>') +
-          '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + item.nome + dupBadge + '</p><p class="text-[10px] text-slate-400 mt-0.5">' + (item.frete || "") + '</p><div class="mt-1">' + catHtml + '</div></div>' +
-          '<span class="text-sm font-bold text-teal-600 whitespace-nowrap">R$ ' + parsePreco(item.preco) + '</span>' +
+          '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + item.nome + dupBadge + priceWarn + '</p><p class="text-[10px] text-slate-400 mt-0.5">' + (item.frete || "") + '</p><div class="mt-1">' + catHtml + '</div></div>' +
+          '<span class="text-sm font-bold ' + (isValidPrice(item.preco) ? 'text-teal-600' : 'text-red-400') + ' whitespace-nowrap">R$ ' + parsePreco(item.preco) + '</span>' +
           (!item.erro ? '<button onclick="removeBatchItem(' + i + ')" class="text-red-400 hover:text-red-600 transition-colors"><i data-lucide="x" class="w-4 h-4"></i></button>' : '') +
           '</div>';
       }).join("");
@@ -575,18 +582,22 @@
       var catGlobal = document.getElementById("batch-categoria").value;
       if (catGlobal === "__create__") { alert("Confirme a ação no gerenciador de categorias primeiro."); return; }
       var validItems = batchItems.filter(function(i) { return !i.erro; });
-      var blocked = 0, already = 0, toAdd = [];
+      var blocked = 0, already = 0, noPrice = 0, toAdd = [];
       validItems.forEach(function(item) {
         var cat = item.categoriaAuto || catGlobal;
         if (!cat) { blocked++; return; }
+        if (!isValidPrice(item.preco)) { noPrice++; return; }
         var isDup = offers.some(function(o) { return o.link && item.link && o.link === item.link; });
         if (isDup) { already++; item._dup = true; }
         toAdd.push({ item: item, cat: cat });
       });
       var statusEl = document.getElementById("batch-status");
-      if (blocked > 0) {
+      if (blocked > 0 || noPrice > 0) {
+        var msgs = [];
+        if (blocked > 0) msgs.push(blocked + " sem categoria");
+        if (noPrice > 0) msgs.push(noPrice + " com preço inválido (0 ou vazio)");
         statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
-        statusEl.textContent = "⚠️ " + blocked + " sem categoria. Corrija e clique em Adicionar todos novamente.";
+        statusEl.textContent = "⚠️ " + msgs.join(", ") + ". Corrija e clique em Adicionar todos novamente.";
         renderBatchResults(); return;
       }
       if (already > 0) {
