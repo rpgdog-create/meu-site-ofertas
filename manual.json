@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "nome": "Árvore Natal Pinheiro Luxo 180cm 480 Galhos Cheia Realista",
+    "preco": "119.9",
+    "link": "https://meli.la/33schJK",
+    "categoria": "Casa, Móveis e Decoração",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_734445-MLB112811751384_072026-O-arvore-natal-pinheiro-luxo-180cm-480-galhos-cheia-realista.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Jogo Panela Ceramica Antiaderente 5pç Tampa Silicone Induçao",
+    "preco": "266.17",
+    "link": "https://meli.la/1haGYNB",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_815631-MLB109277052486_042026-O-jogo-panela-ceramica-antiaderente-5pc-tampa-silicone-inducao.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Jogo Stop 3.0 Eletrônico Educativo para Família Com Teclado Digital em Português",
+    "preco": "52",
+    "link": "https://meli.la/18Vxujp",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_743608-MLA113038995686_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  }
+]
