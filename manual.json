@@ -2251,5 +2251,461 @@
     "marketplace": "ML",
     "frete": "sim",
     "precoOriginal": "549.00"
+  },
+  {
+    "nome": "Candide, Laptop Infantil, Barbie, Brinquedo Educativo - Bilíngue",
+    "preco": "48.35",
+    "link": "https://www.amazon.com.br/dp/B08GKYKZBF?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61ubj7qnXCL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.99"
+  },
+  {
+    "nome": "Brinquedo Caranguejo Dançante Siri Fujão com Luz LED e Música - Brinquedo Interativo Infantil",
+    "preco": "21.00",
+    "link": "https://www.amazon.com.br/dp/B0F3JXKL2X?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61aFIaD6G3L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Estrela, Jogo Tapa Certo",
+    "preco": "26.96",
+    "link": "https://www.amazon.com.br/dp/B07CBL2H3M?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/619Vr4UzwqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.99"
+  },
+  {
+    "nome": "ToyUnited Blocos Magnéticos - 100 Peças De Blocos De Construção Magnéticos, Brinquedos De Cubo Magnético Empilháveis, Conjunto De Construção De Mundo Florestal, Brinquedos Sensoriais Stem Montessori",
+    "preco": "61.65",
+    "link": "https://www.amazon.com.br/dp/B0D1Q4M86Y?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/91BWVJb7hFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "68.49"
+  },
+  {
+    "nome": "Labirinto Magnético Infantil Montessori, Jogo Educativo de Madeira com Imã, Brinquedo de Coordenação Motora para Crianças 3+ Anos",
+    "preco": "36.00",
+    "link": "https://www.amazon.com.br/dp/B0G972FPW7?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71x0IVt4lpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.90"
+  },
+  {
+    "nome": "Mesinha Didática Infantil com Atividades – Brinquedo Educativo Sensorial com Formas de Encaixe, Engrenagens e Som – Coordenação Motora 12 Meses+",
+    "preco": "40.75",
+    "link": "https://www.amazon.com.br/dp/B0GWS97F1D?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71cv70+exyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.90"
+  },
+  {
+    "nome": "Brinquedo Pega Peixe Infantil – Jogo de Pescaria Maluca a Pilha com 15 Peixinhos Coloridos e 3 Varas de Pesca Diversão Para Toda Família Brinquedo Educativo",
+    "preco": "31.00",
+    "link": "https://www.amazon.com.br/dp/B0GHH9PKC3?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71aFlCQTrZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Boneca Barbie Vestido Surpresa Mattel. Look Estilo barbiecore com Vestido rosa Estampado e Sapatos Fashion. para crianças a partir dos 3 anos.",
+    "preco": "23.99",
+    "link": "https://www.amazon.com.br/dp/B004H49BCI?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61FpU0Mz+gL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "38.50"
+  },
+  {
+    "nome": "DM Toys Brinquedo Interativo Musical Mexe Danca Luz e Som Dancing Cachorro",
+    "preco": "40.63",
+    "link": "https://www.amazon.com.br/dp/B08Z899HWG?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51XhC8NrEpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "66.90"
+  },
+  {
+    "nome": "Brinquedo Educativo de Madeira com Formas Geométricas 5 Colunas e 20 Peças Multicoloridas para Encaixe Infantil",
+    "preco": "19.90",
+    "link": "https://www.amazon.com.br/dp/B0HFYRMVMS?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51X101ljGoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "29.90"
+  },
+  {
+    "nome": "Candide, Moto do Homem-Aranha, Função Pullback - Webcycle",
+    "preco": "21.84",
+    "link": "https://www.amazon.com.br/dp/B0CCQB4LD4?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61BXcLXa1qL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "29.99"
+  },
+  {
+    "nome": "Candide, Laptop Infantil, Patrulha Canina, Brinquedo Educativo - Bilíngue",
+    "preco": "48.35",
+    "link": "https://www.amazon.com.br/dp/B093QCF4PM?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61DxXmGX-+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.99"
+  },
+  {
+    "nome": "Play-Doh, Massinha de Modelar Infantil, Mini Sorveteria Divertida - Conjunto de Brinquedo com Acessórios e 2 Potes - A partir de 3 Anos",
+    "preco": "33.99",
+    "link": "https://www.amazon.com.br/dp/B09SVRB79R?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71PFjBadk-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "GGB Brinquedo Educativo Monta Bichinhos 28 Peças",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B0FCVTCFDK?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81Ycc9XTvGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Brincando de Engenheiro 73 Peças Xalingo",
+    "preco": "25.90",
+    "link": "https://www.amazon.com.br/dp/B0779LGJG3?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81VHwPBjTAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "42.51"
+  },
+  {
+    "nome": "Jogo Crocodilo Morde Dedo, Art Brink",
+    "preco": "19.90",
+    "link": "https://www.amazon.com.br/dp/B0C5FXDN3X?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51jp-RlefVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Brinquedo Sensorial Montessori para Bebê 6M+, 6 Atividades, Sem Pilhas",
+    "preco": "39.00",
+    "link": "https://www.amazon.com.br/dp/B0H1C6V4ZT?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71rxNir3dTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Jogo Cilada, Estrela",
+    "preco": "27.36",
+    "link": "https://www.amazon.com.br/dp/B077PLGWMG?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81KlwvRaklL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.99"
+  },
+  {
+    "nome": "Play-Doh, Massinha de Modelar Infantil, Smoothies Coloridos - Conjunto de Brinquedo com Liquidificador de Brinquedo, Acessórios e 5 Potes - A partir de 3 Anos",
+    "preco": "43.99",
+    "link": "https://www.amazon.com.br/dp/B0CQTNGCF9?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71HyVqL3MRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.99"
+  },
+  {
+    "nome": "Colorir: Brinquedos",
+    "preco": "1.88",
+    "link": "https://www.amazon.com.br/dp/8573894091?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61AytBfymZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "2.90"
+  },
+  {
+    "nome": "Lanterna Projetora Infantil com 3 Discos e 24 Imagens Sortidas – Brinquedo Educativo e Divertido - TYDA (AZUL)",
+    "preco": "29.47",
+    "link": "https://www.amazon.com.br/dp/B0F4DT3TTR?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/41uNa0MLEWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fisher-Price - Meu livrão de colorir",
+    "preco": "5.07",
+    "link": "https://www.amazon.com.br/dp/6555005904?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71J+iay2W7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "9.90"
+  },
+  {
+    "nome": "Elka Bluey, Brinquedo, boneco de ação, 2+ Anos",
+    "preco": "56.03",
+    "link": "https://www.amazon.com.br/dp/B0D2DPCP55?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/619Z3Zol2IL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "104.99"
+  },
+  {
+    "nome": "Estrela, Jogo Cara a Cara, ‎53 peças",
+    "preco": "54.32",
+    "link": "https://www.amazon.com.br/dp/B077PLGGJX?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81CJd3CfGnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "119.99"
+  },
+  {
+    "nome": "Pais & Filhos | Jogo da Memória Patrulha Canina com 52 Cartas | Brinquedo Educativo +3 Anos | Desenvolve Memória e Concentração",
+    "preco": "19.60",
+    "link": "https://www.amazon.com.br/dp/B0D3VD54HM?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/815V5azf6FL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 2 Raquetes de Velcro + Bola Que Gruda – Bateu Colou Brinquedo Esportivo Infantil/Adulto - TYDA",
+    "preco": "39.90",
+    "link": "https://www.amazon.com.br/dp/B0FSF29J85?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51zTTVUp8mL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Blocos Magnéticos de Construção 30 Peças Brinquedo Educativo Infantil 3D Encaixe Imantado Criativo Kit Montar Crianças STEM Desenvolvimento Cognitivo Coordenação Presente Meninos Meninas 30pcs",
+    "preco": "42.74",
+    "link": "https://www.amazon.com.br/dp/B0H5X772P6?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71UXebEKVYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "44.99"
+  },
+  {
+    "nome": "GGB Brinquedo Educativo Encaixando e Aprendendo Soletrando 72 Peças",
+    "preco": "16.54",
+    "link": "https://www.amazon.com.br/dp/B0FCVZQ8D7?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81Icy15I7TL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "18.90"
+  },
+  {
+    "nome": "Avião de Brinquedo para Meninos, Pistola Planadora de Espuma com Luzes LED e Dois Modos de Voo, Brinquedo Voador para uso Externo. (Vermelho e Azul Claro)",
+    "preco": "47.49",
+    "link": "https://www.amazon.com.br/dp/B0GY328KZZ?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/613vrnnc7PL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.99"
+  },
+  {
+    "nome": "Blocos Magnéticos de Construção Infantil 80 Peças, Kit de Cubos Magnéticos Empilháveis com Cenário Pixelado, Brinquedo Educativo Criativo para Crianças a Partir de 3 Anos",
+    "preco": "47.49",
+    "link": "https://www.amazon.com.br/dp/B0HD268GT1?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71jAGfYw3tL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.99"
+  },
+  {
+    "nome": "Giro Mágico Infantil Viva Brincar 8 Peças Dismat",
+    "preco": "37.99",
+    "link": "https://www.amazon.com.br/dp/B07RRXQJYN?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61fmDp62htL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "53.82"
+  },
+  {
+    "nome": "Kendy Brinquedo Educativo de Encaixar Bola P com Blocos",
+    "preco": "9.99",
+    "link": "https://www.amazon.com.br/dp/B0BXYV8L54?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/51UXEvN2nWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Brinquedo para Bebe Dino Papa Tudo com Acessórios, Elka, Multicor",
+    "preco": "55.90",
+    "link": "https://www.amazon.com.br/dp/B076X7VHWN?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61Tgw23t8-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "92.99"
+  },
+  {
+    "nome": "Play-Doh, Massinha de Modelar Infantil, Kit Inicial de Números - Conjunto de Brinquedo com Acessórios e 6 Potes - A partir de 3 Anos",
+    "preco": "30.99",
+    "link": "https://www.amazon.com.br/dp/B0CW6D6MSW?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71naHkUmMeL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Luva Aranha Lançador de Teia com Lança Dardos, Brinquedo Infantil",
+    "preco": "30.99",
+    "link": "https://www.amazon.com.br/dp/B0DPGX3TYS?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61HGQc--ozL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Caminhão Dinossauro T-Rex com 6 Carrinhos e Pista Lançadora Dupla",
+    "preco": "85.47",
+    "link": "https://www.amazon.com.br/dp/B0HG46JGJK?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71O3xcRx2BL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.97"
+  },
+  {
+    "nome": "Candide, Laptop Infantil, Homem-Aranha, Brinquedo Educativo - Bilíngue",
+    "preco": "52.25",
+    "link": "https://www.amazon.com.br/dp/B08GKXGS45?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61mMbktfL-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.99"
+  },
+  {
+    "nome": "Jogo Stop Eletrônico 10 Segundos Timer Raciocínio Caça Palavras Educativo Família Cartas Desafio Letras Brinquedo Inteligente Interativo Festa Viagem Português Prime Luxo",
+    "preco": "39.99",
+    "link": "https://www.amazon.com.br/dp/B0GW1G6ZXR?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61kbobufrUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "44.99"
+  },
+  {
+    "nome": "Jogo Eu Sou...?, Estrela",
+    "preco": "52.99",
+    "link": "https://www.amazon.com.br/dp/B076X57GB7?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61NcLkIvJlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "79.99"
+  },
+  {
+    "nome": "GGB Jogo Infantil 2 em 1 Mico e da Memória",
+    "preco": "16.89",
+    "link": "https://www.amazon.com.br/dp/B0C7LVWM1R?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81FpUGJeVwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "18.98"
+  },
+  {
+    "nome": "Kits Educativos de Ciências - Kit de Poções Mágicas Atóxico, Brinquedo STEAM e Presente Criativo para Meninos e Meninas para Brincar com Mais de 6 Anos",
+    "preco": "67.27",
+    "link": "https://www.amazon.com.br/dp/B0H5BVMMNK?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71-pT5AI29L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "115.00"
+  },
+  {
+    "nome": "Blocos de Montar Magnéticos Brinquedo Educativo Infantil",
+    "preco": "66.47",
+    "link": "https://www.amazon.com.br/dp/B0HGS2C7J9?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/71ZitHHW-vL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.97"
+  },
+  {
+    "nome": "Carrinho Vira Robô Transformável Infantil com Luz e Som Carro Camaro Amarelo Automático que se Transforma Brinquedo Divertido Presente Menino Criativo Pilhas Premium",
+    "preco": "50.25",
+    "link": "https://www.amazon.com.br/dp/B0GVC8B6D7?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/716tQFEia7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "52.90"
+  },
+  {
+    "nome": "GGB Jogo Infantil Educativo Sílabas 60 Peças",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B0FCVCDB9B?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81CWgugjGOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Jogo Bingo da Bingo Bluey para Criança 5 Anos Elka",
+    "preco": "25.21",
+    "link": "https://www.amazon.com.br/dp/B0C69YMHB1?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61Vt32NFJJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.99"
+  },
+  {
+    "nome": "Quebra-Cabeça 38 Pçs Viagem ao Espaço - Madeira",
+    "preco": "19.81",
+    "link": "https://www.amazon.com.br/dp/B0D63FK3R6?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/81CyV0eWGiL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "21.48"
+  },
+  {
+    "nome": "GGB Brinquedo Piui Trem I",
+    "preco": "19.90",
+    "link": "https://www.amazon.com.br/dp/B09MQ12Z8K?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/41ov23F9SAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
