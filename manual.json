@@ -2131,5 +2131,59 @@
     "imagem": "https://m.media-amazon.com/images/I/61MTZ3VjE7L._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Anker Nano Power Bank 10000mAh, Carregador Portátil Até 30W",
+    "preco": "255.54",
+    "link": "https://www.amazon.com.br/dp/B0C9CJKCH3?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61TAhURSqhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Controlador MIDI, 16 teclados MIDI retroiluminados RGB,mini pads portáteis Multifuncional, USB C recarregável sem fio, suporta a maioria das conexões de PC e telefone celular SMC M-VAVE CUVAVE",
+    "preco": "224.70",
+    "link": "https://www.amazon.com.br/dp/B0D9NQBMFS?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61alrjKTHxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Anker MagGo Power Bank 10.000mAh, Carregador Portátil Qi2 15W, com MagSafe",
+    "preco": "360.03",
+    "link": "https://www.amazon.com.br/dp/B0CFDPQXN4?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/61wHeTQyTJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "M-VAVE Sistema de Transmissão Sem Fio para Monitor de Ouvido Profissional, 2.4GHz, 30m Alcance, Latência <12ms, Áudio 24bit/48KHz, Mono/Stereo, 7h Bateria, Ideal para Músicos, Podcast, Igreja",
+    "preco": "156.89",
+    "link": "https://www.amazon.com.br/dp/B0F1FG64CC?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51nDIrz7bbL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "KitchenAid Abridor de latas/abridor de garrafas multifunções clássico, 21 cm, vermelho império",
+    "preco": "140.61",
+    "link": "https://www.amazon.com.br/dp/B07YP1TB6P?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/613jvH9+M9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Coqueteleira Caipirinha Bar Profissional Inox 12 Peças 550ml",
+    "preco": "111.06",
+    "link": "https://www.amazon.com.br/dp/B0G4WZRQ24?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/71x6hodfJpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
