@@ -1292,5 +1292,443 @@
     "imagem": "https://m.media-amazon.com/images/I/717VZqOf7eL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "nao"
+  },
+  {
+    "nome": "Pacote 5 Carros Sortidos, Hot Wheels, Mattel, Multicor - não é possível escolher as cores",
+    "preco": "54.99",
+    "link": "https://www.amazon.com.br/dp/B000GKUEVE?tag=ofertas01dc-20",
+    "categoria": "Agro",
+    "imagem": "https://m.media-amazon.com/images/I/81GMRnT1SsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "84.99"
+  },
+  {
+    "nome": "kit 8 carrinhos fricção filme carros 3 relampago mcqueen",
+    "preco": "34.60",
+    "link": "https://www.amazon.com.br/dp/B096WV96HX?tag=ofertas01dc-20",
+    "categoria": "Alimentos e Bebidas",
+    "imagem": "https://m.media-amazon.com/images/I/41jjR9gggzS._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.90"
+  },
+  {
+    "nome": "Candide, Carrinho de Controle Remoto com três funções, Homem-Aranha Autoracing",
+    "preco": "56.90",
+    "link": "https://www.amazon.com.br/dp/B0CV1T6ZB9?tag=ofertas01dc-20",
+    "categoria": "Casa, Móveis e Decoração",
+    "imagem": "https://m.media-amazon.com/images/I/61P-3wA9gSL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.99"
+  },
+  {
+    "nome": "GGB Brinquedo Carrinho Mini Frota Guincho Amarelo e Branco",
+    "preco": "9.90",
+    "link": "https://www.amazon.com.br/dp/B09MQ23CSB?tag=ofertas01dc-20",
+    "categoria": "Festas e Lembrancinhas",
+    "imagem": "https://m.media-amazon.com/images/I/4167xlDBi+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Candide, Kit Mini Carrinhos de Brinquedo, Homem-Aranha, Função Pullback - 5 unidades",
+    "preco": "33.66",
+    "link": "https://www.amazon.com.br/dp/B0CCQJZRK1?tag=ofertas01dc-20",
+    "categoria": "Animais",
+    "imagem": "https://m.media-amazon.com/images/I/61-cFoD4dlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.99"
+  },
+  {
+    "nome": "Candide, Kit Mini Carrinhos de Brinquedo, Liga da Justiça, Função Pullback - 5 unidades",
+    "preco": "19.91",
+    "link": "https://www.amazon.com.br/dp/B0B8KZXLNS?tag=ofertas01dc-20",
+    "categoria": "Arte, Papelaria e Armarinho",
+    "imagem": "https://m.media-amazon.com/images/I/61TrU+CVcmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.99"
+  },
+  {
+    "nome": "Carro de Fricção Hot Wheels Fast Racer Luz e Som Modelos Sortidos Multikids - BR2084",
+    "preco": "39.20",
+    "link": "https://www.amazon.com.br/dp/B0CQKNT6LJ?tag=ofertas01dc-20",
+    "categoria": "Automotivo e Moto",
+    "imagem": "https://m.media-amazon.com/images/I/61nRxbQgMML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Caminhão Dinossauro 2 em 1 com Pista Lançadora e 4 Carrinhos, Porta-Carrinhos Infantil com Garagem, Pista de Corrida e Dinossauro que Engole Carrinhos, Brinquedo Infantil",
+    "preco": "85.40",
+    "link": "https://www.amazon.com.br/dp/B0HGK4Y1X5?tag=ofertas01dc-20",
+    "categoria": "Ferramentas",
+    "imagem": "https://m.media-amazon.com/images/I/71WweK9ElgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.90"
+  },
+  {
+    "nome": "Veículo Totokinha, Cardoso Toys, Menino",
+    "preco": "74.00",
+    "link": "https://www.amazon.com.br/dp/B0B35JQ28V?tag=ofertas01dc-20",
+    "categoria": "Televisores",
+    "imagem": "https://m.media-amazon.com/images/I/51JgdTaKIDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.00"
+  },
+  {
+    "nome": "Candide, Carrinho de Controle Remoto, Batman Autoracing - 3 Funções",
+    "preco": "59.84",
+    "link": "https://www.amazon.com.br/dp/B0CV26QNPT?tag=ofertas01dc-20",
+    "categoria": "Jardim e Piscina",
+    "imagem": "https://m.media-amazon.com/images/I/61hlotqBq+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.99"
+  },
+  {
+    "nome": "GGB Brinquedo Caminhão Deko Caçamba I",
+    "preco": "13.90",
+    "link": "https://www.amazon.com.br/dp/B09MPZJTPF?tag=ofertas01dc-20",
+    "categoria": "Ingressos",
+    "imagem": "https://m.media-amazon.com/images/I/41kdm0X3vsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Divplast Caminhão Infantil Cegonheira com 2 carrinhos",
+    "preco": "23.90",
+    "link": "https://www.amazon.com.br/dp/B0FY3RDVVJ?tag=ofertas01dc-20",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://m.media-amazon.com/images/I/71nYhiaCEFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Carrinhos de Construção Movido a Fricção com 2 Peças",
+    "preco": "9.00",
+    "link": "https://www.amazon.com.br/dp/B0HFY331FH?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71sO9iki1wL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "GGB Brinquedo Carrinho Mini Frota Samu Vermelho",
+    "preco": "9.90",
+    "link": "https://www.amazon.com.br/dp/B09MPZSJGJ?tag=ofertas01dc-20",
+    "categoria": "Televisores",
+    "imagem": "https://m.media-amazon.com/images/I/612U3oipYPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mini Carrinho Die Cast Garagem S.A. - Sortido",
+    "preco": "9.99",
+    "link": "https://www.amazon.com.br/dp/B0DGYWX1WM?tag=ofertas01dc-20",
+    "categoria": "Serviços",
+    "imagem": "https://m.media-amazon.com/images/I/61FxKzRAE3L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 5 Carrinhos Miniatura Modelos Variados Colecionáveis",
+    "preco": "34.90",
+    "link": "https://www.amazon.com.br/dp/B0HDK56MT2?tag=ofertas01dc-20",
+    "categoria": "Jardim e Piscina",
+    "imagem": "https://m.media-amazon.com/images/I/714TJK00VcL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Super Carro que Vira Robô – Brinquedo 2 em 1 com Luzes LED, Som e Estilo Carro Robô (Amarelo)",
+    "preco": "41.54",
+    "link": "https://www.amazon.com.br/dp/B0HG69Y6JQ?tag=ofertas01dc-20",
+    "categoria": "Joias e Relógios",
+    "imagem": "https://m.media-amazon.com/images/I/61QDBmm8GVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "43.73"
+  },
+  {
+    "nome": "Carrinho de ferro Fusca 53, Miniatura de carro colecionável, abre portas e capô, Com fricção, Bege, 12 CM",
+    "preco": "21.90",
+    "link": "https://www.amazon.com.br/dp/B0CN5PYG59?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/614nJW5hpKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "23.10"
+  },
+  {
+    "nome": "Carrinho que Muda de Cor na Água Morna, Mini Carro 1:64, Transformação Mágica com Água, Brinquedo Surpresa Infantil (Verde Nitro)",
+    "preco": "25.00",
+    "link": "https://www.amazon.com.br/dp/B0GQ5H112R?tag=ofertas01dc-20",
+    "categoria": "Câmeras e Acessórios",
+    "imagem": "https://m.media-amazon.com/images/I/717qpt3q8mL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 6 Carrinhos Miniatura Metal Fricção Filme Carros Brinquedos Colecionador Infantil",
+    "preco": "56.90",
+    "link": "https://www.amazon.com.br/dp/B0H9YRYJBN?tag=ofertas01dc-20",
+    "categoria": "Animais",
+    "imagem": "https://m.media-amazon.com/images/I/71pOS16jHRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.90"
+  },
+  {
+    "nome": "Divplast Carro Sport Infatil Brincar e Crecer",
+    "preco": "8.64",
+    "link": "https://www.amazon.com.br/dp/B093TFNCCD?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71jiKHnE+iL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "12.90"
+  },
+  {
+    "nome": "DM Toys Carro Fricção Super Racing Fórmula 1 26cm Vermelho",
+    "preco": "35.89",
+    "link": "https://www.amazon.com.br/dp/B0DMXN77FG?tag=ofertas01dc-20",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://m.media-amazon.com/images/I/51Pdkb3D+sL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "GGB Brinquedo Carrinho Mini Frota Boiadeiro Vermelho",
+    "preco": "13.90",
+    "link": "https://www.amazon.com.br/dp/B09MPZXRX9?tag=ofertas01dc-20",
+    "categoria": "Celulares e Telefones",
+    "imagem": "https://m.media-amazon.com/images/I/51PP3P5-L8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit com 6 Carrinhos de Brinquedo com Fricção, Veículos Coloridos com Olhos, Inclui Bolsinha de Transporte, 4cm x 4,5cm x 3cm",
+    "preco": "25.99",
+    "link": "https://www.amazon.com.br/dp/B0GRBTWJWM?tag=ofertas01dc-20",
+    "categoria": "Antiguidades e Coleções",
+    "imagem": "https://m.media-amazon.com/images/I/412cKBEK-+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Fricção 4x4 Infantil",
+    "preco": "25.90",
+    "link": "https://www.amazon.com.br/dp/B0HC4VTHQS?tag=ofertas01dc-20",
+    "categoria": "Jardim e Piscina",
+    "imagem": "https://m.media-amazon.com/images/I/71ddAYaQQtL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Sortido Hot Wheels Diecast, Carro de Metal Básico, Estampas Coloridas e Acabamento Realista, para Crianças a Partir de 3 Anos",
+    "preco": "21.17",
+    "link": "https://www.amazon.com.br/dp/B000EEYG2K?tag=ofertas01dc-20",
+    "categoria": "Instrumentos Musicais",
+    "imagem": "https://m.media-amazon.com/images/I/81ohf0CESgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Baby Cars, Big Star, original, 513- BC",
+    "preco": "36.90",
+    "link": "https://www.amazon.com.br/dp/B0992HS429?tag=ofertas01dc-20",
+    "categoria": "Bebês",
+    "imagem": "https://m.media-amazon.com/images/I/51d4sXZM4AL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carro Vira Robo Som Luz Carrinho BMW BRANCO Brinquedo Menino Pilha Cor CAMARO AMARELO - TYDA (BMW BRANCO)",
+    "preco": "56.49",
+    "link": "https://www.amazon.com.br/dp/B0DSV3LCQT?tag=ofertas01dc-20",
+    "categoria": "Câmeras e Acessórios",
+    "imagem": "https://m.media-amazon.com/images/I/61Cp3TwbvzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.47"
+  },
+  {
+    "nome": "DM Toys Carrinho Fricção Corrida Maluco 4x4 Sortido",
+    "preco": "29.99",
+    "link": "https://www.amazon.com.br/dp/B0B6D8HLH3?tag=ofertas01dc-20",
+    "categoria": "Livros, Revistas e Comics",
+    "imagem": "https://m.media-amazon.com/images/I/518aPbrHkKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carro Vira Robo Som Luz Carrinho BMW BRANCO Brinquedo Menino Pilha Cor CAMARO AMARELO - TYDA (CAMARO AMARELO)",
+    "preco": "46.45",
+    "link": "https://www.amazon.com.br/dp/B0DSV4DY9P?tag=ofertas01dc-20",
+    "categoria": "Televisores",
+    "imagem": "https://m.media-amazon.com/images/I/612O3kHAYbL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.47"
+  },
+  {
+    "nome": "Carrinho Die Cast Fórmula GSA Azul",
+    "preco": "11.99",
+    "link": "https://www.amazon.com.br/dp/B0HHFMQRKT?tag=ofertas01dc-20",
+    "categoria": "Música, Filmes e Seriados",
+    "imagem": "https://m.media-amazon.com/images/I/515E77jgqTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Off Road Mini Relâmpago Mcqueen de Fricção Monster Truck 9cm Original",
+    "preco": "44.53",
+    "link": "https://www.amazon.com.br/dp/B0G4XKJLVJ?tag=ofertas01dc-20",
+    "categoria": "Joias e Relógios",
+    "imagem": "https://m.media-amazon.com/images/I/61TgJw00wwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "46.88"
+  },
+  {
+    "nome": "Carrinho de Ferro Herbie Clássico Fricção Abre as Portas e Capô",
+    "preco": "38.74",
+    "link": "https://www.amazon.com.br/dp/B0DJ3RJJP2?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51ZphFakbmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "42.99"
+  },
+  {
+    "nome": "Carrinho Die Cast Fórmula GSA",
+    "preco": "13.19",
+    "link": "https://www.amazon.com.br/dp/B0GXLL6FN9?tag=ofertas01dc-20",
+    "categoria": "Bebês",
+    "imagem": "https://m.media-amazon.com/images/I/515DD+a3uQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Maral Carrinho Com Chassis Jip Jip Militar Multicor",
+    "preco": "236.55",
+    "link": "https://www.amazon.com.br/dp/B0779H6MXT?tag=ofertas01dc-20",
+    "categoria": "Carros, Motos e Outros",
+    "imagem": "https://m.media-amazon.com/images/I/517ObAGvpUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "275.79"
+  },
+  {
+    "nome": "Carrinho Hot Wheels Monster Truck, com Rodas Coloridas, Brinquedo com Estampas e Visuais Aleatórios, Não é Possível Escolher Modelo",
+    "preco": "59.95",
+    "link": "https://www.amazon.com.br/dp/B07S3FBJ5P?tag=ofertas01dc-20",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://m.media-amazon.com/images/I/71YI+ISRNXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.90"
+  },
+  {
+    "nome": "Hot Wheels Mini Lançador Monster Truck",
+    "preco": "15.00",
+    "link": "https://www.amazon.com.br/dp/B0CG6QPZ68?tag=ofertas01dc-20",
+    "categoria": "Ferramentas",
+    "imagem": "https://m.media-amazon.com/images/I/51mjCXpGaDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "18.99"
+  },
+  {
+    "nome": "Carrinho de Controle Remoto Hot Wheels RC 2 Canais com Volante Azul Multikids - BR2469",
+    "preco": "69.99",
+    "link": "https://www.amazon.com.br/dp/B0F4XSFW16?tag=ofertas01dc-20",
+    "categoria": "Calçados, Roupas e Bolsas",
+    "imagem": "https://m.media-amazon.com/images/I/610gsCsbZ2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Mini Defensor Azul II, GGB Plast",
+    "preco": "11.92",
+    "link": "https://www.amazon.com.br/dp/B09Q8F58T3?tag=ofertas01dc-20",
+    "categoria": "Calçados, Roupas e Bolsas",
+    "imagem": "https://m.media-amazon.com/images/I/416Oi95WLoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carrinho Dragão Transformável 2 em 1 - Kit com 2 Carros Magnéticos que se Transformam em Dragão - Brinquedo de Fusão Magnética para Crianças",
+    "preco": "53.10",
+    "link": "https://www.amazon.com.br/dp/B0H9V425TB?tag=ofertas01dc-20",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://m.media-amazon.com/images/I/71aMm6ss5sL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "55.90"
+  },
+  {
+    "nome": "Carrinho Infantil Mini Rally 8,5cm Com Fricção Sem Pilhas Carroceria Flexível Rodas De Borracha E Mola Interna Brinquedo Resistente Para Corridas Diversão E Colecionar (AZUL)",
+    "preco": "37.05",
+    "link": "https://www.amazon.com.br/dp/B0HF24G5V1?tag=ofertas01dc-20",
+    "categoria": "Arte, Papelaria e Armarinho",
+    "imagem": "https://m.media-amazon.com/images/I/71afQGSaAZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.00"
+  },
+  {
+    "nome": "JOY.CO Carrinho Joy.Trucks Betoneira 16cm",
+    "preco": "29.00",
+    "link": "https://www.amazon.com.br/dp/B0F3PFMHPQ?tag=ofertas01dc-20",
+    "categoria": "Animais",
+    "imagem": "https://m.media-amazon.com/images/I/619EpFb5mPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Candide, Carrinho de Controle Remoto, Sonic Tumbling Rush",
+    "preco": "59.99",
+    "link": "https://www.amazon.com.br/dp/B0CCQ5KGWP?tag=ofertas01dc-20",
+    "categoria": "Antiguidades e Coleções",
+    "imagem": "https://m.media-amazon.com/images/I/61nwfaXyQnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.99"
+  },
+  {
+    "nome": "Carrinho Organizador Multiuso 3 Prateleiras Com Rodinhas/Estante/Fruteira (Branco)",
+    "preco": "94.90",
+    "link": "https://www.amazon.com.br/dp/B0BTK4W8DJ?tag=ofertas01dc-20",
+    "categoria": "Alimentos e Bebidas",
+    "imagem": "https://m.media-amazon.com/images/I/71BhRlOZqOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.90"
+  },
+  {
+    "nome": "Candide, Kit Mini Carrinhos de Brinquedo, Batman, Função Pullback - 5 unidades",
+    "preco": "32.46",
+    "link": "https://www.amazon.com.br/dp/B0CCQRW6CV?tag=ofertas01dc-20",
+    "categoria": "Agro",
+    "imagem": "https://m.media-amazon.com/images/I/61-Immp-mUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.99"
+  },
+  {
+    "nome": "JOY.CO Carrinho Joy.Trucks Plataforma 16cm",
+    "preco": "29.80",
+    "link": "https://www.amazon.com.br/dp/B0F3PF4VZ7?tag=ofertas01dc-20",
+    "categoria": "Acessórios para Veículos",
+    "imagem": "https://m.media-amazon.com/images/I/71ncsAPLGtL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
