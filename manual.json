@@ -1285,5 +1285,419 @@
     "imagem": "https://m.media-amazon.com/images/I/71EvJYnDRYL._AC_UY218_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Elétrica KRUPS Beertender 5L B101, Acabamento em Inox, Compatível com Barril Heineken, Preta, 110V",
+    "preco": "899.89",
+    "link": "https://www.amazon.com.br/dp/B077NMYZTF?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41z1DHhm5GL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Elétrica KRUPS Beertender 5L B101, Acabamento em Inox, Compatível com Barril Heineken, Preta, 220V",
+    "preco": "831.52",
+    "link": "https://www.amazon.com.br/dp/B079DWJ7SV?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41z1DHhm5GL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Eos Bierhaus 5 Litros Eletrônica All Black Ece051pb Bivolt",
+    "preco": "1052.39",
+    "link": "https://www.amazon.com.br/dp/B0FB9H7T4K?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51yxCkJ60XL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira EOS Bierhaus 5 Litros com Compressor All Black ECC055PC 110V",
+    "preco": "1442.84",
+    "link": "https://www.amazon.com.br/dp/B0FB9F9YHC?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61LPvKfDuGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Cerveja Gelada 4,1 Litros Setbeer Hops Cervejeira Portátil Preto -",
+    "preco": "227.99",
+    "link": "https://www.amazon.com.br/dp/B096FS58HR?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61RmCq8lvoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Eos Bierhaus 5 Litros com Compressor All Black Ecc055pc 220v",
+    "preco": "1442.84",
+    "link": "https://www.amazon.com.br/dp/B0FB9DG8WW?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61LPvKfDuGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre de Chopp Marchesoni Marcbeer Transparente com Preto 3,5 L",
+    "preco": "364.62",
+    "link": "https://www.amazon.com.br/dp/B076X6PWPZ?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41SKVemOeZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Térmica Keg Vacuum 5 litros About Beer",
+    "preco": "1519.05",
+    "link": "https://www.amazon.com.br/dp/B0D2LWZYXZ?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51piy2b8RML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Gelo Refrigerada Chopp Serpentina Black Portátil Setbeer Hops",
+    "preco": "227.99",
+    "link": "https://www.amazon.com.br/dp/B096FQNX18?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61oi5ga9XLL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira e Cervejeira Eos Kegerator 172 Litros 2 Torneiras com Compressor Inox Eck220p 110v",
+    "preco": "4677.96",
+    "link": "https://www.amazon.com.br/dp/B0HF9XHG3Q?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41t6kv3ajkL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Portátil GelaFast para Barril com Serpentina Resfriamento a Gelo Sem Energia",
+    "preco": "379.90",
+    "link": "https://www.amazon.com.br/dp/B081YHHD8M?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51fc6mqosJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Cervejeira 4,1 Litros Preta Portátil Setbeer Hops Serpentina Torre Chopp",
+    "preco": "227.99",
+    "link": "https://www.amazon.com.br/dp/B096FJ8JLP?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61RmCq8lvoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Kegerator e Cervejeira com Compressor EOS 172 Litros Inox 1 Torneira ECK210P 110V",
+    "preco": "4156.04",
+    "link": "https://www.amazon.com.br/dp/B0HFB96PM5?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41WY8MYfktL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira e Cervejeira Eos Kegerator 172 Litros 1 Torneira com Compressor Inox Eck210p 220v",
+    "preco": "4156.04",
+    "link": "https://www.amazon.com.br/dp/B0HFB68CRX?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41WY8MYfktL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre de Chopp Marcbeer 2.5 L Marchesoni Marcbeer Transparente com Preto",
+    "preco": "360.99",
+    "link": "https://www.amazon.com.br/dp/B076X9BBKJ?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41GOSFt7pVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "CHOPEIRA CVX1 PRETO FOSCO 220 V",
+    "preco": "4876.89",
+    "link": "https://www.amazon.com.br/dp/B0CQMMVYCM?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41JVCEnEtIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Elétrica Bravo!Zero Black com Visor LED 50 Litros/Hora (220)",
+    "preco": "4283.26",
+    "link": "https://www.amazon.com.br/dp/B0CBSF9D39?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51GNI3z4QXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre de Chopp Vollekz 2,5 Litros com Refil Congelante em Aço Inox, Base Giratória e Autosserviço",
+    "preco": "313.40",
+    "link": "https://www.amazon.com.br/dp/B0HGGSHCVT?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51lzALgMStL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Portátil Cervejeira Refrigerada Gelo Torre Chopp Cerveja",
+    "preco": "227.99",
+    "link": "https://www.amazon.com.br/dp/B0987ST15R?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61RmCq8lvoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira A Gelo 34L com Torneira Italiana Cromada, Serpentina 10m e Destrave para Barril 5L Azul",
+    "preco": "758.10",
+    "link": "https://www.amazon.com.br/dp/B09RGDY9YZ?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41cWsZ0SpiL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Kit Chopeira Térmica Keg Vacuum Portátil de 5 L com Caneca About Beer",
+    "preco": "1851.55",
+    "link": "https://www.amazon.com.br/dp/B0DWLNBHVP?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61pTEoLMK9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira A Gelo 34L com Torneira Italiana Cromada, Serpentina 10m e Destrave para Barril 5L Preto",
+    "preco": "758.10",
+    "link": "https://www.amazon.com.br/dp/B09RGG7P6Y?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/417J1NINGzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira 34l Torneira Italiana E Destrave Barril 5l - Preto",
+    "preco": "573.39",
+    "link": "https://www.amazon.com.br/dp/B0DMPJ44QC?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41asuWt-xiL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Antonow Minia 15 Smart Flex - Não Precisa Cilindro de Gás - Com Kit de Extração (220, Volts)",
+    "preco": "6355.50",
+    "link": "https://www.amazon.com.br/dp/B0FY7KG2FD?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61xZWtU1cLL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira A Gelo 34L com Torneira Italiana Cromada e Destrave para Barril 5L Preto",
+    "preco": "616.55",
+    "link": "https://www.amazon.com.br/dp/B09RFX5H3Y?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/31id76rBRaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Kit Tubos Para Chopeira Beertender B-100 Heineken Krups 3Un",
+    "preco": "72.39",
+    "link": "https://www.amazon.com.br/dp/B0851SKY87?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51DDw281+9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira e Cervejeira Eos Kegerator 172 Litros 2 Torneiras com Compressor Inox Eck220p 220v",
+    "preco": "4640.54",
+    "link": "https://www.amazon.com.br/dp/B0HFBJW54S?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41t6kv3ajkL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Suqueira, Refresqueira, Chopeira Capacidade 3 Litros Base E Tampa De Aluminio Polido",
+    "preco": "56.90",
+    "link": "https://www.amazon.com.br/dp/B0F9H1CZYP?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/611iAVRN4uL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Chopeira Térmica Keg Vacuum Portátil About Beer de 5 Litros",
+    "preco": "1851.55",
+    "link": "https://www.amazon.com.br/dp/B0DT4Y74G9?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/517w58t-Y2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Elétrica Bravo!Zero com Visor LED 70 Litros/Hora (220)",
+    "preco": "5249.41",
+    "link": "https://www.amazon.com.br/dp/B0CBSGY37R?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51AtuaRB72L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre de Chopp Chopeira Tulipa Profissional Grande 3,5 Litros Progás Prtc-35",
+    "preco": "324.12",
+    "link": "https://www.amazon.com.br/dp/B0CDSPMBHV?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/319y0s5dEsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Pingadeira Chopeira Kegerator Em Aço Inox 25x15x2",
+    "preco": "70.30",
+    "link": "https://www.amazon.com.br/dp/B0DHB42RXD?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61Ttirg+kWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre de Chopp 2,5 Litros com Iluminação de Led Colorido GT14040-G - Lorben",
+    "preco": "253.95",
+    "link": "https://www.amazon.com.br/dp/B07DLHFMJL?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51CYVRSwRGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Portátil Cevejeira Refrigerada Gelo Serpentina Chopp Torre Churrasco",
+    "preco": "227.99",
+    "link": "https://www.amazon.com.br/dp/B0BK9YLM46?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61H-6I4UGRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Vacuum 5L Black",
+    "preco": "1376.55",
+    "link": "https://www.amazon.com.br/dp/B0DB6GRNYP?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/31JydEosNVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Portátil Cervejeira Refrigerada A Gelo Chopp - Preto",
+    "preco": "227.94",
+    "link": "https://www.amazon.com.br/dp/B098CZ7YXW?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61H-6I4UGRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Torre Chopp Cerveja Suco 4 Litros Hopr Super Chopeira",
+    "preco": "375.25",
+    "link": "https://www.amazon.com.br/dp/B0F74WL1K4?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51wMltnDxUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "CHOPEIRA CVX1 PRETO FOSCO 127 V",
+    "preco": "4876.89",
+    "link": "https://www.amazon.com.br/dp/B0CQRT2LZ1?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/41JVCEnEtIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira Com Frontal Com Corpo Cilindrico Em Plastico E Inox Com Banja Antigoteja Para Uso Em E Cozinhas Domesticas, Vermelho, Vermelho, style to 2",
+    "preco": "470.28",
+    "link": "https://www.amazon.com.br/dp/B0HHSBVKDH?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51GJbh2wwdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Pingadeira para Chopeira, Acessório para Chopeiras",
+    "preco": "49.30",
+    "link": "https://www.amazon.com.br/dp/B0DCWZXN2Q?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/31A2qcEgeRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chopeira Antonow Minia 40 Smart Flex/Não Precisa Cilindro de Gás/Com Kit de Extração (220, Volts)",
+    "preco": "7457.50",
+    "link": "https://www.amazon.com.br/dp/B08MVC3ZG1?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61UA88ENuWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Pingaira Bebida em Inox Perfurado Pingaira Bebida Altura Baixo para Chopeira Resincial",
+    "preco": "308.13",
+    "link": "https://www.amazon.com.br/dp/B0HDQQRTDW?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/61iKHrdqoUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Chopeira de Vidro Com Dispenser e Suqueira Grande Com Torneira Tampa Jarra Bebidas Suco Torre Chopp Bar Beer Churras(1 Chopeira Preta)",
+    "preco": "144.95",
+    "link": "https://www.amazon.com.br/dp/B0GK8S19N8?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51zEJYjrwEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Bolsa para Transporte Chopeira Keg Vaccum 5 Litros About Beer",
+    "preco": "208.05",
+    "link": "https://www.amazon.com.br/dp/B0DLLDKD8F?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51eRVaTH-+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Chopeira de Vidro Com Dispenser e Suqueira Grande Com Torneira Tampa Jarra Bebidas Suco Torre Chopp Bar Beer Churras(1 Chopeira Preta)",
+    "preco": "151.05",
+    "link": "https://www.amazon.com.br/dp/B0G1SJZVN4?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/51ttYlSXTAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Chopeira A Gelo 34L com Torneira Italiana Cromada e Destrave para Barril 5L Azul",
+    "preco": "616.55",
+    "link": "https://www.amazon.com.br/dp/B09RG12S56?tag=ofertas01dc-20",
+    "categoria": "Eletrodomésticos",
+    "imagem": "https://m.media-amazon.com/images/I/31CE+oqDCxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
   }
 ]
