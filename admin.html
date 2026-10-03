@@ -13,7 +13,7 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    input::selection, textarea::selection { background: rgba(13, 148, 136, 0.3); }     
+    input::selection, textarea::selection { background: rgba(13, 148, 136, 0.3); }
     #btn-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 3rem; height: 3rem; border-radius: 50%; background: #fff; color: #334155; border: 1px solid #E6DFD3; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 9999; display: flex; align-items: center; justify-content: center; cursor: move; user-select: none; transition: all 0.2s; }
     #btn-top:hover { color: #0F766E; transform: translateY(-2px); }
     .loading { display: inline-block; width: 14px; height: 14px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; }
@@ -93,54 +93,10 @@
         <div id="batch-actions" class="hidden mt-4 pt-4 border-t border-sand-100">
           <div class="flex items-center gap-3 mb-2 flex-wrap">
             <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Categoria global:</label>
-            <select id="batch-categoria" onchange="onGlobalCatChange(this)" class="px-3 py-2 rounded-xl border text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/40 transition-colors">
-              <option value="">Nenhuma (exige individual)</option>
-              <option value="__create__">➕ Criar categoria</option>
-              <option disabled>─────────────────</option>
-              <option value="Acessórios para Veículos">Acessórios para Veículos</option>
-              <option value="Agro">Agro</option>
-              <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
-              <option value="Animais">Animais (Pet)</option>
-              <option value="Antiguidades e Coleções">Antiguidades e Coleções</option>
-              <option value="Arte, Papelaria e Armarinho">Arte, Papelaria e Armarinho</option>
-              <option value="Automotivo e Moto">Automotivo e Moto</option>
-              <option value="Bebês">Bebês</option>
-              <option value="Beleza e Cuidado Pessoal">Beleza e Cuidado Pessoal</option>
-              <option value="Brinquedos e Hobbies">Brinquedos e Hobbies</option>
-              <option value="Calçados, Roupas e Bolsas">Calçados, Roupas e Bolsas</option>
-              <option value="Carros, Motos e Outros">Carros, Motos e Outros</option>
-              <option value="Casa, Móveis e Decoração">Casa, Móveis e Decoração</option>
-              <option value="Celulares e Telefones">Celulares e Telefones</option>
-              <option value="Câmeras e Acessórios">Câmeras e Acessórios</option>
-              <option value="Construção">Construção</option>
-              <option value="Cozinha e Utensílios">Cozinha e Utensílios</option>
-              <option value="Eletrodomésticos">Eletrodomésticos</option>
-              <option value="Eletrônicos, Áudio e Vídeo">Eletrônicos, Áudio e Vídeo</option>
-              <option value="Esportes e Fitness">Esportes e Fitness</option>
-              <option value="Ferramentas">Ferramentas</option>
-              <option value="Festas e Lembrancinhas">Festas e Lembrancinhas</option>
-              <option value="Games">Games</option>
-              <option value="Indústria e Comércio">Indústria e Comércio</option>
-              <option value="Ingressos">Ingressos</option>
-              <option value="Instrumentos Musicais">Instrumentos Musicais</option>
-              <option value="Jardim e Piscina">Jardim e Piscina</option>
-              <option value="Joias e Relógios">Joias e Relógios</option>
-              <option value="Livros, Revistas e Comics">Livros, Revistas e Comics</option>
-              <option value="Música, Filmes e Seriados">Música, Filmes e Seriados</option>
-              <option value="Móveis">Móveis</option>
-              <option value="Papelaria e Escritório">Papelaria e Escritório</option>
-              <option value="Saúde">Saúde</option>
-              <option value="Serviços">Serviços</option>
-              <option value="Televisores">Televisores</option>
-              <option value="Informática">Informática</option>
-              <option value="Outros">Outros</option>
-            </select>
+            <select id="batch-categoria" onchange="onGlobalCatChange(this)" class="px-3 py-2 rounded-xl border text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/40 transition-colors"></select>
             <button onclick="applyGlobalCat()" class="px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all">Aplicar a todos</button>
           </div>
-          <div id="global-newcat" class="hidden mb-2 flex items-center gap-2">
-            <input type="text" id="global-newcat-input" placeholder="Nome da nova categoria..." onkeydown="if(event.key==='Enter')confirmGlobalNewCat()" class="px-3 py-1.5 rounded-lg border border-teal-200 text-xs focus:outline-none focus:ring-2 focus:ring-teal-500/40 w-48">
-            <button onclick="confirmGlobalNewCat()" class="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white text-[10px] font-semibold rounded-lg">OK</button>
-          </div>
+          <div id="global-catmgr" class="hidden mb-2"></div>
           <div class="flex gap-3">
             <button id="btn-add" onclick="confirmBatch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Adicionar todos</button>
             <button onclick="clearBatch()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all">Limpar lista</button>
@@ -180,12 +136,15 @@
     var OWNER = "rpgdog-create";
     var REPO = "meu-site-ofertas";
     var FILE_PATH = "manual.json";
+    var CATS_FILE = "categorias.json";
     var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FILE_PATH;
+    var CATS_API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + CATS_FILE;
     var CORS_PROXY = "https://ml-proxy.rpgdog.workers.dev/?url=";
     var CAT_OPTIONS = ["Acessórios para Veículos","Agro","Alimentos e Bebidas","Animais","Antiguidades e Coleções","Arte, Papelaria e Armarinho","Automotivo e Moto","Bebês","Beleza e Cuidado Pessoal","Brinquedos e Hobbies","Calçados, Roupas e Bolsas","Carros, Motos e Outros","Casa, Móveis e Decoração","Celulares e Telefones","Câmeras e Acessórios","Construção","Cozinha e Utensílios","Eletrodomésticos","Eletrônicos, Áudio e Vídeo","Esportes e Fitness","Ferramentas","Festas e Lembrancinhas","Games","Indústria e Comércio","Ingressos","Instrumentos Musicais","Jardim e Piscina","Joias e Relógios","Livros, Revistas e Comics","Música, Filmes e Seriados","Móveis","Papelaria e Escritório","Saúde","Serviços","Televisores","Informática","Outros"];
 
     var offers = [];
     var batchItems = [];
+    var customCats = [];
     var currentCode = null;
     var codeExpiry = null;
     var timerInterval = null;
@@ -198,7 +157,7 @@
     function sendCode() {
       var email = document.getElementById("auth-email").value.trim().toLowerCase();
       hideErr("email-error");
-      if (email !== ADMIN_EMAIL) { showErr("email-error", "E-mail não autorizado."); return; }
+      if (email !== ADMIN_EMAIL) { showErr("email-email-error", "E-mail não autorizado."); return; }
       currentCode = String(Math.floor(100000 + Math.random() * 900000));
       codeExpiry = Date.now() + CODE_EXPIRY_MS;
       emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { to_email: email, code: currentCode })
@@ -238,7 +197,7 @@
       document.getElementById("admin-panel").style.display = "block";
       clearInterval(timerInterval);
       lucide.createIcons();
-      if (getToken()) { document.getElementById("token-status").textContent = "Token carregado ✓"; loadOffers(); }
+      if (getToken()) { document.getElementById("token-status").textContent = "Token carregado ✓"; loadOffers(); loadCustomCats(); }
     }
 
     function doLogout() { sessionStorage.removeItem("admin_auth"); location.reload(); }
@@ -253,7 +212,7 @@
       localStorage.setItem("gh_token", t);
       document.getElementById("token-status").textContent = "Salvo! ✓";
       setTimeout(function() { document.getElementById("token-status").textContent = ""; }, 3000);
-      loadOffers();
+      loadOffers(); loadCustomCats();
     }
 
     async function ghFetch(url, options) {
@@ -266,9 +225,14 @@
       return res;
     }
 
-    async function getFileSHA() { var res = await ghFetch(API); var data = await res.json(); return data.sha; }
+    async function getFileSHA(path) {
+      var url = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + path;
+      var res = await ghFetch(url);
+      var data = await res.json();
+      return data.sha;
+    }
 
-    async function commitFile(content, message) {
+    async function commitFile(content, filePath, message) {
       var jsonStr = JSON.stringify(content, null, 2);
       var bytes = new TextEncoder().encode(jsonStr);
       var binary = '';
@@ -276,10 +240,11 @@
         binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
       }
       var base64 = btoa(binary);
+      var url = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + filePath;
       for (var attempt = 0; attempt < 3; attempt++) {
-        var sha = await getFileSHA();
+        var sha = await getFileSHA(filePath);
         try {
-          await ghFetch(API, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" }) });
+          await ghFetch(url, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" }) });
           return;
         } catch (e) {
           if (e.message.indexOf("409") !== -1 && attempt < 2) continue;
@@ -299,28 +264,127 @@
       return true;
     }
 
-function addCatToOptions(cat) {
-  if (CAT_OPTIONS.indexOf(cat) === -1) {
-    var sorted = CAT_OPTIONS.concat([cat]).sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
-    CAT_OPTIONS = sorted;
-    var sel = document.getElementById("batch-categoria");
-    if (sel) {
-      var opt = document.createElement("option");
-      opt.value = cat; opt.textContent = cat;
-      var inserted = false;
-      for (var i = 0; i < sel.options.length; i++) {
-        if (sel.options[i].disabled) continue;
-        if (sel.options[i].value === "__create__" || sel.options[i].value === "") continue;
-        if (sel.options[i].value.localeCompare(cat, 'pt-BR') > 0) {
-          sel.insertBefore(opt, sel.options[i]);
-          inserted = true;
-          break;
-        }
-      }
-      if (!inserted) sel.appendChild(opt);
+    function allCats() {
+      var merged = CAT_OPTIONS.concat(customCats);
+      return merged.sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
     }
-  }
-}   
+
+    function rebuildSelects() {
+      var sel = document.getElementById("batch-categoria");
+      if (!sel) return;
+      var prev = sel.value;
+      sel.innerHTML = '<option value="">Nenhuma (exige individual)</option>';
+      sel.innerHTML += '<option value="__create__">➕ Gerenciar categorias</option>';
+      sel.innerHTML += '<option disabled>─────────────────</option>';
+      var sorted = allCats();
+      for (var i = 0; i < sorted.length; i++) {
+        sel.innerHTML += '<option value="' + sorted[i] + '">' + sorted[i] + '</option>';
+      }
+      if (prev && (CAT_OPTIONS.indexOf(prev) !== -1 || customCats.indexOf(prev) !== -1)) sel.value = prev;
+    }
+
+    async function loadCustomCats() {
+      try {
+        var res = await fetch(CATS_FILE + "?t=" + Date.now());
+        if (res.ok) { customCats = await res.json(); }
+        else { customCats = []; }
+      } catch(e) { customCats = []; }
+      rebuildSelects();
+    }
+
+    async function saveCustomCats() {
+      try {
+        await commitFile(customCats, CATS_FILE, "Update categorias.json");
+      } catch(e) {
+        alert("Erro ao salvar categorias: " + e.message);
+      }
+    }
+
+    function openCatMgr(context) {
+      var box = document.getElementById(context === "global" ? "global-catmgr" : "item-catmgr-" + context);
+      if (!box) return;
+      if (!box.classList.contains('hidden')) { box.classList.add('hidden'); return; }
+      box.classList.remove('hidden');
+      var html = '<div class="p-3 rounded-xl border border-teal-200 bg-teal-50/50 space-y-3">';
+      html += '<p class="text-[10px] font-bold text-teal-800 uppercase tracking-wider">Gerenciador de categorias</p>';
+      html += '<div class="flex items-center gap-2"><input type="text" id="catmgr-new-input" placeholder="Nova categoria..." onkeydown="if(event.key===\'Enter\')catMgrCreate(\'' + context + '\')" class="flex-1 px-3 py-1.5 rounded-lg border border-teal-200 text-xs focus:outline-none focus:ring-2 focus:ring-teal-500/40"><button onclick="catMgrCreate(\'' + context + '\')" class="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white text-[10px] font-semibold rounded-lg">Criar</button></div>';
+      if (customCats.length > 0) {
+        html += '<div class="space-y-1">';
+        var sorted = customCats.slice().sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
+        for (var i = 0; i < sorted.length; i++) {
+          html += '<div class="flex items-center gap-2 text-xs">';
+          html += '<span class="flex-1 truncate">' + sorted[i] + '</span>';
+          html += '<button onclick="catMgrRename(\'' + context + '\',\'' + sorted[i].replace(/'/g, "\\'") + '\')" class="text-teal-600 hover:text-teal-800" title="Renomear"><i data-lucide="pencil" class="w-3 h-3"></i></button>';
+          html += '<button onclick="catMgrDelete(\'' + context + '\',\'' + sorted[i].replace(/'/g, "\\'") + '\')" class="text-red-400 hover:text-red-600" title="Excluir"><i data-lucide="trash-2" class="w-3 h-3"></i></button>';
+          html += '</div>';
+        }
+        html += '</div>';
+      } else {
+        html += '<p class="text-[10px] text-slate-400">Nenhuma categoria customizada ainda.</p>';
+      }
+      html += '</div>';
+      box.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    async function catMgrCreate(context) {
+      var input = document.getElementById("catmgr-new-input");
+      var val = input.value.trim();
+      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
+      if (CAT_OPTIONS.indexOf(val) !== -1) { alert("Já existe nas categorias fixas."); return; }
+      if (customCats.indexOf(val) !== -1) { alert("Já existe nas categorias customizadas."); return; }
+      customCats.push(val);
+      customCats.sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
+      await saveCustomCats();
+      rebuildSelects();
+      if (context === "global") {
+        document.getElementById("batch-categoria").value = val;
+        applyGlobalCat();
+      } else {
+        var idx = parseInt(context);
+        batchItems[idx].categoriaAuto = val;
+      }
+      renderBatchResults();
+      updateGlobalCatStyle();
+      openCatMgr(context);
+    }
+
+    function catMgrRename(context, oldName) {
+      var newName = prompt("Renomear \"" + oldName + "\" para:", oldName);
+      if (!newName || newName.trim() === oldName) return;
+      newName = newName.trim();
+      if (newName.length < 3) { alert("Nome muito curto."); return; }
+      if (CAT_OPTIONS.indexOf(newName) !== -1) { alert("Já existe nas categorias fixas."); return; }
+      if (customCats.indexOf(newName) !== -1) { alert("Já existe nas categorias customizadas."); return; }
+      var oi = customCats.indexOf(oldName);
+      if (oi === -1) return;
+      customCats[oi] = newName;
+      customCats.sort(function(a,b){ return a.localeCompare(b, 'pt-BR'); });
+      batchItems.forEach(function(item) { if (item.categoriaAuto === oldName) item.categoriaAuto = newName; });
+      offers.forEach(function(o) { if (o.categoria === oldName) o.categoria = newName; });
+      saveCustomCats();
+      rebuildSelects();
+      renderBatchResults();
+      renderList();
+      updateGlobalCatStyle();
+      openCatMgr(context);
+    }
+
+    function catMgrDelete(context, catName) {
+      if (!confirm("Excluir \"" + catName + "\"?\n\nItens que usam esta categoria ficarão SEM categoria.")) return;
+      var ci = customCats.indexOf(catName);
+      if (ci === -1) return;
+      customCats.splice(ci, 1);
+      batchItems.forEach(function(item) { if (item.categoriaAuto === catName) item.categoriaAuto = ""; });
+      offers.forEach(function(o) { if (o.categoria === catName) o.categoria = ""; });
+      saveCustomCats();
+      rebuildSelects();
+      renderBatchResults();
+      renderList();
+      updateGlobalCatStyle();
+      openCatMgr(context);
+    }
+
     function updateGlobalCatStyle() {
       var sel = document.getElementById("batch-categoria");
       if (!sel) return;
@@ -338,36 +402,16 @@ function addCatToOptions(cat) {
 
     function onGlobalCatChange(sel) {
       if (sel.value === "__create__") {
-        document.getElementById("global-newcat").classList.remove('hidden');
-        document.getElementById("global-newcat-input").focus();
+        openCatMgr("global");
       } else {
-        document.getElementById("global-newcat").classList.add('hidden');
-        document.getElementById("global-newcat-input").value = "";
-      }
-    }
-
-    function confirmGlobalNewCat() {
-      var val = document.getElementById("global-newcat-input").value.trim();
-      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
-      addCatToOptions(val);
-      var applied = 0;
-      batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = val; applied++; } });
-      document.getElementById("global-newcat").classList.add('hidden');
-      document.getElementById("global-newcat-input").value = "";
-      document.getElementById("batch-categoria").value = "";
-      renderBatchResults();
-      updateGlobalCatStyle();
-      if (applied > 0) {
-        var s = document.getElementById("batch-status");
-        s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700';
-        s.textContent = applied + " item(ns) receberam a categoria: " + val;
+        document.getElementById("global-catmgr").classList.add('hidden');
       }
     }
 
     function applyGlobalCat() {
       var cat = document.getElementById("batch-categoria").value;
       if (!cat) { alert("Selecione uma categoria primeiro."); return; }
-      if (cat === "__create__") { document.getElementById("global-newcat").classList.remove('hidden'); document.getElementById("global-newcat-input").focus(); return; }
+      if (cat === "__create__") { openCatMgr("global"); return; }
       var applied = 0;
       batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = cat; applied++; } });
       renderBatchResults();
@@ -470,11 +514,12 @@ function addCatToOptions(cat) {
         if (item.categoriaAuto) { catHtml = '<span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">' + item.categoriaAuto + '</span>'; }
         else {
           var opts = '<option value="">Escolha...</option>';
-          opts += '<option value="__create__">➕ Criar categoria</option>';
+          opts += '<option value="__create__">➕ Gerenciar categorias</option>';
           opts += '<option disabled>─────────────────</option>';
-          for (var j = 0; j < CAT_OPTIONS.length; j++) opts += '<option value="' + CAT_OPTIONS[j] + '">' + CAT_OPTIONS[j] + '</option>';
+          var sorted = allCats();
+          for (var j = 0; j < sorted.length; j++) opts += '<option value="' + sorted[j] + '">' + sorted[j] + '</option>';
           catHtml = '<select class="text-[10px] px-2 py-1 rounded-lg border border-sand-200 bg-white focus:outline-none focus:ring-1 focus:ring-teal-500" onchange="onItemCatChange(' + i + ',this)">' + opts + '</select>';
-          catHtml += '<div id="item-newcat-' + i + '" class="hidden mt-1 flex items-center gap-1"><input type="text" id="item-newcat-input-' + i + '" placeholder="Nova categoria..." onkeydown="if(event.key===\'Enter\')confirmItemNewCat(' + i + ')" class="text-[10px] px-2 py-1 rounded border border-teal-200 focus:outline-none focus:ring-1 focus:ring-teal-500 w-32"><button onclick="confirmItemNewCat(' + i + ')" class="px-2 py-1 bg-teal-600 text-white text-[9px] rounded">OK</button></div>';
+          catHtml += '<div id="item-catmgr-' + i + '" class="hidden mt-1"></div>';
         }
         var boxClass = item._dup ? 'border-red-300 bg-red-50' : (item.erro ? 'border-sand-100 opacity-50' : 'border-sand-100');
         var dupBadge = item._dup ? '<span class="text-[9px] font-bold text-red-600 bg-red-100 px-1.5 py-0.5 rounded ml-1">JÁ ADICIONADO</span>' : '';
@@ -491,23 +536,13 @@ function addCatToOptions(cat) {
 
     function onItemCatChange(i, sel) {
       if (sel.value === "__create__") {
-        var box = document.getElementById("item-newcat-" + i);
-        if (box) { box.classList.remove('hidden'); box.classList.add('flex'); document.getElementById("item-newcat-input-" + i).focus(); }
+        openCatMgr(i);
       } else if (sel.value) {
         batchItems[i].categoriaAuto = sel.value;
         renderBatchResults();
+        updateGlobalCatStyle();
       }
     }
-
-    function confirmItemNewCat(i) {
-      var val = document.getElementById("item-newcat-input-" + i).value.trim();
-      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
-      addCatToOptions(val);
-      batchItems[i].categoriaAuto = val;
-      renderBatchResults();
-    }
-
-    function setBatchCat(index, value) { batchItems[index].categoriaAuto = value; renderBatchResults(); }
 
     function removeBatchItem(i) {
       batchItems.splice(i, 1);
@@ -528,8 +563,7 @@ function addCatToOptions(cat) {
       document.getElementById("batch-status").classList.add('hidden');
       document.getElementById("progress").classList.add('hidden');
       document.getElementById("batch-links").value = "";
-      document.getElementById("global-newcat").classList.add('hidden');
-      document.getElementById("global-newcat-input").value = "";
+      document.getElementById("global-catmgr").classList.add('hidden');
       document.getElementById("batch-categoria").value = "";
       var btnAdd = document.getElementById("btn-add");
       btnAdd.disabled = false;
@@ -539,7 +573,7 @@ function addCatToOptions(cat) {
 
     function confirmBatch() {
       var catGlobal = document.getElementById("batch-categoria").value;
-      if (catGlobal === "__create__") { alert("Confirme a nova categoria primeiro (clique OK)."); return; }
+      if (catGlobal === "__create__") { alert("Confirme a ação no gerenciador de categorias primeiro."); return; }
       var validItems = batchItems.filter(function(i) { return !i.erro; });
       var blocked = 0, already = 0, toAdd = [];
       validItems.forEach(function(item) {
@@ -667,7 +701,7 @@ function addCatToOptions(cat) {
     async function saveAll() {
       var s = document.getElementById("save-status");
       s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-sky-50 text-sky-700'; s.textContent = "Salvando...";
-      try { await commitFile(offers, "Update manual.json (" + offers.length + " ofertas)"); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; s.textContent = "Salvo! Site atualiza em ~30s. ✓"; }
+      try { await commitFile(offers, FILE_PATH, "Update manual.json (" + offers.length + " ofertas)"); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; s.textContent = "Salvo! Site atualiza em ~30s. ✓"; }
       catch (e) { s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700'; s.textContent = "Erro: " + e.message; }
     }
 
@@ -679,6 +713,8 @@ function addCatToOptions(cat) {
       document.addEventListener('mouseup', function() { dragging = false; });
       btn.addEventListener('click', function() { if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' }); });
     })();
+
+    rebuildSelects();
   </script>
 </body>
 </html>   
