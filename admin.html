@@ -261,7 +261,7 @@
     async function getFileSHA() { var res = await ghFetch(API); var data = await res.json(); return data.sha; }
 
     async function commitFile(content, message) {
-      var base64 = btoa(String.fromCharCode.apply(null, new Uint8Array(new TextEncoder().encode(JSON.stringify(content, null, 2)))));
+
       for (var attempt = 0; attempt < 3; attempt++) {
         var sha = await getFileSHA();
         try {
