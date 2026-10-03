@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "nome": "Jogo Panela Ceramica Antiaderente 5pç Tampa Silicone Induçao",
+    "preco": "266.17",
+    "link": "https://meli.la/1haGYNB",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_815631-MLB109277052486_042026-O-jogo-panela-ceramica-antiaderente-5pc-tampa-silicone-inducao.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit Pincéis Maquiagem 13 Peças + 2 Esponjas Com Estojo",
+    "preco": "22.9",
+    "link": "https://meli.la/1E8VWZZ",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_600326-MLB116947956512_092026-O-kit-pinceis-maquiagem-13-pecas--2-esponjas-com-estojo.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  }
+]
