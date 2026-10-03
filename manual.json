@@ -2192,5 +2192,64 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "59.00"
+  },
+  {
+    "nome": "Ps3 Playstation 3 + 47 Jogos + 2 Controles + Nf-e E Garantia",
+    "preco": "1479",
+    "link": "https://meli.la/1pxyhjY",
+    "categoria": "Games",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_948524-MLB111488980009_052026-O-ps3-playstation-3--47-jogos--2-controles--nfe-e-garantia.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Torneira Gourmet Flexível Giratória Cozinha Pia Parede 2 Jatos Cromada - Marca Camperluz",
+    "preco": "29.97",
+    "link": "https://meli.la/1dE14fY",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_778406-MLA109893963069_032026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "49.97"
+  },
+  {
+    "nome": "Parafusadeira Furadeira De Impacto The Black Tools Profissional 2 Baterias Com Maleta + Kit Acessórios 145 Peças Tbkit19",
+    "preco": "303.9",
+    "link": "https://meli.la/2m1huxs",
+    "categoria": "Ferramentas",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_909899-MLA110797840878_052026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "499.90"
+  },
+  {
+    "nome": "Bicicleta Scooter Elétrica Xplore 48v/ 12ah 500w Sem Cnh Preto",
+    "preco": "3349.9",
+    "link": "https://meli.la/1GHMFYj",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_779139-MLA115894400855_082026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "4990.00"
+  },
+  {
+    "nome": "Torneira Gourmet Parede Cozinha Preta Flexível 2 Jatos Chuveirinho Cone 1/4 Volta Luxo Premium Silicone Cone Mais Vendida Preto Fosco",
+    "preco": "37.95",
+    "link": "https://meli.la/2FSdfn1",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_616490-MLA111500394001_052026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "69.00"
+  },
+  {
+    "nome": "Perfume Masculino Calvin Klein Ck In2u For Him Eau De Toilette Edt Original Importado (100ml)",
+    "preco": "30.81",
+    "link": "https://meli.la/139p193",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_928102-MLA74781927305_022024-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "549.00"
   }
 ]
