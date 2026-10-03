@@ -448,6 +448,8 @@ y          <div class="flex gap-3">
       if (!token) { alert('Token não encontrado. Faça login primeiro.'); return; }
       var btn = event.target.closest('button');
       btn.disabled = true;
+      btn.classList.remove('bg-emerald-50', 'text-emerald-700');
+      btn.classList.add('bg-orange-100', 'text-orange-700');
       btn.innerHTML = '<span class="animate-pulse">Sincronizando...</span>';
       try {
         var res = await fetch('https://api.github.com/repos/rpgdog-create/meu-site-ofertas/actions/workflows/sync-ml.yml/dispatches', {
@@ -455,23 +457,39 @@ y          <div class="flex gap-3">
           headers: { 'Authorization': 'token ' + token, 'Content-Type': 'application/json' },
           body: JSON.stringify({ ref: 'main' })
         });
-        if (res.status === 204) {
-          btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Sync iniciado!';
-          btn.classList.remove('bg-emerald-50', 'text-emerald-700');
-          btn.classList.add('bg-emerald-100', 'text-emerald-800');
-        } else {
-          alert('Erro: ' + res.status + ' ' + res.statusText);
-          btn.disabled = false;
-          btn.innerHTML = '<i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync ML';
-        }
+        if (res.status !== 204) { throw new Error('HTTP ' + res.status); }
+        var poll = setInterval(async function() {
+          try {
+            var r = await fetch('https://api.github.com/repos/rpgdog-create/meu-site-ofertas/actions/workflows/sync-ml.yml/runs?per_page=1', {
+              headers: { 'Authorization': 'token ' + token }
+            });
+            var data = await r.json();
+            var run = data.workflow_runs && data.workflow_runs[0];
+            if (run && run.status === 'completed') {
+              clearInterval(poll);
+              if (run.conclusion === 'success') {
+                btn.classList.remove('bg-orange-100', 'text-orange-700');
+                btn.classList.add('bg-emerald-100', 'text-emerald-800');
+                btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Sincronizado ✓';
+              } else {
+                btn.classList.remove('bg-orange-100', 'text-orange-700');
+                btn.classList.add('bg-red-100', 'text-red-700');
+                btn.innerHTML = '<i data-lucide="x" class="w-4 h-4"></i> Erro no sync';
+              }
+              btn.disabled = false;
+              lucide.createIcons();
+            }
+          } catch(e) {}
+        }, 10000);
       } catch (e) {
         alert('Erro: ' + e.message);
         btn.disabled = false;
+        btn.classList.remove('bg-orange-100', 'text-orange-700');
+        btn.classList.add('bg-emerald-50', 'text-emerald-700');
         btn.innerHTML = '<i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync ML';
+        lucide.createIcons();
       }
-      lucide.createIcons();
-    }
-   
+    }      
 
     function renderList() {
       document.getElementById("count").textContent = offers.length;
