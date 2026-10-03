@@ -261,15 +261,24 @@
     async function getFileSHA() { var res = await ghFetch(API); var data = await res.json(); return data.sha; }
 
     async function commitFile(content, message) {
-
+      var jsonStr = JSON.stringify(content, null, 2);
+      var bytes = new TextEncoder().encode(jsonStr);
+      var binary = '';
+      for (var i = 0; i < bytes.length; i += 0x8000) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      }
+      var base64 = btoa(binary);
       for (var attempt = 0; attempt < 3; attempt++) {
         var sha = await getFileSHA();
         try {
           await ghFetch(API, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" }) });
           return;
-        } catch (e) { if (e.message.indexOf("409") !== -1 && attempt < 2) continue; throw e; }
+        } catch (e) {
+          if (e.message.indexOf("409") !== -1 && attempt < 2) continue;
+          throw e;
+        }
       }
-    }
+    } 
 
     function isValidCategory(cat) {
       if (!cat) return false;
