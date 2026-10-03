@@ -375,7 +375,7 @@
         if (c) cats.add(c);
       });
       var sorted = Array.from(cats).sort(function(a, b) { return a.localeCompare(b, 'pt-BR'); });
-      var html = '<button data-cat="all" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5"></i> Todos (' + allOffers.length + ')</button>';
+      var html = '<button data-cat="all" class="sticky left-0 z-10 whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5"></i> Todos (' + allOffers.length + ')</button>';   
       sorted.forEach(function(cat) {
         var count = allOffers.filter(function(p) { return (p.categoria || p.categoriaAuto) === cat; }).length;
         html += '<button data-cat="' + cat + '" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5 text-slate-400"></i> ' + cat + ' (' + count + ')</button>';
