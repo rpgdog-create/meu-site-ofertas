@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Ofertas do Dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: { 50:'#F0FDF9', 100:'#CCFBEF', 500:'#0D9488', 600:'#0F766E', 900:'#134E4A' }, accent: { 50:'#FFF7ED', 500:'#F97316', 600:'#EA580C' }, sand: { 50:'#FAF8F5', 100:'#F5F0E8', 200:'#E6DFD3', 800:'#2C2A29' } }, fontFamily: { sans: ['"Plus Jakarta Sans"','sans-serif'], display: ['"Space Grotesk"','sans-serif'] } } }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    input::selection, textarea::selection { background: rgba(13, 148, 136, 0.3); }     
+    #btn-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 3rem; height: 3rem; border-radius: 50%; background: #fff; color: #334155; border: 1px solid #E6DFD3; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 9999; display: flex; align-items: center; justify-content: center; cursor: move; user-select: none; transition: all 0.2s; }
+    #btn-top:hover { color: #0F766E; transform: translateY(-2px); }
+    .loading { display: inline-block; width: 14px; height: 14px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body class="bg-sand-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+  <header class="sticky top-0 z-40 bg-teal-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-teal-200 hover:text-white transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
+      <div class="flex items-center gap-3">
+        <span class="font-display font-bold text-lg text-white">Admin <span class="text-teal-200">Panel</span></span>
+        <button onclick="doLogout()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-teal-200 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="log-out" class="w-3.5 h-3.5"></i> Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="screen-email" class="flex items-center justify-center min-h-[70vh] px-4">
+    <div class="bg-white p-8 rounded-3xl border border-sand-200 shadow-xl shadow-slate-200/40 w-full max-w-sm text-center">
+      <div class="w-14 h-14 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-lg mx-auto mb-5"><i data-lucide="shield-check" class="w-7 h-7"></i></div>
+      <h2 class="font-display text-xl font-bold text-slate-900 mb-1">Área Restrita</h2>
+      <p class="text-sm text-slate-500 mb-6">Digite seu e-mail para receber o código de acesso.</p>
+      <input type="email" id="auth-email" placeholder="seu@email.com" onkeydown="if(event.key==='Enter')sendCode()" class="w-full px-4 py-3 rounded-xl border border-sand-200 text-sm text-center focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500 mb-4">
+      <button onclick="sendCode()" class="w-full px-4 py-3 bg-teal-600 hover:bg-teal-500 text-white text-sm font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Enviar código</button>
+      <p class="text-xs text-red-500 mt-3 hidden" id="email-error"></p>
+    </div>
+  </div>
+
+  <div id="screen-code" class="flex items-center justify-center min-h-[70vh] px-4" style="display:none;">
+    <div class="bg-white p-8 rounded-3xl border border-sand-200 shadow-xl shadow-slate-200/40 w-full max-w-sm text-center">
+      <div class="w-14 h-14 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-lg mx-auto mb-5"><i data-lucide="key-round" class="w-7 h-7"></i></div>
+      <h2 class="font-display text-xl font-bold text-slate-900 mb-1">Código de verificação</h2>
+      <p class="text-sm text-slate-500 mb-6">Enviamos um código para <strong id="show-email" class="text-slate-700"></strong></p>
+      <input type="text" id="auth-code" maxlength="6" placeholder="000000" onkeydown="if(event.key==='Enter')verifyCode()" class="w-full px-4 py-3 rounded-xl border border-sand-200 text-center text-2xl font-bold tracking-[0.5em] focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500 mb-3">
+      <p class="text-xs text-slate-400 mb-4" id="timer"></p>
+      <button onclick="verifyCode()" class="w-full px-4 py-3 bg-teal-600 hover:bg-teal-500 text-white text-sm font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Verificar</button>
+      <p class="text-xs text-red-500 mt-3 hidden" id="code-error"></p>
+      <p class="mt-4"><a href="#" onclick="resendCode()" class="text-xs text-slate-400 hover:text-teal-600 transition-colors">Reenviar código</a></p>
+    </div>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+
+      <section class="bg-white rounded-2xl border border-sand-200 p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center"><i data-lucide="github" class="w-5 h-5 text-slate-600"></i></div>
+          <div>
+            <h2 class="font-display font-bold text-slate-900">Token do GitHub</h2>
+            <p class="text-xs text-slate-500">Personal Access Token (classic, repo + workflow)</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <input type="password" id="gh-token" placeholder="ghp_..." class="flex-1 px-4 py-2.5 rounded-xl border border-sand-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500">
+          <button onclick="saveToken()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Salvar</button>
+        </div>
+        <span id="token-status" class="text-xs text-emerald-600 mt-2 block"></span>
+      </section>
+
+      <section class="bg-white rounded-2xl border border-sand-200 p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-teal-50 flex items-center justify-center"><i data-lucide="download" class="w-5 h-5 text-teal-600"></i></div>
+          <div>
+            <h2 class="font-display font-bold text-slate-900">Importar ofertas</h2>
+            <p class="text-xs text-slate-500">Cole os dados do ML Copy / AM Copy ou links puros (um por linha)</p>
+          </div>
+        </div>
+        <textarea id="batch-links" rows="5" placeholder="Cole aqui (Ctrl+V) os dados do ML Copy / AM Copy ou os links..." class="w-full px-4 py-3 rounded-xl border border-sand-200 text-xs font-mono focus:outline-none focus:ring-2 focus:ring-teal-500/40 focus:border-teal-500 resize-y mb-4"></textarea>
+        <div class="flex gap-3">
+          <button id="btn-batch" onclick="batchFetch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Importar</button>
+          <button onclick="document.getElementById('batch-links').value=''" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all">Limpar caixa</button>
+        </div>
+        <div id="batch-status" class="hidden mt-4 px-4 py-3 rounded-xl text-xs font-medium"></div>
+        <div id="progress" class="hidden mt-3 h-1.5 bg-sand-100 rounded-full overflow-hidden"><div id="progress-fill" class="h-full bg-teal-500 transition-all" style="width:0%"></div></div>
+        <div id="batch-results" class="mt-4 space-y-2"></div>
+        <div id="batch-actions" class="hidden mt-4 pt-4 border-t border-sand-100">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Categoria global:</label>
+            <select id="batch-categoria" onchange="onGlobalCatChange(this)" class="px-3 py-2 rounded-xl border text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/40 transition-colors">
+              <option value="">Nenhuma (exige individual)</option>
+              <option value="__create__">➕ Criar categoria</option>
+              <option disabled>─────────────────</option>
+              <option value="Acessórios para Veículos">Acessórios para Veículos</option>
+              <option value="Agro">Agro</option>
+              <option value="Alimentos e Bebidas">Alimentos e Bebidas</option>
+              <option value="Animais">Animais (Pet)</option>
+              <option value="Antiguidades e Coleções">Antiguidades e Coleções</option>
+              <option value="Arte, Papelaria e Armarinho">Arte, Papelaria e Armarinho</option>
+              <option value="Automotivo e Moto">Automotivo e Moto</option>
+              <option value="Bebês">Bebês</option>
+              <option value="Beleza e Cuidado Pessoal">Beleza e Cuidado Pessoal</option>
+              <option value="Brinquedos e Hobbies">Brinquedos e Hobbies</option>
+              <option value="Calçados, Roupas e Bolsas">Calçados, Roupas e Bolsas</option>
+              <option value="Carros, Motos e Outros">Carros, Motos e Outros</option>
+              <option value="Casa, Móveis e Decoração">Casa, Móveis e Decoração</option>
+              <option value="Celulares e Telefones">Celulares e Telefones</option>
+              <option value="Câmeras e Acessórios">Câmeras e Acessórios</option>
+              <option value="Construção">Construção</option>
+              <option value="Cozinha e Utensílios">Cozinha e Utensílios</option>
+              <option value="Eletrodomésticos">Eletrodomésticos</option>
+              <option value="Eletrônicos, Áudio e Vídeo">Eletrônicos, Áudio e Vídeo</option>
+              <option value="Esportes e Fitness">Esportes e Fitness</option>
+              <option value="Ferramentas">Ferramentas</option>
+              <option value="Festas e Lembrancinhas">Festas e Lembrancinhas</option>
+              <option value="Games">Games</option>
+              <option value="Indústria e Comércio">Indústria e Comércio</option>
+              <option value="Ingressos">Ingressos</option>
+              <option value="Instrumentos Musicais">Instrumentos Musicais</option>
+              <option value="Jardim e Piscina">Jardim e Piscina</option>
+              <option value="Joias e Relógios">Joias e Relógios</option>
+              <option value="Livros, Revistas e Comics">Livros, Revistas e Comics</option>
+              <option value="Música, Filmes e Seriados">Música, Filmes e Seriados</option>
+              <option value="Móveis">Móveis</option>
+              <option value="Papelaria e Escritório">Papelaria e Escritório</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Serviços">Serviços</option>
+              <option value="Televisores">Televisores</option>
+              <option value="Informática">Informática</option>
+              <option value="Outros">Outros</option>
+            </select>
+            <button onclick="applyGlobalCat()" class="px-4 py-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all">Aplicar a todos</button>
+          </div>
+          <div id="global-newcat" class="hidden mb-2 flex items-center gap-2">
+            <input type="text" id="global-newcat-input" placeholder="Nome da nova categoria..." onkeydown="if(event.key==='Enter')confirmGlobalNewCat()" class="px-3 py-1.5 rounded-lg border border-teal-200 text-xs focus:outline-none focus:ring-2 focus:ring-teal-500/40 w-48">
+            <button onclick="confirmGlobalNewCat()" class="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white text-[10px] font-semibold rounded-lg">OK</button>
+          </div>
+          <div class="flex gap-3">
+            <button id="btn-add" onclick="confirmBatch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Adicionar todos</button>
+            <button onclick="clearBatch()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all">Limpar lista</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-2xl border border-sand-200 p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-accent-50 flex items-center justify-center"><i data-lucide="package" class="w-5 h-5 text-accent-600"></i></div>
+          <h2 class="font-display font-bold text-slate-900">Ofertas atuais (<span id="count">0</span>)</h2>
+        </div>
+        <div id="offers-list" class="space-y-2 max-h-[400px] overflow-y-auto pr-1"></div>
+        <div class="mt-5 pt-4 border-t border-sand-100 flex gap-3 flex-wrap">
+          <button onclick="saveAll()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98] flex items-center gap-2"><i data-lucide="save" class="w-4 h-4"></i> Salvar no site</button>
+          <button onclick="loadOffers()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-cw" class="w-4 h-4"></i> Recarregar</button>
+          <button onclick="runSyncML()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync</button>
+          <button onclick="removeAllOffers()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="trash-2" class="w-4 h-4"></i> Remover todos</button>
+        </div>
+        <div id="save-status" class="hidden mt-4 px-4 py-3 rounded-xl text-xs font-medium"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <button id="btn-top" title="Voltar ao Topo"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    lucide.createIcons();
+
+    var ADMIN_EMAIL = "rpgdog@gmail.com";
+    var EMAILJS_PUBLIC_KEY = "iMkQX8pFPaer4mxtE";
+    var EMAILJS_SERVICE_ID = "Gmail_service";
+    var EMAILJS_TEMPLATE_ID = "template_2fa";
+    var CODE_EXPIRY_MS = 5 * 60 * 1000;
+    var OWNER = "rpgdog-create";
+    var REPO = "meu-site-ofertas";
+    var FILE_PATH = "manual.json";
+    var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FILE_PATH;
+    var CORS_PROXY = "https://ml-proxy.rpgdog.workers.dev/?url=";
+    var CAT_OPTIONS = ["Acessórios para Veículos","Agro","Alimentos e Bebidas","Animais","Antiguidades e Coleções","Arte, Papelaria e Armarinho","Automotivo e Moto","Bebês","Beleza e Cuidado Pessoal","Brinquedos e Hobbies","Calçados, Roupas e Bolsas","Carros, Motos e Outros","Casa, Móveis e Decoração","Celulares e Telefones","Câmeras e Acessórios","Construção","Cozinha e Utensílios","Eletrodomésticos","Eletrônicos, Áudio e Vídeo","Esportes e Fitness","Ferramentas","Festas e Lembrancinhas","Games","Indústria e Comércio","Ingressos","Instrumentos Musicais","Jardim e Piscina","Joias e Relógios","Livros, Revistas e Comics","Música, Filmes e Seriados","Móveis","Papelaria e Escritório","Saúde","Serviços","Televisores","Informática","Outros"];
+
+    var offers = [];
+    var batchItems = [];
+    var currentCode = null;
+    var codeExpiry = null;
+    var timerInterval = null;
+
+    (function() { emailjs.init(EMAILJS_PUBLIC_KEY); })();
+
+    function showErr(id, msg) { var el = document.getElementById(id); el.textContent = msg; el.classList.remove('hidden'); }
+    function hideErr(id) { document.getElementById(id).classList.add('hidden'); }
+
+    function sendCode() {
+      var email = document.getElementById("auth-email").value.trim().toLowerCase();
+      hideErr("email-error");
+      if (email !== ADMIN_EMAIL) { showErr("email-error", "E-mail não autorizado."); return; }
+      currentCode = String(Math.floor(100000 + Math.random() * 900000));
+      codeExpiry = Date.now() + CODE_EXPIRY_MS;
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { to_email: email, code: currentCode })
+        .then(function() {
+          document.getElementById("screen-email").style.display = "none";
+          document.getElementById("screen-code").style.display = "flex";
+          document.getElementById("show-email").textContent = email;
+          startTimer();
+        }).catch(function(err) { showErr("email-error", "Erro: " + (err.text || err.message)); });
+    }
+
+    function resendCode() { sendCode(); }
+
+    function verifyCode() {
+      var input = document.getElementById("auth-code").value.trim();
+      hideErr("code-error");
+      if (Date.now() > codeExpiry) { showErr("code-error", "Código expirado."); return; }
+      if (input !== currentCode) { showErr("code-error", "Código incorreto."); return; }
+      sessionStorage.setItem("admin_auth", "1");
+      showPanel();
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(function() {
+        var r = codeExpiry - Date.now();
+        if (r <= 0) { document.getElementById("timer").textContent = "Código expirado."; clearInterval(timerInterval); return; }
+        var min = Math.floor(r / 60000);
+        var sec = Math.floor((r % 60000) / 1000);
+        document.getElementById("timer").textContent = min + ":" + String(sec).padStart(2, "0");
+      }, 1000);
+    }
+
+    function showPanel() {
+      document.getElementById("screen-email").style.display = "none";
+      document.getElementById("screen-code").style.display = "none";
+      document.getElementById("admin-panel").style.display = "block";
+      clearInterval(timerInterval);
+      lucide.createIcons();
+      if (getToken()) { document.getElementById("token-status").textContent = "Token carregado ✓"; loadOffers(); }
+    }
+
+    function doLogout() { sessionStorage.removeItem("admin_auth"); location.reload(); }
+
+    if (sessionStorage.getItem("admin_auth") === "1") showPanel();
+
+    function getToken() { return localStorage.getItem("gh_token"); }
+
+    function saveToken() {
+      var t = document.getElementById("gh-token").value.trim();
+      if (!t) return;
+      localStorage.setItem("gh_token", t);
+      document.getElementById("token-status").textContent = "Salvo! ✓";
+      setTimeout(function() { document.getElementById("token-status").textContent = ""; }, 3000);
+      loadOffers();
+    }
+
+    async function ghFetch(url, options) {
+      options = options || {};
+      var token = getToken();
+      if (!token) { alert("Salve seu token GitHub primeiro!"); throw new Error("No token"); }
+      options.headers = Object.assign({}, options.headers, { "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json" });
+      var res = await fetch(url, options);
+      if (!res.ok) { var e = await res.json().catch(function() { return {}; }); throw new Error(e.message || "HTTP " + res.status); }
+      return res;
+    }
+
+    async function getFileSHA() { var res = await ghFetch(API); var data = await res.json(); return data.sha; }
+
+    async function commitFile(content, message) {
+      var jsonStr = JSON.stringify(content, null, 2);
+      var bytes = new TextEncoder().encode(jsonStr);
+      var binary = '';
+      for (var i = 0; i < bytes.length; i += 0x8000) {
+        binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+      }
+      var base64 = btoa(binary);
+      for (var attempt = 0; attempt < 3; attempt++) {
+        var sha = await getFileSHA();
+        try {
+          await ghFetch(API, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: message, content: base64, sha: sha, branch: "main" }) });
+          return;
+        } catch (e) {
+          if (e.message.indexOf("409") !== -1 && attempt < 2) continue;
+          throw e;
+        }
+      }
+    }
+
+    function isValidCategory(cat) {
+      if (!cat) return false;
+      var clean = cat.trim();
+      if (clean.length < 3 || clean.length > 50) return false;
+      if (clean.indexOf("@") !== -1) return false;
+      var lower = clean.toLowerCase();
+      if (lower.indexOf("vender") !== -1 || lower.indexOf("igual") !== -1 || lower.indexOf("comprar") !== -1 || lower.indexOf("oferta") !== -1 || lower.indexOf("imperd") !== -1 || lower.indexOf("mais vendido") !== -1) return false;
+      if (clean.charAt(0) >= "0" && clean.charAt(0) <= "9") return false;
+      return true;
+    }
+
+    function addCatToOptions(cat) {
+      if (CAT_OPTIONS.indexOf(cat) === -1) {
+        CAT_OPTIONS.push(cat);
+        var sel = document.getElementById("batch-categoria");
+        if (sel) {
+          var opt = document.createElement("option");
+          opt.value = cat; opt.textContent = cat;
+          sel.appendChild(opt);
+        }
+      }
+    }
+
+    function updateGlobalCatStyle() {
+      var sel = document.getElementById("batch-categoria");
+      if (!sel) return;
+      var validItems = batchItems.filter(function(i) { return !i.erro; });
+      var missing = validItems.filter(function(i) { return !i.categoriaAuto; }).length;
+      sel.classList.remove('border-sand-200','border-red-300','border-emerald-300','bg-white','bg-red-50','bg-emerald-50');
+      if (validItems.length === 0) {
+        sel.classList.add('border-sand-200','bg-white');
+      } else if (missing > 0) {
+        sel.classList.add('border-red-300','bg-red-50');
+      } else {
+        sel.classList.add('border-emerald-300','bg-emerald-50');
+      }
+    }
+
+    function onGlobalCatChange(sel) {
+      if (sel.value === "__create__") {
+        document.getElementById("global-newcat").classList.remove('hidden');
+        document.getElementById("global-newcat-input").focus();
+      } else {
+        document.getElementById("global-newcat").classList.add('hidden');
+        document.getElementById("global-newcat-input").value = "";
+      }
+    }
+
+    function confirmGlobalNewCat() {
+      var val = document.getElementById("global-newcat-input").value.trim();
+      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
+      addCatToOptions(val);
+      var applied = 0;
+      batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = val; applied++; } });
+      document.getElementById("global-newcat").classList.add('hidden');
+      document.getElementById("global-newcat-input").value = "";
+      document.getElementById("batch-categoria").value = "";
+      renderBatchResults();
+      updateGlobalCatStyle();
+      if (applied > 0) {
+        var s = document.getElementById("batch-status");
+        s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700';
+        s.textContent = applied + " item(ns) receberam a categoria: " + val;
+      }
+    }
+
+    function applyGlobalCat() {
+      var cat = document.getElementById("batch-categoria").value;
+      if (!cat) { alert("Selecione uma categoria primeiro."); return; }
+      if (cat === "__create__") { document.getElementById("global-newcat").classList.remove('hidden'); document.getElementById("global-newcat-input").focus(); return; }
+      var applied = 0;
+      batchItems.forEach(function(item, i) { if (!item.erro && !item.categoriaAuto) { batchItems[i].categoriaAuto = cat; applied++; } });
+      renderBatchResults();
+      updateGlobalCatStyle();
+      var statusEl = document.getElementById("batch-status");
+      if (applied > 0) { statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; statusEl.textContent = applied + " item(ns) receberam a categoria: " + cat; }
+      else { alert("Nenhum item sem categoria para atualizar."); }
+    }
+
+    async function batchFetch() {
+      var raw = document.getElementById("batch-links").value.trim();
+      var lines = raw.split("\n").map(function(l) { return l.trim(); }).filter(function(l) { return l.length > 5; });
+      var statusEl = document.getElementById("batch-status");
+      var progress = document.getElementById("progress");
+      var fill = document.getElementById("progress-fill");
+      var btn = document.getElementById("btn-batch");
+      var results = document.getElementById("batch-results");
+      var actions = document.getElementById("batch-actions");
+      if (lines.length === 0) { alert("Cole pelo menos 1 linha."); return; }
+      if (lines[0].indexOf("|||") !== -1) {
+        batchItems = lines.map(function(line) {
+          var parts = line.split("|||");
+          var c4 = (parts[4] || "").trim(); var c5 = (parts[5] || "").trim();
+          var isUrl = function(s){ return /^https?:\/\//i.test(s); };
+          var linkVal = isUrl(c5) ? c5 : c4; var mlCat = isUrl(c5) ? c4 : c5;
+          var cat = isValidCategory(mlCat) ? mlCat : "";
+          return { nome: (parts[0] || "Sem nome").trim(), preco: (parts[1] || "0").trim(), imagem: (parts[2] || "").trim(), frete: (parts[3] || "").trim(), link: linkVal, categoriaAuto: cat, precoOriginal: (parts[6] || "").trim(), erro: false, _dup: false };
+        });
+        statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700';
+        statusEl.textContent = batchItems.length + " produto(s) importados!";
+        progress.classList.add('hidden'); renderBatchResults(); actions.classList.remove('hidden');
+        var btnAdd = document.getElementById("btn-add");
+        btnAdd.disabled = false;
+        btnAdd.classList.remove('bg-red-400','cursor-not-allowed');
+        btnAdd.classList.add('bg-teal-600','hover:bg-teal-500');
+        updateGlobalCatStyle();
+        return;
+      }
+      btn.disabled = true; btn.innerHTML = '<span class="loading"></span>';
+      statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-sky-50 text-sky-700';
+      progress.classList.remove('hidden'); results.innerHTML = ""; actions.classList.add('hidden'); batchItems = [];
+      var ok = 0, fail = 0;
+      for (var i = 0; i < lines.length; i++) {
+        var link = lines[i];
+        statusEl.textContent = "Buscando " + (i + 1) + " de " + lines.length + "...";
+        fill.style.width = Math.round((i / lines.length) * 100) + "%";
+        try { var data = await fetchProductData(link); data.link = link; data._dup = false; batchItems.push(data); ok++; }
+        catch (e) { fail++; batchItems.push({ nome: "Erro: " + e.message, preco: "0", link: link, imagem: "", frete: "", categoriaAuto: "", erro: true, _dup: false }); }
+        renderBatchResults();
+      }
+      fill.style.width = "100%";
+      statusEl.textContent = ok + " encontrados, " + fail + " falhas.";
+      statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium ' + (fail === 0 ? 'bg-emerald-50 text-emerald-700' : 'bg-sky-50 text-sky-700');
+      if (batchItems.length > 0) actions.classList.remove('hidden');
+      var btnAdd2 = document.getElementById("btn-add");
+      btnAdd2.disabled = false;
+      btnAdd2.classList.remove('bg-red-400','cursor-not-allowed');
+      btnAdd2.classList.add('bg-teal-600','hover:bg-teal-500');
+      updateGlobalCatStyle();
+      btn.disabled = false; btn.textContent = "Importar";
+    }
+
+    async function fetchProductData(url) {
+      var itemId = null; var pageHtml = "";
+      if (url.indexOf("meli.la") !== -1) {
+        var res = await fetch(CORS_PROXY + encodeURIComponent(url)); pageHtml = await res.text();
+        var idMatch = pageHtml.match(/MLB-?\d{6,}/); if (idMatch) itemId = idMatch[0].replace('-','');
+      } else if (url.indexOf("mercadolivre.com") !== -1) {
+        var idMatch2 = url.match(/MLB-?\d{6,}/); if (idMatch2) itemId = idMatch2[0].replace('-','');
+      }
+      if (!itemId) throw new Error("ID MLB não encontrado");
+      var data = null;
+      try { var apiUrl = CORS_PROXY + encodeURIComponent("https://api.mercadolibre.com/items/" + itemId); var apiRes = await fetch(apiUrl); if (apiRes.ok) data = await apiRes.json(); } catch (e) {}
+      if (!data || !data.title) { if (!pageHtml) { var pageRes = await fetch(CORS_PROXY + encodeURIComponent("https://www.mercadolivre.com.br/p/" + itemId)); pageHtml = await pageRes.text(); } data = parseMLPage(pageHtml); }
+      if (!data || (!data.nome && !data.title)) throw new Error("Dados não encontrados");
+      var nome = data.nome || data.title || "Produto sem nome";
+      var preco = data.preco || data.price || "0";
+      var imagem = data.imagem || data.image || "";
+      var freeShip = /frete\s*gr[aá]tis/i.test(pageHtml || (data.shipping || ""));
+      var frete = freeShip ? "Grátis" : "Consultar frete";
+      return { nome: nome, preco: String(preco), imagem: imagem, frete: frete, link: url, categoriaAuto: "", erro: false, _dup: false };
+    }
+
+    function parseMLPage(html) {
+      var result = { nome: "", preco: "0", imagem: "" };
+      var ldMatch = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s);
+      if (ldMatch) { try { var ld = JSON.parse(ldMatch[1]); var items = Array.isArray(ld) ? ld : [ld]; for (var i = 0; i < items.length; i++) { var item = items[i]; if (item["@type"] === "Product" || item["@type"] === "IndividualProduct") { if (item.name) result.nome = item.name; if (item.offers) { var o = Array.isArray(item.offers) ? item.offers[0] : item.offers; if (o.price) result.preco = o.price; } if (item.image) result.imagem = Array.isArray(item.image) ? item.image[0] : item.image; } } } catch (e) {} }
+      if (!result.nome) { var og = html.match(/<meta property="og:title" content="([^"]*)"/); if (og) result.nome = og[1].replace(/ - Mercado Livre.*$/, "").trim(); }
+      if (!result.imagem) { var ogImg = html.match(/<meta property="og:image" content="([^"]*)"/); if (ogImg) result.imagem = ogImg[1]; }
+      if (!result.preco || result.preco === "0") { var m = html.match(/"price"\s*:\s*"?([\d.]+)"?/); if (m) result.preco = m[1]; }
+      return result;
+    }
+
+    function parsePreco(str) { var n = parseFloat(String(str).replace(/[^\d.]/g, '')); return isNaN(n) ? str : n.toFixed(2); }
+
+    function renderBatchResults() {
+      var results = document.getElementById("batch-results");
+      results.innerHTML = batchItems.map(function(item, i) {
+        var catHtml;
+        if (item.categoriaAuto) { catHtml = '<span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">' + item.categoriaAuto + '</span>'; }
+        else {
+          var opts = '<option value="">Escolha...</option>';
+          opts += '<option value="__create__">➕ Criar categoria</option>';
+          opts += '<option disabled>─────────────────</option>';
+          for (var j = 0; j < CAT_OPTIONS.length; j++) opts += '<option value="' + CAT_OPTIONS[j] + '">' + CAT_OPTIONS[j] + '</option>';
+          catHtml = '<select class="text-[10px] px-2 py-1 rounded-lg border border-sand-200 bg-white focus:outline-none focus:ring-1 focus:ring-teal-500" onchange="onItemCatChange(' + i + ',this)">' + opts + '</select>';
+          catHtml += '<div id="item-newcat-' + i + '" class="hidden mt-1 flex items-center gap-1"><input type="text" id="item-newcat-input-' + i + '" placeholder="Nova categoria..." onkeydown="if(event.key===\'Enter\')confirmItemNewCat(' + i + ')" class="text-[10px] px-2 py-1 rounded border border-teal-200 focus:outline-none focus:ring-1 focus:ring-teal-500 w-32"><button onclick="confirmItemNewCat(' + i + ')" class="px-2 py-1 bg-teal-600 text-white text-[9px] rounded">OK</button></div>';
+        }
+        var boxClass = item._dup ? 'border-red-300 bg-red-50' : (item.erro ? 'border-sand-100 opacity-50' : 'border-sand-100');
+        var dupBadge = item._dup ? '<span class="text-[9px] font-bold text-red-600 bg-red-100 px-1.5 py-0.5 rounded ml-1">JÁ ADICIONADO</span>' : '';
+        return '<div class="flex items-center gap-3 p-3 rounded-xl border transition-colors ' + boxClass + '">' +
+          (item.imagem ? '<img src="' + item.imagem + '" alt="" class="w-12 h-12 object-contain rounded-lg">' : '<div class="w-12 h-12 bg-sand-100 rounded-lg"></div>') +
+          '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + item.nome + dupBadge + '</p><p class="text-[10px] text-slate-400 mt-0.5">' + (item.frete || "") + '</p><div class="mt-1">' + catHtml + '</div></div>' +
+          '<span class="text-sm font-bold text-teal-600 whitespace-nowrap">R$ ' + parsePreco(item.preco) + '</span>' +
+          (!item.erro ? '<button onclick="removeBatchItem(' + i + ')" class="text-red-400 hover:text-red-600 transition-colors"><i data-lucide="x" class="w-4 h-4"></i></button>' : '') +
+          '</div>';
+      }).join("");
+      lucide.createIcons();
+      updateGlobalCatStyle();
+    }
+
+    function onItemCatChange(i, sel) {
+      if (sel.value === "__create__") {
+        var box = document.getElementById("item-newcat-" + i);
+        if (box) { box.classList.remove('hidden'); box.classList.add('flex'); document.getElementById("item-newcat-input-" + i).focus(); }
+      } else if (sel.value) {
+        batchItems[i].categoriaAuto = sel.value;
+        renderBatchResults();
+      }
+    }
+
+    function confirmItemNewCat(i) {
+      var val = document.getElementById("item-newcat-input-" + i).value.trim();
+      if (val.length < 3) { alert("Nome muito curto (mín. 3 caracteres)."); return; }
+      addCatToOptions(val);
+      batchItems[i].categoriaAuto = val;
+      renderBatchResults();
+    }
+
+    function setBatchCat(index, value) { batchItems[index].categoriaAuto = value; renderBatchResults(); }
+
+    function removeBatchItem(i) {
+      batchItems.splice(i, 1);
+      renderBatchResults();
+      var hasDup = batchItems.some(function(item) { return item._dup; });
+      if (!hasDup) {
+        var btnAdd = document.getElementById("btn-add");
+        btnAdd.disabled = false;
+        btnAdd.classList.remove('bg-red-400','cursor-not-allowed');
+        btnAdd.classList.add('bg-teal-600','hover:bg-teal-500');
+        document.getElementById("batch-status").classList.add('hidden');
+      }
+    }
+
+    function clearBatch() {
+      batchItems = []; renderBatchResults();
+      document.getElementById("batch-actions").classList.add('hidden');
+      document.getElementById("batch-status").classList.add('hidden');
+      document.getElementById("progress").classList.add('hidden');
+      document.getElementById("batch-links").value = "";
+      document.getElementById("global-newcat").classList.add('hidden');
+      document.getElementById("global-newcat-input").value = "";
+      document.getElementById("batch-categoria").value = "";
+      var btnAdd = document.getElementById("btn-add");
+      btnAdd.disabled = false;
+      btnAdd.classList.remove('bg-red-400','cursor-not-allowed');
+      btnAdd.classList.add('bg-teal-600','hover:bg-teal-500');
+    }
+
+    function confirmBatch() {
+      var catGlobal = document.getElementById("batch-categoria").value;
+      if (catGlobal === "__create__") { alert("Confirme a nova categoria primeiro (clique OK)."); return; }
+      var validItems = batchItems.filter(function(i) { return !i.erro; });
+      var blocked = 0, already = 0, toAdd = [];
+      validItems.forEach(function(item) {
+        var cat = item.categoriaAuto || catGlobal;
+        if (!cat) { blocked++; return; }
+        var isDup = offers.some(function(o) { return o.link && item.link && o.link === item.link; });
+        if (isDup) { already++; item._dup = true; }
+        toAdd.push({ item: item, cat: cat });
+      });
+      var statusEl = document.getElementById("batch-status");
+      if (blocked > 0) {
+        statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
+        statusEl.textContent = "⚠️ " + blocked + " sem categoria. Corrija e clique em Adicionar todos novamente.";
+        renderBatchResults(); return;
+      }
+      if (already > 0) {
+        statusEl.classList.remove('hidden'); statusEl.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700';
+        statusEl.textContent = "⚠️ " + already + " já adicionado(s) — marcados em vermelho na prévia. Remova-os e clique novamente.";
+        renderBatchResults();
+        var btnAdd = document.getElementById("btn-add");
+        btnAdd.disabled = true;
+        btnAdd.classList.remove('bg-teal-600','hover:bg-teal-500');
+        btnAdd.classList.add('bg-red-400','cursor-not-allowed');
+        return;
+      }
+      statusEl.classList.add('hidden');
+      toAdd.forEach(function(entry) {
+        var item = entry.item;
+        var offer = { nome: item.nome, preco: item.preco, link: item.link, categoria: entry.cat };
+        if (item.imagem) offer.imagem = item.imagem;
+        var lk = (item.link || "").toLowerCase();
+        if (lk.indexOf("mercadolivre") !== -1 || lk.indexOf("meli.la") !== -1 || lk.indexOf("rpgdog") !== -1) offer.marketplace = "ML";
+        else if (lk.indexOf("shopee") !== -1) offer.marketplace = "Shopee";
+        else if (lk.indexOf("amazon") !== -1) offer.marketplace = "Amazon";
+        if (item.frete) offer.frete = item.frete;
+        if (item.precoOriginal) offer.precoOriginal = item.precoOriginal;
+        offers.push(offer);
+      });
+      renderList(); clearBatch();
+    }
+
+    async function loadOffers() { try { offers = await (await fetch("manual.json?t=" + Date.now())).json(); } catch (e) { offers = []; } renderList(); }
+
+    async function runSyncML() {
+      var token = localStorage.getItem('gh_token');
+      if (!token) { alert('Token não encontrado. Faça login primeiro.'); return; }
+      var btn = event.target.closest('button');
+      btn.disabled = true;
+      btn.classList.remove('bg-emerald-50', 'text-emerald-700', 'bg-emerald-100', 'text-emerald-800', 'bg-red-100', 'text-red-700');
+      btn.classList.add('bg-orange-100', 'text-orange-700');
+      btn.innerHTML = '<span class="animate-pulse">Sincronizando...</span>';
+      var dispatchTime = new Date().toISOString();
+      try {
+        var res = await fetch('https://api.github.com/repos/rpgdog-create/meu-site-ofertas/actions/workflows/sync-ml.yml/dispatches', {
+          method: 'POST',
+          headers: { 'Authorization': 'token ' + token, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ref: 'main' })
+        });
+        if (res.status !== 204) { throw new Error('HTTP ' + res.status); }
+        var attempts = 0;
+        var poll = setInterval(async function() {
+          attempts++;
+          if (attempts > 30) {
+            clearInterval(poll);
+            btn.classList.remove('bg-orange-100', 'text-orange-700');
+            btn.classList.add('bg-emerald-50', 'text-emerald-700');
+            btn.innerHTML = '<i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync ML';
+            btn.disabled = false;
+            lucide.createIcons();
+            return;
+          }
+          try {
+            var r = await fetch('https://api.github.com/repos/rpgdog-create/meu-site-ofertas/actions/workflows/sync-ml.yml/runs?per_page=1', {
+              headers: { 'Authorization': 'token ' + token }
+            });
+            var data = await r.json();
+            var run = data.workflow_runs && data.workflow_runs[0];
+            if (run && run.created_at >= dispatchTime && run.status === 'completed') {
+              clearInterval(poll);
+              if (run.conclusion === 'success') {
+                btn.classList.remove('bg-orange-100', 'text-orange-700');
+                btn.classList.add('bg-emerald-100', 'text-emerald-800');
+                btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Sincronizado ✓';
+              } else {
+                btn.classList.remove('bg-orange-100', 'text-orange-700');
+                btn.classList.add('bg-red-100', 'text-red-700');
+                btn.innerHTML = '<i data-lucide="x" class="w-4 h-4"></i> Erro no sync';
+              }
+              btn.disabled = false;
+              lucide.createIcons();
+            }
+          } catch(e) {}
+        }, 5000);
+      } catch (e) {
+        alert('Erro: ' + e.message);
+        btn.disabled = false;
+        btn.classList.remove('bg-orange-100', 'text-orange-700');
+        btn.classList.add('bg-emerald-50', 'text-emerald-700');
+        btn.innerHTML = '<i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync ML';
+        lucide.createIcons();
+      }
+    }
+
+    function renderList() {
+      document.getElementById("count").textContent = offers.length;
+      var list = document.getElementById("offers-list");
+      if (!offers.length) { list.innerHTML = "<p class='text-xs text-slate-400 text-center py-4'>Nenhuma oferta ainda.</p>"; return; }
+      list.innerHTML = offers.map(function(o, i) {
+        return '<div class="flex items-center justify-between p-3 rounded-xl border transition-colors ' + (o._dup ? 'border-red-300 bg-red-50' : 'border-sand-100 hover:border-sand-200') + '">' +
+          '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + (o.tag ? '<span class="inline-block px-1.5 py-0.5 bg-accent-500 text-white rounded text-[9px] font-bold mr-1">' + o.tag + '</span>' : "") + o.nome + '</p>' +
+          '<p class="text-[10px] text-slate-400 mt-0.5">R$ ' + parsePreco(o.preco) + (o.frete ? " | " + o.frete : "") + (o.categoria ? " | " + o.categoria : "") + '</p></div>' +
+          '<button onclick="removeOffer(' + i + ')" class="ml-3 text-red-400 hover:text-red-600 transition-colors"><i data-lucide="x" class="w-4 h-4"></i></button></div>';
+      }).join("");
+      lucide.createIcons();
+    }
+
+    function removeOffer(i) { offers.splice(i, 1); renderList(); }
+
+    function removeAllOffers() {
+      if (offers.length === 0) { alert("Nenhuma oferta para remover."); return; }
+      if (!confirm("Tem certeza? Vai remover TODAS as " + offers.length + " ofertas.")) return;
+      offers = []; renderList();
+    }
+
+    async function saveAll() {
+      var s = document.getElementById("save-status");
+      s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-sky-50 text-sky-700'; s.textContent = "Salvando...";
+      try { await commitFile(offers, "Update manual.json (" + offers.length + " ofertas)"); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; s.textContent = "Salvo! Site atualiza em ~30s. ✓"; }
+      catch (e) { s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700'; s.textContent = "Erro: " + e.message; }
+    }
+
+    (function() {
+      var btn = document.getElementById('btn-top');
+      var dragging = false, offsetX = 0, offsetY = 0, moved = false;
+      btn.addEventListener('mousedown', function(e) { dragging = true; moved = false; offsetX = e.clientX - btn.offsetLeft; offsetY = e.clientY - btn.offsetTop; e.preventDefault(); });
+      document.addEventListener('mousemove', function(e) { if (!dragging) return; if (!moved) { moved = true; btn.style.right = 'auto'; btn.style.bottom = 'auto'; } btn.style.left = (e.clientX - offsetX) + 'px'; btn.style.top = (e.clientY - offsetY) + 'px'; });
+      document.addEventListener('mouseup', function() { dragging = false; });
+      btn.addEventListener('click', function() { if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    })();
+  </script>
+</body>
+</html>   
