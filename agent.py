@@ -28,9 +28,10 @@ HEADERS = {
 
 # ─── AMAZON SCRAPING ──────────────────────────────────────────────
 def fetch_page(url, retries=2):
+    proxy = f"https://ml-proxy.rpgdog.workers.dev?url={requests.utils.quote(url, safe='')}"
     for i in range(retries + 1):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=15)
+            r = requests.get(proxy, timeout=30)
             if r.status_code == 200:
                 return r.text
             if r.status_code in (503, 429):
@@ -39,7 +40,7 @@ def fetch_page(url, retries=2):
             return None
         except Exception:
             time.sleep(3)
-    return None
+    return None   
 
 def parse_search(html):
     soup = BeautifulSoup(html, "html.parser")
