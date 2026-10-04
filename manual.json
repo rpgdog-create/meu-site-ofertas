@@ -277,5 +277,15 @@
     "imagem": "https://m.media-amazon.com/images/I/71NbgNL7uUL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "nao"
+  },
+  {
+    "nome": "Romantic Crown Mochila Masculina de Viagem para Notebook",
+    "preco": "102.85",
+    "link": "https://www.amazon.com.br/dp/B0FNMDJ3P3?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/711KEB0WWAL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "119.99"
   }
 ]
