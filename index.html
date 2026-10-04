@@ -1,10 +1,17 @@
-∑<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ofertas do Dia — O curador inteligente dos melhores descontos da Amazon, Mercado Livre e Shopee.">
-  <title>Ofertas do Dia — Curadoria Inteligente de Preços & Descontos</title>
+  <title>Ofertas do Dia — Melhor Preço em ML, Amazon e Shopee</title>   
+<script type="application/ld+json" id="schema-product"></script>     
+<meta name="description" content="Compare e encontre as melhores ofertas com desconto em Mercado Livre, Amazon e Shopee. Preços verificados diariamente. Atualizado a cada 6 horas.">
+  <meta property="og:title" content="Ofertas do Dia — Melhor Preço em ML, Amazon e Shopee">
+  <meta property="og:description" content="As melhores ofertas com desconto, verificadas diariamente.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rpgdog-create.github.io/meu-site-ofertas">
+  <meta property="og:locale" content="pt_BR">     
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -440,7 +447,23 @@
         var spWrap = document.getElementById('spotlight-disc-wrap');
         if (spDisc > 0) { document.getElementById('spotlight-disc').textContent = '-' + spDisc + '% OFF'; spWrap.classList.remove('hidden'); }
         else { spWrap.classList.add('hidden'); }   
-      }
+        // Schema.org Product (Top Pick)
+        var spSchema = {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": top.productName || top.nome,
+          "image": top.imagem || '',
+          "description": "Oferta verificada em " + (mp === 'ML' ? 'Mercado Livre' : mp === 'AMAZON' ? 'Amazon Brasil' : 'Shopee'),
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "BRL",
+            "price": Number(top.price || top.preco).toFixed(2),
+            "availability": "https://schema.org/InStock",
+            "url": top.offerLink || top.link
+          }
+        };
+        document.getElementById("schema-product").textContent = JSON.stringify(spSchema);         
+        }
     }
 
     searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
