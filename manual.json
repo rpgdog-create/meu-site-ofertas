@@ -296,5 +296,14 @@
     "imagem": "https://m.media-amazon.com/images/I/51THm2xdnnL._AC_SX679_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Drone com Câmera 4K UHD DLI E99, Cinza, 2 Baterias",
+    "preco": "180.49",
+    "link": "https://www.amazon.com.br/dp/B0GLN715V7?tag=ofertas01dc-20",
+    "categoria": "Brinquedos e Hobbies",
+    "imagem": "https://m.media-amazon.com/images/I/61mah2lubGL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
