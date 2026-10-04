@@ -2008,5 +2008,15 @@
     "imagem": "https://m.media-amazon.com/images/I/61RODmuCfUL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Kit 6 Pares Meias Lupo 3245 Cano Médio Algodão - Sortido",
+    "preco": "52.05",
+    "link": "https://www.amazon.com.br/dp/B07RML3H5T?tag=ofertas01dc-20",
+    "categoria": "Calçados, Roupas e Bolsas",
+    "imagem": "https://m.media-amazon.com/images/I/713Ija9xF3L._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.99"
   }
 ]
