@@ -1571,5 +1571,442 @@
     "categoria": "Brinquedos",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71PFjBadk-L._AC_UL300_SR300,200_.jpg",
     "marketplace": "Amazon"
+  },
+  {
+    "nome": "Kit 12 Lenço de Papel Folha Tripla, Branco, 21cm x 21cm, Textura Macia, Fibras Naturais, 12 Pacotes com 10 Lenços, 120 Unidades",
+    "preco": "24.95",
+    "link": "https://www.amazon.com.br/dp/B0GPDVBRXW?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61fnO82BZjL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Ricca, Lenço de Papel Folha Tripla, Branco, 20,5 cm x 20,5 cm, 10 unidades",
+    "preco": "2.10",
+    "link": "https://www.amazon.com.br/dp/B07HDDWHMF?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51705++dX6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit com 5 Caixas de Lenços de Papel Faciais 4 Camadas, 320 Folhas por Caixa, 1600 Folhas por Kit, Extra Macios e Resistentes, Alta Absorção, Papel Tissue para Uso Diário, Casa e Escritório",
+    "preco": "19.90",
+    "link": "https://www.amazon.com.br/dp/B0HFT3TRTJ?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61MtKWAzzWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kleenex Lenço Extrato de Seda, 60 unidades - Leve 60 Pague 50",
+    "preco": "5.90",
+    "link": "https://www.amazon.com.br/dp/B00YJE8SOI?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61Yxdax2NEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Huggies Rosto e Corpo Limpeza 4 x 48 Un",
+    "preco": "32.59",
+    "link": "https://www.amazon.com.br/dp/B07MJ251Z8?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71943l48V+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço de Papel Box Kleenex 150 lenços, a embalagem pode variar",
+    "preco": "13.89",
+    "link": "https://www.amazon.com.br/dp/B0DTC7LQQ5?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61W+4XcQEuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Elite Lenço De Papel Softy'S Máxima Suav 100 Fls 100 Unidades",
+    "preco": "9.99",
+    "link": "https://www.amazon.com.br/dp/B07C861W8K?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/81QBA82Xw5L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "MamyPoko Lenços Umedecidos Dia&Noite 200 Unidades",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B09BBDVPB1?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/81LbIKRgAqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 2 Lenço de Papel Descartável Dia a Dia, Folha Dupla, Textura Macia, 21cm x 12,7cm, 2 caixas com 150 lenços",
+    "preco": "28.95",
+    "link": "https://www.amazon.com.br/dp/B0GPFD2SBT?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61pkF21afTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Presidente 3242 Contém 3 Unidades - 100% algodão",
+    "preco": "22.30",
+    "link": "https://www.amazon.com.br/dp/B0C6MV9KBP?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51lF3FM-NHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Pampers Cuidado de Bebê 192 Unidades",
+    "preco": "40.08",
+    "link": "https://www.amazon.com.br/dp/B0CGY62F23?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61lSWTBB1NL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit com 5 Caixas de Lenços Faciais de Papel 4 Camadas, 1600 Folhas, Lenços Descartáveis Macios para Higiene do Rosto, Cuidados Pessoais, Maquiagem, Casa, Escritório e Viagem, 320 Folhas por Caixa",
+    "preco": "15.90",
+    "link": "https://www.amazon.com.br/dp/B0HJ16D9ZP?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71mAAswvAgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço Umedecido Íntimo Personalidade Lady Clean Side Vitamina E com Ácido Lático 20 unidades 20cm X 15cm",
+    "preco": "5.50",
+    "link": "https://www.amazon.com.br/dp/B0FS9QG6C4?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71CQsyI1C6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço Umedecido Personalidade Antisséptico Hidratante 20 unidades 20cm X 15cm",
+    "preco": "4.98",
+    "link": "https://www.amazon.com.br/dp/B0FS9XM19H?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/711SSTWSYhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Huggies Recém-Nascido Sem Fragrância 6x48U",
+    "preco": "54.90",
+    "link": "https://www.amazon.com.br/dp/B07FN7T2LK?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61qM9b1b77L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Pampers Cuidado de bebê, 576 Unidades",
+    "preco": "107.73",
+    "link": "https://www.amazon.com.br/dp/B0B9959CWN?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61+OonwT8PL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Huggies Higiene Superior Limpam 2x Mais 6 x 48 Un",
+    "preco": "55.49",
+    "link": "https://www.amazon.com.br/dp/B07FN1XPNW?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71rS1wIq+bL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Free Wipes Lenço Umedecido Toilet Pack com 4 unidades",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0FCSNGK6G?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/512D+sunkEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Toalha Umedecida Personalidade Baby Ultra Extrato de Calêndola e Aloe Vera 16 unidades 19cm X 14cm",
+    "preco": "2.86",
+    "link": "https://www.amazon.com.br/dp/B0FS9VMVGP?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71gh35ShvmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço de Papel Kit 5 Pacotes Pequeno - 1600 Folhas Tissue Facial",
+    "preco": "27.90",
+    "link": "https://www.amazon.com.br/dp/B0H1SN3YHZ?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61MPYiltxuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço Umedecido Babysec Pacote Economico 192 folhas",
+    "preco": "24.74",
+    "link": "https://www.amazon.com.br/dp/B09S77G7N6?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61A6xlN2EHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Para Banho CREMER 100 UN Higienização Hospitalar 30x35cm",
+    "preco": "47.40",
+    "link": "https://www.amazon.com.br/dp/B0FNX5Q9JL?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51XkB8jE2BL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.90"
+  },
+  {
+    "nome": "Toalhas Umedecidas Meu BebÊ Ultra - 500 Unidades",
+    "preco": "47.96",
+    "link": "https://www.amazon.com.br/dp/B088C49G3K?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61KlgKgGzmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "50.49"
+  },
+  {
+    "nome": "PIQUITUCHO Toalhinhas Umed Premium 1 Unidade Com 120 Lenços Umedecidos",
+    "preco": "14.39",
+    "link": "https://www.amazon.com.br/dp/B0781CTJF6?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51XpbplLvaL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Toalha Umedecida Personalidade Baby Plus com Extrato de Camomila e Aloe Vera 16 unidades 19cm X 14cm",
+    "preco": "2.86",
+    "link": "https://www.amazon.com.br/dp/B0FSB4J41J?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71+H2b0JvML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "MamyPoko Lenços Umedecidos Dia&Noite 500 Unidades",
+    "preco": "71.17",
+    "link": "https://www.amazon.com.br/dp/B0D3617S3R?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/81sCPAKvuhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mimmo Lenços de Papel, 100 Unidades, Folha Dupla, 12,7 x 21,2 cm",
+    "preco": "6.49",
+    "link": "https://www.amazon.com.br/dp/B0FS7S2Z3D?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/41kLPwWe+VL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Huggies Lenços Umedecidos Higiene Diária Rendem 2x Mais 88 Un",
+    "preco": "12.19",
+    "link": "https://www.amazon.com.br/dp/B0C8PT9NBZ?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/711QFeI0pHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço De Banho e Higiene Cremer Pacote Com 50 Unidades",
+    "preco": "24.35",
+    "link": "https://www.amazon.com.br/dp/B0DYVJQ11T?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51Kw45sfbBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit com 5 Caixas de Lenços de Papel Faciais 4 Camadas, 80 Lenços por Caixa, Extra Macios e Resistentes, Alta Absorção, Papel Tissue para Uso Diário, Casa e Escritório",
+    "preco": "30.97",
+    "link": "https://www.amazon.com.br/dp/B0GMJZQHDD?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51U1lKPq2iL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Pampers Higiene Completa192 Unidades",
+    "preco": "40.37",
+    "link": "https://www.amazon.com.br/dp/B08T85RHB1?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61wlTNk7NFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bepantol Baby Lenço Umedecido Hipoalergênico, 192 Unidades",
+    "preco": "51.19",
+    "link": "https://www.amazon.com.br/dp/B096KDKNNQ?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/713euw7uVZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "53.89"
+  },
+  {
+    "nome": "Free Wipes Freco Lenço Umed Antisseptico Pct 20",
+    "preco": "7.89",
+    "link": "https://www.amazon.com.br/dp/B084LGS17D?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51qV23IzSpS._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço Umedecido Álcool 70% C/100 - Proteção Vírus-bactérias - Swab UNIQMED",
+    "preco": "14.04",
+    "link": "https://www.amazon.com.br/dp/B08GQDZZGS?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71zy89HjWHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Toalha Umedecida Sininho com Aloe Vera 100 unidades 20cm X 13cm",
+    "preco": "7.36",
+    "link": "https://www.amazon.com.br/dp/B0FS9XLQF8?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71Do06ZpX2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Johnson's Baby Recém-Nascido, 192 Unidades",
+    "preco": "53.09",
+    "link": "https://www.amazon.com.br/dp/B0F4G5NL2K?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51puwf2c88L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenço De Banho Cremer Pacote Com 100 Unidades",
+    "preco": "46.31",
+    "link": "https://www.amazon.com.br/dp/B0CXY3T338?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61RRTL7OybL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.99"
+  },
+  {
+    "nome": "Munila - Mini Lenço Umedecido Tá na Mão – Pack com 8 Pacotes (64 Lenços) | Adulto e Infantil | À Base de Água | Embalagem Compacta e Portátil | Sem Álcool | Com Aloe Vera",
+    "preco": "22.71",
+    "link": "https://www.amazon.com.br/dp/B0FVZR9QJ5?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61VOQ86E6eL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lysoform Original, Lenço Umedecido Desinfetante, Multisuso, Desinfecção e Limpeza, 36 unidades",
+    "preco": "18.79",
+    "link": "https://www.amazon.com.br/dp/B08TW1VM5V?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71mlMFNdFCL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mili Toalhas Umedecidas Love & Care Premium, Para Bebê, Com Aloe Vera e Calêndula, Dermatologicamente Testadas, 96 Unidades",
+    "preco": "12.59",
+    "link": "https://www.amazon.com.br/dp/B07GFFW1LN?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/517hfrPIZyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 3 Lenços Masculinos Presidente Puro Algodão. (Caixa 3 unidades).",
+    "preco": "47.02",
+    "link": "https://www.amazon.com.br/dp/B096YQGG7V?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51bjaVK2OYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.50"
+  },
+  {
+    "nome": "Lenço Umedecido Neve Care Leve 4 Pague 3",
+    "preco": "37.99",
+    "link": "https://www.amazon.com.br/dp/B0GDS7ZHC4?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51peSNVXIwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Lenços de Papel Elite Softy's Folha Dupla, 50 unidades de 21x14,08 cm",
+    "preco": "7.49",
+    "link": "https://www.amazon.com.br/dp/B00EJNZSEC?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61mMmHBBsxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mili Toalhas Umedecidas Baby, Uso Bebê, Com Aloe Vera e Calêndula, Dermatologicamente Testadas, 50 Unidades",
+    "preco": "5.99",
+    "link": "https://www.amazon.com.br/dp/B07GC7TF7W?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71ZBUQLjomL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lenços Umedecidos Huggies Puro e Natural - 192 lenços",
+    "preco": "41.90",
+    "link": "https://www.amazon.com.br/dp/B08FV6G3QQ?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71lSt8UFFeL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Toalha Umedecida Personalidade Baby Plus com Extrato de Camomila e Aloe Vera 50 unidades 19cm X 14cm",
+    "preco": "6.75",
+    "link": "https://www.amazon.com.br/dp/B0FSBFSN5V?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/71wquOvjCIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Ricca, Lenços Absorventes de Oleosidade para o Rosto, 50 unidades",
+    "preco": "9.90",
+    "link": "https://www.amazon.com.br/dp/B07CML9X7T?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/51eJYs8pJPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kiss Lenço Facial Folha Dupla Branca, 100 Lenços, Embalagens Sortidas",
+    "preco": "7.63",
+    "link": "https://www.amazon.com.br/dp/B07D5LZZCY?tag=ofertas01dc-20",
+    "categoria": "cuidados pessoais",
+    "imagem": "https://m.media-amazon.com/images/I/61RODmuCfUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
