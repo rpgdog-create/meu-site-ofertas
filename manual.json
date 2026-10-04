@@ -287,5 +287,14 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "119.99"
+  },
+  {
+    "nome": "Fone De Ouvido Bluetooth Sem Fio Intra Auricular Estéreo Com Visor Graves Potentes Compatível Com Todos Os Celulares",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B0H5G8184H?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51THm2xdnnL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
   }
 ]
