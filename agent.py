@@ -115,7 +115,7 @@ def categorize_batch(names):
 
 # ─── GITHUB API ───────────────────────────────────────────────────
 def gh(path):
-    return f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/{path}"
+    return f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}"   
 
 def gh_headers():
     return {"Authorization": f"token {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json"}
