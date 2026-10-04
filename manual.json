@@ -37,5 +37,245 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "24.90"
+  },
+  {
+    "nome": "Sensodyne Creme Dental, Sensibilidade e Rápido Alívio e Proteção Duradoura Leve 3 e Pague 2, Alívio Instantâneo, 50g cada",
+    "preco": "31.99",
+    "link": "https://www.amazon.com.br/dp/B07F3RMJ2Q?tag=ofertas01dc-20",
+    "categoria": "Beleza e Cuidado Pessoal",
+    "imagem": "https://m.media-amazon.com/images/I/71cOrPLTCgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fone de Ouvido Sem Fio, INAVA, Fone de Ouvido Esportivos Bluetooth 5.4, 48 Horas, com Indicador LED de Bateria, Prova d'água IPX7, Adequados para Exercícios Físicos e Corrida​ - Preto",
+    "preco": "75.03",
+    "link": "https://www.amazon.com.br/dp/B0FRS3RFZ8?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/51TWqDrUeqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.00"
+  },
+  {
+    "nome": "Pen Drive Twist 16GB USB Leitura 10MB/s e Gravação 3MB/s Preto Multi - PD588",
+    "preco": "49.90",
+    "link": "https://www.amazon.com.br/dp/B0754JVBGJ?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/41dXz6DHSFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Seladora Embaladora a Vácuo Automática Portátil Doméstica Embalagem Moderna Embaladora Selar Para Embalar Kitchen Manual Profissional Embalador Carnes Plástico Empacotadora Queijo Fechar Pro",
+    "preco": "56.05",
+    "link": "https://www.amazon.com.br/dp/B0CVPMG3Q2?tag=ofertas01dc-20",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://m.media-amazon.com/images/I/61vOf9vDySL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.00"
+  },
+  {
+    "nome": "Aspirador pó vertical com fio portátil de mão 2 em 1 1100W cabo 5m capacidade 1,2L filtro HEPA Electrolux STK12 preto 220v STK",
+    "preco": "152.92",
+    "link": "https://www.amazon.com.br/dp/B08SBP4GY6?tag=ofertas01dc-20",
+    "categoria": "Limpeza",
+    "imagem": "https://m.media-amazon.com/images/I/31-UuoXfe7L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "269.90"
+  },
+  {
+    "nome": "Kit Skincare Vitamina C Anti Idade + Sérum Clareador - 4 Itens 90% de EFICÁCIA COMPROVADA",
+    "preco": "53.69",
+    "link": "https://www.amazon.com.br/dp/B0F6KXV9GP?tag=ofertas01dc-20",
+    "categoria": "Saúde",
+    "imagem": "https://m.media-amazon.com/images/I/51dd8ZKa9iL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "56.52"
+  },
+  {
+    "nome": "Potes Herméticos Quadrados Kit com 4, Tampa Plástica com Trava, MTS, Transparente, Varios Tamanhos, Armazena Alimentos Vedados, Resistente, Ideal Freezer/Microondas, Tamanhos 120ml, 790, 1160 e 1690ml",
+    "preco": "39.70",
+    "link": "https://www.amazon.com.br/dp/B0FT1WGRXQ?tag=ofertas01dc-20",
+    "categoria": "Cozinha e Utensílios",
+    "imagem": "https://m.media-amazon.com/images/I/71mUKSVPjKL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Pastilhas para Limpeza de Máquina de Lavar Roupas – Limpa Máquina Eficiente para Tampa Frontal e Superior (12)",
+    "preco": "22.99",
+    "link": "https://www.amazon.com.br/dp/B0FZ8D81T6?tag=ofertas01dc-20",
+    "categoria": "Limpeza",
+    "imagem": "https://m.media-amazon.com/images/I/71GLE2KnPQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Massageador Facial LED 7 Cores - Modos, Aparelho Anti-Rugas para Rosto e Pescoço, Tratamento Estético Vibratório com Luz LED Para Elevação da Pele Lifting Bivolt Recarregável (Rosa)",
+    "preco": "61.72",
+    "link": "https://www.amazon.com.br/dp/B0FXBFC46S?tag=ofertas01dc-20",
+    "categoria": "Saúde",
+    "imagem": "https://m.media-amazon.com/images/I/61h35QQurnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "64.97"
+  },
+  {
+    "nome": "Saco Para Lavagem Tênis Com Chenille Acolchoado Protetor Máquina De Lavar Rede Para Lavar Sapato Calçados Sapatilha Chuteira Anti-impacto Limpeza Praticidade Cuidados Academia Lavanderia",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0G76XKM25?tag=ofertas01dc-20",
+    "categoria": "Limpeza",
+    "imagem": "https://m.media-amazon.com/images/I/61RZZGXR4nL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Irrigador Oral Portátil Recarregável 300 ml com 4 Níveis e 4 Ponteiras",
+    "preco": "179.95",
+    "link": "https://www.amazon.com.br/dp/B0FB5VRRH4?tag=ofertas01dc-20",
+    "categoria": "Saúde",
+    "imagem": "https://m.media-amazon.com/images/I/61qt07dSuzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "189.43"
+  },
+  {
+    "nome": "Organizador De Mala Para Viagem Kit 6 Peças De Nécessaire - CINZA",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0CLPTJ442?tag=ofertas01dc-20",
+    "categoria": "Viagem",
+    "imagem": "https://m.media-amazon.com/images/I/61QQImk1huL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "ANRABESS Blusas femininas de manga curta Henley gola V elegantes blusas casuais verão moda roupas de férias 2026",
+    "preco": "66.96",
+    "link": "https://www.amazon.com.br/dp/B0DJJPN62D?tag=ofertas01dc-20",
+    "categoria": "Móveis",
+    "imagem": "https://m.media-amazon.com/images/I/71IFE6W6THL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "ANRABESS Camisetas femininas de manga comprida de malha waffle elegantes casuais soltas com botões e gola V Henley blusa básica outono 2025",
+    "preco": "99.36",
+    "link": "https://www.amazon.com.br/dp/B0FB2ZVGPW?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/913waW21HnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Yincro Cardigã feminino leve de manga comprida com frente aberta e bolsos",
+    "preco": "132.67",
+    "link": "https://www.amazon.com.br/dp/B0FF28JKR7?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/61mLaXVBqOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "AUTOMET Camisetas femininas de manga comprida da moda outono 2025 suéter elegante gola redonda túnica roupas de inverno roupas casuais",
+    "preco": "99.26",
+    "link": "https://www.amazon.com.br/dp/B0F1K82Z9K?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/71+XfupaK-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Kistore Blusas femininas bordadas 2026 manga curta acabamento em renda gola redonda blusas pulôver casuais modernas",
+    "preco": "130.95",
+    "link": "https://www.amazon.com.br/dp/B0FY1MMCV7?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/715-tC9tVdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "ALL OF SHE Calcinha feminina de algodão hipster, respirável, sexy, elástica, macia, pacote com 6, P-2GG",
+    "preco": "114.46",
+    "link": "https://www.amazon.com.br/dp/B0DHXK4KBH?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/81nzxXUr06L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Zeagoo Blusa feminina de verão com gola V e manga curta",
+    "preco": "95.90",
+    "link": "https://www.amazon.com.br/dp/B0FY2QHR7K?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/712tfPFBd8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Kistore Blusas femininas bordadas 2026 manga curta acabamento em renda gola redonda blusas pulôver casuais modernas",
+    "preco": "113.79",
+    "link": "https://www.amazon.com.br/dp/B0FY1PCD1B?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/71U0+x-1R6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "AUTOMET",
+    "preco": "114.00",
+    "link": "https://www.amazon.com.br/dp/B0DNPY9WDL?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/81-upvexsPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "XMTOPYE Suéter feminino fashion de manga comprida pulôver com gola V casual solto",
+    "preco": "97.12",
+    "link": "https://www.amazon.com.br/dp/B0DJZZPSFW?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/714glea5+8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Camiseta Am1012 AUTOMETFeminino",
+    "preco": "82.46",
+    "link": "https://www.amazon.com.br/dp/B09DYC6VKX?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/71T9DKxCEWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Camiseta feminina grande estampada gola redonda verão manga curta",
+    "preco": "90.11",
+    "link": "https://www.amazon.com.br/dp/B0CNRD9S8S?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/61e1iXKbSqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "AUTOMET Camisas femininas de manga curta para negócios, casual, túnica de trabalho, blusas elegantes de primavera 2026, roupas modernas",
+    "preco": "97.60",
+    "link": "https://www.amazon.com.br/dp/B0G18YQLTK?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/71dd7UAdIJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "AUTOMET Camisetas femininas casuais, elegantes, básicas, folgadas, gola redonda, manga cavada, roupas de verão 2024",
+    "preco": "87.64",
+    "link": "https://www.amazon.com.br/dp/B0CYC659P1?tag=ofertas01dc-20",
+    "categoria": "Moda Feminina",
+    "imagem": "https://m.media-amazon.com/images/I/71NbgNL7uUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
   }
 ]
