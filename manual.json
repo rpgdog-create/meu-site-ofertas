@@ -8,5 +8,34 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "35.90"
+  },
+  {
+    "nome": "saco de lavagem de calçados (AMARELO)",
+    "preco": "27.99",
+    "link": "https://www.amazon.com.br/dp/B0HD2CTMC9?tag=ofertas01dc-20",
+    "categoria": "Casa, Móveis e Decoração",
+    "imagem": "https://m.media-amazon.com/images/I/7103mxPsPbL._AC_SY879_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Sparta Maleta de ferramentas kit com 129 peças",
+    "preco": "92.02",
+    "link": "https://www.amazon.com.br/dp/B076N2S8FV?tag=ofertas01dc-20",
+    "categoria": "Ferramentas",
+    "imagem": "https://m.media-amazon.com/images/I/61ZmjmMLsRL._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "140.45"
+  },
+  {
+    "nome": "Bola Mágica para Lavar Roupas Remove Fiapos Pelos e Sujeira sem Sabão Econômica Ecológica e Reutilizável – Alta Eficiência Dura até 1500 Lavagens Ideal para Roupas Limpas sem Produtos Químicos",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B0D8VFGW3T?tag=ofertas01dc-20",
+    "categoria": "Saúde",
+    "imagem": "https://m.media-amazon.com/images/I/51uVjne8i6L._AC_SX679_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "24.90"
   }
 ]
