@@ -305,5 +305,293 @@
     "imagem": "https://m.media-amazon.com/images/I/61mah2lubGL._AC_SX679_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "PlayStation®5 Slim Digital 825GB – Pacote ASTRO BOT e Gran Turismo 7",
+    "preco": "4184.07",
+    "link": "https://www.amazon.com.br/dp/B0FPGF9J2J?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71WCygaQDAL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "4499.00"
+  },
+  {
+    "nome": "Grand Theft Auto VI - PlayStation 5",
+    "preco": "418.40",
+    "link": "https://www.amazon.com.br/dp/B0H6KT2RWH?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/81o4MCqBv5L._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "449.90"
+  },
+  {
+    "nome": "Controle sem fio PlayStation DualSense™ – Edição limitada LISA",
+    "preco": "557.90",
+    "link": "https://www.amazon.com.br/dp/B0HKMD27WX?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/610QC5o6zIL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "599.90"
+  },
+  {
+    "nome": "Base De Carregamento Do Dualsense - PlayStation 5",
+    "preco": "175.77",
+    "link": "https://www.amazon.com.br/dp/B09JH4PD8Q?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/41y-G-g+dVL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "249.90"
+  },
+  {
+    "nome": "Sony PlayStation 5 Edição Digital 825GB 1 Controle",
+    "preco": "4084.90",
+    "link": "https://www.amazon.com.br/dp/B0GWNKJDCZ?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/319QTMDdZhL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "4299.90"
+  },
+  {
+    "nome": "EA Sports FC 27 - PlayStation 5",
+    "preco": "360.05",
+    "link": "https://www.amazon.com.br/dp/B0HGGNZY3Y?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71OmGCyRnHL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "379.00"
+  },
+  {
+    "nome": "PlayStation®5 Slim Disk - Pacote ASTRO BOT e Gran Turismo 7",
+    "preco": "4649.06",
+    "link": "https://www.amazon.com.br/dp/B0F8R9NDXC?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71IkUBtdDGL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "4999.00"
+  },
+  {
+    "nome": "Sony Control Inalámbrico PS5 DualSense Midnight Black",
+    "preco": "394.25",
+    "link": "https://www.amazon.com.br/dp/B0956PFTDK?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/41LRLaqOAWL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "415.00"
+  },
+  {
+    "nome": "Resident Evil Requiem - PlayStation 5",
+    "preco": "251.00",
+    "link": "https://www.amazon.com.br/dp/B0GGLJCJQM?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71xKlhR+NtL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "349.90"
+  },
+  {
+    "nome": "Marvel's Wolverine - PlayStation 5",
+    "preco": "332.40",
+    "link": "https://www.amazon.com.br/dp/B0GWCCBDRR?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/81HieNgPHTL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "399.90"
+  },
+  {
+    "nome": "PlayStation DualSense Controle sem fio – Branco",
+    "preco": "404.26",
+    "link": "https://www.amazon.com.br/dp/B0CQKLS4RP?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/51PmeLGEkML._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "499.90"
+  },
+  {
+    "nome": "Controle sem fio PlayStation DualSense™ – Branco",
+    "preco": "404.27",
+    "link": "https://www.amazon.com.br/dp/B0FY6X2XXY?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/51zRVFcqMLL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "499.90"
+  },
+  {
+    "nome": "Onimusha: Way of the Sword - PlayStation 5",
+    "preco": "339.90",
+    "link": "https://www.amazon.com.br/dp/B0HCQYG4NM?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71-l4WnB2iL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Controle DualSense - PlayStation 5",
+    "preco": "394.25",
+    "link": "https://www.amazon.com.br/dp/B088GNW267?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/5102Pp-TfHL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "469.90"
+  },
+  {
+    "nome": "Final Fantasy Resonance - PlayStation 5 (Exclusivo Amazon)",
+    "preco": "278.90",
+    "link": "https://www.amazon.com.br/dp/B0HJSTGWPL?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/614-3NRjMLL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "299.90"
+  },
+  {
+    "nome": "PRAGMATA - PlayStation 5",
+    "preco": "229.90",
+    "link": "https://www.amazon.com.br/dp/B0GS35BTFZ?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61Qf8CZcmQL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "299.90"
+  },
+  {
+    "nome": "Carregador Controle PS5 Base de Carregamento PS5 Duplo com Carregamento Rápido, Adaptador USB, Indicador LED, base Carregadora Controle PS5 Acessórios",
+    "preco": "68.58",
+    "link": "https://www.amazon.com.br/dp/B0H8NNXHRG?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61Zjuds5jqL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "75.99"
+  },
+  {
+    "nome": "Controle sem fio DualSense Midnight Black",
+    "preco": "394.25",
+    "link": "https://www.amazon.com.br/dp/B0CQKKHT5J?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/517nIWAoJFL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "499.90"
+  },
+  {
+    "nome": "PlayStation®5 Pro",
+    "preco": "7299.00",
+    "link": "https://www.amazon.com.br/dp/B0DH8J5YGH?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/51dfg52K-cL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Headset sem fio PlayStation PULSE Elite™ – Midnight Black",
+    "preco": "749.55",
+    "link": "https://www.amazon.com.br/dp/B0DSWL1FH8?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61dHx9xitSL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "999.90"
+  },
+  {
+    "nome": "Ghost of Yōtei - PlayStation 5",
+    "preco": "297.51",
+    "link": "https://www.amazon.com.br/dp/B0F6F6MYP1?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/81T4Iic4FRL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "319.90"
+  },
+  {
+    "nome": "Kingdom Hearts: Collection [I-III] - PlayStation 5 (Exclusivo Amazon)",
+    "preco": "409.10",
+    "link": "https://www.amazon.com.br/dp/B0HJSX61PX?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/715fdZ-pf6L._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "439.90"
+  },
+  {
+    "nome": "Castlevania: Belmont's Curse - PlayStation 5",
+    "preco": "237.47",
+    "link": "https://www.amazon.com.br/dp/B0GMNQMJS1?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/81hhA8TIQOL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "249.97"
+  },
+  {
+    "nome": "Persona 4 Revival - PlayStation 5",
+    "preco": "278.90",
+    "link": "https://www.amazon.com.br/dp/B0HKT8K2BF?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/81dKvD+JRSL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "299.90"
+  },
+  {
+    "nome": "Dragon’s Dogma 2: Dark Arisen - PlayStation 5",
+    "preco": "232.40",
+    "link": "https://www.amazon.com.br/dp/B0HKB8KB6P?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/71opl3mvlWL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "249.90"
+  },
+  {
+    "nome": "007 First Light - Specialist Edition (Exclusivo Amazon) - PlayStation 5",
+    "preco": "278.90",
+    "link": "https://www.amazon.com.br/dp/B0FZDSXJMY?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61mxvp+aRrL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "299.90"
+  },
+  {
+    "nome": "Base de Carregamento PS5 Duplo Carregador Controle PS5 com Carregamento Rápido, Adaptador USB, Indicador LED, base Carregadora Controle PS5 Acessórios",
+    "preco": "75.98",
+    "link": "https://www.amazon.com.br/dp/B0GY43MYRW?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61Ag4fqQg0L._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.99"
+  },
+  {
+    "nome": "Gran Turismo 7 Edição Padrão - PlayStation 5",
+    "preco": "161.50",
+    "link": "https://www.amazon.com.br/dp/B09C4T66X3?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/61o3TmIqogL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "399.90"
+  },
+  {
+    "nome": "Controle sem fio DualSense™ Cosmic Red",
+    "preco": "416.75",
+    "link": "https://www.amazon.com.br/dp/B0CQKKNLKH?tag=ofertas01dc-20",
+    "categoria": "Games",
+    "imagem": "https://m.media-amazon.com/images/I/51Gz5hqpewL._AC_UY218_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "499.00"
   }
 ]
