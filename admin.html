@@ -467,7 +467,16 @@
         var link = lines[i];
         statusEl.textContent = "Buscando " + (i + 1) + " de " + lines.length + "...";
         fill.style.width = Math.round((i / lines.length) * 100) + "%";
-        try { var data = await fetchProductData(link); data.link = link; data._dup = false; batchItems.push(data); ok++; }
+        try {
+          if (link.indexOf("|||") !== -1) {
+            var parts = link.split("|||");
+            var d = { nome: (parts[0]||"").trim(), preco: (parts[1]||"").trim(), imagem: (parts[2]||"").trim(), frete: (parts[3]||"").trim(), categoriaAuto: (parts[4]||"").trim(), link: (parts[5]||"").trim(), precoOriginal: (parts[6]||"").trim(), erro: false, _dup: false };
+            if (!isValidPrice(d.preco)) { d.erro = true; d.nome = "⚠ PREÇO INVÁLIDO — " + d.nome; }
+            batchItems.push(d); ok++;
+          } else {
+            var data = await fetchProductData(link); data.link = link; data._dup = false; batchItems.push(data); ok++;
+          }
+        }   
         catch (e) { fail++; batchItems.push({ nome: "Erro: " + e.message, preco: "0", link: link, imagem: "", frete: "", categoriaAuto: "", erro: true, _dup: false }); }
         renderBatchResults();
       }
