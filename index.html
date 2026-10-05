@@ -173,35 +173,48 @@
 
     <!-- Filter & Sort Bar -->
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-white rounded-2xl border border-sand-200 mb-8 shadow-sm">
+      <div class="flex items-center gap-3 w-full sm:w-auto flex-wrap">
         <div class="relative w-full sm:w-48">
           <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
           <input type="text" id="search-input-filters" placeholder="Buscar..." class="w-full bg-sand-50 border border-sand-200 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-500">
-        </div>         
-        <div class="flex items-center gap-3 w-full sm:w-auto flex-wrap">
-        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Filtrar por:</span>
-        <div class="flex items-center gap-2">
-          <input type="number" id="price-min" placeholder="Mín (R$)" class="w-20 px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
-          <span class="text-slate-400 text-xs">até</span>
-          <input type="number" id="price-max" placeholder="Máx (R$)" class="w-20 px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
         </div>
-        <label class="flex items-center gap-1.5 text-xs font-medium text-slate-600 cursor-pointer ml-2">
-          <input type="checkbox" id="frete-gratis" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
-          <span>Frete Grátis</span>
-        </label>
+        <div class="relative">
+          <button id="btn-filters" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all">
+            <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+            Filtros
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform" id="filter-chevron"></i>
+            <span id="filter-badge" class="hidden w-2 h-2 rounded-full bg-brand-500"></span>
+          </button>
+          <div id="filter-panel" class="hidden absolute top-full left-0 mt-2 w-72 bg-white border border-sand-200 rounded-2xl shadow-xl p-4 z-50">
+            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Ordenar por</p>
+            <select id="sort-select" class="w-full bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-2 px-3 mb-4 focus:outline-none focus:ring-1 focus:ring-brand-500">
+              <option value="recentes">Mais recentes</option>
+              <option value="menor-preco">Menor preço</option>
+              <option value="maior-preco">Maior preço</option>
+              <option value="maiores-descontos">Maiores descontos</option>
+            </select>
+            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Filtrar</p>
+            <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-2">
+              <input type="checkbox" id="frete-gratis" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
+              <span>Frete grátis</span>
+            </label>
+            <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-4">
+              <input type="checkbox" id="com-desconto" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
+              <span>Só com desconto</span>
+            </label>
+            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Faixa de preço</p>
+            <div class="flex items-center gap-2">
+              <input type="number" id="price-min" placeholder="Mín (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
+              <span class="text-slate-400 text-xs">até</span>
+              <input type="number" id="price-max" placeholder="Máx (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="flex items-center justify-between w-full sm:w-auto gap-4">
         <span class="text-xs text-slate-500"><strong class="text-slate-900 font-semibold" id="results-count">0</strong> produtos</span>
-        <div class="flex items-center gap-2">
-          <span class="text-xs text-slate-400">Ordenar:</span>
-          <select id="sort-select" class="bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-1.5 px-3 focus:outline-none focus:ring-1 focus:ring-brand-500">
-            <option value="recentes">Mais recentes</option>
-            <option value="menor-preco">Menor preço</option>
-            <option value="maior-preco">Maior preço</option>
-          </select>
-        </div>
       </div>
-    </div>
-
+    </div>   
     <!-- Product Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-all"></div>
 
@@ -320,6 +333,7 @@
     var maxPrice = Infinity;
     var freteOnly = false;
     var sortBy = 'recentes';
+    var descontoOnly = false;   
 
     function getMpKey(p) {
       var mp = (p.marketplace || '').toUpperCase();
@@ -419,8 +433,10 @@
       if (minPrice > 0) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) >= minPrice; });
       if (maxPrice < Infinity) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) <= maxPrice; });
       if (freteOnly) filtered = filtered.filter(function(p) { return /gr[aá]tis|sim/i.test(p.frete || ''); });
+      if (descontoOnly) filtered = filtered.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });         
       if (sortBy === 'menor-preco') filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
       else if (sortBy === 'maior-preco') filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
+      else if (sortBy === 'maiores-descontos') filtered.sort(function(a, b) { var da = (a.precoOriginal && Number(a.precoOriginal) > Number(a.price||a.preco)) ? (1 - Number(a.price||a.preco)/Number(a.precoOriginal))*100 : 0; var db = (b.precoOriginal && Number(b.precoOriginal) > Number(b.price||b.preco)) ? (1 - Number(b.price||b.preco)/Number(b.precoOriginal))*100 : 0; return db - da; });   
 
       grid.innerHTML = '';
       if (filtered.length === 0) {
@@ -479,13 +495,19 @@
     var searchInputFilters = document.getElementById('search-input-filters');
     searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; searchInputFilters.value = searchTerm; renderGrid(); });
     searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; searchInputFilters.value = searchTerm; renderGrid(); });   
-    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
-    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
     searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
     searchInputMobile.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });   
-    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); });
-    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
+    var descontoCheck = document.getElementById('com-desconto');
+    descontoCheck.addEventListener('change', function() { descontoOnly = descontoCheck.checked; renderGrid(); updateFilterBadge(); });
+    var btnFilters = document.getElementById('btn-filters');
+    var filterPanel = document.getElementById('filter-panel');
+    var filterChevron = document.getElementById('filter-chevron');
+    btnFilters.addEventListener('click', function(e) { e.stopPropagation(); filterPanel.classList.toggle('hidden'); filterChevron.style.transform = filterPanel.classList.contains('hidden') ? '' : 'rotate(180deg)'; });
+    document.addEventListener('click', function(e) { if (!filterPanel.contains(e.target) && e.target !== btnFilters) { filterPanel.classList.add('hidden'); filterChevron.style.transform = ''; } });
+    function updateFilterBadge() { var active = freteOnly || descontoOnly || minPrice > 0 || maxPrice < Infinity; document.getElementById('filter-badge').classList.toggle('hidden', !active); }
+    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; updateFilterBadge(); });
+    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; updateFilterBadge(); });       
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
 
     function setNavMp(mp) {
