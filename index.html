@@ -466,8 +466,14 @@
         }
     }
 
-    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
-    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
+    function focusFirstResult() {
+      setTimeout(function() {
+        var first = document.getElementById('grid-all').firstElementChild;
+        if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); first.style.outline = '3px solid #0D9488'; first.style.outlineOffset = '2px'; setTimeout(function() { first.style.outline = ''; first.style.outlineOffset = ''; }, 1500); }
+      }, 100);
+    }
+    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); if (searchTerm) focusFirstResult(); });
+    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); if (searchTerm) focusFirstResult(); });   
     priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); });
     priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); });
     freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
