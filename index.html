@@ -394,12 +394,12 @@
           chipsContainer.querySelectorAll('button').forEach(function(b) { b.className = 'whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all flex items-center gap-1.5'; });
           btn.className = 'whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5';
           activeCat = btn.dataset.cat;
-          renderGrid();
+          renderGrid(true);   
         });
       });
     }
 
-    function renderGrid() {
+    function renderGrid(focus) {   
       var filtered = allOffers.slice();
       if (activeMp) filtered = filtered.filter(function(p) { return getMpKey(p) === activeMp; });
       if (activeCat !== 'all') filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
@@ -429,6 +429,7 @@
       }
       lucide.createIcons();
       resultsCount.textContent = filtered.length;
+      if (focus) focusFirstResult();   
     }
 
     function updateStats() {
@@ -483,23 +484,23 @@
     searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
     searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
     searchInputMobile.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
-    freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); updateFilterBadge(); });
+    freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(true); updateFilterBadge(); });   
     var descontoCheck = document.getElementById('com-desconto');
-    descontoCheck.addEventListener('change', function() { descontoOnly = descontoCheck.checked; renderGrid(); updateFilterBadge(); });
+    descontoCheck.addEventListener('change', function() { descontoOnly = descontoCheck.checked; renderGrid(true); updateFilterBadge(); });   
     var btnFilters = document.getElementById('btn-filters');
     var filterPanel = document.getElementById('filter-panel');
     var filterChevron = document.getElementById('filter-chevron');
     btnFilters.addEventListener('click', function(e) { e.stopPropagation(); filterPanel.classList.toggle('hidden'); filterChevron.style.transform = filterPanel.classList.contains('hidden') ? '' : 'rotate(180deg)'; });
     document.addEventListener('click', function(e) { if (!filterPanel.contains(e.target) && e.target !== btnFilters) { filterPanel.classList.add('hidden'); filterChevron.style.transform = ''; } });
     function updateFilterBadge() { var active = freteOnly || descontoOnly || minPrice > 0 || maxPrice < Infinity || minDiscount > 0 || minSavings > 0 || activeMp !== ''; document.getElementById('filter-badge').classList.toggle('hidden', !active); }
-    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); updateFilterBadge(); });
-    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); updateFilterBadge(); });
-    sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
-    document.getElementById('min-discount').addEventListener('change', function() { minDiscount = parseInt(this.value)||0; renderGrid(); updateFilterBadge(); });
-    document.getElementById('min-savings').addEventListener('input', function() { minSavings = parseFloat(this.value)||0; renderGrid(); updateFilterBadge(); });
+    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(true); updateFilterBadge(); });   
+    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(true); updateFilterBadge(); });   
+    sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(true); });   
+    document.getElementById('min-discount').addEventListener('change', function() { minDiscount = parseInt(this.value)||0; renderGrid(true); updateFilterBadge(); });   
+    document.getElementById('min-savings').addEventListener('input', function() { minSavings = parseFloat(this.value)||0; renderGrid(true); updateFilterBadge(); });   
     document.querySelectorAll('.dnav-btn').forEach(function(btn) { btn.addEventListener('click', function() { setNavMp(this.dataset.mp); }); });
     function syncDNav() { document.querySelectorAll('.dnav-btn').forEach(function(b) { b.className = 'dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors'; }); var active = document.querySelector('.dnav-btn[data-mp="' + activeMp + '"]'); if (active) active.className = 'dnav-btn px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm'; }
-    function setNavMp(mp) { activeMp = mp; syncDNav(); renderGrid(); }
+    function setNavMp(mp) { activeMp = mp; syncDNav(); renderGrid(true); }   
 
     async function loadAll() {
       try {
