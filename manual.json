@@ -2087,5 +2087,72 @@
     "categoria": "Brinquedos",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71QuTKIbyBL._AC_UL600_SR600,400_.jpg",
     "marketplace": "Amazon"
+  },
+  {
+    "nome": "Echo Dot (Geração mais recente) | Smart speaker com Alexa, som vibrante e potente, Wi-Fi e Bluetooth | Cor Branca, com Acesso Antecipado à Alexa+",
+    "preco": "329.00",
+    "link": "https://www.amazon.com.br/dp/B09B8XVSDP?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/71YVBa7zc5L._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "649.00"
+  },
+  {
+    "nome": "Fritadeira Philco Air Fryer Oven 12L PFR2200P - 127V",
+    "preco": "377.99",
+    "link": "https://www.amazon.com.br/dp/B08R93TVRG?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/612gXC9waVL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "1199.90"
+  },
+  {
+    "nome": "Whisky Royal Salute 21 anos The Signature Blend Escocês - 700 ml",
+    "preco": "685.35",
+    "link": "https://www.amazon.com.br/dp/B005NEW08S?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/518+lSygSkL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "1364.90"
+  },
+  {
+    "nome": "Echo Dot (Geração mais recente) | Smart speaker com Alexa, som vibrante e potente, Wi-Fi e Bluetooth | Cor Preta, com Acesso Antecipado à Alexa+",
+    "preco": "329.00",
+    "link": "https://www.amazon.com.br/dp/B09B8VGCR8?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71xoR4A6q-L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pilha recarregável AAA 1000mAh Elgin com 4 unidades Palito",
+    "preco": "29.50",
+    "link": "https://www.amazon.com.br/dp/B0754KMGFN?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71SnHLZ+XjL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Caixa de Pilha AAA com 40 unidades Elgin Palito - Tubo, Zinco",
+    "preco": "27.99",
+    "link": "https://www.amazon.com.br/dp/B09LD48ZZ4?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51wlcSTwZsL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "EUCERIN Dual Sérum Facial Antimanchas e Anti-idade 30ml, Anti-Pigment, Clareador, Thiamidol, Ácido Hialurônico",
+    "preco": "230.99",
+    "link": "https://www.amazon.com.br/dp/B07SJSZHD7?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71njjocTB6L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Secret Desodorante Antitranspirante em Gel Proteção de Algodão 73 g",
+    "preco": "19.98",
+    "link": "https://www.amazon.com.br/dp/B0F3K1H34H?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51GcYLd6R2L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
   }
 ]
