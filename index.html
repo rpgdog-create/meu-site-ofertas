@@ -640,12 +640,21 @@
         var r3 = await fetch('cupons.json?t=' + Date.now());
         allCupons = await r3.json().catch(function() { return []; });
         buildChips();
+        syncDNav();   
         renderGrid();
         updateStats();
       } catch (e) {
         grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Erro ao carregar ofertas.</p>';
       }
     }
+        // Ler query params da URL
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var mp = params.get('mp');
+      var cat = params.get('cat');
+      if (mp) activeMp = mp;
+      if (cat) activeCat = cat;
+    })();   
     loadAll();
     setInterval(loadAll, 15 * 60 * 1000);
 
