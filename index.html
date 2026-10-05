@@ -402,8 +402,77 @@
       });
     }
 
+  var isCuponsMode = false;
+
+  function selectCupons() {
+    isCuponsMode = true;
+    var chip = document.getElementById('chip-cupons');
+    if (chip) {
+      chip.classList.remove('bg-amber-50', 'text-amber-800', 'border-amber-200');
+      chip.classList.add('bg-amber-500', 'text-white', 'border-amber-500');
+    }
+    renderCupons();
+  }
+
+  function clearCuponsMode() {
+    isCuponsMode = false;
+    var chip = document.getElementById('chip-cupons');
+    if (chip) {
+      chip.classList.remove('bg-amber-500', 'text-white', 'border-amber-500');
+      chip.classList.add('bg-amber-50', 'text-amber-800', 'border-amber-200');
+    }
+  }
+
+  function renderCupons() {
+    var grid = document.getElementById('offers-grid');
+    if (!grid) return;
+    var mpFilter = document.getElementById('nav-mp') ? document.getElementById('nav-mp').dataset.mp : 'todos';
+    var filtered = allCupons.filter(function(c) {
+      if (mpFilter !== 'todos' && c.marketplace !== mpFilter) return false;
+      return true;
+    });
+    if (filtered.length === 0) {
+      grid.innerHTML = '<div class="col-span-full text-center py-12 text-gray-400">Nenhum cupom disponível.</div>';
+      return;
+    }
+    grid.innerHTML = filtered.map(function(c) {
+      var mpBadge = c.marketplace === 'ML' ? 'bg-teal-100 text-teal-800' : c.marketplace === 'AM' ? 'bg-orange-100 text-orange-800' : 'bg-pink-100 text-pink-800';
+      var mpIcon = c.marketplace === 'ML' ? '🛒' : c.marketplace === 'AM' ? '📦' : '🛍️';
+      var codeBlock = c.codigo
+        ? '<div class="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 mt-3">'
+          + '<span class="font-mono text-sm font-semibold text-gray-800">' + c.codigo + '</span>'
+          + '<button onclick="copyCouponCode(\'' + c.codigo + '\')" class="text-xs text-teal-600 hover:text-teal-800 font-medium flex items-center gap-1"><i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar</button>'
+          + '</div>'
+        : '';
+      var conditions = '';
+      if (c.minima || c.maximo) {
+        conditions = '<div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-500">';
+        if (c.minima) conditions += '<span>Mín: <strong>' + c.minima + '</strong></span>';
+        if (c.maximo) conditions += '<span>Máx: <strong>' + c.maximo + '</strong></span>';
+        conditions += '</div>';
+      }
+      var validade = c.validade ? '<div class="mt-2 text-xs text-amber-700 font-medium">⏳ ' + c.validade + '</div>' : '';
+      return '<div class="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all p-5 flex flex-col">'
+        + '<div class="flex items-start justify-between">'
+        + '<div class="flex-1">'
+        + '<div class="flex items-center gap-2 mb-1"><span class="text-lg">🎟️</span><span class="text-sm font-semibold text-gray-800">' + c.nome + '</span></div>'
+        + '<span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full ' + mpBadge + '">' + mpIcon + ' ' + c.marketplace + '</span>'
+        + '</div>'
+        + '<span class="text-xl font-bold text-teal-700 whitespace-nowrap">' + c.desconto + '</span>'
+        + '</div>'
+        + codeBlock   
     function renderGrid(focus) {   
-      var filtered = allOffers.slice();
+    var searchVal = (document.getElementById('search-input') || {}).value || '';
+    var searchLower = searchVal.toLowerCase().trim();
+    var isCuponSearch = (searchLower === 'cupom' || searchLower === 'cupons' || searchLower === 'cupom de desconto');
+    if (isCuponSearch) {
+      if (!isCuponsMode) selectCupons();
+      return;
+    }
+    if (isCuponsMode) {
+      clearCuponsMode();
+    }       
+    var filtered = allOffers.slice();
       if (activeMp) filtered = filtered.filter(function(p) { return getMpKey(p) === activeMp; });
       if (activeCat !== 'all') filtered = filtered.filter(function(p) { return (p.categoria || p.categoriaAuto || '') === activeCat; });
       if (searchTerm) {
