@@ -115,7 +115,8 @@
           <button onclick="saveAll()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98] flex items-center gap-2"><i data-lucide="save" class="w-4 h-4"></i> Salvar no site</button>
           <button id="btn-amazon-promos" onclick="(function(){var btn=document.getElementById('btn-amazon-promos');var cmd='cd /Users/ronaldogabrielli/Programa&ccedil;&atilde;o/projetos/Meu_site_ofertas/meu-site-ofertas && python3 amazon_promos.py';navigator.clipboard.writeText(cmd);btn.className='px-4 py-2.5 rounded-xl bg-orange-500 text-white font-semibold text-sm flex items-center gap-2';btn.innerHTML='⏳ Aguardando...';var ta=document.getElementById('import-textarea');var iv=setInterval(function(){if(ta.value.indexOf('|||')!==-1){clearInterval(iv);btn.className='px-4 py-2.5 rounded-xl bg-emerald-100 text-emerald-800 font-semibold text-sm flex items-center gap-2';btn.innerHTML='✓ Produtos trazidos';}},500);})()" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">
   📦 Amazon Promos
-</button>   
+</button>
+<button id="btn-import-cupons" onclick="importCupons()" class="bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition">🎟️ Importar Cupons</button>      
           <button onclick="loadOffers()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-cw" class="w-4 h-4"></i> Recarregar</button>
           <button onclick="runSyncML()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync</button>
           <button onclick="removeAllOffers()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="trash-2" class="w-4 h-4"></i> Remover todos</button>
@@ -235,7 +236,54 @@
       var data = await res.json();
       return data.sha;
     }
-
+  async function importCupons() {
+    var btn = document.getElementById('btn-import-cupons');
+    btn.textContent = '⏳ Importando...';
+    btn.classList.add('opacity-70');
+    try {
+      var text = await navigator.clipboard.readText();
+      var data = JSON.parse(text);
+      if (!Array.isArray(data) || data.length === 0) throw new Error('Clipboard não contém array de cupons.');
+      var jsonStr = JSON.stringify(data, null, 2);
+      var token = localStorage.getItem('gh_token');
+      var repo = 'rpgdog-create/meu-site-ofertas';
+      var sha = '';
+      var shaRes = await fetch('https://api.github.com/repos/' + repo + '/contents/cupons.json', {
+        headers: { 'Authorization': 'token ' + token }
+      });
+      if (shaRes.ok) {
+        var shaData = await shaRes.json();
+        sha = shaData.sha;
+      }
+      var body = {
+        message: 'feat: atualizar cupons (' + data.length + ')',
+        content: btoa(unescape(encodeURIComponent(jsonStr))),
+        branch: 'main'
+      };
+      if (sha) body.sha = sha;
+      var res = await fetch('https://api.github.com/repos/' + repo + '/contents/cupons.json', {
+        method: 'PUT',
+        headers: { 'Authorization': 'token ' + token, 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (!res.ok) throw new Error('Erro na API: ' + res.status);
+      btn.textContent = '✓ ' + data.length + ' cupons salvos!';
+      btn.classList.remove('opacity-70');
+      btn.classList.add('bg-emerald-600');
+      setTimeout(function() {
+        btn.textContent = '🎟️ Importar Cupons';
+        btn.classList.remove('bg-emerald-600');
+      }, 3000);
+    } catch (e) {
+      btn.textContent = '✗ Erro: ' + e.message;
+      btn.classList.remove('opacity-70');
+      btn.classList.add('bg-red-500');
+      setTimeout(function() {
+        btn.textContent = '🎟️ Importar Cupons';
+        btn.classList.remove('bg-red-500');
+      }, 4000);
+    }
+  }   
     async function commitFile(content, filePath, message) {
       var jsonStr = JSON.stringify(content, null, 2);
       var bytes = new TextEncoder().encode(jsonStr);
