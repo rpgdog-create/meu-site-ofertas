@@ -34,333 +34,138 @@
     <div class="max-w-5xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2">
         <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-[10px] uppercase tracking-wider">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Help
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> Live Radar
         </span>
-        <span class="hidden sm:inline">Guia completo de operação do site</span>
+        <span class="hidden sm:inline">Guia de operação do site</span>
       </div>
-      <a href="admin.html" class="text-teal-200 hover:text-white text-xs font-semibold">← Voltar ao Admin</a>
+      <a href="admin.html" class="text-teal-200 hover:text-white text-xs font-semibold transition-colors">← Voltar ao Admin</a>
     </div>
   </aside>
 
   <!-- Header -->
   <header class="bg-teal-900 text-white py-8 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h1 class="font-display text-2xl sm:text-3xl font-bold">📖 Guia de Operação</h1>
-      <p class="mt-2 text-teal-200 text-sm">Tudo que você precisa pra gerenciar o site de ofertas.</p>
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="font-display text-2xl sm:text-3xl font-bold">Help <span class="text-teal-200 font-normal">Admin</span></h1>
+        <p class="mt-1 text-teal-200 text-sm">Adicionar e remover produtos e cupons.</p>
+      </div>
     </div>
   </header>
 
   <main class="max-w-5xl mx-auto px-4 py-10">
 
-    <!-- TOC -->
-    <nav class="bg-white rounded-2xl border border-sand-200 p-5 mb-10">
-      <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Sumário</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
-        <a href="#inserir" class="text-teal-600 hover:text-teal-800 font-medium">→ Inserir Produtos</a>
-        <a href="#editar" class="text-teal-600 hover:text-teal-800 font-medium">→ Editar Produtos</a>
-        <a href="#excluir" class="text-teal-600 hover:text-teal-800 font-medium">→ Excluir Produtos</a>
-        <a href="#cupons" class="text-teal-600 hover:text-teal-800 font-medium">→ Cupons</a>
-        <a href="#categorias" class="text-teal-600 hover:text-teal-800 font-medium">→ Categorias</a>
-        <a href="#sync" class="text-teal-600 hover:text-teal-800 font-medium">→ Sync</a>
-        <a href="#bookmarklets" class="text-teal-600 hover:text-teal-800 font-medium">→ Bookmarklets</a>
-        <a href="#scripts" class="text-teal-600 hover:text-teal-800 font-medium">→ Scripts</a>
-        <a href="#workflows" class="text-teal-600 hover:text-teal-800 font-medium">→ Workflows</a>
-      </div>
-    </nav>
+    <!-- INSERIR PRODUTOS -->
+    <section class="mb-10">
+      <h2 class="font-display text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="plus-circle" class="w-5 h-5 text-teal-600"></i> Adicionar Produtos</h2>
 
-    <!-- INSERIR -->
-    <section id="inserir" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="plus-circle" class="w-5 h-5 text-teal-600"></i> Inserir Produtos</h2>
-
-      <!-- Amazon Lote Script -->
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">📦 Amazon — Lote (Script Local)</h3>
-        <p class="text-sm text-slate-600 mb-3">Varre Goldbox + 7 bestsellers (~120 produtos). Vem com categoria e link de afiliado.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">📦 Amazon — Lote (recomendado)</h3>
         <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>Clicar botão <strong>"📦 Amazon Promos"</strong> no admin (copia comando pro clipboard)</li>
-          <li>Abrir terminal, colar e rodar: <code class="bg-sand-100 px-1.5 py-0.5 rounded text-xs">python3 amazon_promos.py</code></li>
-          <li>Chromium abre, varre as páginas (~1 min), copia resultado pro clipboard</li>
-          <li>Voltar ao admin → colar na textarea → <strong>Importar</strong> → <strong>Adicionar todos</strong> → <strong>Salvar no site</strong></li>
-        </ol>
-        <p class="text-xs text-amber-700 mt-2">⚠️ Goldbox: só produtos com desconto. Bestsellers: com e sem desconto.</p>
-      </div>
-
-      <!-- Amazon Individual -->
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">📦 Amazon — Individual (Bookmarklet)</h3>
-        <p class="text-sm text-slate-600 mb-3">Pega 1 produto por vez na página do produto. Vem com categoria e link de afiliado.</p>
-        <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>Clicar bookmarklet <strong>"AM Clear"</strong> (limpa a lista)</li>
-          <li>Abre a página do produto na Amazon</li>
-          <li>Clicar bookmarklet <strong>"AM Copy"</strong> (extrai nome, preço, imagem, categoria, link)</li>
-          <li>Repetir nos próximos produtos</li>
-          <li>Clicar bookmarklet <strong>"AM Export"</strong> (copia tudo pro clipboard)</li>
+          <li>Clicar <strong>"📦 Amazon Promos"</strong> no admin</li>
+          <li>Abrir terminal, colar e rodar o comando</li>
+          <li>Aguardar Chromium terminar (~1 min) → copia pro clipboard</li>
           <li>Voltar ao admin → colar na textarea → <strong>Importar</strong> → <strong>Adicionar todos</strong> → <strong>Salvar no site</strong></li>
         </ol>
       </div>
 
-      <!-- Amazon Batch -->
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">📦 Amazon — Lote (Bookmarklet Batch)</h3>
-        <p class="text-sm text-slate-600 mb-3">Varre página de busca da Amazon, pega todos os cards visíveis.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">📦 Amazon — Individual</h3>
         <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>Clicar bookmarklet <strong>"AM Clear"</strong></li>
-          <li>Abre uma busca na Amazon (ex: "fone bluetooth")</li>
-          <li>Clicar bookmarklet <strong>"AM Batch"</strong> (pega todos os cards da página)</li>
-          <li>Scroll e clicar de novo se quiser mais</li>
+          <li>Clicar <strong>"AM Clear"</strong></li>
+          <li>Na página do produto, clicar <strong>"AM Copy"</strong> (repetir em cada produto)</li>
           <li>Clicar <strong>"AM Export"</strong> → colar no admin → <strong>Importar</strong> → <strong>Salvar</strong></li>
         </ol>
-        <p class="text-xs text-amber-700 mt-2">⚠️ Não funciona em bestsellers/goldbox (estrutura diferente). Categoria vem vazia — aplicar no admin.</p>
       </div>
 
-      <!-- ML -->
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">🛒 Mercado Livre — Individual (Bookmarklet)</h3>
-        <p class="text-sm text-slate-600 mb-3">Pega 1 produto por vez. Vem com link de afiliado. Usa 2 abas intercalando subdomínios.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">📦 Amazon — Busca (Batch)</h3>
         <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>Abrir 2 abas do ML (ex: <code class="bg-sand-100 px-1.5 py-0.5 rounded text-xs">produto.mercadolivre.com.br</code> e <code class="bg-sand-100 px-1.5 py-0.5 rounded text-xs">www.mercadolivre.com.br</code>)</li>
-          <li>Clicar <strong>"ML Clear"</strong> na aba A <strong>e</strong> na aba B</li>
-          <li>Na Barra de Afiliados do ML: Compartilhar → clicar <strong>"ML Copy"</strong> (repete em cada produto, intercalando subdomínios)</li>
-          <li>Clicar <strong>"ML Export"</strong> na aba A → copia</li>
-          <li>Clicar <strong>"ML Export"</strong> na aba B → copia</li>
-          <li>Colar os dois no admin → <strong>Importar</strong> → <strong>Adicionar todos</strong> → <strong>Salvar no site</strong></li>
+          <li>Clicar <strong>"AM Clear"</strong></li>
+          <li>Abre busca na Amazon → clicar <strong>"AM Batch"</strong></li>
+          <li>Clicar <strong>"AM Export"</strong> → colar no admin → <strong>Importar</strong> → <strong>Salvar</strong></li>
         </ol>
-        <p class="text-xs text-amber-700 mt-2">⚠️ ML Batch está no freezer (sem link de afiliado — não entra no site sem comissão).</p>
+        <p class="text-xs text-amber-700 mt-2">⚠️ Categoria vem vazia — aplicar no admin. Não funciona em bestsellers/goldbox.</p>
       </div>
 
-      <!-- Shopee -->
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">🛍️ Shopee — Manual (aguardando API)</h3>
-        <p class="text-sm text-slate-600">Ainda sem automação. Adicionar manualmente no admin: colar o link do produto na textarea → Importar → Salvar. A API Open está pendente de aprovação.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">🛒 Mercado Livre</h3>
+        <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
+          <li>Abrir 2 abas do ML (intercalando subdomínios)</li>
+          <li>Clicar <strong>"ML Clear"</strong> nas duas abas</li>
+          <li>Barra de Afiliados → Compartilhar → clicar <strong>"ML Copy"</strong> em cada produto</li>
+          <li>Clicar <strong>"ML Export"</strong> na aba A → copiar</li>
+          <li>Clicar <strong>"ML Export"</strong> na aba B → copiar</li>
+          <li>Colar os dois no admin → <strong>Importar</strong> → <strong>Adicionar todos</strong> → <strong>Salvar</strong></li>
+        </ol>
+      </div>
+
+      <div class="bg-white rounded-xl border border-sand-200 p-5">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">🛍️ Shopee</h3>
+        <p class="text-sm text-slate-700">Colar o link do produto na textarea → <strong>Importar</strong> → <strong>Salvar</strong>. (API ainda pendente.)</p>
       </div>
     </section>
 
-    <!-- EDITAR -->
-    <section id="editar" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="pencil" class="w-5 h-5 text-teal-600"></i> Editar Produtos</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <p class="text-sm text-slate-700 mb-3">Não há edição inline no admin. Para editar um produto:</p>
-        <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>No admin, localizar o produto na lista</li>
-          <li>Excluir o produto (botão 🗑️ no card)</li>
-          <li>Re-adicionar com os dados corrigidos (colar na textarea → Importar → Adicionar → Salvar)</li>
-        </ol>
-        <p class="text-xs text-slate-500 mt-3">Alternativa: editar o <code class="bg-sand-100 px-1.5 py-0.5 rounded">manual.json</code> diretamente via nano/terminal e pushar.</p>
-      </div>
-    </section>
+    <!-- REMOVER PRODUTOS -->
+    <section class="mb-10">
+      <h2 class="font-display text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="trash-2" class="w-5 h-5 text-red-600"></i> Remover Produtos</h2>
 
-    <!-- EXCLUIR -->
-    <section id="excluir" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="trash-2" class="w-5 h-5 text-red-600"></i> Excluir Produtos</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">Individual</h3>
-        <p class="text-sm text-slate-700">No admin, clicar no botão 🗑️ no card do produto → confirmar → Salvar no site.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <p class="text-sm text-slate-700"><strong>Individual:</strong> clicar 🗑️ no card → <strong>Salvar no site</strong>.</p>
       </div>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">Todos</h3>
-        <p class="text-sm text-slate-700">Clicar <strong>"Remover todos"</strong> (botão vermelho) → confirmar → Salvar no site.</p>
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <p class="text-sm text-slate-700"><strong>Todos:</strong> botão <strong>"Remover todos"</strong> → <strong>Salvar no site</strong>.</p>
       </div>
       <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <h3 class="font-bold text-slate-900 mb-2">Automático (Sync)</h3>
-        <p class="text-sm text-slate-700">O workflow <code class="bg-sand-100 px-1.5 py-0.5 rounded">sync-ml.yml</code> roda a cada 6h e remove produtos que retornam 404/410/403. Também pode ser disparado manualmente pelo botão <strong>"Sync"</strong> no admin.</p>
+        <p class="text-sm text-slate-700"><strong>Automático (Sync):</strong> botão <strong>"Sync"</strong> no admin → remove produtos que retornam 404/410/403. Roda sozinho a cada 6h.</p>
       </div>
     </section>
 
     <!-- CUPONS -->
-    <section id="cupons" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="ticket" class="w-5 h-5 text-amber-600"></i> Cupons</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">Como adicionar</h3>
+    <section class="mb-10">
+      <h2 class="font-display text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="ticket" class="w-5 h-5 text-amber-600"></i> Cupons</h2>
+
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">Adicionar / Atualizar (3 cliques)</h3>
         <ol class="text-sm text-slate-700 space-y-1 list-decimal list-inside">
-          <li>Abrir <code class="bg-sand-100 px-1.5 py-0.5 rounded text-xs">cupons.json</code> no nano</li>
-          <li>Adicionar o cupom no array (ver formato abaixo)</li>
-          <li>Salvar → push</li>
+          <li>Clicar <strong>"🎟️ Cupons ML"</strong> no admin → abre ML em nova aba</li>
+          <li>Clicar bookmarklet <strong>"ML Cupons"</strong> → copia JSON pro clipboard</li>
+          <li>Voltar ao admin → clicar <strong>"🎟️ Importar Cupons"</strong> → salva direto</li>
         </ol>
       </div>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">Formato do JSON</h3>
-        <pre class="bg-slate-900 text-green-400 text-xs p-4 rounded-lg overflow-x-auto"><code>{
-  "nome": "15% OFF em Eletrônicos",
-  "marketplace": "ML",
-  "desconto": "15% OFF",
-  "minima": "R$ 99",
-  "maximo": "R$ 50",
-  "codigo": "ELETR15",
-  "categoria": "Eletrônicos",
-  "validade": "até 20/10",
-  "link": ""
-}</code></pre>
-        <p class="text-xs text-slate-500 mt-2">Se <code>categoria</code> estiver preenchido, o link é gerado automaticamente (abre o site filtrado). Se vazio, usa o valor de <code>link</code>.</p>
+
+      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-3">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">Como funciona no site</h3>
+        <p class="text-sm text-slate-700">Chip "🎟️ Cupons" no header e busca por "cupons". O botão "Resgatar →" abre o site filtrado (categoria + marketplace) — o usuário vê produtos com seu link de afiliado e compra → comissão.</p>
       </div>
+
       <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <h3 class="font-bold text-slate-900 mb-2">Como funciona no site</h3>
-        <p class="text-sm text-slate-700">O chip "🎟️ Cupons" no header e a busca por "cupons" mostram os cupons. O botão "Resgatar →" abre o site filtrado (categoria + marketplace) — o usuário vê os produtos com seu link de afiliado e compra → comissão pra você.</p>
+        <h3 class="font-bold text-slate-900 text-sm mb-2">Dica</h3>
+        <p class="text-sm text-slate-700">Se o cupom for de uma categoria específica, preencher o campo <code class="bg-sand-100 px-1 py-0.5 rounded text-xs">categoria</code> no JSON — o link é gerado automaticamente e abre o site já filtrado.</p>
       </div>
     </section>
 
     <!-- CATEGORIAS -->
-    <section id="categorias" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="folder" class="w-5 h-5 text-teal-600"></i> Categorias</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <h3 class="font-bold text-slate-900 mb-2">Fixas (37)</h3>
-        <p class="text-sm text-slate-700">Acessórios para Veículos, Agro, Alimentos e Bebidas, Animais, Antiguidades e Coleções, Arte Papelaria e Armarinho, Automotivo e Moto, Bebês, Beleza e Cuidado Pessoal, Brinquedos e Hobbies, Calçados Roupas e Bolsas, Carros Motos e Outros, Casa Móveis e Decoração, Celulares e Telefones, Câmeras e Acessórios, Construção, Cozinha e Utensílios, Eletrodomésticos, Eletrônicos Áudio e Vídeo, Esportes e Fitness, Ferramentas, Festas e Lembrancinhas, Games, Indústria e Comércio, Ingressos, Instrumentos Musicais, Jardim e Piscina, Joias e Relógios, Livros Revistas e Comics, Música Filmes e Seriados, Móveis, Papelaria e Escritório, Saúde, Serviços, Televisores, Informática, Outros.</p>
-      </div>
+    <section class="mb-10">
+      <h2 class="font-display text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="folder" class="w-5 h-5 text-teal-600"></i> Categorias</h2>
+
       <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <h3 class="font-bold text-slate-900 mb-2">Customizadas</h3>
-        <p class="text-sm text-slate-700 mb-2">Criadas via <strong>"➕ Gerenciar categorias"</strong> no admin (select global ou individual). Persistem em <code class="bg-sand-100 px-1.5 py-0.5 rounded">categorias.json</code>.</p>
+        <p class="text-sm text-slate-700 mb-2">37 categorias fixas + customizadas (criadas via <strong>"➕ Gerenciar categorias"</strong> no admin).</p>
         <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside">
           <li><strong>Criar:</strong> input + botão "Criar"</li>
-          <li><strong>Renomear:</strong> ✏️ → atualiza em todos os itens do batch + nas ofertas já salvas</li>
-          <li><strong>Excluir:</strong> 🗑️ → itens que usavam a categoria ficam sem categoria</li>
-          <li>Sempre em ordem alfabética (mescladas com as fixas)</li>
+          <li><strong>Renomear:</strong> ✏️ → atualiza em todos os itens</li>
+          <li><strong>Excluir:</strong> 🗑️ → itens ficam sem categoria</li>
         </ul>
       </div>
     </section>
 
     <!-- SYNC -->
-    <section id="sync" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-emerald-600"></i> Sync</h2>
+    <section class="mb-10">
+      <h2 class="font-display text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-emerald-600"></i> Sync</h2>
+
       <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <p class="text-sm text-slate-700 mb-2">Verifica todos os produtos (ML via proxy, Amazon direto). Se a URL retornar 404/410/403, remove. Se der erro de rede, mantém.</p>
-        <ul class="text-sm text-slate-700 space-y-1 list-disc list-inside mt-3">
-          <li><strong>Automático:</strong> a cada 6h (workflow <code class="bg-sand-100 px-1.5 py-0.5 rounded">sync-ml.yml</code>)</li>
-          <li><strong>Manual:</strong> botão <strong>"Sync"</strong> no admin → dispara via API → polling a cada 5s → timeout 30 tentativas</li>
-          <li>Status: laranja "Sincronizando..." → verde "Sincronizado ✓" ou vermelho "Erro no sync"</li>
-        </ul>
+        <p class="text-sm text-slate-700">Botão <strong>"Sync"</strong> no admin → verifica todos os produtos → remove inativos (404/410/403). Roda automaticamente a cada 6h. Também pode ser disparado manualmente.</p>
       </div>
     </section>
-
-    <!-- BOOKMARKLETS -->
-    <section id="bookmarklets" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="bookmark" class="w-5 h-5 text-teal-600"></i> Bookmarklets</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mb-4">
-        <p class="text-sm text-slate-700 mb-3">Como criar: abra uma aba em branco no Brave, clique na barra de favoritos, crie um novo favorito, edite a URL e cole o código do bookmarklet. Nomeie como quiser.</p>
-      </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm bg-white rounded-xl border border-sand-200 overflow-hidden">
-          <thead class="bg-sand-100 text-left">
-            <tr>
-              <th class="px-4 py-3 font-semibold text-slate-700">Nome</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Onde usar</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Função</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-sand-200">
-            <tr><td class="px-4 py-2 font-medium">ML Clear</td><td class="px-4 py-2">Qualquer aba ML</td><td class="px-4 py-2">Limpa localStorage + clipboard</td></tr>
-            <tr><td class="px-4 py-2 font-medium">ML Copy</td><td class="px-4 py-2">Página do produto ML</td><td class="px-4 py-2">Extrai produto + link afiliado (acumula 30 min)</td></tr>
-            <tr><td class="px-4 py-2 font-medium">ML Export</td><td class="px-4 py-2">Qualquer aba ML</td><td class="px-4 py-2">Copia tudo pro clipboard (formato |||)</td></tr>
-            <tr><td class="px-4 py-2 font-medium">ML Batch</td><td class="px-4 py-2">Página de busca ML</td><td class="px-4 py-2">Varre todos os cards (⚠️ sem link afiliado — freezer)</td></tr>
-            <tr><td class="px-4 py-2 font-medium">AM Clear</td><td class="px-4 py-2">Qualquer aba Amazon</td><td class="px-4 py-2">Limpa localStorage + clipboard</td></tr>
-            <tr><td class="px-4 py-2 font-medium">AM Copy</td><td class="px-4 py-2">Página do produto Amazon</td><td class="px-4 py-2">Extrai produto + link afiliado (acumula 30 min)</td></tr>
-            <tr><td class="px-4 py-2 font-medium">AM Export</td><td class="px-4 py-2">Qualquer aba Amazon</td><td class="px-4 py-2">Copia tudo pro clipboard (formato |||)</td></tr>
-            <tr><td class="px-4 py-2 font-medium">AM Batch</td><td class="px-4 py-2">Página de busca Amazon</td><td class="px-4 py-2">Varre todos os cards visíveis (pula patrocinados)</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="bg-white rounded-xl border border-sand-200 p-5 mt-4">
-        <h3 class="font-bold text-slate-900 mb-2">Formato de export (7 campos)</h3>
-        <pre class="bg-slate-900 text-green-400 text-xs p-4 rounded-lg overflow-x-auto"><code>nome ||| preco ||| imagem ||| frete ||| categoria ||| link ||| precoOriginal</code></pre>
-        <p class="text-xs text-slate-500 mt-2"><code>precoOriginal</code> fica vazio se não houver preço riscado ou se for menor/igual ao preço atual.</p>
-      </div>
-    </section>
-
-    <!-- SCRIPTS -->
-    <section id="scripts" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="terminal" class="w-5 h-5 text-slate-600"></i> Scripts Locais</h2>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm bg-white rounded-xl border border-sand-200 overflow-hidden">
-          <thead class="bg-sand-100 text-left">
-            <tr>
-              <th class="px-4 py-3 font-semibold text-slate-700">Script</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Comando</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Função</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Status</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-sand-200">
-            <tr>
-              <td class="px-4 py-2 font-medium">amazon_promos.py</td>
-              <td class="px-4 py-2"><code class="bg-sand-100 px-1 py-0.5 rounded text-xs">python3 amazon_promos.py</code></td>
-              <td class="px-4 py-2">Goldbox + 7 bestsellers (~120 produtos)</td>
-              <td class="px-4 py-2 text-emerald-600 font-medium">✅ Ativo</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2 font-medium">sync_ml.py</td>
-              <td class="px-4 py-2">— (roda via workflow)</td>
-              <td class="px-4 py-2">Remove produtos inativos (404/410/403)</td>
-              <td class="px-4 py-2 text-emerald-600 font-medium">✅ Ativo</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2 font-medium">agent.py</td>
-              <td class="px-4 py-2">— (roda via workflow)</td>
-              <td class="px-4 py-2">Busca Amazon + Gemini (aguardando Creators API)</td>
-              <td class="px-4 py-2 text-amber-600 font-medium">⏸️ Aguardando</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2 font-medium">scrape.py</td>
-              <td class="px-4 py-2">— (roda via workflow)</td>
-              <td class="px-4 py-2">Scraper Shopee (aguardando App ID/Secret)</td>
-              <td class="px-4 py-2 text-amber-600 font-medium">⏸️ Aguardando</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- WORKFLOWS -->
-    <section id="workflows" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="git-branch" class="w-5 h-5 text-slate-600"></i> Workflows GitHub Actions</h2>
-      <div class="overflow-x-auto">
-        <table class="w-full text-sm bg-white rounded-xl border border-sand-200 overflow-hidden">
-          <thead class="bg-sand-100 text-left">
-            <tr>
-              <th class="px-4 py-3 font-semibold text-slate-700">Workflow</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Cron</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Função</th>
-              <th class="px-4 py-3 font-semibold text-slate-700">Status</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-sand-200">
-            <tr>
-              <td class="px-4 py-2 font-medium">sync-ml.yml</td>
-              <td class="px-4 py-2">0 6 * * * (6h UTC = 3h Brasil)</td>
-              <td class="px-4 py-2">Remove produtos inativos</td>
-              <td class="px-4 py-2 text-emerald-600 font-medium">✅ Ativo</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2 font-medium">agent.yml</td>
-              <td class="px-4 py-2">0 3 * * * (3h UTC = 0h Brasil)</td>
-              <td class="px-4 py-2">Agente Amazon (Creators API)</td>
-              <td class="px-4 py-2 text-amber-600 font-medium">⏸️ Desativado</td>
-            </tr>
-            <tr>
-              <td class="px-4 py-2 font-medium">scrape.yml</td>
-              <td class="px-4 py-2">0 */6 * * * (6h)</td>
-              <td class="px-4 py-2">Scraper Shopee</td>
-              <td class="px-4 py-2 text-amber-600 font-medium">⏸️ Desativado</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- PENDENCIAS -->
-    <section id="pendencias" class="mb-12">
-      <h2 class="font-display text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i data-lucide="alert-circle" class="w-5 h-5 text-amber-600"></i> Pendências</h2>
-      <div class="bg-white rounded-xl border border-sand-200 p-5">
-        <ul class="text-sm text-slate-700 space-y-2">
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400"></span> Shopee: aguardando aprovação da API Open</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-amber-400"></span> Amazon: Creators API (10 vendas em 30 dias)</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-400"></span> ML: sem API de afiliado (continua manual via bookmarklets)</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-400"></span> Tráfego: canal Telegram + grupos + Reels</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="text-center text-xs text-slate-400 pt-8 border-t border-sand-200">
-      <p>Ofertas do Dia — Painel Admin Help</p>
-    </footer>
 
   </main>
 
