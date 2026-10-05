@@ -1,57 +1,79 @@
 [
   {
-    "nome": "Liquida 10.10 — até 70% OFF",
-    "marketplace": "ML",
-    "desconto": "até 70% OFF",
-    "minima": "",
-    "maximo": "",
-    "codigo": "",
-    "categoria": "",
-    "validade": "até 12/10",
-    "link": "index.html?mp=ML"
-  },
-  {
-    "nome": "10% OFF (mín. R$79)",
+    "nome": "10% OFF",
     "marketplace": "ML",
     "desconto": "10% OFF",
     "minima": "R$ 79",
     "maximo": "R$ 50",
     "codigo": "1FRUIT",
-    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "index.html?mp=ML"
+    "categoria": "",
+    "link": ""
   },
   {
-    "nome": "15% OFF (mín. R$119)",
+    "nome": "15% OFF",
     "marketplace": "ML",
     "desconto": "15% OFF",
     "minima": "R$ 119",
     "maximo": "R$ 70",
     "codigo": "S5PRUNK",
-    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "index.html?mp=ML"
+    "categoria": "",
+    "link": ""
   },
   {
-    "nome": "12% OFF (mín. R$99)",
+    "nome": "12% OFF",
     "marketplace": "ML",
     "desconto": "12% OFF",
     "minima": "R$ 99",
     "maximo": "R$ 60",
     "codigo": "EC0LACOLA",
-    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "index.html?mp=ML"
+    "categoria": "",
+    "link": ""
   },
   {
-    "nome": "12% OFF (mín. R$129)",
+    "nome": "12% OFF",
     "marketplace": "ML",
     "desconto": "12% OFF",
     "minima": "R$ 129",
     "maximo": "R$ 50",
     "codigo": "CR3VI1S",
-    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "index.html?mp=ML"
+    "categoria": "",
+    "link": ""
+  },
+  {
+    "nome": "10% OFF",
+    "marketplace": "ML",
+    "desconto": "10% OFF",
+    "minima": "R$ 159",
+    "maximo": "R$ 50",
+    "codigo": "N4GAS4K1",
+    "validade": "limitado (1.000 usos)",
+    "categoria": "",
+    "link": ""
+  },
+  {
+    "nome": "10% OFF",
+    "marketplace": "ML",
+    "desconto": "10% OFF",
+    "minima": "R$ 99",
+    "maximo": "R$ 60",
+    "codigo": "W33ENY1",
+    "validade": "limitado (1.000 usos)",
+    "categoria": "",
+    "link": ""
+  },
+  {
+    "nome": "12% OFF",
+    "marketplace": "ML",
+    "desconto": "12% OFF",
+    "minima": "R$ 129",
+    "maximo": "R$ 60",
+    "codigo": "P4NOR4M1C",
+    "validade": "limitado (1.000 usos)",
+    "categoria": "",
+    "link": ""
   }
 ]
