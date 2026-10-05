@@ -6,8 +6,9 @@
     "minima": "",
     "maximo": "",
     "codigo": "",
+    "categoria": "",
     "validade": "até 12/10",
-    "link": "https://www.mercadolivre.com.br/l/promocoes"
+    "link": "index.html?mp=ML"
   },
   {
     "nome": "10% OFF (mín. R$79)",
@@ -16,8 +17,9 @@
     "minima": "R$ 79",
     "maximo": "R$ 50",
     "codigo": "1FRUIT",
+    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "https://www.mercadolivre.com.br/l/promocoes"
+    "link": "index.html?mp=ML"
   },
   {
     "nome": "15% OFF (mín. R$119)",
@@ -26,8 +28,9 @@
     "minima": "R$ 119",
     "maximo": "R$ 70",
     "codigo": "S5PRUNK",
+    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "https://www.mercadolivre.com.br/l/promocoes"
+    "link": "index.html?mp=ML"
   },
   {
     "nome": "12% OFF (mín. R$99)",
@@ -36,8 +39,9 @@
     "minima": "R$ 99",
     "maximo": "R$ 60",
     "codigo": "EC0LACOLA",
+    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "https://www.mercadolivre.com.br/l/promocoes"
+    "link": "index.html?mp=ML"
   },
   {
     "nome": "12% OFF (mín. R$129)",
@@ -46,7 +50,8 @@
     "minima": "R$ 129",
     "maximo": "R$ 50",
     "codigo": "CR3VI1S",
+    "categoria": "",
     "validade": "limitado (1.000 usos)",
-    "link": "https://www.mercadolivre.com.br/l/promocoes"
+    "link": "index.html?mp=ML"
   }
 ]
