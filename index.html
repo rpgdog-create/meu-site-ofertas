@@ -173,7 +173,11 @@
 
     <!-- Filter & Sort Bar -->
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 bg-white rounded-2xl border border-sand-200 mb-8 shadow-sm">
-      <div class="flex items-center gap-3 w-full sm:w-auto flex-wrap">
+        <div class="relative w-full sm:w-48">
+          <i data-lucide="search" class="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input type="text" id="search-input-filters" placeholder="Buscar..." class="w-full bg-sand-50 border border-sand-200 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-500">
+        </div>         
+        <div class="flex items-center gap-3 w-full sm:w-auto flex-wrap">
         <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Filtrar por:</span>
         <div class="flex items-center gap-2">
           <input type="number" id="price-min" placeholder="Mín (R$)" class="w-20 px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
@@ -472,6 +476,9 @@
         if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); first.style.outline = '3px solid #0D9488'; first.style.outlineOffset = '2px'; setTimeout(function() { first.style.outline = ''; first.style.outlineOffset = ''; }, 1500); }
       }, 100);
     }
+    var searchInputFilters = document.getElementById('search-input-filters');
+    searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; searchInputFilters.value = searchTerm; renderGrid(); });
+    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; searchInputFilters.value = searchTerm; renderGrid(); });   
     searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
     searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
     searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
