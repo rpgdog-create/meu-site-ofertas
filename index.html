@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ofertas do Dia — O curador inteligente dos melhores descontos da Amazon, Mercado Livre e Shopee.">
-  <title>Ofertas do Dia — Melhor Preço em ML, Amazon e Shopee</title>   
-<script type="application/ld+json" id="schema-product"></script>     
-<meta name="description" content="Compare e encontre as melhores ofertas com desconto em Mercado Livre, Amazon e Shopee. Preços verificados diariamente. Atualizado a cada 6 horas.">
+  <meta name="description" content="Compare e encontre as melhores ofertas com desconto em Mercado Livre, Amazon e Shopee. Preços verificados diariamente. Atualizado a cada 6 horas.">
+  <title>Ofertas do Dia — Melhor Preço em ML, Amazon e Shopee</title>
+<script type="application/ld+json" id="schema-product"></script>
   <meta property="og:title" content="Ofertas do Dia — Melhor Preço em ML, Amazon e Shopee">
   <meta property="og:description" content="As melhores ofertas com desconto, verificadas diariamente.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rpgdog-create.github.io/meu-site-ofertas">
-  <meta property="og:locale" content="pt_BR">     
+  <meta property="og:locale" content="pt_BR">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -35,15 +34,14 @@
   </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    input::selection, textarea::selection { background: rgba(13, 148, 136, 0.3); }   
+    input::selection, textarea::selection { background: rgba(13, 148, 136, 0.3); }
     .custom-scroll::-webkit-scrollbar { height: 6px; }
     .custom-scroll::-webkit-scrollbar-thumb { background-color: #E6DFD3; border-radius: 9999px; }
     #btn-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 3rem; height: 3rem; border-radius: 50%; background: #fff; color: #334155; border: 1px solid #E6DFD3; box-shadow: 0 10px 25px rgba(0,0,0,0.1); z-index: 9999; display: flex; align-items: center; justify-content: center; cursor: move; user-select: none; transition: all 0.2s; }
     #btn-top:hover { color: #0F766E; transform: translateY(-2px); }
   </style>
 </head>
-<body class="bg-sand-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
-
+<body class="bg-sand-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">   
   <!-- Top Announcement Bar -->
   <aside class="bg-brand-900 text-teal-100 py-2.5 px-4 text-xs font-medium tracking-wide">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -62,83 +60,74 @@
 
   <!-- Navigation -->
   <header class="sticky top-0 z-40 bg-sand-50/90 backdrop-blur-md border-b border-sand-200/80 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center gap-4">
       <a href="index.html" class="flex items-center gap-3 group flex-shrink-0">
         <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform duration-300">
           <i data-lucide="sparkles" class="w-6 h-6"></i>
         </div>
-        <div>
+        <div class="hidden lg:block">
           <span class="font-display font-bold text-xl tracking-tight text-slate-900 flex items-center gap-1.5">Ofertas <span class="text-brand-600">do Dia</span></span>
           <p class="text-[11px] font-medium text-slate-500 tracking-wide uppercase">Curadoria Independente</p>
         </div>
       </a>
-
-
+      <div class="relative flex-1 max-w-md">
+        <i data-lucide="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+        <input type="text" id="search-input" placeholder="Buscar por fone bluetooth, JBL, smart speaker..." class="w-full bg-white border border-sand-200 rounded-xl pl-11 pr-3 py-2 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 shadow-sm transition-all">
       </div>
-
-      <nav class="flex items-center gap-3">
-        <div class="flex-1 max-w-2xl hidden md:flex items-center gap-3">
-          <div class="relative flex-1">
-            <i data-lucide="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
-            <input type="text" id="search-input" placeholder="Buscar por fone bluetooth, JBL, smart speaker..." class="w-full bg-white border border-sand-200 rounded-xl pl-11 pr-3 py-2 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500 shadow-sm transition-all">
+      <div class="relative">
+        <button id="btn-filters" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all">
+          <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
+          Filtros
+          <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform" id="filter-chevron"></i>
+          <span id="filter-badge" class="hidden w-2 h-2 rounded-full bg-brand-500"></span>
+        </button>
+        <div id="filter-panel" class="hidden absolute top-full right-0 mt-2 w-72 bg-white border border-sand-200 rounded-2xl shadow-xl p-4 z-50">
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Ordenar por</p>
+          <select id="sort-select" class="w-full bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-2 px-3 mb-4 focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <option value="recentes">Mais recentes</option>
+            <option value="menor-preco">Menor preço</option>
+            <option value="maior-preco">Maior preço</option>
+            <option value="maiores-descontos">Maiores descontos</option>
+          </select>
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Filtrar</p>
+          <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-2">
+            <input type="checkbox" id="frete-gratis" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
+            <span>Frete grátis</span>
+          </label>
+          <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-2">
+            <input type="checkbox" id="com-desconto" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
+            <span>Só com desconto</span>
+          </label>
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Desconto mínimo</p>
+          <select id="min-discount" class="w-full bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-2 px-3 mb-3 focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <option value="0">Qualquer desconto</option>
+            <option value="10">10% ou mais</option>
+            <option value="20">20% ou mais</option>
+            <option value="30">30% ou mais</option>
+            <option value="50">50% ou mais</option>
+          </select>
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Economia mínima (R$)</p>
+          <input type="number" id="min-savings" placeholder="Ex: 50" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500 mb-4">
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Faixa de preço</p>
+          <div class="flex items-center gap-2">
+            <input type="number" id="price-min" placeholder="Mín (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
+            <span class="text-slate-400 text-xs">até</span>
+            <input type="number" id="price-max" placeholder="Máx (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
           </div>
-          <div class="relative">
-            <button id="btn-filters" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all">
-              <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5"></i>
-              Filtros
-              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform" id="filter-chevron"></i>
-              <span id="filter-badge" class="hidden w-2 h-2 rounded-full bg-brand-500"></span>
-            </button>
-            <div id="filter-panel" class="hidden absolute top-full right-0 mt-2 w-72 bg-white border border-sand-200 rounded-2xl shadow-xl p-4 z-50">
-              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Ordenar por</p>
-              <select id="sort-select" class="w-full bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-2 px-3 mb-4 focus:outline-none focus:ring-1 focus:ring-brand-500">
-                <option value="recentes">Mais recentes</option>
-                <option value="menor-preco">Menor preço</option>
-                <option value="maior-preco">Maior preço</option>
-                <option value="maiores-descontos">Maiores descontos</option>
-              </select>
-              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Filtrar</p>
-              <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-2">
-                <input type="checkbox" id="frete-gratis" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
-                <span>Frete grátis</span>
-              </label>
-              <label class="flex items-center gap-2 text-xs font-medium text-slate-600 cursor-pointer mb-2">
-                <input type="checkbox" id="com-desconto" class="rounded border-sand-200 text-brand-600 focus:ring-brand-500">
-                <span>Só com desconto</span>
-              </label>
-              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Desconto mínimo</p>
-              <select id="min-discount" class="w-full bg-sand-50 border border-sand-200 text-xs font-semibold text-slate-700 rounded-lg py-2 px-3 mb-3 focus:outline-none focus:ring-1 focus:ring-brand-500">
-                <option value="0">Qualquer desconto</option>
-                <option value="10">10% ou mais</option>
-                <option value="20">20% ou mais</option>
-                <option value="30">30% ou mais</option>
-                <option value="50">50% ou mais</option>
-              </select>
-              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Economia mínima (R$)</p>
-              <input type="number" id="min-savings" placeholder="Ex: 50" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500 mb-4">
-              <p class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-2">Faixa de preço</p>
-              <div class="flex items-center gap-2">
-                <input type="number" id="price-min" placeholder="Mín (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
-                <span class="text-slate-400 text-xs">até</span>
-                <input type="number" id="price-max" placeholder="Máx (R$)" class="w-full px-2.5 py-1.5 text-xs bg-sand-50 border border-sand-200 rounded-lg text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-500">
-              </div>
-            </div>
-          </div>
-          <div class="hidden lg:flex items-center gap-1 bg-white/70 p-1 rounded-xl border border-sand-200 text-xs font-semibold text-slate-600" id="dnav-mp-bar">
-            <button data-mp="" class="dnav-btn px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm">Todos</button>
-            <button data-mp="ML" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">🛒 ML</button>
-            <button data-mp="AMAZON" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">📦 AM</button>
-            <button data-mp="SHOPEE" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">🛍️ SP</button>
-          </div>
-          <span class="text-xs text-slate-500 whitespace-nowrap"><strong class="text-slate-900 font-semibold" id="results-count">0</strong></span>
-        </div>   
-        <a href="admin.html" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold px-3 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all" title="Admin">
-          <i data-lucide="settings" class="w-4 h-4"></i>
-        </a>
-      </nav>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-1 bg-white/70 p-1 rounded-xl border border-sand-200 text-xs font-semibold text-slate-600" id="dnav-mp-bar">
+        <button data-mp="" class="dnav-btn px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm">Todos</button>
+        <button data-mp="ML" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">🛒 ML</button>
+        <button data-mp="AMAZON" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">📦 AM</button>
+        <button data-mp="SHOPEE" class="dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors">🛍️ SP</button>
+      </div>
+      <span class="text-xs text-slate-500 whitespace-nowrap hidden sm:block"><strong class="text-slate-900 font-semibold" id="results-count">0</strong></span>
+      <a href="admin.html" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold px-3 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all flex-shrink-0" title="Admin">
+        <i data-lucide="settings" class="w-4 h-4"></i>
+      </a>
     </div>
-  </header>
-
+  </header>   
   <!-- Hero Section -->
   <section class="relative overflow-hidden pt-10 pb-12 sm:pt-16 sm:pb-20 border-b border-sand-200">
     <div class="absolute inset-0 -z-10 pointer-events-none">
@@ -197,7 +186,6 @@
                 <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
-          </div>   
           </div>
         </div>
       </div>
@@ -206,21 +194,13 @@
 
   <!-- Main Feed Area -->
   <main id="feed" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
-    <!-- Mobile Search -->
     <div class="md:hidden mb-6 relative">
       <i data-lucide="search" class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
       <input type="text" id="search-input-mobile" placeholder="Buscar produto..." class="w-full bg-white border border-sand-200 rounded-2xl pl-11 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/40">
     </div>
-
-    <!-- Categories Pills -->
     <div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scroll mb-8" id="chips"></div>
-
-    <!-- Product Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-all"></div>
-
-  </main>
-
+  </main>   
   <!-- Trust Section -->
   <section class="bg-sand-100 py-16 border-y border-sand-200 mt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,17 +286,16 @@
   </footer>
 
   <!-- Floating Scroll To Top -->
-  <button id="btn-top" title="Voltar ao Topo"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>
-
+  <button id="btn-top" title="Voltar ao Topo"><i data-lucide="arrow-up" class="w-5 h-5"></i></button>   
   <script>
     lucide.createIcons();
     document.addEventListener('keydown', function(e) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k'   ) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         var input = window.innerWidth >= 768 ? document.getElementById('search-input') : document.getElementById('search-input-mobile');
         if (input) { input.focus(); input.select(); }
       }
-    });   
+    });
     var grid = document.getElementById('grid-all');
     var searchInput = document.getElementById('search-input');
     var searchInputMobile = document.getElementById('search-input-mobile');
@@ -336,7 +315,7 @@
     var sortBy = 'recentes';
     var descontoOnly = false;
     var minDiscount = 0;
-    var minSavings = 0;   
+    var minSavings = 0;
 
     function getMpKey(p) {
       var mp = (p.marketplace || '').toUpperCase();
@@ -363,7 +342,7 @@
       div.className = 'bg-white rounded-2xl p-4 border border-sand-200 hover:border-brand-500/50 hover:shadow-xl hover:shadow-brand-500/5 transition-all duration-300 flex flex-col justify-between group';
       var badge = getBadge(p);
       var disc = (p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco)) ? Math.round((1 - Number(p.price || p.preco) / Number(p.precoOriginal)) * 100) : 0;
-      var discBadge = disc ? '<span class="px-1.5 py-0.5 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold">-' + disc + '%</span>' : '';   
+      var discBadge = disc ? '<span class="px-1.5 py-0.5 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold">-' + disc + '%</span>' : '';
       var tag = p.tag ? '<span class="px-2 py-0.5 rounded-md bg-accent-50 text-accent-600 text-[10px] font-bold">' + p.tag + '</span>' : '';
       var img = p.imagem ? '<img src="' + p.imagem + '" alt="" class="h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300">' : '';
       var frete = p.frete ? '<span class="text-[10px] text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="truck" class="w-3 h-3"></i> ' + p.frete + '</span>' : '';
@@ -376,7 +355,7 @@
             (tag ? '<span class="absolute top-2.5 right-2.5">' + tag + '</span>' : '') +
             img +
           '</div>' +
-          '<div class="flex items-center gap-1.5 mt-2">' + badge + (discBadge ? '<span class="px-1.5 py-0.5 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold">-' + disc + '%</span>' : '') + '</div>' +   
+          '<div class="flex items-center gap-1.5 mt-2">' + badge + discBadge + '</div>' +
           cat +
           '<h2 class="text-sm font-bold text-slate-800 line-clamp-2 mt-1 group-hover:text-brand-600 transition-colors">' + (p.productName || p.nome) + '</h2>' +
         '</div>' +
@@ -403,7 +382,7 @@
         if (c) cats.add(c);
       });
       var sorted = Array.from(cats).sort(function(a, b) { return a.localeCompare(b, 'pt-BR'); });
-      var html = '<button data-cat="all" class="sticky left-0 z-10 whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5"></i> Todos (' + allOffers.length + ')</button>';   
+      var html = '<button data-cat="all" class="sticky left-0 z-10 whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm shadow-brand-500/20 flex items-center gap-1.5"><i data-lucide="grid" class="w-3.5 h-3.5"></i> Todos (' + allOffers.length + ')</button>';
       sorted.forEach(function(cat) {
         var count = allOffers.filter(function(p) { return (p.categoria || p.categoriaAuto) === cat; }).length;
         html += '<button data-cat="' + cat + '" class="whitespace-nowrap px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-200 text-slate-700 hover:border-brand-500 hover:text-brand-600 transition-all flex items-center gap-1.5"><i data-lucide="tag" class="w-3.5 h-3.5 text-slate-400"></i> ' + cat + ' (' + count + ')</button>';
@@ -436,13 +415,12 @@
       if (minPrice > 0) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) >= minPrice; });
       if (maxPrice < Infinity) filtered = filtered.filter(function(p) { return Number(p.price || p.preco || 0) <= maxPrice; });
       if (freteOnly) filtered = filtered.filter(function(p) { return /gr[aá]tis|sim/i.test(p.frete || ''); });
-      if (descontoOnly) filtered = filtered.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });         
+      if (descontoOnly) filtered = filtered.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });
       if (minDiscount > 0) filtered = filtered.filter(function(p) { var po = Number(p.precoOriginal||0), pr = Number(p.price||p.preco||0); return po > pr && ((1 - pr/po)*100) >= minDiscount; });
-      if (minSavings > 0) filtered = filtered.filter(function(p) { return Number(p.precoOriginal||0) - Number(p.price||p.preco||0) >= minSavings; });         
+      if (minSavings > 0) filtered = filtered.filter(function(p) { return Number(p.precoOriginal||0) - Number(p.price||p.preco||0) >= minSavings; });
       if (sortBy === 'menor-preco') filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
       else if (sortBy === 'maior-preco') filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
-      else if (sortBy === 'maiores-descontos') filtered.sort(function(a, b) { var da = (a.precoOriginal && Number(a.precoOriginal) > Number(a.price||a.preco)) ? (1 - Number(a.price||a.preco)/Number(a.precoOriginal))*100 : 0; var db = (b.precoOriginal && Number(b.precoOriginal) > Number(b.price||b.preco)) ? (1 - Number(b.price||b.preco)/Number(b.precoOriginal))*100 : 0; return db - da; });   
-
+      else if (sortBy === 'maiores-descontos') filtered.sort(function(a, b) { var da = (a.precoOriginal && Number(a.precoOriginal) > Number(a.price||a.preco)) ? (1 - Number(a.price||a.preco)/Number(a.precoOriginal))*100 : 0; var db = (b.precoOriginal && Number(b.precoOriginal) > Number(b.price||b.preco)) ? (1 - Number(b.price||b.preco)/Number(b.precoOriginal))*100 : 0; return db - da; });
       grid.innerHTML = '';
       if (filtered.length === 0) {
         grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Nenhuma oferta encontrada com os filtros atuais.</p>';
@@ -459,9 +437,9 @@
       if (allOffers.length > 0) {
         var minP = Math.min.apply(null, allOffers.map(function(p) { return Number(p.price || p.preco || 0); }));
         document.getElementById('stat-min-price').textContent = 'R$ ' + minP.toFixed(2);
-    var discounted = allOffers.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });
-    var top = allOffers[0];
-    if (discounted.length > 0) { discounted.sort(function(a, b) { var da = (Number(a.precoOriginal) - Number(a.price || a.preco)) / Number(a.precoOriginal) * 100; var db = (Number(b.precoOriginal) - Number(b.price || b.preco)) / Number(b.precoOriginal) * 100; return db - da; }); top = discounted[0]; }   
+        var discounted = allOffers.filter(function(p) { return p.precoOriginal && Number(p.precoOriginal) > Number(p.price || p.preco); });
+        var top = allOffers[0];
+        if (discounted.length > 0) { discounted.sort(function(a, b) { var da = (Number(a.precoOriginal) - Number(a.price || a.preco)) / Number(a.precoOriginal) * 100; var db = (Number(b.precoOriginal) - Number(b.price || b.preco)) / Number(b.precoOriginal) * 100; return db - da; }); top = discounted[0]; }
         document.getElementById('spotlight-name').textContent = top.productName || top.nome;
         document.getElementById('spotlight-price').textContent = 'R$ ' + Number(top.price || top.preco).toFixed(2);
         document.getElementById('spotlight-img').src = top.imagem || '';
@@ -471,8 +449,7 @@
         var spDisc = (top.precoOriginal && Number(top.precoOriginal) > Number(top.price || top.preco)) ? Math.round((1 - Number(top.price || top.preco) / Number(top.precoOriginal)) * 100) : 0;
         var spWrap = document.getElementById('spotlight-disc-wrap');
         if (spDisc > 0) { document.getElementById('spotlight-disc').textContent = '-' + spDisc + '% OFF'; spWrap.classList.remove('hidden'); }
-        else { spWrap.classList.add('hidden'); }   
-        // Schema.org Product (Top Pick)
+        else { spWrap.classList.add('hidden'); }
         var spSchema = {
           "@context": "https://schema.org",
           "@type": "Product",
@@ -490,9 +467,9 @@
         if (top.rating) {
           spSchema.aggregateRating = { "@type": "AggregateRating", "ratingValue": Number(top.rating).toFixed(1), "ratingCount": top.salesCount ? Number(top.salesCount) : 1, "bestRating": 5, "worstRating": 1 };
           spSchema.review = { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": Number(top.rating).toFixed(1), "bestRating": 5, "worstRating": 1 }, "reviewBody": "Produto verificado no radar de ofertas." };
-        }   
-        document.getElementById("schema-product").textContent = JSON.stringify(spSchema);         
         }
+        document.getElementById("schema-product").textContent = JSON.stringify(spSchema);
+      }
     }
 
     function focusFirstResult() {
@@ -501,10 +478,12 @@
         if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); first.style.outline = '3px solid #0D9488'; first.style.outlineOffset = '2px'; setTimeout(function() { first.style.outline = ''; first.style.outlineOffset = ''; }, 1500); }
       }, 100);
     }
+
     searchInput.addEventListener('input', function() { searchTerm = searchInput.value.trim(); searchInputMobile.value = searchTerm; renderGrid(); });
-    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });       searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
-    searchInputMobile.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });   
-    freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); });
+    searchInputMobile.addEventListener('input', function() { searchTerm = searchInputMobile.value.trim(); searchInput.value = searchTerm; renderGrid(); });
+    searchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
+    searchInputMobile.addEventListener('keydown', function(e) { if (e.key === 'Enter' && searchTerm) focusFirstResult(); });
+    freteGratis.addEventListener('change', function() { freteOnly = freteGratis.checked; renderGrid(); updateFilterBadge(); });
     var descontoCheck = document.getElementById('com-desconto');
     descontoCheck.addEventListener('change', function() { descontoOnly = descontoCheck.checked; renderGrid(); updateFilterBadge(); });
     var btnFilters = document.getElementById('btn-filters');
@@ -512,30 +491,17 @@
     var filterChevron = document.getElementById('filter-chevron');
     btnFilters.addEventListener('click', function(e) { e.stopPropagation(); filterPanel.classList.toggle('hidden'); filterChevron.style.transform = filterPanel.classList.contains('hidden') ? '' : 'rotate(180deg)'; });
     document.addEventListener('click', function(e) { if (!filterPanel.contains(e.target) && e.target !== btnFilters) { filterPanel.classList.add('hidden'); filterChevron.style.transform = ''; } });
-    function updateFilterBadge() { var active = freteOnly || descontoOnly || minPrice > 0 || maxPrice < Infinity || minDiscount > 0 || minSavings > 0 || activeMp !== ''; document.getElementById('filter-badge').classList.toggle('hidden', !active); }   
-    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; updateFilterBadge(); });
-    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; updateFilterBadge(); });       
+    function updateFilterBadge() { var active = freteOnly || descontoOnly || minPrice > 0 || maxPrice < Infinity || minDiscount > 0 || minSavings > 0 || activeMp !== ''; document.getElementById('filter-badge').classList.toggle('hidden', !active); }
+    priceMin.addEventListener('input', function() { minPrice = parseFloat(priceMin.value) || 0; renderGrid(); updateFilterBadge(); });
+    priceMax.addEventListener('input', function() { maxPrice = parseFloat(priceMax.value) || Infinity; renderGrid(); updateFilterBadge(); });
     sortSelect.addEventListener('change', function() { sortBy = sortSelect.value; renderGrid(); });
     document.getElementById('min-discount').addEventListener('change', function() { minDiscount = parseInt(this.value)||0; renderGrid(); updateFilterBadge(); });
     document.getElementById('min-savings').addEventListener('input', function() { minSavings = parseFloat(this.value)||0; renderGrid(); updateFilterBadge(); });
-    document.querySelectorAll('.dnav-btn').forEach(function(btn) { btn.addEventListener('click', function() { setNavMp(this.dataset.mp); syncDNav(); }); });
-    function syncDNav() { document.querySelectorAll('.dnav-btn').forEach(function(b) { b.className = 'dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors'; }); var active = document.querySelector('.dnav-btn[data-mp="' + activeMp + '"]'); if (active) active.className = 'dnav-btn px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm'; }   
-    function setNavMp(mp) {
-      activeMp = mp;
-      syncDNav();
-      renderGrid();
-    }   
-      if (mp === '') { document.getElementById('nav-todos').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm'; }
-      else if (mp === 'ML') { document.getElementById('nav-ml').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
-      else if (mp === 'AMAZON') { document.getElementById('nav-amazon').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
-      else if (mp === 'SHOPEE') { document.getElementById('nav-shopee').className = 'px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm flex items-center gap-1.5'; }
-      activeMp = mp;
-      syncDNav();         
-      renderGrid();
-    }
+    document.querySelectorAll('.dnav-btn').forEach(function(btn) { btn.addEventListener('click', function() { setNavMp(this.dataset.mp); }); });
+    function syncDNav() { document.querySelectorAll('.dnav-btn').forEach(function(b) { b.className = 'dnav-btn px-3 py-1.5 rounded-lg hover:text-brand-600 transition-colors'; }); var active = document.querySelector('.dnav-btn[data-mp="' + activeMp + '"]'); if (active) active.className = 'dnav-btn px-3 py-1.5 rounded-lg bg-sand-100 text-slate-900 shadow-sm'; }
+    function setNavMp(mp) { activeMp = mp; syncDNav(); renderGrid(); }
 
     async function loadAll() {
-    setInterval(loadAll, 15 * 60 * 1000);   
       try {
         var r1 = await fetch('manual.json?t=' + Date.now());
         var r2 = await fetch('ofertas.json?t=' + Date.now());
@@ -549,49 +515,28 @@
         grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Erro ao carregar ofertas.</p>';
       }
     }
-
     loadAll();
+    setInterval(loadAll, 15 * 60 * 1000);
 
     // Drag to scroll - chips
     (function() {
       var container = document.getElementById('chips');
       var isDown = false, startX, startScroll, dragged;
-      container.addEventListener('mousedown', function(e) {
-        isDown = true; dragged = false;
-        startX = e.pageX;
-        startScroll = container.scrollLeft;
-      });
-      document.addEventListener('mousemove', function(e) {
-        if (!isDown) return;
-        var dx = e.pageX - startX;
-        if (Math.abs(dx) > 5) dragged = true;
-        if (dragged) { container.scrollLeft = startScroll - dx; e.preventDefault(); }
-      });
+      container.addEventListener('mousedown', function(e) { isDown = true; dragged = false; startX = e.pageX; startScroll = container.scrollLeft; });
+      document.addEventListener('mousemove', function(e) { if (!isDown) return; var dx = e.pageX - startX; if (Math.abs(dx) > 5) dragged = true; if (dragged) { container.scrollLeft = startScroll - dx; e.preventDefault(); } });
       document.addEventListener('mouseup', function() { isDown = false; });
-      container.addEventListener('click', function(e) {
-        if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
-      }, true);
-    })();   
+      container.addEventListener('click', function(e) { if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; } }, true);
+    })();
 
     // Botão flutuante "voltar ao topo" (arrastável)
     (function() {
       var btn = document.getElementById('btn-top');
       var dragging = false, offsetX = 0, offsetY = 0, moved = false;
-      btn.addEventListener('mousedown', function(e) {
-        dragging = true; moved = false;
-        offsetX = e.clientX - btn.offsetLeft;
-        offsetY = e.clientY - btn.offsetTop;
-        e.preventDefault();
-      });
-      document.addEventListener('mousemove', function(e) {
-        if (!dragging) return;
-        if (!moved) { moved = true; btn.style.right = 'auto'; btn.style.bottom = 'auto'; }
-        btn.style.left = (e.clientX - offsetX) + 'px';
-        btn.style.top = (e.clientY - offsetY) + 'px';
-      });
+      btn.addEventListener('mousedown', function(e) { dragging = true; moved = false; offsetX = e.clientX - btn.offsetLeft; offsetY = e.clientY - btn.offsetTop; e.preventDefault(); });
+      document.addEventListener('mousemove', function(e) { if (!dragging) return; if (!moved) { moved = true; btn.style.right = 'auto'; btn.style.bottom = 'auto'; } btn.style.left = (e.clientX - offsetX) + 'px'; btn.style.top = (e.clientY - offsetY) + 'px'; });
       document.addEventListener('mouseup', function() { dragging = false; });
       btn.addEventListener('click', function() { if (!moved) window.scrollTo({ top: 0, behavior: 'smooth' }); });
     })();
   </script>
 </body>
-</html>   
+</html>  
