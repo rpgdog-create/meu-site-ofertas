@@ -308,6 +308,7 @@
     var chipsContainer = document.getElementById('chips');
     var resultsCount = document.getElementById('results-count');
     var allOffers = [];
+    var allCupons = [];       
     var activeCat = 'all';
     var activeMp = '';
     var searchTerm = '';
@@ -514,6 +515,8 @@
         var manual = await r1.json().catch(function() { return []; });
         var shopee = await r2.json().catch(function() { return []; });
         allOffers = manual.concat(shopee);
+        var r3 = await fetch('cupons.json?t=' + Date.now());
+        allCupons = await r3.json().catch(function() { return []; });           
         buildChips();
         renderGrid();
         updateStats();
