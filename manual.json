@@ -2018,5 +2018,15 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "69.99"
+  },
+  {
+    "nome": "Churrasqueira Portátil Camping Praia Compacta Galvanizada",
+    "preco": "53.66",
+    "link": "https://meli.la/1SYaFxb",
+    "categoria": "camping",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_863155-MLB114268098492_082026-O-churrasqueira-portatil-camping-praia-compacta-galvanizada.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "78.00"
   }
 ]
