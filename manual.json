@@ -2154,5 +2154,420 @@
     "categoria": "Beleza",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/51GcYLd6R2L._AC_UL600_SR600,400_.jpg",
     "marketplace": "Amazon"
+  },
+  {
+    "nome": "LEGO Fortnite Acampamento de Embananado e Faísca 77075 (250 Peças)",
+    "preco": "121.98",
+    "link": "https://www.amazon.com.br/dp/B0DRW647G6?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81vDFWZhTEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "179.99"
+  },
+  {
+    "nome": "LEGO Fortnite Cabeça-de-Tomate 77079",
+    "preco": "107.99",
+    "link": "https://www.amazon.com.br/dp/B0G2T3BVS1?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81LTxGWAS2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "119.99"
+  },
+  {
+    "nome": "Figurinhas Fortnite, Panini, Série 1, Envelope com 6 Cards",
+    "preco": "15.66",
+    "link": "https://www.amazon.com.br/dp/B09FTNB6DZ?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/616aVKG4fLL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "16.69"
+  },
+  {
+    "nome": "LEGO Fortnite Lhama de Suprimentos 77071 (691 Peças)",
+    "preco": "229.00",
+    "link": "https://www.amazon.com.br/dp/B0DF85X82B?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81Q4-W6NriL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "379.99"
+  },
+  {
+    "nome": "LEGO Fortnite Klimbo 77077 (1.084 Peças)",
+    "preco": "589.25",
+    "link": "https://www.amazon.com.br/dp/B0DRW85S7L?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81qbESvlBkL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "999.99"
+  },
+  {
+    "nome": "Pop Fortnite Giddy Up Vinyl Figure",
+    "preco": "66.40",
+    "link": "https://www.amazon.com.br/dp/B07SPFL2TQ?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71icDiDnHhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.90"
+  },
+  {
+    "nome": "Funko Pop! Keychain: Fortnite - Dark Vanguard Toy, Multicolor",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B07L6VB3CP?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/51txQQuw4vL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "LEGO Fortnite Entrega de Suprimentos 77080",
+    "preco": "289.09",
+    "link": "https://www.amazon.com.br/dp/B0G2SSNHRW?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81i4whT6WDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "349.99"
+  },
+  {
+    "nome": "Fortnite Conjunto de acessórios FNT (caixa de loot colecionável) (estilo E) S2",
+    "preco": "66.40",
+    "link": "https://www.amazon.com.br/dp/B07XL27YR7?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81M12YGgeGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.90"
+  },
+  {
+    "nome": "Super Detonado Game Master Dicas e Segredos - Fortnite Capítulo 2: SUPER DETONADO",
+    "preco": "36.00",
+    "link": "https://www.amazon.com.br/dp/8579606209?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/812xUTfQ1uS._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "60.00"
+  },
+  {
+    "nome": "Fortnite Legendary Tomatohead – Boneco articulado de 15 cm com ferramenta de colheita, suporte traseiro e código para item virtual bônus",
+    "preco": "170.44",
+    "link": "https://www.amazon.com.br/dp/B0G1PZ8P5F?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/810X9D0bV4L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Fortnite Legendary Peely – Boneco articulado de 15 cm com ferramenta de colheita, suporte traseiro e código para item virtual bônus",
+    "preco": "133.57",
+    "link": "https://www.amazon.com.br/dp/B0DGW3HBNQ?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61+9ZYxy0oL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "PowerA Advantage Wired Controller for Xbox Series X|S - Fortnite: Victory Royale, gamepad, hall effect thumbsticks, gaming controller, USB-C, Works with Xbox One, Officially Licensed",
+    "preco": "254.70",
+    "link": "https://www.amazon.com.br/dp/B0GP6QM8GT?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71ArJWuoM1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Luz de logotipo Fortnite RGB que muda de cor, lâmpada de jogos oficialmente licenciada com controle remoto, tela na parede ou mesa, decoração de casa alimentada por USB para jogadores | Paladone",
+    "preco": "208.43",
+    "link": "https://www.amazon.com.br/dp/B0FGYB7C8L?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/51P4pTjpcVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Fortnite x marvel - volume 5",
+    "preco": "19.90",
+    "link": "https://www.amazon.com.br/dp/6559829995?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71zc-G9SdiL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fortnite Tricera Ops Chaveiro Mini Boneco Pop Funko Funko Multicolorido Pequeno",
+    "preco": "24.90",
+    "link": "https://www.amazon.com.br/dp/B07L749CS3?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61RX6TB41vL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fortnite Legendary Drift – Boneco articulado de 15 cm com ferramenta de colheita, suporte traseiro e código para item virtual bônus",
+    "preco": "177.01",
+    "link": "https://www.amazon.com.br/dp/B0FJZ92331?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71ZyvFjByHL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "LEGO Fortnite Miau 77081",
+    "preco": "712.49",
+    "link": "https://www.amazon.com.br/dp/B0G2SZZ6TR?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81yREXUFkeL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "899.99"
+  },
+  {
+    "nome": "Fortnite Loot Battle Box for 10cm Core Figures (Styles Vary)",
+    "preco": "251.69",
+    "link": "https://www.amazon.com.br/dp/B07S9JM38F?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61ig3w1FT+S._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "260.69"
+  },
+  {
+    "nome": "theory11 Fortnite Playing Cards, Officially Licensed Collector's Cards",
+    "preco": "144.53",
+    "link": "https://www.amazon.com.br/dp/B0GZ9688ZM?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81kBdIo4BgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Hasbro Gaming Monopoly Flip Edition: Fortnite Board Game for Ages 13 Game Inspired by Fortnite Video Game, Board Games for Teens and Adults, 2-4 Players",
+    "preco": "207.31",
+    "link": "https://www.amazon.com.br/dp/B0BKHCVMMM?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81ZBNByAWFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "PowerA Wired Earbuds for Nintendo Switch – Fortnite Peely, 3.5 mm, Wired, Officially Licensed, Bonus Virtual Item and Matching Peely Drawstring Bag Included",
+    "preco": "157.50",
+    "link": "https://www.amazon.com.br/dp/B0CT5C1YF1?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61QeLHyQMEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "165.93"
+  },
+  {
+    "nome": "Batman/fortnite vol. 5",
+    "preco": "8.91",
+    "link": "https://www.amazon.com.br/dp/6559822176?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61Dfk1E9a6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Fortnite Legendary Skull Trooper (dourado) – Boneco articulado de 15 cm com ferramenta de colheita, reforço nas costas e código para item virtual bônus",
+    "preco": "150.24",
+    "link": "https://www.amazon.com.br/dp/B0G1QGJQ41?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61NQfYrMieL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Funko Fortnite - Gumbo",
+    "preco": "133.13",
+    "link": "https://www.amazon.com.br/dp/B09V85KN7C?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61CYjOH9h2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "LEGO 77070 Fortnite - Durrr Burguer (193 Peças)",
+    "preco": "189.90",
+    "link": "https://www.amazon.com.br/dp/B0DHSFJVLW?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81so4uX-lhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "199.90"
+  },
+  {
+    "nome": "Fortnite Legendary Rabbit Raider - 6-inch Articulated Figure with Harvesting Tool, Back Bling, and Code for Bonus Virtual Item",
+    "preco": "138.34",
+    "link": "https://www.amazon.com.br/dp/B0DGWM12C4?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61U7jcZf5nL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "LEGO Fortnite Caverna da Rave 77082",
+    "preco": "1471.55",
+    "link": "https://www.amazon.com.br/dp/B0G2SZXVHB?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81ZZn8QT0kL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1699.99"
+  },
+  {
+    "nome": "LEGO Fortnite Restaurante Durrr Burger 77076 (546 Peças)",
+    "preco": "426.55",
+    "link": "https://www.amazon.com.br/dp/B0DRW49G7P?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/91qeGZikSnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "449.00"
+  },
+  {
+    "nome": "FORTNITE Official: Outfits 2: The Collectors' Edition",
+    "preco": "101.87",
+    "link": "https://www.amazon.com.br/dp/147227718X?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81neLxyWahL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fortnite Legendary Wild Card – Boneco articulado de 15 cm com ferramenta de colheita, suporte traseiro e código para item virtual bônus",
+    "preco": "142.77",
+    "link": "https://www.amazon.com.br/dp/B0FJZJQ3KQ?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61BgAkzg7LL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Epic Games Pacote Fortnite Transformers (Código Em Uma Caixa) (Nintendo Switch)",
+    "preco": "161.93",
+    "link": "https://www.amazon.com.br/dp/B0CB88ZDHQ?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/712ulklBxML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Fortnite x marvel n.1: guerra do ponto zero",
+    "preco": "23.85",
+    "link": "https://www.amazon.com.br/dp/6525904307?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/613jgV+fOrL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "25.11"
+  },
+  {
+    "nome": "Figurinhas Fortnite, Panini, Premium, Envelope com 20 Cards",
+    "preco": "38.33",
+    "link": "https://www.amazon.com.br/dp/B09FTQ6WQW?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/51DFqIeWFNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fortnite Ponto Zero - Superpôster PlayStation",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B08Y4D9VLF?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71lwi5u7+FL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PowerA Advantage Wired Controller for Xbox Series X|S - Fortnite Glow, gamepad, wired video game controller, gaming controller, USB-C, Works with Xbox One, Officially Licensed",
+    "preco": "273.09",
+    "link": "https://www.amazon.com.br/dp/B0DSGD9CY9?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81BeJPf2WXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "The Science of Fortnite: The Real Science Behind the Weapons, Gadgets, Mechanics, and More!",
+    "preco": "21.45",
+    "link": "https://www.amazon.com.br/dp/1510749624?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81JrZPsCM1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Carimbos Fortnite Em Saquinhos Plasticos",
+    "preco": "31.28",
+    "link": "https://www.amazon.com.br/dp/B088Y6BDTY?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61m0pjBw8HL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Boneco Fortnite Victory Royale Series, Figura de 15 cm com acessórios",
+    "preco": "210.21",
+    "link": "https://www.amazon.com.br/dp/B09H1C1GD3?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/71lyk7HgiqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "219.25"
+  },
+  {
+    "nome": "Fortnite Discovery Glider",
+    "preco": "129.42",
+    "link": "https://www.amazon.com.br/dp/B0F7FZKLL1?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/81M4TyTZ9IL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Fortnite Conjunto de carteira e chaveiro, Cinza, One Size, Conjunto de carteira/chaveiro",
+    "preco": "172.65",
+    "link": "https://www.amazon.com.br/dp/B0F2VXZFY7?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/91OP8QLMWDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "Funko Fortnite - The Foundation",
+    "preco": "132.77",
+    "link": "https://www.amazon.com.br/dp/B09V85SHW6?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61ss+hq5HSL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fortnite x marvel vol.02",
+    "preco": "38.28",
+    "link": "https://www.amazon.com.br/dp/6525902681?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61+haUHRWDL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "40.30"
+  },
+  {
+    "nome": "Fortnite x marvel vol.04",
+    "preco": "12.66",
+    "link": "https://www.amazon.com.br/dp/6525901839?tag=ofertas01dc-20",
+    "categoria": "Fortnite",
+    "imagem": "https://m.media-amazon.com/images/I/61oUXt3-XIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "14.90"
   }
 ]
