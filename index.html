@@ -503,6 +503,10 @@
             "url": top.offerLink || top.link
           }
         };
+        if (top.rating) {
+          spSchema.aggregateRating = { "@type": "AggregateRating", "ratingValue": Number(top.rating).toFixed(1), "ratingCount": top.salesCount ? Number(top.salesCount) : 1, "bestRating": 5, "worstRating": 1 };
+          spSchema.review = { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": Number(top.rating).toFixed(1), "bestRating": 5, "worstRating": 1 }, "reviewBody": "Produto verificado no radar de ofertas." };
+        }   
         document.getElementById("schema-product").textContent = JSON.stringify(spSchema);         
         }
     }
