@@ -2028,5 +2028,64 @@
     "marketplace": "ML",
     "frete": "sim",
     "precoOriginal": "78.00"
+  },
+  {
+    "nome": "Kindle 16 GB (modelo 2024) - Leve e compacto, com tela antirreflexo, trocas de página rápidas, luz frontal ajustável e bateria de longa duração - Cor Verde",
+    "preco": "519.00",
+    "link": "https://www.amazon.com.br/dp/B0CP31QS6R?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/71hbbhAqJJL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "899.00"
+  },
+  {
+    "nome": "Fralda Pampers Premium Care Pants Tamanho XXG, Fácil de Vestir, 90 Unidades",
+    "preco": "133.97",
+    "link": "https://www.amazon.com.br/dp/B08K4L452V?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/61R9B7tntEL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "182.45"
+  },
+  {
+    "nome": "Personal Papel Higiênico Vip Folha Tripla, 32 Rolos De 20M",
+    "preco": "37.88",
+    "link": "https://www.amazon.com.br/dp/B0C75GP7VP?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/81LqO9bt-AL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "65.20"
+  },
+  {
+    "nome": "Havit Fone de Ouvido Headset Gamer Fuxi-H3 Black Com Fio e Sem Fio, Wireless 2,4GHz, Bluetooth, Cabo USB-C",
+    "preco": "189.45",
+    "link": "https://www.amazon.com.br/dp/B0CHJXCJTW?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71g1gS6qGmL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Mouse Sem Fio Recarregável Wireless Bluetooth Optico Led Rgb Colorido Ergonômico Usb 2.4 Ghz Notebook Computador Pc Desktop Linha Premium - Cores Sortidas",
+    "preco": "17.90",
+    "link": "https://www.amazon.com.br/dp/B0F1G2TL8P?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51NVWRIcQ2L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "MeepleBR Sleeves SLIM - PADRÃO (63,5x88mm), TCG, Plástico para Proteção de Cartas",
+    "preco": "10.50",
+    "link": "https://www.amazon.com.br/dp/B07PDGM46R?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61C6Ov2ZnLL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Baby Alive, Boneca, Dia no Spa - Cabelos Loiros, Inclui Máscara e Mamadeira, 22,5 cm - A partir de 3 Anos",
+    "preco": "62.98",
+    "link": "https://www.amazon.com.br/dp/B0CNG17BSZ?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71QuTKIbyBL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
   }
 ]
