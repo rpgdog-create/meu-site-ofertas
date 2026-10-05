@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "25% OFF em geral",
+    "marketplace": "ML",
+    "desconto": "25% OFF",
+    "minima": "R$ 1",
+    "maximo": "R$ 500",
+    "codigo": "MIMODODIA",
+    "validade": "até 10/10",
+    "link": "https://www.mercadolivre.com.br/l/promocoes"
+  },
+  {
+    "nome": "R$20 OFF primeira compra no App",
+    "marketplace": "AM",
+    "desconto": "R$ 20 OFF",
+    "minima": "R$ 30",
+    "maximo": "",
+    "codigo": "COMPRANOAPP",
+    "validade": "",
+    "link": "https://www.amazon.com.br"
+  },
+  {
+    "nome": "15% OFF em eletrônicos",
+    "marketplace": "AM",
+    "desconto": "15% OFF",
+    "minima": "R$ 50",
+    "maximo": "R$ 2000",
+    "codigo": "ELETRON15",
+    "validade": "até 15/10",
+    "link": "https://www.amazon.com.br"
+  }
+]   
