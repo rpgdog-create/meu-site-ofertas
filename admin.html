@@ -27,7 +27,7 @@
       <a href="index.html" class="flex items-center gap-2 text-sm font-semibold text-teal-200 hover:text-white transition-colors"><i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao site</a>
       <div class="flex items-center gap-3">
         <span class="font-display font-bold text-lg text-white">Admin <span class="text-teal-200">Panel</span></span>
-        <a href="help.html" class="text-teal-200 hover:text-white text-sm font-medium transition-colors">📖 Help</a>   
+        <a href="help.html" class="text-teal-200 hover:text-white text-sm font-medium transition-colors">📖 Help</a>
         <button onclick="doLogout()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-teal-200 hover:text-white hover:bg-white/10 transition-all"><i data-lucide="log-out" class="w-3.5 h-3.5"></i> Sair</button>
       </div>
     </div>
@@ -113,17 +113,28 @@
         <div id="offers-list" class="space-y-2 max-h-[400px] overflow-y-auto pr-1"></div>
         <div class="mt-5 pt-4 border-t border-sand-100 flex gap-3 flex-wrap">
           <button onclick="saveAll()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98] flex items-center gap-2"><i data-lucide="save" class="w-4 h-4"></i> Salvar no site</button>
-          <button id="btn-amazon-promos" onclick="(function(){var btn=document.getElementById('btn-amazon-promos');var cmd='cd /Users/ronaldogabrielli/Programa&ccedil;&atilde;o/projetos/Meu_site_ofertas/meu-site-ofertas && python3 amazon_promos.py';navigator.clipboard.writeText(cmd);btn.className='px-4 py-2.5 rounded-xl bg-orange-500 text-white font-semibold text-sm flex items-center gap-2';btn.innerHTML='⏳ Aguardando...';var ta=document.getElementById('import-textarea');var iv=setInterval(function(){if(ta.value.indexOf('|||')!==-1){clearInterval(iv);btn.className='px-4 py-2.5 rounded-xl bg-emerald-100 text-emerald-800 font-semibold text-sm flex items-center gap-2';btn.innerHTML='✓ Produtos carregadosø
-';}},500);})()" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">
-  📦 Amazon Promos
-</button>
-<button onclick="window.open('https://www.mercadolivre.com.br/l/promocoes','_blank')" class="bg-amber-100 text-amber-800 hover:bg-amber-200 text-xs font-semibold px-3 py-2 rounded-lg transition">🎟️ Cupons ML</button>   
-<button id="btn-import-cupons" onclick="importCupons()" class="bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition">🎟️Importar CCupsss</button>      
+          <button id="btn-amazon-promos" onclick="(function(){var btn=document.getElementById('btn-amazon-promos');var cmd='cd /Users/ronaldogabrielli/Programação/projetos/Meu_site_ofertas/meu-site-ofertas && python3 amazon_promos.py';navigator.clipboard.writeText(cmd);btn.className='px-4 py-2.5 rounded-xl bg-orange-500 text-white font-semibold text-sm flex items-center gap-2';btn.innerHTML='⏳ Aguardando...';var ta=document.getElementById('batch-links');var iv=setInterval(function(){if(ta.value.indexOf('|||')!==-1){clearInterval(iv);btn.className='px-4 py-2.5 rounded-xl bg-emerald-100 text-emerald-800 font-semibold text-sm flex items-center gap-2';btn.innerHTML='✓ Produtos carregados';}},500);})()" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">📦 Amazon Promos</button>
+          <button onclick="window.open('https://www.mercadolivre.com.br/l/promocoes','_blank')" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">🎟️ Cupons ML</button>
+          <button id="btn-import-cupons" onclick="importCupons()" class="px-4 py-2.5 rounded-xl bg-teal-600 text-white font-semibold text-sm hover:bg-teal-700 transition-colors flex items-center gap-2">🎟️ Importar Cupons</button>
           <button onclick="loadOffers()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-cw" class="w-4 h-4"></i> Recarregar</button>
           <button onclick="runSyncML()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-ccw" class="w-4 h-4"></i> Sync</button>
           <button onclick="removeAllOffers()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="trash-2" class="w-4 h-4"></i> Remover todos</button>
         </div>
         <div id="save-status" class="hidden mt-4 px-4 py-3 rounded-xl text-xs font-medium"></div>
+      </section>
+
+      <section class="bg-white rounded-2xl border border-sand-200 p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-amber-50 flex items-center justify-center"><i data-lucide="ticket" class="w-5 h-5 text-amber-600"></i></div>
+          <h2 class="font-display font-bold text-slate-900">Cupons atuais (<span id="cupons-count">0</span>)</h2>
+        </div>
+        <div id="cupons-list" class="space-y-2 max-h-[300px] overflow-y-auto pr-1"></div>
+        <div class="mt-5 pt-4 border-t border-sand-100 flex gap-3 flex-wrap">
+          <button onclick="saveCupons()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98] flex items-center gap-2"><i data-lucide="save" class="w-4 h-4"></i> Salvar no site</button>
+          <button onclick="loadCupons()" class="px-4 py-2.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="refresh-cw" class="w-4 h-4"></i> Recarregar</button>
+          <button onclick="removeAllCupons()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all flex items-center gap-2"><i data-lucide="trash-2" class="w-4 h-4"></i> Remover todos</button>
+        </div>
+        <div id="cupons-save-status" class="hidden mt-4 px-4 py-3 rounded-xl text-xs font-medium"></div>
       </section>
 
     </main>
@@ -144,12 +155,15 @@
     var REPO = "meu-site-ofertas";
     var FILE_PATH = "manual.json";
     var CATS_FILE = "categorias.json";
+    var CUPONS_FILE = "cupons.json";
     var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + FILE_PATH;
     var CATS_API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + CATS_FILE;
+    var CUPONS_API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/" + CUPONS_FILE;
     var CORS_PROXY = "https://ml-proxy.rpgdog.workers.dev/?url=";
     var CAT_OPTIONS = ["Acessórios para Veículos","Agro","Alimentos e Bebidas","Animais","Antiguidades e Coleções","Arte, Papelaria e Armarinho","Automotivo e Moto","Bebês","Beleza e Cuidado Pessoal","Brinquedos e Hobbies","Calçados, Roupas e Bolsas","Carros, Motos e Outros","Casa, Móveis e Decoração","Celulares e Telefones","Câmeras e Acessórios","Construção","Cozinha e Utensílios","Eletrodomésticos","Eletrônicos, Áudio e Vídeo","Esportes e Fitness","Ferramentas","Festas e Lembrancinhas","Games","Indústria e Comércio","Ingressos","Instrumentos Musicais","Jardim e Piscina","Joias e Relógios","Livros, Revistas e Comics","Música, Filmes e Seriados","Móveis","Papelaria e Escritório","Saúde","Serviços","Televisores","Informática","Outros"];
 
     var offers = [];
+    var cupons = [];
     var batchItems = [];
     var customCats = [];
     var currentCode = null;
@@ -204,7 +218,7 @@
       document.getElementById("admin-panel").style.display = "block";
       clearInterval(timerInterval);
       lucide.createIcons();
-      if (getToken()) { document.getElementById("token-status").textContent = "Token carregado ✓"; loadOffers(); loadCustomCats(); }
+      if (getToken()) { document.getElementById("token-status").textContent = "Token carregado ✓"; loadOffers(); loadCupons(); loadCustomCats(); }
     }
 
     function doLogout() { sessionStorage.removeItem("admin_auth"); location.reload(); }
@@ -219,7 +233,7 @@
       localStorage.setItem("gh_token", t);
       document.getElementById("token-status").textContent = "Salvo! ✓";
       setTimeout(function() { document.getElementById("token-status").textContent = ""; }, 3000);
-      loadOffers(); loadCustomCats();
+      loadOffers(); loadCupons(); loadCustomCats();
     }
 
     async function ghFetch(url, options) {
@@ -238,88 +252,65 @@
       var data = await res.json();
       return data.sha;
     }
-  async function importCupons() {
-    var btn = document.getElementById('btn-import-cupons');
-    var text = '';
-    try {
-      text = await navigator.clipboard.readText();
-    } catch (e) {
-      text = '';
-    }
-    var data = null;
-    if (text) {
+
+    async function importCupons() {
+      var btn = document.getElementById('btn-import-cupons');
+      var text = '';
       try {
-        data = JSON.parse(text);
+        text = await navigator.clipboard.readText();
       } catch (e) {
-        data = null;
+        text = '';
+      }
+      var data = null;
+      if (text) {
+        try {
+          data = JSON.parse(text);
+        } catch (e) {
+          data = null;
+        }
+      }
+      if (!data || !Array.isArray(data) || data.length === 0) {
+        var ta = document.getElementById('cupons-textarea');
+        if (!ta) {
+          ta = document.createElement('textarea');
+          ta.id = 'cupons-textarea';
+          ta.placeholder = 'Cole aqui o JSON dos cupons (do bookmarklet ML Cupons)...';
+          ta.className = 'w-full bg-sand-50 border border-sand-200 rounded-lg p-3 text-xs font-mono h-32 mb-3 focus:outline-none focus:ring-1 focus:ring-teal-500';
+          btn.parentNode.insertBefore(ta, btn);
+        }
+        ta.classList.remove('hidden');
+        ta.value = text || '';
+        ta.focus();
+        btn.textContent = '📋 Cole o JSON acima e clique de novo';
+        btn.classList.add('bg-amber-500');
+        return;
+      }
+      btn.textContent = '⏳ Importando...';
+      btn.classList.add('opacity-70');
+      try {
+        cupons = data;
+        renderCuponsList();
+        await saveCupons();
+        var ta2 = document.getElementById('cupons-textarea');
+        if (ta2) ta2.classList.add('hidden');
+        btn.textContent = '✓ ' + data.length + ' cupons salvos!';
+        btn.classList.remove('opacity-70', 'bg-amber-500');
+        btn.classList.add('bg-emerald-600');
+        setTimeout(function() {
+          btn.textContent = '🎟️ Importar Cupons';
+          btn.classList.remove('bg-emerald-600');
+        }, 3000);
+      } catch (e) {
+        btn.textContent = '✗ Erro: ' + e.message;
+        btn.classList.remove('opacity-70');
+        btn.classList.add('bg-red-500');
+        setTimeout(function() {
+          btn.textContent = '🎟️ Importar Cupons';
+          btn.classList.remove('bg-red-500');
+        }, 4000);
       }
     }
-    if (!data || !Array.isArray(data) || data.length === 0) {
-      var ta = document.getElementById('cupons-textarea');
-      if (!ta) {
-        ta = document.createElement('textarea');
-        ta.id = 'cupons-textarea';
-        ta.placeholder = 'Cole aqui o JSON dos cupons (do bookmarklet ML Cupons)...';
-        ta.className = 'w-full bg-sand-50 border border-sand-200 rounded-lg p-3 text-xs font-mono h-32 mb-3 focus:outline-none focus:ring-1 focus:ring-teal-500';
-        btn.parentNode.insertBefore(ta, btn);
-      }
-      ta.classList.remove('hidden');
-      ta.value = text || '';
-      ta.focus();
-      btn.textContent = '📋 Cole o JSON acima e clique de novo';
-      btn.classList.add('bg-amber-500');
-      return;
-    }
-    btn.textContent = '⏳ Importando...';
-    btn.classList.add('opacity-70');
-    try {
-      var jsonStr = JSON.stringify(data, null, 2);
-      var token = localStorage.getItem('gh_token');
-      var repo = 'rpgdog-create/meu-site-ofertas';
-      var sha = '';
-      var shaRes = await fetch('https://api.github.com/repos/' + repo + '/contents/cupons.json', {
-        headers: { 'Authorization': 'token ' + token }
-      });
-      if (shaRes.ok) {
-        var shaData = await shaRes.json();
-        sha = shaData.sha;
-      }
-      var chunks = [];
-      var enc = encodeURIComponent(jsonStr);
-      for (var i = 0; i < enc.length; i += 0x8000) {
-        chunks.push(btoa(decodeURIComponent(enc.substring(i, i + 0x8000))));
-      }
-      var body = {
-        message: 'feat: atualizar cupons (' + data.length + ')',
-        content: chunks.join(''),
-        branch: 'main'
-      };
-      if (sha) body.sha = sha;
-      var res = await fetch('https://api.github.com/repos/' + repo + '/contents/cupons.json', {
-        method: 'PUT',
-        headers: { 'Authorization': 'token ' + token, 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-      });
-      if (!res.ok) throw new Error('Erro na API: ' + res.status);
-      var ta2 = document.getElementById('cupons-textarea');
-      if (ta2) ta2.classList.add('hidden');
-      btn.textContent = '✓ ' + data.length + ' cupons salvos!';
-      btn.classList.remove('opacity-70', 'bg-amber-500');
-      btn.classList.add('bg-emerald-600');
-      setTimeout(function() {
-        btn.textContent = '🎟️ Importar Cupons';
-        btn.classList.remove('bg-emerald-600');
-      }, 3000);
-    } catch (e) {
-      btn.textContent = '✗ Erro: ' + e.message;
-      btn.classList.remove('opacity-70');
-      btn.classList.add('bg-red-500');
-      setTimeout(function() {
-        btn.textContent = '🎟️ Importar Cupons';
-        btn.classList.remove('bg-red-500');
-      }, 4000);
-    }
-  }   
+
     async function commitFile(content, filePath, message) {
       var jsonStr = JSON.stringify(content, null, 2);
       var bytes = new TextEncoder().encode(jsonStr);
@@ -561,7 +552,7 @@
           } else {
             var data = await fetchProductData(link); data.link = link; data._dup = false; batchItems.push(data); ok++;
           }
-        }   
+        }
         catch (e) { fail++; batchItems.push({ nome: "Erro: " + e.message, preco: "0", link: link, imagem: "", frete: "", categoriaAuto: "", erro: true, _dup: false }); }
         renderBatchResults();
       }
@@ -724,6 +715,42 @@
     }
 
     async function loadOffers() { try { offers = await (await fetch("manual.json?t=" + Date.now())).json(); } catch (e) { offers = []; } renderList(); }
+
+    async function loadCupons() { try { cupons = await (await fetch("cupons.json?t=" + Date.now())).json(); } catch (e) { cupons = []; } renderCuponsList(); }
+
+    function renderCuponsList() {
+      document.getElementById("cupons-count").textContent = cupons.length;
+      var list = document.getElementById("cupons-list");
+      if (!cupons.length) { list.innerHTML = "<p class='text-xs text-slate-400 text-center py-4'>Nenhum cupom ainda.</p>"; return; }
+      list.innerHTML = cupons.map(function(c, i) {
+        var mpIcon = c.marketplace === 'ML' ? '🛒' : c.marketplace === 'AM' ? '📦' : '🛍️';
+        var codeHtml = c.codigo ? '<span class="font-mono text-[10px] bg-sand-100 px-1.5 py-0.5 rounded">' + c.codigo + '</span>' : '<span class="text-[10px] text-slate-400">sem código</span>';
+        return '<div class="flex items-center justify-between p-3 rounded-xl border border-sand-100 hover:border-sand-200 transition-colors">' +
+          '<div class="flex-1 min-w-0"><p class="text-xs font-semibold text-slate-800 truncate">' + mpIcon + ' ' + c.nome + ' <span class="text-teal-600 font-bold">' + c.desconto + '</span></p>' +
+          '<p class="text-[10px] text-slate-400 mt-0.5">' + codeHtml + (c.minima ? ' | Compra mín: ' + c.minima : '') + (c.validade ? ' | ' + c.validade : '') + '</p></div>' +
+          '<button onclick="removeCoupon(' + i + ')" class="ml-3 text-red-400 hover:text-red-600 transition-colors"><i data-lucide="x" class="w-4 h-4"></i></button></div>';
+      }).join("");
+      lucide.createIcons();
+    }
+
+    function removeCoupon(i) { cupons.splice(i, 1); renderCuponsList(); }
+
+    function removeAllCupons() {
+      if (cupons.length === 0) { alert("Nenhum cupom para remover."); return; }
+      if (!confirm("Tem certeza? Vai remover TODOS os " + cupons.length + " cupons.")) return;
+      cupons = []; renderCuponsList();
+    }
+
+    async function saveCupons() {
+      var s = document.getElementById("cupons-save-status");
+      s.classList.remove('hidden'); s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-sky-50 text-sky-700'; s.textContent = "Salvando...";
+      try {
+        await commitFile(cupons, CUPONS_FILE, "Update cupons.json (" + cupons.length + " cupons)");
+        s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-emerald-50 text-emerald-700'; s.textContent = "Salvo! Site atualiza em ~30s. ✓";
+      } catch (e) {
+        s.className = 'mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-red-50 text-red-700'; s.textContent = "Erro: " + e.message;
+      }
+    }
 
     async function runSyncML() {
       var token = localStorage.getItem('gh_token');
