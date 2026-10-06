@@ -113,7 +113,8 @@
         <div id="offers-list" class="space-y-2 max-h-[400px] overflow-y-auto pr-1"></div>
         <div class="mt-5 pt-4 border-t border-sand-100 flex gap-3 flex-wrap">
           <button onclick="saveAll()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98] flex items-center gap-2"><i data-lucide="save" class="w-4 h-4"></i> Salvar no site</button>
-          <button id="btn-amazon-promos" onclick="(function(){var btn=document.getElementById('btn-amazon-promos');var cmd='cd /Users/ronaldogabrielli/Programa&ccedil;&atilde;o/projetos/Meu_site_ofertas/meu-site-ofertas && python3 amazon_promos.py';navigator.clipboard.writeText(cmd);btn.className='px-4 py-2.5 rounded-xl bg-orange-500 text-white font-semibold text-sm flex items-center gap-2';btn.innerHTML='⏳ Aguardando...';var ta=document.getElementById('import-textarea');var iv=setInterval(function(){if(ta.value.indexOf('|||')!==-1){clearInterval(iv);btn.className='px-4 py-2.5 rounded-xl bg-emerald-100 text-emerald-800 font-semibold text-sm flex items-center gap-2';btn.innerHTML='✓ Produtos trazidos';}},500);})()" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">
+          <button id="btn-amazon-promos" onclick="(function(){var btn=document.getElementById('btn-amazon-promos');var cmd='cd /Users/ronaldogabrielli/Programa&ccedil;&atilde;o/projetos/Meu_site_ofertas/meu-site-ofertas && python3 amazon_promos.py';navigator.clipboard.writeText(cmd);btn.className='px-4 py-2.5 rounded-xl bg-orange-500 text-white font-semibold text-sm flex items-center gap-2';btn.innerHTML='⏳ Aguardando...';var ta=document.getElementById('import-textarea');var iv=setInterval(function(){if(ta.value.indexOf('|||')!==-1){clearInterval(iv);btn.className='px-4 py-2.5 rounded-xl bg-emerald-100 text-emerald-800 font-semibold text-sm flex items-center gap-2';btn.innerHTML='✓ Produtos carregadosø
+';}},500);})()" class="px-4 py-2.5 rounded-xl bg-amber-100 text-amber-800 font-semibold text-sm hover:bg-amber-200 transition-colors flex items-center gap-2">
   📦 Amazon Promos
 </button>
 <button id="btn-import-cupons" onclick="importCupons()" class="bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition">🎟️ Importar Cupons</button>      
@@ -238,12 +239,39 @@
     }
   async function importCupons() {
     var btn = document.getElementById('btn-import-cupons');
+    var text = '';
+    try {
+      text = await navigator.clipboard.readText();
+    } catch (e) {
+      text = '';
+    }
+    var data = null;
+    if (text) {
+      try {
+        data = JSON.parse(text);
+      } catch (e) {
+        data = null;
+      }
+    }
+    if (!data || !Array.isArray(data) || data.length === 0) {
+      var ta = document.getElementById('cupons-textarea');
+      if (!ta) {
+        ta = document.createElement('textarea');
+        ta.id = 'cupons-textarea';
+        ta.placeholder = 'Cole aqui o JSON dos cupons (do bookmarklet ML Cupons)...';
+        ta.className = 'w-full bg-sand-50 border border-sand-200 rounded-lg p-3 text-xs font-mono h-32 mb-3 focus:outline-none focus:ring-1 focus:ring-teal-500';
+        btn.parentNode.insertBefore(ta, btn);
+      }
+      ta.classList.remove('hidden');
+      ta.value = text || '';
+      ta.focus();
+      btn.textContent = '📋 Cole o JSON acima e clique de novo';
+      btn.classList.add('bg-amber-500');
+      return;
+    }
     btn.textContent = '⏳ Importando...';
     btn.classList.add('opacity-70');
     try {
-      var text = await navigator.clipboard.readText();
-      var data = JSON.parse(text);
-      if (!Array.isArray(data) || data.length === 0) throw new Error('Clipboard não contém array de cupons.');
       var jsonStr = JSON.stringify(data, null, 2);
       var token = localStorage.getItem('gh_token');
       var repo = 'rpgdog-create/meu-site-ofertas';
@@ -255,9 +283,14 @@
         var shaData = await shaRes.json();
         sha = shaData.sha;
       }
+      var chunks = [];
+      var enc = encodeURIComponent(jsonStr);
+      for (var i = 0; i < enc.length; i += 0x8000) {
+        chunks.push(btoa(decodeURIComponent(enc.substring(i, i + 0x8000))));
+      }
       var body = {
         message: 'feat: atualizar cupons (' + data.length + ')',
-        content: btoa(unescape(encodeURIComponent(jsonStr))),
+        content: chunks.join(''),
         branch: 'main'
       };
       if (sha) body.sha = sha;
@@ -267,8 +300,10 @@
         body: JSON.stringify(body)
       });
       if (!res.ok) throw new Error('Erro na API: ' + res.status);
+      var ta2 = document.getElementById('cupons-textarea');
+      if (ta2) ta2.classList.add('hidden');
       btn.textContent = '✓ ' + data.length + ' cupons salvos!';
-      btn.classList.remove('opacity-70');
+      btn.classList.remove('opacity-70', 'bg-amber-500');
       btn.classList.add('bg-emerald-600');
       setTimeout(function() {
         btn.textContent = '🎟️ Importar Cupons';
