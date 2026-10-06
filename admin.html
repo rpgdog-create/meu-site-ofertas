@@ -771,7 +771,7 @@
         var attempts = 0;
         var poll = setInterval(async function() {
           attempts++;
-          if (attempts > 90) {
+          if (attempts > 180) {
             clearInterval(poll);
             btn.classList.remove('bg-orange-100', 'text-orange-700');
             btn.classList.add('bg-emerald-50', 'text-emerald-700');
