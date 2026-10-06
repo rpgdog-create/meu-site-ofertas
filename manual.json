@@ -4344,5 +4344,15 @@
     "imagem": "https://m.media-amazon.com/images/I/71yfaIfxwzL._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "nao"
+  },
+  {
+    "nome": "Echo Spot com Alexa (Geração mais recente) | Despertador inteligente com som vibrante | Cor Preta, com Acesso Antecipado à Alexa+",
+    "preco": "439.00",
+    "link": "https://www.amazon.com.br/dp/B0C2RS4ZG6?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos, Áudio e Vídeo",
+    "imagem": "https://m.media-amazon.com/images/I/718KFI+hBOL._AC_SY300_SX300_QL70_ML2_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "899.00"
   }
 ]
