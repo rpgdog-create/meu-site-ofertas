@@ -4503,5 +4503,240 @@
     "imagem": "https://m.media-amazon.com/images/I/61FuSHopQXL._AC_UY218_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
+  },
+  {
+    "nome": "Computador Dell 24 All-in-1 AIO-i1303-A15, Intel Core i5-1334U",
+    "preco": "6754.15",
+    "link": "https://www.amazon.com.br/dp/B0FHBWZNP1?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/51zUVaalVIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "8299.00"
+  },
+  {
+    "nome": "Pc Home Office Core I5 3470, 16 Gb Ddr3, Ssd 240 Gb, Fonte Bivolt",
+    "preco": "785.64",
+    "link": "https://www.amazon.com.br/dp/B0C7RQFRVQ?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/41IeECNWJ1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "903.99"
+  },
+  {
+    "nome": "Computador Dell 24 All-in-One EC24250, FHD, Intel i5, 16GB, 512GB, Win11",
+    "preco": "6999.00",
+    "link": "https://www.amazon.com.br/dp/B0GT6VR28W?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/51zUVaalVIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "8399.00"
+  },
+  {
+    "nome": "Xbox Series S - Console 512GB SSD Com Controle Sem Fio - Até 120 FPS - 10GB RAM - Alta Faixa Dinâmica - Arquitetura Velocity",
+    "preco": "3542.55",
+    "link": "https://www.amazon.com.br/dp/B0D932YWSZ?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61PI59RfWvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "3939.00"
+  },
+  {
+    "nome": "PC GAMER RYZEN 5 5600GT, 16GB DDR4, SSD 480GB, VEGA 7",
+    "preco": "2847.14",
+    "link": "https://www.amazon.com.br/dp/B0CGBQVDNK?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61rUoNMZAzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "2996.99"
+  },
+  {
+    "nome": "PC GAMER RYZEN 5 5600GT, 16GB DDR4, SSD SATA 480GB, FONTE 500W + KIT GAMER 4 EM 1 + MONITOR 19",
+    "preco": "3183.44",
+    "link": "https://www.amazon.com.br/dp/B0FQR1S5GP?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61cCGGmARxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "3350.99"
+  },
+  {
+    "nome": "Computador Completo Intel Core i5 16GB SSD 256GB Monitor 19\" 4 Núcleos Super Turbo Pc Hdmi Teclado e Mouse Strong Tech",
+    "preco": "1192.25",
+    "link": "https://www.amazon.com.br/dp/B0BTC75VZN?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61xNVYhoatL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1364.20"
+  },
+  {
+    "nome": "Microsoft Xbox Series S 512 GB All-Digital Console de jogos + 1 controle sem fio Xbox, branco - resolução de 1440p, até 120 FPS, 802.11ac 2x2 WiFi - WEPGPY HDMI Cabo",
+    "preco": "3600.50",
+    "link": "https://www.amazon.com.br/dp/B09P7CT2W6?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61mRVct105L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "3790.00"
+  },
+  {
+    "nome": "Computador All in One 23.8\" Full HD Intel Core I7-7500U, SSD M.2 512GB, 16GB RAM, Wi-Fi Dual Band, Saídas HDMI/VGA, Alto-Falantes Webcam Integrados com Teclado e Mouse, Branco",
+    "preco": "2976.90",
+    "link": "https://www.amazon.com.br/dp/B0GL9JCYBM?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61xr+1gzwAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PC Gamer Ryzen 5 5600GT, 16GB DDR4, SSD 480GB, 500W 80 Plus, Windows 11 Pro, PCGT10-E",
+    "preco": "3839.00",
+    "link": "https://www.amazon.com.br/dp/B0BM58RVJH?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71HCY9qpx-L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "ASUS Configuração antecipada PG27AQWP-G",
+    "preco": "12516.09",
+    "link": "https://www.amazon.com.br/dp/B0H3Z2PZNF?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71-AxNYa3eL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao"
+  },
+  {
+    "nome": "PC Gamer com AMD Ryzen 7 5700G, 32GB RAM, NVME 500GB, NVIDIA GeForce RTX 5060 8GB",
+    "preco": "7352.99",
+    "link": "https://www.amazon.com.br/dp/B0F4NJW78F?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61axAZGW0BL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "7739.99"
+  },
+  {
+    "nome": "Computador Core i7-16GB RAM - SSD 128GB + HD 500GB Tela - 23.8 Polegadas",
+    "preco": "2976.90",
+    "link": "https://www.amazon.com.br/dp/B0G52YJHL9?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61S3Tvi2j9L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "3459.00"
+  },
+  {
+    "nome": "PC GAMER INTEL I5 3470-16GB DDR3 - SSD 240GB - MONITOR 19'' - KIT GAMER: TECLADO, MOUSE E HEADSET",
+    "preco": "1315.75",
+    "link": "https://www.amazon.com.br/dp/B0D1VX986G?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61zam7ASXRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1385.00"
+  },
+  {
+    "nome": "Apple 2024 iMac (de 24 polegadas, Chip M4 da Apple com CPU de 8 núcleos e GPU de 8 núcleos, 16GB Memória unificada, de 256 GB) - Prateado",
+    "preco": "15499.00",
+    "link": "https://www.amazon.com.br/dp/B0DL8H1B1B?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/51hFDIZIdIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "PC Gamer AURA Ryzen 7 5700G, Placa-Mãe A520M, 16GB DDR4 3200MHz, SSD 480GB, Fonte 600W 80 Plus, Gabinete com 3 fans ARGB",
+    "preco": "3609.90",
+    "link": "https://www.amazon.com.br/dp/B0GV5GYVHP?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71DwHay8kjL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "3799.90"
+  },
+  {
+    "nome": "PC COMPLETO GAMER RYZEN 7 5700G SSD 512GB 16GB 3200MHZ MONITOR 21,5'' - KIT GAMER RGB",
+    "preco": "3963.40",
+    "link": "https://www.amazon.com.br/dp/B0H34M1MN6?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61dO6LISalL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "4172.00"
+  },
+  {
+    "nome": "Computador All in One 23,8\" Intel Core i5 16GB RAM SSD 512GB Full HD",
+    "preco": "2374.90",
+    "link": "https://www.amazon.com.br/dp/B0H8QRKBT3?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61Ap+pCOgOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "2699.90"
+  },
+  {
+    "nome": "COMPUTADOR COMPLETO INTEL I7 2600 16GB RAM SSD 480GB MONITOR 19 WIFI WINDOWS 11 TRIAL",
+    "preco": "1424.99",
+    "link": "https://www.amazon.com.br/dp/B0FV11L12Y?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/51I3sVpdWlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "1650.00"
+  },
+  {
+    "nome": "COMPUTADOR COMPLETO CORE I5 2400, 16GB DDR3, SSD 480GB, WIFI + MONITOR 19\" + KIT TECLADO E MOUSE",
+    "preco": "1272.99",
+    "link": "https://www.amazon.com.br/dp/B0FL4RVKRX?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/612pLbrp2kL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1339.99"
+  },
+  {
+    "nome": "AMD PC Gamer Completo Ryzen 5 5500, RTX 3050, 16GB DDR4, SSD 480GB, 600W 80 Plus, Monitor 21.5\", Windows 11 Pro, PNZKOB1O-E",
+    "preco": "5443.33",
+    "link": "https://www.amazon.com.br/dp/B0BM5B3BVC?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71zWBWNqdML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Beelink Mini PC SER8, AMD Ryzen 7 8745HS (8C/16T, até 4,9GHz), 32G DDR5 RAM 1TB PCIe4.0 SSD, Mini Gaming Computer Suporte 4K Tela Tripla/WiFi6/BT5.2/2.5G LAN/USB4/Win11 Pro",
+    "preco": "6821.00",
+    "link": "https://www.amazon.com.br/dp/B0F6619G9V?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/61bQLMMMO0L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "7180.00"
+  },
+  {
+    "nome": "Gamer PC Basic AM Intel i5 16GB RAM 512GB SSD Tela 21,5\" Kit Gamer L2F",
+    "preco": "1684.35",
+    "link": "https://www.amazon.com.br/dp/B0D9PK7KDL?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/71MiR6OwQNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1773.00"
+  },
+  {
+    "nome": "PC HOME OFFICE CORE I7 4790, 16GB DDR3, SSD 240GB, FONTE BIVOLT",
+    "preco": "1261.59",
+    "link": "https://www.amazon.com.br/dp/B0FFBPNWC1?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://m.media-amazon.com/images/I/41IeECNWJ1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "1327.99"
   }
 ]
