@@ -2737,5 +2737,915 @@
     "marketplace": "ML",
     "frete": "sim",
     "precoOriginal": "120.00"
+  },
+  {
+    "nome": "Canivete Tático 16cm Compacto em Aço Inoxidável Dobrável com Trava de Segurança Cabo Antiderrapante para Camping Trilha Pesca e Uso Diário",
+    "preco": "7.90",
+    "link": "https://www.amazon.com.br/dp/B0HJBGT35C?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61YlvuyqpsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Cadeira Camping Dobrável Com Bolsa Porta Copos E Pé De Ferro E Tecido Poliéster Resistente Premium",
+    "preco": "46.54",
+    "link": "https://www.amazon.com.br/dp/B0GFG39H1J?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51T6Qyv9naL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "61.90"
+  },
+  {
+    "nome": "Lâmpada LED Recarregável Portátil 3W com Bateria de Longa Duração para Camping, Emergências e Uso Doméstico Sendo 3 Modos de Iluminação 6 horas de duração.",
+    "preco": "28.90",
+    "link": "https://www.amazon.com.br/dp/B0FM2Q36LP?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61B8II10+fL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mictório Portátil Dobrável Unissex 750ml com Tampa Antivazamento, Garrafa Sanitária Reutilizável para Viagem, Carro, Camping, Trilha.",
+    "preco": "26.90",
+    "link": "https://www.amazon.com.br/dp/B0H8QTS4L6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/610e9EjiQUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "29.90"
+  },
+  {
+    "nome": "Tapete Impermeável para Praia, Camping e Piquenique – Azul e Cinza, 2,00 x 2,10m, Leve, Compacto e Resistente com 4 Pinos de Fixação e Mosquetão, Ideal para Viagens e Atividades ao Ar Livre",
+    "preco": "52.15",
+    "link": "https://www.amazon.com.br/dp/B0FQMSB4J5?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51vYrtidWmL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "54.90"
+  },
+  {
+    "nome": "Faca Tática de Sobrevivência Profissional Completa com Bainha, Pederneira, Bússola e Apito – Faca para Camping, Trilha, Pesca, Caça e Uso Militar Alta Resistência",
+    "preco": "39.80",
+    "link": "https://www.amazon.com.br/dp/B0GYQB8CQY?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61dAgCGIYqL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "41.90"
+  },
+  {
+    "nome": "Saboneteira para Viagem com Estojo Escorredor – Dupla Drenagem, Compacta, À Prova de Vazamentos – Tampa com Encaixe Firme – Ideal para Viagens, Academia, Banho e Camping",
+    "preco": "23.90",
+    "link": "https://www.amazon.com.br/dp/B0G2ZRZJMH?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61w63xQ-JxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Banco Dobrável Portátil de Alumínio para Camping e Pesca",
+    "preco": "29.97",
+    "link": "https://www.amazon.com.br/dp/B0H6RP1S3L?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/518TK-q+PfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Lâmpada LED Solar 40w Recarregável com Gancho | Luz de Emergência Portátil | Carregamento Solar | Indicador de Bateria | Ideal para Camping, Falta de Energia, Barraca e Uso Externo",
+    "preco": "34.11",
+    "link": "https://www.amazon.com.br/dp/B0GRW1C6L6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61Ms0UGvJgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "39.90"
+  },
+  {
+    "nome": "Conjunto De Panelas Para Camping 10 Peças Liga De Alumínio Alimentar Com Panela Frigideira E Chaleira Bolsa De Armazenamento Portátil Para 2‑3 Pessoas Caminhada Piquenique Ao Ar Livre",
+    "preco": "144.48",
+    "link": "https://www.amazon.com.br/dp/B0GS526QJQ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71+F9PU2iFL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "169.00"
+  },
+  {
+    "nome": "BASK Cadeira Premium Dobrável Ultralight de Alumínio – 1 kg, Compacta 37×13 cm, 150 kg de Capacidade, Portátil para Camping, Praia e Trilhas",
+    "preco": "106.85",
+    "link": "https://www.amazon.com.br/dp/B0D3J8RYFW?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/616b2vPI9HL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "124.99"
+  },
+  {
+    "nome": "Lampião Led Lâmpada Lanterna Recarregável Solar Usb Luz Emergência Camping Acampamento Barraca Pesca",
+    "preco": "39.00",
+    "link": "https://www.amazon.com.br/dp/B0FHGZTNZ1?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/81EfJ6yX1mL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fogareiro Camping, Fogareiro Portatil com Estojo, para Cozinhar Ao Ar Livre, Churrascos e Emergências",
+    "preco": "80.75",
+    "link": "https://www.amazon.com.br/dp/B0GTXT1T16?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71HcdOt52RL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "85.00"
+  },
+  {
+    "nome": "Tapete Piquenique Impermeável Dobrável, Grande 200x200cm, com Alça, Toalha para Picnic, Parque, Praias, Passeios ao Ar Livre, a Prova de Água, Fácil de Carregar (Vermelho)",
+    "preco": "24.90",
+    "link": "https://www.amazon.com.br/dp/B0GBSW4J1J?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71PZ+vy8UsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "39.90"
+  },
+  {
+    "nome": "Lanterna LED Recarregável Tática Portátil Alta Potência USB COB Luz Forte Emergência Camping Trilha Pesca Segurança Lanterna Compacta com Estojo e Cabo Carregamento Resistente",
+    "preco": "16.90",
+    "link": "https://www.amazon.com.br/dp/B0FRB79DNN?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/719+sA+JfQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "NTK, Fogareiro Frontier Em Aço Esmaltado Com Ignição Eletrônica Apoio De Panela, Chama Regulável, Dispensa Uso De Fósforos, Ideal Para Uso Diário, Camping, Trilha Ou Viagens, Prático E Econômico",
+    "preco": "96.62",
+    "link": "https://www.amazon.com.br/dp/B0777T6MB6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/611OBGSiRML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "199.00"
+  },
+  {
+    "nome": "Kit 3 Cordas de Poliéster 4mm x 5m – Multiuso, Resistentes, Cores Variadas para uso Doméstico, Varal, Camping, Bicicleta e Amarrações, 15 Metros (Total) Multicolorido.",
+    "preco": "23.90",
+    "link": "https://www.amazon.com.br/dp/B0FR5DPP6Q?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/615++GnDKzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Colchonete Mont Long Acampamento Camping Casal",
+    "preco": "50.33",
+    "link": "https://www.amazon.com.br/dp/B07B269LX7?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71jXr+QAaBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "56.20"
+  },
+  {
+    "nome": "Kit 10 Peças de Talheres em Aço Inoxidável 304 com Bolsa – Leve e Compacto para Camping, Churrasco e Piquenique",
+    "preco": "113.04",
+    "link": "https://www.amazon.com.br/dp/B0HDYX1LMZ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61L2m3fD+vL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "118.99"
+  },
+  {
+    "nome": "Canivete Tático Premium 16cm Aço Inoxidável Dobrável com Trava de Segurança Cabo Antiderrapante Camping Trilhas",
+    "preco": "15.90",
+    "link": "https://www.amazon.com.br/dp/B0GRWXHF1M?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61ItADanA+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "18.90"
+  },
+  {
+    "nome": "Guepardo, Isolante Térmico Solteiro Revestido Aluminizado Proteção Térmica, Acampamento",
+    "preco": "40.75",
+    "link": "https://www.amazon.com.br/dp/B079Z9M1CC?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51kKi2mIVzL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "42.90"
+  },
+  {
+    "nome": "JOYFOX Rede De Dormir Camping Construção Rápida, Portátil Dobrável Rede de Árvore Acampamento (Médio Azul)",
+    "preco": "89.00",
+    "link": "https://www.amazon.com.br/dp/B0CZ34NWZ6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71ZFpUZahVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Banco Dobrável Portátil para Camping e Pesca Banqueta Banquinho de Alumínio Leve e Resistente Assento em Tecido com Bolsa de Transporte Montagem Rápida",
+    "preco": "28.49",
+    "link": "https://www.amazon.com.br/dp/B0GL3XM1V4?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61hSQ9d+BEL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "29.99"
+  },
+  {
+    "nome": "Lanterna T9 Tática LED Recarregável P50 Alta Potência 1200 Lumens Zoom Longo Alcance Ajustável Profissional - 3 Modos de Iluminação - Camping Trilhas Emergência Resistente e Compacta",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0GMTWQ6JZ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61o6ayfS6PL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mesa Dobrável De Alumínio Para Camping E Praia 50 x 50 cm Portátil Com Bolsa",
+    "preco": "74.95",
+    "link": "https://www.amazon.com.br/dp/B0H9ZH6N73?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61opNsfkdWL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "78.90"
+  },
+  {
+    "nome": "Canivete Dobrável 16 cm com Trava de Segurança – Compacto, Resistente e Ideal para Camping, Trilhas e Pescas",
+    "preco": "16.99",
+    "link": "https://www.amazon.com.br/dp/B0GFPLBDJX?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61foI3N15YL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "18.99"
+  },
+  {
+    "nome": "Saco de Dormir Térmico de Emergência Portátil, Verde militar, Abrigo térmico refletivo Para Camping Trilha e Sobrevivência Ultraleve Dobrável Retém Calor À Prova d'Água e Vento",
+    "preco": "39.00",
+    "link": "https://www.amazon.com.br/dp/B0H93KLKV5?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/81gD1b-Eu3L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Cadeira Camping Dobrável Com Bolsa Porta Copos E Pé De Ferro E Tecido Poliéster Resistente Premium",
+    "preco": "47.39",
+    "link": "https://www.amazon.com.br/dp/B0GMRTTYQ6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61azokeD+VL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.90"
+  },
+  {
+    "nome": "Mini Lanterna LED Recarregável USB-C com Gancho para Camping e Emergência",
+    "preco": "23.90",
+    "link": "https://www.amazon.com.br/dp/B0F17K37D5?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61M6dCF3nOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Kit 2 Cordas 8MM x 15M Multiuso Alta Resistência para Camping e Varal",
+    "preco": "36.90",
+    "link": "https://www.amazon.com.br/dp/B0GWNCCT4D?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71Vx1u3COpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chuveiro Ducha Portátil 20 Litros Lorben Camping Acampamento Aquecimento Solar Água Quente ou Fria",
+    "preco": "29.50",
+    "link": "https://www.amazon.com.br/dp/B0BRNRNDRZ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61iaAuKtuZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Cadeira Dobrável Portátil para Camping, Praia, Pesca e Lazer (Marrom)",
+    "preco": "47.40",
+    "link": "https://www.amazon.com.br/dp/B0HB5R5MFF?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71CZ8H2WcVL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.90"
+  },
+  {
+    "nome": "Cadeira Portátil Dobrável com Porta Copos e Garrafa, Suporta 120kg (Azul)",
+    "preco": "47.47",
+    "link": "https://www.amazon.com.br/dp/B0HGC6YJ4J?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61++k1hRv3L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "49.97"
+  },
+  {
+    "nome": "Fogareiro Portatil Dobravel Fogão a Gas para Camping e Viagem Bestfer BFH3007",
+    "preco": "38.90",
+    "link": "https://www.amazon.com.br/dp/B0CW1WR6CQ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/512ifkGWqUL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Fogão Portátil de Camping em Aço Inoxidável com Suporte Dobrável para Uso ao Ar Livre Premium",
+    "preco": "34.90",
+    "link": "https://www.amazon.com.br/dp/B0GYQGWZMJ?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61M-eEzzhZL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Barraca Camping 4 Pessoas Compacta Com Bag Tipo Iglu Ontrek",
+    "preco": "74.95",
+    "link": "https://www.amazon.com.br/dp/B0F79TPWSN?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51NF+Nh1AnL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "78.90"
+  },
+  {
+    "nome": "Chapéu de Pescador Australiano com Proteção Aba Larga Protetor de Nuca Sol Pesca Camping",
+    "preco": "21.99",
+    "link": "https://www.amazon.com.br/dp/B0FSYGRFYM?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51kwHXB80gL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Chapéu Pescador Camping Australiano Proteção Nuca Pescoço Uv",
+    "preco": "24.90",
+    "link": "https://www.amazon.com.br/dp/B0D79P3F93?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51M+KuO5aoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mesa Dobrável 120cm Resistente Para Camping Garden Life Acampamentos Churrascos Piqueniques Caminhadas Pesca (Dourado)",
+    "preco": "159.00",
+    "link": "https://www.amazon.com.br/dp/B0DPHZHW59?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61y8EoSeyPL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Bask Camping Bite Relief – Dispositivo Térmico Portátil para Picadas de Insetos, Tecnologia Thermo-Pulse™, Placa Cerâmica, 4 Temperaturas, Timer Automático 30 s, Bateria 500 mAh Recarregável",
+    "preco": "59.83",
+    "link": "https://www.amazon.com.br/dp/B0DMFWTP7R?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/31xVyxXu7cL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "69.99"
+  },
+  {
+    "nome": "Protetor para Fogareiro Escudo Alumínio 10 bocas Camping, leve, dobrável, para fogão de camping, piquenique, fogareiro a gás butano e álcool",
+    "preco": "36.00",
+    "link": "https://www.amazon.com.br/dp/B0H6NV3ZZR?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51Zb+ePEXQL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "38.00"
+  },
+  {
+    "nome": "Churrasqueira Portátil Bancada Camping USA Texas Compact Grill + Grelha Removível",
+    "preco": "52.60",
+    "link": "https://www.amazon.com.br/dp/B0CN3X3PJS?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61sUO34ZauL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "58.90"
+  },
+  {
+    "nome": "kit com 2 Lanternas Pequenas, Chaveiro Mini Refletor, Recarregável Mosquetão, com Imã e Abridor de Garrafa, Usb, Caça, Pesca, Camping, Campo, Led Forte",
+    "preco": "36.90",
+    "link": "https://www.amazon.com.br/dp/B0F1V3V7QK?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/518NRdBpI+L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "NTK, Lanterna de Cabeça, Cobb, Plástico ABS com LED 3W, 15 Metros Alcance, Camping/Aventura, Preto",
+    "preco": "27.45",
+    "link": "https://www.amazon.com.br/dp/B07L9GJJMH?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41NtHrw+gRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "37.08"
+  },
+  {
+    "nome": "Chuveiro Portátil Premium Para Camping E Viagem, USB, VARENZIA",
+    "preco": "118.91",
+    "link": "https://www.amazon.com.br/dp/B0GVKGM9N6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61jp3zJD3LL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "139.90"
+  },
+  {
+    "nome": "Fogareiro Nautika Frontier",
+    "preco": "123.30",
+    "link": "https://www.amazon.com.br/dp/B07XZD8SV3?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51KTQsUW1mL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "129.90"
+  },
+  {
+    "nome": "Cadeira Dobrável de Camping com Porta-Copo, Estrutura em Aço, Assento em Tela Respirável, Cadeira Portátil para Praia, Pesca e Camping",
+    "preco": "41.88",
+    "link": "https://www.amazon.com.br/dp/B0GR9J46BW?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71tsdXuEL4L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "49.00"
+  },
+  {
+    "nome": "Piso Barraca Camping Preto 3x2 M Permeável Ecológico",
+    "preco": "71.84",
+    "link": "https://www.amazon.com.br/dp/B0DNTNL5C9?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61Mh+XJ4FxL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "88.95"
+  },
+  {
+    "nome": "Cinto Tático Ultra Resistente Ajustável com Fivela de Engate Rápido – Ideal para Atividades ao Ar Livre, Aventura, Pesca, Caminhada, Camping, Trilha e Uso Diário Trabalho",
+    "preco": "29.99",
+    "link": "https://www.amazon.com.br/dp/B0FR3SW9P7?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71QrdHOvn8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "NAUTIKA, Bolsa para barracas de acampamento compatível com todos os modelos de barracas da NAUTIKA",
+    "preco": "27.50",
+    "link": "https://www.amazon.com.br/dp/B077T2Z7TH?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41ZdzrcWrXL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "35.10"
+  },
+  {
+    "nome": "NTK, Saco de Dormir Envelope 2,10m em Poliéster com Hollow-Fiber, para Camping e Aventuras, Viper",
+    "preco": "86.90",
+    "link": "https://www.amazon.com.br/dp/B00QK417AC?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51ukIyjPdfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "149.00"
+  },
+  {
+    "nome": "Tapete Para Piquenique Parque Praça Dobrável Impermeável, Leve e Compacto com Alça Ideal Para Praia, Camping, Gramado e Passeios ao Ar Livre Confortável e Fácil de Limpar PREMIUM",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B0F7LVJS89?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61To2KZ6XIL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "JOYFOX Barraca de Camping Automática, 3-8 Pessoas, Montagem Rápida em 3 Segundos, Proteção UV UPF50+, À Prova de Chuva com Vestíbulo e Mosquiteiro, Ideal para Acampamento, Praia e Trilha",
+    "preco": "369.55",
+    "link": "https://www.amazon.com.br/dp/B0CZR8VRB5?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/711MvKTnzBL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "459.00"
+  },
+  {
+    "nome": "Lampião LED Lanterna Carregável Com Luz Solar Camping Luminária Dupla Iluminação Acampamento Trilhas Multiuso Carregador USB Portátil LINHA PREMIUM-THREE BROTHERS (Lampeão Preto)",
+    "preco": "39.90",
+    "link": "https://www.amazon.com.br/dp/B0DLHM7FS2?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/518i5hdtcOL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Azteq, Conjunto de Cozinha para Acampamentos 6 Peças Compacto Livre de BPA Expedições e Trilhas, Kit Solos",
+    "preco": "59.00",
+    "link": "https://www.amazon.com.br/dp/B0DZP3JC6Z?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51UHuUgPZpL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "65.70"
+  },
+  {
+    "nome": "Saco Viper 5ºc a 12º, Nautika",
+    "preco": "76.50",
+    "link": "https://www.amazon.com.br/dp/B00QK4626Q?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51dXrW3UOML._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "149.00"
+  },
+  {
+    "nome": "Cadeira Camping Dobrável Reforçada 200kg Porta Copos Ômega",
+    "preco": "194.54",
+    "link": "https://www.amazon.com.br/dp/B0HHB8P7KL?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61vYE3HyhoL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "215.56"
+  },
+  {
+    "nome": "Cadeira Portátil Dobrável Bolsa Pesca Camping Apoio Porta Copos e Garrafa Compacto Leve Reforçada",
+    "preco": "48.44",
+    "link": "https://www.amazon.com.br/dp/B0H8WDPHKK?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/717YBY+qvTL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "50.99"
+  },
+  {
+    "nome": "Lampião Camping LED Recarregável, 1200mAh Lanterna Camping 3 em 1",
+    "preco": "71.54",
+    "link": "https://www.amazon.com.br/dp/B0HB8ZS34B?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61CRd3jNMlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "79.50"
+  },
+  {
+    "nome": "Cadeira Camping Dobrável Com Bolsa Porta Copos E Pé De Ferro E Tecido Poliéster Resistente Premium (Vermelho)",
+    "preco": "45.03",
+    "link": "https://www.amazon.com.br/dp/B0HFD62JB8?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71HiPxG3+nL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.90"
+  },
+  {
+    "nome": "Mochila Tática Militar 50L Impermeável Nylon Oxford com Sistema MOLLE – Mochila Grande para Camping, Trilha, Trekking e Viagem, Alta Capacidade, Mochila Militar Resistente para Aventura",
+    "preco": "94.99",
+    "link": "https://www.amazon.com.br/dp/B0GRWSGNKR?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51uNvrQ0bvL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "130.00"
+  },
+  {
+    "nome": "BASK Ferramenta Multiuso 13 em 1 – Martelo, Machado, Alicate, Faca, Serra e Chaves – Aço Inox 420 Premium, Leve e Portátil para Camping & Emergências",
+    "preco": "61.65",
+    "link": "https://www.amazon.com.br/dp/B0DMBZ8CMK?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61giHTLIZGL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "64.90"
+  },
+  {
+    "nome": "BEMMY Mesa Dobravel Portatil de Liga de Alumínio 120CM com 4 Banquinhos Pequenos, Escrivaninha Dobravel Maleta para Camping Pesca Jardim Área Externa Ou Interna",
+    "preco": "227.05",
+    "link": "https://www.amazon.com.br/dp/B0GR5PTMZH?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71QF-07qacL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "239.00"
+  },
+  {
+    "nome": "JOYFOX Rede de Dormir Camping Médio Laranja",
+    "preco": "99.00",
+    "link": "https://www.amazon.com.br/dp/B0CM8Q4HM8?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71EOxp58rrL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Barraca de Camping 3-4 Pessoas Impermeável com Mosquiteiro, Automático Fácil de Monta",
+    "preco": "199.38",
+    "link": "https://www.amazon.com.br/dp/B0FGH49P8N?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/81QQENcGJlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "209.88"
+  },
+  {
+    "nome": "JOYFOX Rede De Dormir Camping Construção Rápida, Portátil Dobrável Rede de Árvore Acampamento (Laranja C/Mosquiteiro)",
+    "preco": "129.00",
+    "link": "https://www.amazon.com.br/dp/B0CLLWQN3X?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/716TBHOuCsL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "NTK, Barraca de Camping Iglu 2,10m para 3 a 4 Pessoas, Poliéster Impermeável e Piso em Polietileno, Cherokee GT 3/4",
+    "preco": "349.90",
+    "link": "https://www.amazon.com.br/dp/B00NLQNZ7A?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/610WCJErp2L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "509.25"
+  },
+  {
+    "nome": "Barraca Acampamento Camping 3 Pessoas Impermeavel Automatica Inboxmobile",
+    "preco": "170.99",
+    "link": "https://www.amazon.com.br/dp/B0GMK9VNTW?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61uC8xeqQfL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "237.99"
+  },
+  {
+    "nome": "Kit Camping Barraca Iglu 3/4 Pessoas Colchão Inflável Casal e Bomba Manual",
+    "preco": "251.87",
+    "link": "https://www.amazon.com.br/dp/B0HF9VX4K6?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51b3DDAj21L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "265.13"
+  },
+  {
+    "nome": "Mesa Camping Dobrável Portátil Aço Praia Acampamento 53x51x50cm Com Bolsa Transporte fácil",
+    "preco": "85.49",
+    "link": "https://www.amazon.com.br/dp/B0FQCN4QKW?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51q6Ocm6Z8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "89.99"
+  },
+  {
+    "nome": "Cadeira Camping e Pesca Dobrável Azul Com Porta Copos e Bolsa 120kg",
+    "preco": "58.39",
+    "link": "https://www.amazon.com.br/dp/B0F2FXBL7V?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71fljMBYKlL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.18"
+  },
+  {
+    "nome": "Mochila Mala T60 Para Academia Natação Camping na Cor Preta",
+    "preco": "66.49",
+    "link": "https://www.amazon.com.br/dp/B09YVVH7J1?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41evW2MWKNL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "69.99"
+  },
+  {
+    "nome": "NTK | Conjunto de Talheres de Camping | Outdoor | Piquenique | Leve | Compacto | Polipropileno",
+    "preco": "21.00",
+    "link": "https://www.amazon.com.br/dp/B0G44ND5PK?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/414-7U2iqJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "22.94"
+  },
+  {
+    "nome": "Chapéu Pescador Camping Australiano Proteção Nuca Pescoço Uv (Preto)",
+    "preco": "19.89",
+    "link": "https://www.amazon.com.br/dp/B0CR1TJP8R?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41Lg8bDnbyL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "25.90"
+  },
+  {
+    "nome": "JOYFOX Rede de Dormir Camping com Mosquiteiro 210T e Suporte 250kg",
+    "preco": "139.00",
+    "link": "https://www.amazon.com.br/dp/B0CM928782?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71RMGfwTlJL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "BASK Tapete de Praia Extra Grande 200x210cm – Ultraleve 0,3kg, com Estacas Longas e Bolsa Compacta 14x20cm – Ideal para Praia, Camping e Piquenique",
+    "preco": "48.82",
+    "link": "https://www.amazon.com.br/dp/B0GMY95K1F?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71gnyjsYbAL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "69.99"
+  },
+  {
+    "nome": "Cinto Tático Militar de Nylon – Ajustável, Fivela de Engate Rápido em Metal, 130cm, Resistente para Uso Outdoor, Camping e Aventureiros",
+    "preco": "39.98",
+    "link": "https://www.amazon.com.br/dp/B0DZFSD5S5?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/512vgd6j2PL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mor Life - Barraca Luna 8 Pessoas",
+    "preco": "899.00",
+    "link": "https://www.amazon.com.br/dp/B078P1PNW3?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51ZmaXPuqYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "NTK, Saco de Dormir, Solteiro, Poliéster 190T, Acampamentos, Viper, Preto e Laranja",
+    "preco": "81.42",
+    "link": "https://www.amazon.com.br/dp/B00QK3UAYW?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51TY6uKKx1L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "149.00"
+  },
+  {
+    "nome": "10pcs. Mini Mosquetão De Alumínio Cores P/Camping Chaveiro",
+    "preco": "25.80",
+    "link": "https://www.amazon.com.br/dp/B07W3YSR9L?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61oOyukzQwL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Ducha Portátil Automática para Camping Banho Externo Recarregável Fluxo Estabilizado com Monitoramento Inteligente de Vazão e Uso Livre de Cabos",
+    "preco": "94.99",
+    "link": "https://www.amazon.com.br/dp/B0H27625NP?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/512r5bFJzdL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.99"
+  },
+  {
+    "nome": "Trailabo Colchão Inflável Casal Automático, Colchão Inflável Portátil para Acampamento, para Uso Interno/Externo, Inclui Travesseiro, Adequado para Acampamento, Cochilo, Caminhadas e Aventuras",
+    "preco": "189.05",
+    "link": "https://www.amazon.com.br/dp/B0FQV6P64V?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71vmNtGS3tL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "199.00"
+  },
+  {
+    "nome": "JOYFOX Mochila De Camping 40L Impermeável Ergonômica Com Proteção De Coluna E Elementos Refletivos, Mochila De Trilha Esportiva Resistente Para Acampamento Viagem E Uso Diário (Laranja)",
+    "preco": "139.00",
+    "link": "https://www.amazon.com.br/dp/B0H6F7ZLRD?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/614gFJgHydL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Colchonete Camping Solteiro Maringa 17693 Camuflado",
+    "preco": "35.97",
+    "link": "https://www.amazon.com.br/dp/B081TLDDTP?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61BBF0fv0kS._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim"
+  },
+  {
+    "nome": "Poste Ajustável Mastro Telescópico Para Lona Tarp Avanço Abrigo Barraca Camping NTK",
+    "preco": "180.40",
+    "link": "https://www.amazon.com.br/dp/B0HCF8DNS7?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41vFYjV5XhL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "189.90"
+  },
+  {
+    "nome": "Mochila Tática Luke Sports 30 L para Camping",
+    "preco": "75.04",
+    "link": "https://www.amazon.com.br/dp/B0CR6RNPTD?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/41PPj-FezuL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "78.99"
+  },
+  {
+    "nome": "Capa de Chuva com Capuz, Capa de Chuva Multifuncional Unissex Dobrável 3 em 1, Leve para Caminhadas, Camping e Atividades ao ar Livre",
+    "preco": "84.63",
+    "link": "https://www.amazon.com.br/dp/B0GFWKZ46T?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61Rghe3OwYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "99.00"
+  },
+  {
+    "nome": "Cadeira Dobrável Portátil para Camping e Pesca, Poliéster e Ferro, com Porta Copos e Bolsa de Transporte, Suporta até 120kg",
+    "preco": "56.97",
+    "link": "https://www.amazon.com.br/dp/B0GTBY5M8P?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/61deUlwXZRL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "59.97"
+  },
+  {
+    "nome": "Joyfox Mesa De Camping Dobrável Regulável G2 Alumínio Reforçado Com Bolsa Oxford E Rede Organizadora Mesa Portátil Vira Maleta Altura Ajustável 50-80cm Espaço 4 A 6 Pessoas Suporta Até 100kg",
+    "preco": "255.55",
+    "link": "https://www.amazon.com.br/dp/B0H8MVNQQG?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/51cQWBDm47L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "269.00"
+  },
+  {
+    "nome": "Rede De Dormir Camping Construção Rápida, Portátil Dobrável Rede de Árvore Acampamento (Laranja C/Mosquiteiro)",
+    "preco": "94.90",
+    "link": "https://www.amazon.com.br/dp/B0GXVSPQYD?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/715485DzP6L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "99.90"
+  },
+  {
+    "nome": "BASK Cadeira Premium Dobrável Portátil Reforçada com Suporte 180kg | Alça de Ombro Integrada | Porta-copo | Conforto e Espaço Ampliado para Camping, Praia e Pesca",
+    "preco": "111.24",
+    "link": "https://www.amazon.com.br/dp/B0CZ13NFN8?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71GBOd0pOCL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "136.98"
+  },
+  {
+    "nome": "New Hawaii Barraca de Camping Automática 4/5/6 Pessoas, Impermeável com Mosquiteiro e Cobertura Solar, Dobrável",
+    "preco": "213.64",
+    "link": "https://www.amazon.com.br/dp/B0FMDHTHJD?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/81y38VHzh8L._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "nao",
+    "precoOriginal": "249.89"
+  },
+  {
+    "nome": "Mochila Tática Militar 50 Litros Impermeável – Grande, Resistente, Para Camping, Trilha e Viagem",
+    "preco": "119.61",
+    "link": "https://www.amazon.com.br/dp/B0F9XHJG9J?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/71tPQTVABgL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "139.90"
+  },
+  {
+    "nome": "Kit 4 Lâmpadas LED Recarregáveis para Acampamento e Pesca, Longa Duração",
+    "preco": "62.79",
+    "link": "https://www.amazon.com.br/dp/B0DP3K479J?tag=ofertas01dc-20",
+    "categoria": "camping",
+    "imagem": "https://m.media-amazon.com/images/I/513vWWlXLYL._AC_UL320_.jpg",
+    "marketplace": "Amazon",
+    "frete": "sim",
+    "precoOriginal": "66.10"
   }
 ]
