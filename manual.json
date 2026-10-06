@@ -2569,5 +2569,154 @@
     "marketplace": "Amazon",
     "frete": "nao",
     "precoOriginal": "14.90"
+  },
+  {
+    "nome": "Cadeira Camping Dobrável Pesca Praia Espreguiçadeira Portáti",
+    "preco": "186",
+    "link": "https://meli.la/2z1TMeK",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_920233-MLB110719626099_042026-O-cadeira-camping-dobravel-pesca-praia-espreguicadeira-portati.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "399.00"
+  },
+  {
+    "nome": "Chuveiro Saco Bolsa 20 Litros Por Aquecimento Solar Camping",
+    "preco": "64.5",
+    "link": "https://meli.la/2QYxeFP",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_800240-MLB115515383785_082026-O-chuveiro-saco-bolsa-20-litros-por-aquecimento-solar-camping.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "67.90"
+  },
+  {
+    "nome": "Faca Tática Pescador Aço Inox 31cm Lâmina 18cm Com Bainha Bússola Quebra Vidro Abridor Garrafa Camping Sobrevivência Corta Limpa Peixe Churrasco Cabo Anatômico Emborrachado",
+    "preco": "29.95",
+    "link": "https://meli.la/29oDNki",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_639059-MLA110256912152_052026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "34.90"
+  },
+  {
+    "nome": "Facão Inox 12 Tramontina Para Mato Camping Acampamento Pesca",
+    "preco": "67.06",
+    "link": "https://meli.la/27mi366",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_684266-MLB117136486398_102026-O-facao-inox-12-tramontina-para-mato-camping-acampamento-pesca.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "78.90"
+  },
+  {
+    "nome": "Regador Portátil Recarregável, [bateria De Longa Duração] Spopal 6000mah Regador Elétrico Para Acampamento Com Tela Led, 4 Modos De Pulverização, Ipx7, Para Caminhadas, Viagens E Uso No Carro Preto",
+    "preco": "160.99",
+    "link": "https://meli.la/2gFTMvy",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_986828-MLA99507217280_112025-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "299.00"
+  },
+  {
+    "nome": "Rede De Dormir Descanso Joyfox Com Toldo Proteção Solar E Mosquiteiro Reforçada 260x140cm Nylon 210t Para Camping",
+    "preco": "134.41",
+    "link": "https://meli.la/1s1VuwB",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_813538-MLA107642056331_022026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "149.00"
+  },
+  {
+    "nome": "Calibrador Compressor Bomba De Air Portátil Recarregável Digital, Com Luz De Emergência Led mini bomba de pneu sem fio 150Psi para Encher Pneus de Carro, Moto, Bike, Bicicleta",
+    "preco": "150.59",
+    "link": "https://meli.la/1f6kTDQ",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_941235-MLA114066824434_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "264.90"
+  },
+  {
+    "nome": "Bomba de Ar Elétrica Quicko para Pneus com Calibrador Digital e Power Bank",
+    "preco": "177.53",
+    "link": "https://meli.la/2Xpv8gQ",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_863869-MLA115253606218_082026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "349.90"
+  },
+  {
+    "nome": "Lanterna Led Tática Mais Forte Do Mundo 2km Militar Potente",
+    "preco": "169.97",
+    "link": "https://meli.la/1Wi9pcW",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_705288-MLB92249703072_092025-O-lanterna-led-tatica-mais-forte-do-mundo-2km-militar-potente.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "278.65"
+  },
+  {
+    "nome": "Pederneira Maciça Magnésio Camping Pesca Acender Fogo",
+    "preco": "18.99",
+    "link": "https://meli.la/1tfDnuD",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_691954-MLB73586424187_122023-O-pederneira-macica-magnesio-camping-pesca-acender-fogo.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "19.99"
+  },
+  {
+    "nome": "Caneca Termica Com Misturador Com Temperatura",
+    "preco": "58.9",
+    "link": "https://meli.la/13c2Yh9",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_874473-MLA114643502379_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "62.00"
+  },
+  {
+    "nome": "Kit Sobrevivência com Faca Tática de 14 cm, Lanterna e Pederneira",
+    "preco": "58.1",
+    "link": "https://meli.la/1NmpgvA",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_845717-MLA112772236644_062026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "77.90"
+  },
+  {
+    "nome": "Kit Talher Camping Aço Inoxidável Garfo Faca Colher Abridor Cor Inox",
+    "preco": "2.64",
+    "link": "https://meli.la/2LwA4Nc",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_890636-MLA86544350760_062025-O.webp",
+    "marketplace": "ML",
+    "frete": "sim"
+  },
+  {
+    "nome": "Mesa Camping Dobrável 120cm 6 Pessoas Altura Ajustável",
+    "preco": "183.33",
+    "link": "https://meli.la/2fXhAkp",
+    "categoria": "Esportes e Fitness",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_883067-MLA115383936635_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "399.00"
+  },
+  {
+    "nome": "Mesa Dobrável Alumínio 90x60cm Vira Maleta Com Alça Portátil Camping Praia The Black Tools",
+    "preco": "153.34",
+    "link": "https://meli.la/2hzvTt1",
+    "categoria": "camping",
+    "imagem": "https://http2.mlstatic.com/D_NQ_NP_695155-MLA113573079242_072026-O.webp",
+    "marketplace": "ML",
+    "frete": "sim",
+    "precoOriginal": "299.90"
   }
 ]
