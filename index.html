@@ -203,6 +203,8 @@
     </div>
     <div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scroll mb-8" id="chips"></div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid-all"></div>
+    <div id="pagination" style="display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:2rem;flex-wrap:wrap;"></div>
+    <div id="pagination" style="display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:2rem;flex-wrap:wrap;"></div>
   </main>
 
   <!-- Trust Section -->
@@ -302,6 +304,8 @@
       }
     });
     var grid = document.getElementById('grid-all');
+    var currentPage = 1;
+    var PAGE_SIZE = 40;
     var searchInput = document.getElementById('search-input');
     var searchInputMobile = document.getElementById('search-input-mobile');
     var priceMin = document.getElementById('price-min');
@@ -515,15 +519,41 @@
       if (sortBy === 'menor-preco') filtered.sort(function(a, b) { return Number(a.price || a.preco || 0) - Number(b.price || b.preco || 0); });
       else if (sortBy === 'maior-preco') filtered.sort(function(a, b) { return Number(b.price || b.preco || 0) - Number(a.price || a.preco || 0); });
       else if (sortBy === 'maiores-descontos') filtered.sort(function(a, b) { var da = (a.precoOriginal && Number(a.precoOriginal) > Number(a.price||a.preco)) ? (1 - Number(a.price||a.preco)/Number(a.precoOriginal))*100 : 0; var db = (b.precoOriginal && Number(b.precoOriginal) > Number(b.price||b.preco)) ? (1 - Number(b.price||b.preco)/Number(b.precoOriginal))*100 : 0; return db - da; });
+      var totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+      if (currentPage > totalPages) currentPage = 1;
+      var start = (currentPage - 1) * PAGE_SIZE;
+      var pageItems = filtered.slice(start, start + PAGE_SIZE);
       grid.innerHTML = '';
       if (filtered.length === 0) {
         grid.innerHTML = '<p style="grid-column:1/-1;color:#9ca3af;text-align:center;padding:3rem;">Nenhuma oferta encontrada com os filtros atuais.</p>';
       } else {
-        filtered.forEach(function(p) { grid.appendChild(renderCard(p)); });
+        pageItems.forEach(function(p) { grid.appendChild(renderCard(p)); });
       }
       lucide.createIcons();
       resultsCount.textContent = filtered.length;
+      renderPagination(totalPages);
       if (focus) focusFirstResult();
+    }
+
+    function renderPagination(totalPages) {
+      var el = document.getElementById('pagination');
+      if (el == null) return;
+      if (totalPages <= 1) { el.innerHTML = ''; return; }
+      var html = '';
+      if (currentPage > 1) html += '<button onclick="goToPage(' + (currentPage - 1) + ')" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:0.5rem;background:white;cursor:pointer;font-size:0.875rem;">&larr; Anterior</button>';
+      var startPage = Math.max(1, currentPage - 2);
+      var endPage = Math.min(totalPages, startPage + 4);
+      for (var i = startPage; i <= endPage; i++) {
+        html += '<button onclick="goToPage(' + i + ')" style="padding:0.5rem 1rem;border:1px solid ' + (i === currentPage ? '#0d9488' : '#e5e7eb') + ';border-radius:0.5rem;background:' + (i === currentPage ? '#0d9488' : 'white') + ';color:' + (i === currentPage ? 'white' : '#374151') + ';cursor:pointer;font-size:0.875rem;">' + i + '</button>';
+      }
+      if (currentPage < totalPages) html += '<button onclick="goToPage(' + (currentPage + 1) + ')" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:0.5rem;background:white;cursor:pointer;font-size:0.875rem;">Próximo &rarr;</button>';
+      el.innerHTML = html;
+    }
+
+    function goToPage(p) {
+      currentPage = p;
+      renderGrid(false);
+      document.getElementById('grid-all').scrollIntoView({ behavior: 'smooth' });
     }
 
     function updateStats() {
