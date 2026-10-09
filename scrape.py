@@ -26,6 +26,26 @@ def search_products(keyword, limit=30):
   return resp.json().get("data", {}).get("productOfferV2", {}).get("nodes", [])
 
 
+def map_item(p, keyword):
+  preco = float(p.get("priceMin", "0"))
+  discount = float(p.get("priceDiscountRate", 0))
+  preco_original = round(preco / (1 - discount / 100), 2) if discount > 0 else ""
+  return {
+    "nome": p.get("productName", ""),
+    "preco": preco,
+    "imagem": p.get("imageUrl", ""),
+    "frete": "",
+    "categoria": "",
+    "link": p.get("offerLink", ""),
+    "precoOriginal": preco_original,
+    "marketplace": "Shopee",
+    "comissao": round(float(p.get("commissionRate", "0")) * 100, 1),
+    "vendas": p.get("sales", 0),
+    "keyword": keyword,
+    "captured_at": time.strftime("%Y-%m-%dT%H:%M:%S")
+  }
+
+
 def main():
   if not APP_ID or not APP_SECRET:
     print("SHOPEE_APP_ID e SHOPEE_APP_SECRET nao configurados.")
@@ -43,13 +63,11 @@ def main():
       if item_id in vistos:
         continue
       if float(p.get("commissionRate", "0")) >= MIN_COMMISSION and p.get("sales", 0) >= MIN_SALES:
-        p["keyword"] = kw
-        p["captured_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
-        todas.append(p)
+        todas.append(map_item(p, kw))
         vistos.add(item_id)
-  todas.sort(key=lambda x: float(x.get("commissionRate", "0")), reverse=True)
-  with open("ofertas.json", "w", encoding="utf-8") as f:
-    json.dump(todas, f, ensure_ascii=False, indent=2)
+  todas.sort(key=lambda x: x.get("comissao", 0), reverse=True)
+  with open("ofertas.json", "w", encoding="utf-8") as f2:
+    json.dump(todas, f2, ensure_ascii=False, indent=2)
   print("OK: " + str(len(todas)) + " ofertas salvas")
 
 
