@@ -586,6 +586,8 @@
             "priceCurrency": "BRL",
             "price": Number(top.price || top.preco).toFixed(2),
             "availability": "https://schema.org/InStock",
+          "brand": {"@type":"Brand","name":"Ofertas do Dia"},
+          "shippingDetails": {"@type":"OfferShippingDetails","shippingRate":{"@type":"MonetaryAmount","value":"0","currency":"BRL"},"shippingDestination":{"@type":"DefinedRegion","addressCountry":"BR"}},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"BR","returnPolicyCountry":"BR","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":30,"returnMethod":"https://schema.org/ReturnByMail","returnFees":"https://schema.org/FreeReturn"},
             "url": top.offerLink || top.link
           }
         };
