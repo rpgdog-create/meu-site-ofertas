@@ -39,8 +39,8 @@ def map_item(p, keyword):
     "link": p.get("offerLink", ""),
     "precoOriginal": preco_original,
     "marketplace": "Shopee",
-    "comissao": round(float(p.get("commissionRate", "0")) * 100, 1),
-    "vendas": p.get("sales", 0),
+    "comissao": round(float((p.get("commissionRate") or 0)) * 100, 1),
+    "vendas": (p.get("sales") or 0),
     "keyword": keyword,
     "captured_at": time.strftime("%Y-%m-%dT%H:%M:%S")
   }
