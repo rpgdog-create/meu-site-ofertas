@@ -27,8 +27,8 @@ def search_products(keyword, limit=30):
 
 
 def map_item(p, keyword):
-  preco = float(p.get("priceMin", "0"))
-  discount = float(p.get("priceDiscountRate", 0))
+  preco = float(p.get("priceMin") or 0)
+  discount = float(p.get("priceDiscountRate") or 0)
   preco_original = round(preco / (1 - discount / 100), 2) if discount > 0 else ""
   return {
     "nome": p.get("productName", ""),
