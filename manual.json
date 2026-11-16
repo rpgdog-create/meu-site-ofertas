@@ -5203,5 +5203,505 @@
     "marketplace": "Amazon",
     "frete": "sim",
     "precoOriginal": "2200.01"
+  },
+  {
+    "nome": "Apple iPhone 17 de 256 GB — Azul-névoa",
+    "preco": "5859.00",
+    "link": "https://www.amazon.com.br/dp/B0GQWF5JD1?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/41j+Sdw2FhL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "7999.00"
+  },
+  {
+    "nome": "Apple iPhone 15 (256 GB) — Preto",
+    "preco": "4887.78",
+    "link": "https://www.amazon.com.br/dp/B0CP6CJ8JG?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/416MG51rNgL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "6799.00"
+  },
+  {
+    "nome": "Samsung Smart TV 70\" Crystal UHD 4K U8000H 2027 | Vision AI Companion, Modo Futebol, Xbox Cloud Gaming, Canais Gratuitos, 7 Anos de Atualização",
+    "preco": "3799.00",
+    "link": "https://www.amazon.com.br/dp/B0H6N4P465?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/51Sg1BAA14L._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "5199.00"
+  },
+  {
+    "nome": "Samsung Smart TV 65\" MiniLED 4K M75H + Soundbar Samsung HW-B400F Combo",
+    "preco": "3848.90",
+    "link": "https://www.amazon.com.br/dp/B0HC8D7RDR?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/51zenv+6lkL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "4746.32"
+  },
+  {
+    "nome": "Duracell Pilhas Alcalinas AA Pequena Pack 24 Unidades – Dura até 10x Mais – Ideal para Controle de Videogame e Brinquedos",
+    "preco": "99.63",
+    "link": "https://www.amazon.com.br/dp/B0C9RVFRZD?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81dHFKPXSML._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Celular Samsung Galaxy A57 5G 128GB, 8GB RAM, Recursos AI (Cinza)",
+    "preco": "2110.00",
+    "link": "https://www.amazon.com.br/dp/B0GVT1T3PB?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51LpX2qhRfL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Duracell Pilha Optimum AA Pequena Com 12 Unidades – Dura até 30x Mais – Ideal para Controle Xbox™, Brinquedos e Lanternas",
+    "preco": "69.89",
+    "link": "https://www.amazon.com.br/dp/B0BXYD49TV?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81PnMCTeZkL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "PHILIPS Pilha Alcalina do Tipo AA e AAA C/10 AA E 10-AAA, Branco, Azul e Cinza, Padrão, LR036P20BP/59",
+    "preco": "41.80",
+    "link": "https://www.amazon.com.br/dp/B0977B9KN4?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81mSdn-33cS._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Smart TV LG 43\" 4K UHD NANO AI 43UN85CBPSA.AWZ",
+    "preco": "1692.00",
+    "link": "https://www.amazon.com.br/dp/B0HCR619M3?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71JvlwEntGL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pilha Alcalina AAA com 8 Unidades, Elgin, Alcalina, 1.5V",
+    "preco": "13.90",
+    "link": "https://www.amazon.com.br/dp/B09MSQGXFR?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61yW9+kFVWL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Duracell Carregador de Pilhas Recarregáveis AA e AAA Com 4 Pilhas AA Inclusas – Bivolt",
+    "preco": "137.75",
+    "link": "https://www.amazon.com.br/dp/B07X4JG2G4?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/819KK4qPMeL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Echo Pop (Geração mais recente) | Smart speaker compacto com som envolvente e Alexa | Cor Branca, com Acesso Antecipado à Alexa+",
+    "preco": "399.00",
+    "link": "https://www.amazon.com.br/dp/B09ZXN77L2?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/815cJtNpN1L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Celular Samsung Galaxy S25 FE 5G, 128GB, 8GB, Câmera Tripla - Jet Black",
+    "preco": "2999.00",
+    "link": "https://www.amazon.com.br/dp/B0FTC96JJ5?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51ydsfiGvOL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Smartphone Motorola Moto g35 5G - 128GB 4GB RAM+8GB Ram Boost e Camera 50MP com AI NFC Tela 6.7\" com Superbrilho - Verde",
+    "preco": "829.00",
+    "link": "https://www.amazon.com.br/dp/B0DHWFBYVC?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61pGaBV+-AL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Smart TV LCD LED 32\" AOC 32S5155/78G - Wi-Fi, HD, Quad Core, Dolby Áudio, 60 Hz",
+    "preco": "869.00",
+    "link": "https://www.amazon.com.br/dp/B0FVY9MD19?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51C7A-6aGFL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Smart TV HD 32\" LG LB650 AI 2026",
+    "preco": "1039.99",
+    "link": "https://www.amazon.com.br/dp/B0H5F85BZC?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61hY++B4tnL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Celular Samsung Galaxy A17 5G, 256GB, 8GB, 50MP Tela 6.7\" - Cinza",
+    "preco": "1465.56",
+    "link": "https://www.amazon.com.br/dp/B0FPQ1C614?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61-i0SOp0eL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pilha recarregável AA 2500Mah Elgin com 4 unidades Comum",
+    "preco": "49.99",
+    "link": "https://www.amazon.com.br/dp/B0755P9SCV?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/712sltU-CfL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Celular Samsung Galaxy A07 128GB, 4GB, Câm. 50MP, Tela 6.7\"- Verde",
+    "preco": "749.00",
+    "link": "https://www.amazon.com.br/dp/B0FPJ5GYPG?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51G8vgohj0L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "soundcore P20i da Anker, Fone de Ouvido Bluetooth 5.3 Sem Fio, 2 Mics IA | Bass UP, Graves Potentes, Drivers de 10mm, 30H, Resistência à Água TWS, Personalização de Som via App para Academia, IPX5",
+    "preco": "129.00",
+    "link": "https://www.amazon.com.br/dp/B0BTYDLTM3?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/612NMxdFraL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Combo Teclado e Mouse Sem Fio Dell KM3322W 1858, Receptor USB 2,4 GHz | 2 pilhas AAA para o teclado e 1 AA para o mouse, DPI 1000, 3 Botões Programáveis, Cor Preto, Peso total 830,1 g",
+    "preco": "125.00",
+    "link": "https://www.amazon.com.br/dp/B0BPTK4P38?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51IPtedWrsL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Notebook ASUS VivoBook Go 15, AMD RYZEN 5 7520U, 8GB, 512GB SSD, KeepOS/Linux, Tela 15,6\" FHD, Mixed Black - E1504FA-NJ732",
+    "preco": "2799.00",
+    "link": "https://www.amazon.com.br/dp/B0CYW2N6TX?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71TK+vh6JIL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Mochila Lenovo Casual B210 Preta para Notebook 15,6\" - GX40Q17225",
+    "preco": "74.26",
+    "link": "https://www.amazon.com.br/dp/B075Y72PHZ?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/6157zAcYYVL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Tablet Samsung Galaxy Tab S10 FE, Cinza, 128GB, 8GB RAM, Tela Imersiva de 10.9\" 90Hz, Camera Traseira de 13MP, Câmera Frontal de 12MP Ultra Wide, Wifi 6, IP68, Android 15",
+    "preco": "3039.00",
+    "link": "https://www.amazon.com.br/dp/B0F3LTWYS5?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51nStwLekjL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "LG UltraGear Monitor Gamer 27\" IPS, 144Hz Nativo, 1ms (MBR), Full HD (1920x1080), HDR10, NVIDIA G-SYNC, AMD FreeSync, Preto - 27G411B",
+    "preco": "692.00",
+    "link": "https://www.amazon.com.br/dp/B0HB7NS9RM?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61II0rNeKXL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "PROCESSADOR AMD RYZEN 7 5700X 3.4GHz (Turbo 4.6GHz) 36MB Cache AM4 100-100000926WOF, Cerâmica Cinza",
+    "preco": "1097.39",
+    "link": "https://www.amazon.com.br/dp/B09VCHQHZ6?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51gRv8z+K6L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Mouse Sem Fio Logitech M330 SILENT com Clique Silencioso, Design Destro, Bateria de 18 Meses, Receptor USB, Compatível com Windows, macOS, ChromeOS e Pilha Inclusa - Preto",
+    "preco": "69.90",
+    "link": "https://www.amazon.com.br/dp/B01JPOLKDW?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61UHRi-KLmL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Cabo USB para Tipo-C (USB-C) 60W 3.1A Carregamento Rápido Reforçado 2 Metros Nylon Trançado – Compatível com Celulares Android, Galaxy e iPhone a partir do 15, além de Tablets com Entrada Tipo-C",
+    "preco": "16.89",
+    "link": "https://www.amazon.com.br/dp/B0G1546Q8L?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51wf1KpsmoL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Mochila de Viagem Expansivel Masculina Feminina Para Notebook",
+    "preco": "99.97",
+    "link": "https://www.amazon.com.br/dp/B0DWMZ9PPQ?tag=ofertas01dc-20",
+    "categoria": "Informática",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61kbcR4xSWL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "NIVEA Kit Loção Hidratante Milk Pele Seca a Extrasseca 400ml (2 unidades)",
+    "preco": "29.88",
+    "link": "https://www.amazon.com.br/dp/B0DK4975DJ?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71Exl60wVRL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Secret Desodorante Antitranspirante em Gel Berry 45g",
+    "preco": "16.10",
+    "link": "https://www.amazon.com.br/dp/B0CZC5XTVJ?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/41Kc89Ph1fL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Densidade Acidificante Capilar 250g, Lola Cosmetics",
+    "preco": "20.13",
+    "link": "https://www.amazon.com.br/dp/B09KCYYZNG?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71oJz+tFG8L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Gillette Mach3 Sensitive Carga para Aparelho de Barbear com Aloe 8 Unidades",
+    "preco": "49.99",
+    "link": "https://www.amazon.com.br/dp/B07F3CJZJW?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71dQMtjhE0L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Clear Shampoo Men Anticaspa Ice Cool Menthol 400Ml | Anticaspa mentolado refrescante",
+    "preco": "21.49",
+    "link": "https://www.amazon.com.br/dp/B07LFGWRC7?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71cW-39wjXL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Gillette Mach3 Carga para Aparelho de Barbear 16 Unidades",
+    "preco": "76.09",
+    "link": "https://www.amazon.com.br/dp/B08VCP7GMD?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71trWiva9mL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Dove Sabonete Em Barra Branco 90G - 8 Unidades | Limpeza hidratante em pack",
+    "preco": "29.90",
+    "link": "https://www.amazon.com.br/dp/B088Z64C82?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71bR8jBRL7L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Secret Clinical Desodorante Antitranspirante em Gel Lavanda Invisível 45 g",
+    "preco": "20.57",
+    "link": "https://www.amazon.com.br/dp/B0GZ7535SW?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61BSPY0tXhL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Shampoo Invigo Nutri Enrich Wella Professionals 1000 ml",
+    "preco": "117.00",
+    "link": "https://www.amazon.com.br/dp/B0BG312BMR?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/41pSxYgVPwL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Aparelho de Depilação Gillette Venus Suave Sensitive, 4 Unidades | Depilação suave para mulheres",
+    "preco": "16.79",
+    "link": "https://www.amazon.com.br/dp/B08XNTQNFB?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61vrINzJy-L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pantene Pro-V Óleo Capilar Queratina Milagroso Finalizador Leave-in 95 ml",
+    "preco": "26.18",
+    "link": "https://www.amazon.com.br/dp/B0CVXT2K1S?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51wwacDg3kL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "NIVEA Sabonete Vegetal Nutrição Da Natureza Manteiga De Karité & Lima Da Pérsia 80g (6 un.), Limpeza Delicada, Banho, Pele Macia e Hidratada, Fórmula Natural",
+    "preco": "2304.00",
+    "link": "https://www.amazon.com.br/dp/B0F3BDZGL5?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/716yFV3WR9L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Seca Sem Frizz Leave-In Finalizador 180ml | Amend Essencial | Alinha cutículas e elimina o frizz na secagem natural sem uso de secador.",
+    "preco": "35.90",
+    "link": "https://www.amazon.com.br/dp/B0DJHCX662?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/4148qMkHJNL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Kit Cronograma Capilar Lola Cosmetics Be(m) Dita Ghee, 3 Produtos",
+    "preco": "35.64",
+    "link": "https://www.amazon.com.br/dp/B0DKVJ1HWB?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71K-GAoX50L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "EUCERIN Pomada Reparadora Aquaphor Duopack 10ml, Hidratação Intensiva, Hidratante Labial",
+    "preco": "35.97",
+    "link": "https://www.amazon.com.br/dp/B07R2DDVVG?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71cXxSNnExL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Dove Óleo + Sérum Bifásico Bond Intense Repair 110 ml",
+    "preco": "24.30",
+    "link": "https://www.amazon.com.br/dp/B0CXBJMSQF?tag=ofertas01dc-20",
+    "categoria": "Beleza",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61+-OgmlRlL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pokémon TCG: Mega Evolution - Reinado Delta - 3-Pack Blister - Português",
+    "preco": "34.07",
+    "link": "https://www.amazon.com.br/dp/B0HK1CGPFT?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/91BNnvI-2QL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Barbie Boneca Fashion Cabelo Loiro com Vestido Rosa e Estrelas",
+    "preco": "19.88",
+    "link": "https://www.amazon.com.br/dp/B0GBSYN948?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/41bUaQUFSXL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "UNO Jogo de Cartas No Mercy 7 anos",
+    "preco": "26.91",
+    "link": "https://www.amazon.com.br/dp/B0CBNR2ML6?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81P6hp1v9CL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Hidrográfica com 24 Cores Estojo Cartão, Faber-Castell, 15.0124CZF, Multicor",
+    "preco": "22.90",
+    "link": "https://www.amazon.com.br/dp/B078BMLGKJ?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61Uk-4r0NKL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pokémon TCG: Mega Evolução - Escuridão Absoluta - 4-Pack Blister",
+    "preco": "44.90",
+    "link": "https://www.amazon.com.br/dp/B0H3Q1XTG4?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81mtbjyIXoL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Play-Doh Mini Kit Veterinário com cão, brinquedo para crianças",
+    "preco": "19.98",
+    "link": "https://www.amazon.com.br/dp/B0C9ZT3B49?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61HthRzWF8L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Kit de Desenho Buba Risque e Apague, Colorido, 10 Unidades",
+    "preco": "18.00",
+    "link": "https://www.amazon.com.br/dp/B0BBJC1KLG?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/810l1W4YoBL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "BIC, Lápis de Cor Sextavado, Evolution, 24 Cores",
+    "preco": "16.49",
+    "link": "https://www.amazon.com.br/dp/B0778T3SRK?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81i4IjyrGGL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Pokémon TCG: Mega Evolução - Caos Ascendente - Sleeved Booster - Português",
+    "preco": "10.62",
+    "link": "https://www.amazon.com.br/dp/B0GVVSBBCJ?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71SWyFhHkXL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Asmodee, Hitster, Jogo de Cartas para 2 a 10 Jogadores | A Partir de 14 Anos, Partidas de 30 Minutos, Party Game Casual, Ideal para Jogar com a Galera",
+    "preco": "131.99",
+    "link": "https://www.amazon.com.br/dp/B0F49YRTSN?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61zQPyunalL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Canetinha Vai e Vem 12 Cores, Faber-Castell, 15.0112VVZF, Multicor",
+    "preco": "21.58",
+    "link": "https://www.amazon.com.br/dp/B072M2YXVG?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81fkw5DzYEL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Barbie Casa dos Sonhos, Casa de Bonecas, 3+ Anos",
+    "preco": "875.00",
+    "link": "https://www.amazon.com.br/dp/B0H1T7241Z?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61VhNgOsi8L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "GGB Quebra-Cabeça Vilarejo Japonês 1000 Peças",
+    "preco": "26.67",
+    "link": "https://www.amazon.com.br/dp/B0CZZBC865?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/717sIrAeFhL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Asmodee, Dobble, Jogo de Cartas 5 em 1 para 2 a 8 Jogadores | A Partir de 6 Anos, Partidas de 15 Minutos, Jogo de Observação e Reflexos Rápido, Jogue com a Família e os Amigos",
+    "preco": "54.99",
+    "link": "https://www.amazon.com.br/dp/B0CFSTKD4J?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71K-sA-YqEL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Utiguti Massa de Modelar Soft Estojo com 12 Cores 180G",
+    "preco": "19.00",
+    "link": "https://www.amazon.com.br/dp/B077Q7D2QX?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81qIWTuUG2L._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Canetinha com 12 Cores Estojo Cartão, Faber-Castell, 15.0112CZF, Multicor",
+    "preco": "16.90",
+    "link": "https://www.amazon.com.br/dp/B077J2FKQN?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/61IhckqVVEL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
+  },
+  {
+    "nome": "Brastoy Blocos de Montar Magnéticos Infantil Construção STEM Brinquedo (130 Peças)",
+    "preco": "175.49",
+    "link": "https://www.amazon.com.br/dp/B0D221YB3L?tag=ofertas01dc-20",
+    "categoria": "Brinquedos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/81uscal1wDL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
   }
 ]
