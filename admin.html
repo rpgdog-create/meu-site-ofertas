@@ -628,6 +628,9 @@
       }).join("");
       lucide.createIcons();
       updateGlobalCatStyle();
+      var hasDup = batchItems.some(function(item) { return item._dup; });
+      var btnRmDup = document.getElementById("btn-rm-dup");
+      if (hasDup) { btnRmDup.classList.remove("hidden"); } else { btnRmDup.classList.add("hidden"); }
     }
 
     function onItemCatChange(i, sel) {
