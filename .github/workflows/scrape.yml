@@ -25,5 +25,5 @@ jobs:
           git config user.email "actions@github.com"
           git add ofertas.json
           git diff --staged --quiet || git commit -m "Atualizar ofertas"
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main
           git push
