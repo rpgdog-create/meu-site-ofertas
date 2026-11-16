@@ -5703,5 +5703,31 @@
     "categoria": "Brinquedos",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/81uscal1wDL._AC_UL600_SR600,400_.jpg",
     "marketplace": "Amazon"
+  },
+  {
+    "nome": "Apple iPhone 16 (128 GB) – Ultramarino",
+    "preco": "5054.44",
+    "link": "https://www.amazon.com.br/dp/B0DJFRYWK8?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/71Q3GA4-J9L._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "6799.00"
+  },
+  {
+    "nome": "Apple iPhone 15 (128 GB) — Azul",
+    "preco": "4199.00",
+    "link": "https://www.amazon.com.br/dp/B0CP6CR795?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/41+jLq6yJKL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "4776.67"
+  },
+  {
+    "nome": "Pilha Alcalina, Elgin, Palito AAA, Blister com 4",
+    "preco": "16.29",
+    "link": "https://www.amazon.com.br/dp/B0754J12RW?tag=ofertas01dc-20",
+    "categoria": "Eletrônicos",
+    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71faB-DYcoL._AC_UL600_SR600,400_.jpg",
+    "marketplace": "Amazon"
   }
 ]
