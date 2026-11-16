@@ -70,6 +70,8 @@ def _main_inner():
       continue
     for p in results:
       try:
+        if not isinstance(p, dict):
+          continue
         item_id = p.get("itemId")
         if item_id in vistos:
           continue
