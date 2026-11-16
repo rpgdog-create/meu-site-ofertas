@@ -82,6 +82,7 @@ def _main_inner():
           vistos.add(item_id)
       except Exception:
         continue
+  todas = [x for x in todas if isinstance(x, dict)]
   todas.sort(key=lambda x: x.get("comissao", 0), reverse=True)
   with open("ofertas.json", "w", encoding="utf-8") as f2:
     json.dump(todas, f2, ensure_ascii=False, indent=2)
