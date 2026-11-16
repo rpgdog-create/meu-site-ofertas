@@ -5729,5 +5729,23 @@
     "categoria": "Eletrônicos",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71faB-DYcoL._AC_UL600_SR600,400_.jpg",
     "marketplace": "Amazon"
+  },
+  {
+    "nome": "Apple iPhone 17 de 256 GB — Sálvia",
+    "preco": "5859.00",
+    "link": "https://www.amazon.com.br/dp/B0GQWP9K1G?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/41k9Fkg0r7L._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "7999.00"
+  },
+  {
+    "nome": "Apple iPhone 16 (128 GB) – Preto",
+    "preco": "5054.44",
+    "link": "https://www.amazon.com.br/dp/B0DJFTJ6LX?tag=ofertas01dc-20",
+    "categoria": "Maiores Descontos",
+    "imagem": "https://m.media-amazon.com/images/I/41uUYcqfLxL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+    "marketplace": "Amazon",
+    "precoOriginal": "6799.00"
   }
 ]
