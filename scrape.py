@@ -60,12 +60,17 @@ def main():
       print("  Erro: " + str(e))
       continue
     for p in results:
-      item_id = p.get("itemId")
-      if item_id in vistos:
+      try:
+        item_id = p.get("itemId")
+        if item_id in vistos:
+          continue
+        comm = float(p.get("commissionRate") or 0)
+        sales = int(p.get("sales") or 0)
+        if comm >= MIN_COMMISSION and sales >= MIN_SALES:
+          todas.append(map_item(p, kw))
+          vistos.add(item_id)
+      except Exception:
         continue
-      if float(p.get("commissionRate", "0")) >= MIN_COMMISSION and p.get("sales", 0) >= MIN_SALES:
-        todas.append(map_item(p, kw))
-        vistos.add(item_id)
   todas.sort(key=lambda x: x.get("comissao", 0), reverse=True)
   with open("ofertas.json", "w", encoding="utf-8") as f2:
     json.dump(todas, f2, ensure_ascii=False, indent=2)
