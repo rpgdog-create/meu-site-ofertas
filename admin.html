@@ -101,6 +101,7 @@
           <div class="flex gap-3">
             <button id="btn-add" onclick="confirmBatch()" class="px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-xl transition-all shadow-md active:scale-[0.98]">Adicionar todos</button>
             <button onclick="clearBatch()" class="px-4 py-2.5 bg-red-50 hover:bg-red-100 text-red-600 text-xs font-semibold rounded-xl transition-all">Limpar lista</button>
+            <button id="btn-rm-dup" onclick="removeDuplicates()" class="hidden px-4 py-2.5 bg-amber-100 hover:bg-amber-200 text-amber-800 text-xs font-semibold rounded-xl transition-all">Remover duplicados</button>
           </div>
         </div>
       </section>
@@ -643,6 +644,8 @@
       batchItems.splice(i, 1);
       renderBatchResults();
       var hasDup = batchItems.some(function(item) { return item._dup; });
+      var btnRmDup = document.getElementById("btn-rm-dup");
+      if (hasDup) { btnRmDup.classList.remove("hidden"); } else { btnRmDup.classList.add("hidden"); }
       if (!hasDup) {
         var btnAdd = document.getElementById("btn-add");
         btnAdd.disabled = false;
@@ -650,6 +653,20 @@
         btnAdd.classList.add('bg-teal-600','hover:bg-teal-500');
         document.getElementById("batch-status").classList.add('hidden');
       }
+    }
+
+    function removeDuplicates() {
+      var before = batchItems.length;
+      batchItems = batchItems.filter(function(item) { return item._dup === false; });
+      var removed = before - batchItems.length;
+      renderBatchResults();
+      var btnAdd = document.getElementById("btn-add");
+      btnAdd.disabled = false;
+      btnAdd.classList.remove("bg-red-400","cursor-not-allowed");
+      btnAdd.classList.add("bg-teal-600","hover:bg-teal-500");
+      document.getElementById("btn-rm-dup").classList.add("hidden");
+      document.getElementById("batch-status").textContent = removed + " duplicado(s) removido(s).";
+      document.getElementById("batch-status").className = "mt-4 px-4 py-3 rounded-xl text-xs font-medium bg-amber-50 text-amber-700";
     }
 
     function clearBatch() {
