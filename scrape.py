@@ -7,7 +7,7 @@ KEYWORDS = ["fone bluetooth", "air fryer", "tênis masculino", "smartwatch", "ga
 ]
 MIN_COMMISSION = 0.005
 MIN_SALES = 0
-MAX_RESULTS_PER_KEYWORD = 80
+MAX_RESULTS_PER_KEYWORD = 50
 API_URL = "https://open-api.affiliate.shopee.com.br/graphql"
 
 
