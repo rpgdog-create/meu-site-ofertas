@@ -28,6 +28,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add manual.json
             git commit -m "sync: remover produtos ML inativos ($(date +%Y-%m-%d))"
+            git pull --rebase origin main
             git push origin main
           else
             echo "Nada a fazer."
