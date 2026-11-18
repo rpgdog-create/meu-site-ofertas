@@ -1501,14 +1501,6 @@
     "marketplace": "Amazon"
   },
   {
-    "nome": "Conjunto de Brinquedos 6 em 1 DIY | STEM Brinquedos Educativos para Crianças de 8 a 13 Anos",
-    "preco": "68.09",
-    "link": "https://www.amazon.com.br/dp/B0FN42SMNF?tag=ofertas01dc-20",
-    "categoria": "Brinquedos",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/71hoqL0jI3L._AC_UL600_SR600,400_.jpg",
-    "marketplace": "Amazon"
-  },
-  {
     "nome": "LEGO Creator Ônibus Espacial 3em1: Nave Espacial 31134 | Brinquedos de Construção para Meninos e Meninas, Anos 6+, 144 Peças, Brinquedo Espacial, Presente para Crianças",
     "preco": "100.01",
     "link": "https://www.amazon.com.br/dp/B0BLJ4FDT4?tag=ofertas01dc-20",
@@ -2062,14 +2054,6 @@
     "link": "https://www.amazon.com.br/dp/B0CHJXCJTW?tag=ofertas01dc-20",
     "categoria": "Informática",
     "imagem": "https://images-na.ssl-images-amazon.com/images/I/71g1gS6qGmL._AC_UL600_SR600,400_.jpg",
-    "marketplace": "Amazon"
-  },
-  {
-    "nome": "Mouse Sem Fio Recarregável Wireless Bluetooth Optico Led Rgb Colorido Ergonômico Usb 2.4 Ghz Notebook Computador Pc Desktop Linha Premium - Cores Sortidas",
-    "preco": "17.90",
-    "link": "https://www.amazon.com.br/dp/B0F1G2TL8P?tag=ofertas01dc-20",
-    "categoria": "Informática",
-    "imagem": "https://images-na.ssl-images-amazon.com/images/I/51NVWRIcQ2L._AC_UL600_SR600,400_.jpg",
     "marketplace": "Amazon"
   },
   {
@@ -2883,16 +2867,6 @@
     "frete": "sim"
   },
   {
-    "nome": "NTK, Fogareiro Frontier Em Aço Esmaltado Com Ignição Eletrônica Apoio De Panela, Chama Regulável, Dispensa Uso De Fósforos, Ideal Para Uso Diário, Camping, Trilha Ou Viagens, Prático E Econômico",
-    "preco": "96.62",
-    "link": "https://www.amazon.com.br/dp/B0777T6MB6?tag=ofertas01dc-20",
-    "categoria": "camping",
-    "imagem": "https://m.media-amazon.com/images/I/611OBGSiRML._AC_UL320_.jpg",
-    "marketplace": "Amazon",
-    "frete": "sim",
-    "precoOriginal": "199.00"
-  },
-  {
     "nome": "Kit 3 Cordas de Poliéster 4mm x 5m – Multiuso, Resistentes, Cores Variadas para uso Doméstico, Varal, Camping, Bicicleta e Amarrações, 15 Metros (Total) Multicolorido.",
     "preco": "23.90",
     "link": "https://www.amazon.com.br/dp/B0FR5DPP6Q?tag=ofertas01dc-20",
@@ -2959,15 +2933,6 @@
     "marketplace": "Amazon",
     "frete": "nao",
     "precoOriginal": "29.99"
-  },
-  {
-    "nome": "Lanterna T9 Tática LED Recarregável P50 Alta Potência 1200 Lumens Zoom Longo Alcance Ajustável Profissional - 3 Modos de Iluminação - Camping Trilhas Emergência Resistente e Compacta",
-    "preco": "29.90",
-    "link": "https://www.amazon.com.br/dp/B0GMTWQ6JZ?tag=ofertas01dc-20",
-    "categoria": "camping",
-    "imagem": "https://m.media-amazon.com/images/I/61o6ayfS6PL._AC_UL320_.jpg",
-    "marketplace": "Amazon",
-    "frete": "sim"
   },
   {
     "nome": "Mesa Dobrável De Alumínio Para Camping E Praia 50 x 50 cm Portátil Com Bolsa",
