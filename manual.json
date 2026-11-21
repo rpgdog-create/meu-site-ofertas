@@ -1565,15 +1565,6 @@
     "marketplace": "Amazon"
   },
   {
-    "nome": "Kit 12 Lenço de Papel Folha Tripla, Branco, 21cm x 21cm, Textura Macia, Fibras Naturais, 12 Pacotes com 10 Lenços, 120 Unidades",
-    "preco": "24.95",
-    "link": "https://www.amazon.com.br/dp/B0GPDVBRXW?tag=ofertas01dc-20",
-    "categoria": "cuidados pessoais",
-    "imagem": "https://m.media-amazon.com/images/I/61fnO82BZjL._AC_UL320_.jpg",
-    "marketplace": "Amazon",
-    "frete": "sim"
-  },
-  {
     "nome": "Ricca, Lenço de Papel Folha Tripla, Branco, 20,5 cm x 20,5 cm, 10 unidades",
     "preco": "2.10",
     "link": "https://www.amazon.com.br/dp/B07HDDWHMF?tag=ofertas01dc-20",
@@ -3975,16 +3966,6 @@
     "imagem": "https://m.media-amazon.com/images/I/51yCzMwn86L._AC_UL320_.jpg",
     "marketplace": "Amazon",
     "frete": "sim"
-  },
-  {
-    "nome": "Bandeira Do Brasil Janela De Carro Com Haste Para Veiculo Copa Do Mundo Futebol Manifestacao Politica Torcida Patriotica Poliester Resistente 45x30cm Kit 1 2 Ou 4 Unidades (1)",
-    "preco": "18.97",
-    "link": "https://www.amazon.com.br/dp/B0GYM723JZ?tag=ofertas01dc-20",
-    "categoria": "bandeiras",
-    "imagem": "https://m.media-amazon.com/images/I/61hRFVvKbBL._AC_UL320_.jpg",
-    "marketplace": "Amazon",
-    "frete": "sim",
-    "precoOriginal": "19.97"
   },
   {
     "nome": "Bandeira do Brasil De Cetim 90x90cm Copa Do Mundo, Multiuso, Bandana, Laço",
